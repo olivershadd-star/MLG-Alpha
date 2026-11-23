@@ -1,5 +1,5 @@
 # Familles complétées et nouvelles catégories — tools/generate_fill.py.
-# Tout est en 4 temps, 16 pas par mesure.
+# Tout est en 4/4. Grille normale : 16 pas. Triolets : grid=1/8T (12 pas) ou grid=1/16T (24 pas).
 # Polyphonie N/N2… + V/V2… ; ratchet *n ; notes = intervalles depuis la tonique.
 
 @drums id=f-drums-rock-0001 name="Batterie rock — 4 voix, 2 mes. #001" genre=rock bars=2 steps=16 voices=4 tags=rock src=gen-fill

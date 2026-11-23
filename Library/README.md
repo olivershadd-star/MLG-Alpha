@@ -5,6 +5,7 @@
 | Fichier | Contenu | Nombre |
 |---|---|---|
 | `fill_drums.txt` | Batteries complètes en 4 temps : rock, metal (double pédale, galop, blast, demi-temps), metal indus, metal prog (kick en 3/5/7 contre la caisse), jazz shuffle, contretemps (one drop, steppers) — avec ghost notes, relances, crashs, roulements | 1 250 |
+| `fill_triplets.txt` | Triolets en 4/4 : charleston en triolets (1/8T et 1/16T), rafales trap, arpèges, basses shuffle, roulements, batterie jazz ternaire | 1 002 |
 | `fill_four_chords.txt` | Les 4 accords I–IV–V–vi : toutes les combinaisons de 2 à 4 accords, 1 à 4 temps par accord, en nappe, stab ou arpège | 552 |
 | `fill_acid.txt` | Nouvelles lignes acid 303 | 1 000 |
 | `fill_electro.txt` | Percussions électro, caisses de break à ghost notes, leads électro | 850 |
@@ -37,13 +38,14 @@
 | `bass_neuralacid.txt` | Basses NeuralAcid sur 4 mesures, qui suivent une grille d'accords | 8 985 |
 | `acid.txt`, `bass.txt`, `melody.txt` | Acid, basses et mélodies écrites à la main | 87 |
 
-**Total : 31 886 motifs.**
+**Total : 32 888 motifs.**
 
 ## Format
 
 Chaque motif commence par une ligne `@type id=… name="…" genre=… bars=… steps=16`.
 
 - **Batterie** : une ligne par instrument (`BD`, `SN`, `CL`, `RS`, `CH`, `OH`, `CY`, `LT`, `MT`, `HT`, `CB`, `SH`, `PC`, `AC` = accent), un caractère par pas : `x` coup, `r` double coup, `h` coup décalé d'un demi-pas, `.` silence. Mesures séparées par un espace.
+- **Triolets** : `steps=12 grid=1/8T` (croches de triolet) ou `steps=24 grid=1/16T` (doubles croches de triolet), toujours en 4/4.
 - **Vélocités** (fichiers `gen_*`) : ligne `V` sous chaque ligne `N`, une vélocité par note.
 - **Percussions** (`gen_perc.txt`) : dans la ligne `N`, le nom de l'instrument (`RS`, `CH`, `LT`…) au lieu d'un intervalle.
 - **Polyphonie** (`tex_*`) : lignes `N`, `N2`, `N3`, `N4` (une par voix) et `V`, `V2`… pour leurs vélocités, à chaque mesure. Champ `voices=` dans l'en-tête.

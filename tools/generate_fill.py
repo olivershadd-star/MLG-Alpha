@@ -417,6 +417,96 @@ def drums_offbeat(_):
     return kit(16, bars, rows), f"Batterie à contretemps ({style})", "offbeat", f"offbeat-{style}"
 
 
+# ------------------------------------------------------------------ TRIOLETS (toujours en 4/4)
+# grid=1/8T : 12 pas par mesure (3 par temps) ; grid=1/16T : 24 pas par mesure (6 par temps).
+def triplet_hats(_):
+    steps = rng.choice([12, 24])
+    per = steps // 4
+    bars = rng.choice([1, 2, 4])
+    tok = rng.choice(["CH", "CY", "SH", "RS", "CH"])
+    p = Pat("perc", bars, 1, steps)
+    keep = rng.choice(["all", "skip-mid", "first-last", "random"])
+    for b in range(bars):
+        for s in range(steps):
+            i = s % per
+            if keep == "skip-mid" and per == 3 and i == 1: continue
+            if keep == "first-last" and i not in (0, per - 1): continue
+            if keep == "random" and i != 0 and rng.random() < .4: continue
+            p.note(0, b * steps + s, tok, (100 if i == 0 else 60) + rng.uniform(-8, 8))
+    return p, "Charleston en triolets", "triplet", f"trip-hats-{steps}"
+
+
+def trap_rolls(_):
+    """Charleston trap : croches, avec des rafales en triolets de doubles croches (24 pas)."""
+    bars = rng.choice([1, 2])
+    p = Pat("perc", bars, 1, 24)
+    for b in range(bars):
+        rolls = rng.sample(range(4), rng.randint(1, 2))
+        for beat in range(4):
+            if beat in rolls:
+                for k in range(6): p.note(0, b * 24 + beat * 6 + k, "CH", 60 + k * 9)
+            else:
+                for k in (0, 3): p.note(0, b * 24 + beat * 6 + k, "CH", 95 if k == 0 else 70)
+    return p, "Rafales trap en triolets", "trap", "trip-trap"
+
+
+def triplet_arp(_):
+    scale = rng.choice([MINOR, PHRYG, MAJOR, [0, 2, 3, 5, 7, 9, 10]])
+    prog = rng.choice([[0], [0, 5], [0, 3], [0, 5, 3, 4], [0, 4]])
+    shape = rng.choice([[0, 1, 2], [2, 1, 0], [0, 2, 1], [0, 1, 2, 3, 2, 1]])
+    steps = 12
+    bars = max(len(prog), rng.choice([1, 2, 4]))
+    p = Pat("melody", bars, 1, steps)
+    for b in range(bars):
+        deg = prog[b % len(prog)]
+        t = [scale[(deg + k) % 7] + 12 * ((deg + k) // 7) for k in (0, 2, 4)] + [scale[deg % 7] + 12 * (deg // 7) + 12]
+        for s in range(steps):
+            p.note(0, b * steps + s, t[shape[s % len(shape)] % len(t)] + 12, 100 if s % 3 == 0 else rng.uniform(65, 85))
+    return p, "Arpège en triolets", "triplet", "trip-arp"
+
+
+def triplet_bass(_):
+    """Basse en triolets (feeling 12/8, shuffle) : tonique + 1 ou 2 notes."""
+    pool = rng.choice([[0], [0, 12], [0, 7], [0, 3], [0, -2], [0, 5]])
+    cells = ["x.x", "xx.", "x..", ".xx", "xxx", ".x."]
+    A = [rng.choice(cells) for _ in range(4)]
+    A[0] = "x" + A[0][1:]
+    bars = rng.choice([1, 2, 4])
+    p = Pat("bass", bars, 1, 12)
+    for b in range(bars):
+        for beat, cell in enumerate(A if b % 2 == 0 else A[:3] + [rng.choice(cells)]):
+            for i, c in enumerate(cell):
+                if c == "x":
+                    n = 0 if (i == 0 or len(pool) == 1 or rng.random() < .6) else rng.choice(pool[1:])
+                    p.note(0, b * 12 + beat * 3 + i, n, 110 if i == 0 else rng.uniform(75, 95))
+    return p, "Basse en triolets", "triplet", "trip-bass"
+
+
+def triplet_fill(_):
+    """Roulement en triolets de doubles croches qui monte (24 pas), sur 1 mesure."""
+    p = Pat("perc", 1, 1, 24)
+    start = rng.choice([0, 12, 18])
+    voices = rng.choice([["SN"], ["HT", "MT", "LT"], ["SN", "HT", "LT"], ["CL"]])
+    for s in range(start, 24):
+        if rng.random() < .85:
+            k = (s - start) * len(voices) // (24 - start)
+            p.note(0, s, voices[min(k, len(voices) - 1)], 55 + (s - start) * 70 / (24 - start))
+    return p, "Roulement en triolets", "triplet", "trip-fill"
+
+
+def jazz_ternary(_):
+    """Jazz ternaire vrai, grille de 12 pas (croches de triolet) en 4/4."""
+    bars = rng.choice([1, 2, 4])
+    return kit(12, bars, {"CY": [(0, 95), (3, 90), (5, 65), (6, 95), (9, 90), (11, 65)],
+                          "CH": [(3, 70), (9, 70)],
+                          "SN": lambda b: [(s, rng.uniform(35, 75)) for s in rng.sample([2, 5, 8, 11], rng.randint(0, 2))],
+                          "BD": lambda b: [(s, rng.uniform(40, 70)) for s in rng.sample([0, 6, 8, 11], rng.randint(0, 2))]}), "Batterie jazz ternaire", "jazz", "jazz-ternary"
+
+
+TRIPLET_PLAN = [(triplet_hats, 250), (trap_rolls, 120), (triplet_arp, 300), (triplet_bass, 300),
+                (triplet_fill, 80), (jazz_ternary, 150)]
+
+
 PLAN = [
     (electro_perc, "electro", 400), (ghost_snare, "electro", 150), (electro_lead, "electro", 300),
     (minimal_click, "minimal_dub", 400), (dub_chords, "minimal_dub", 300), (minimal_blip, "minimal_dub", 200),
@@ -431,7 +521,8 @@ TYPE = {"pad": "pad", "melody": "melody", "stab": "melody", "bass": "bass", "per
 
 def write_block(out, p, label, genre, tag, n, fname):
     head = (f'@{TYPE[p.kind]} id=f-{fname}-{n:04d} name="{label} — {p.nv} voix, {p.bars} mes. #{n:03d}" '
-            f'genre={genre} bars={p.bars} steps={p.steps} voices={p.nv} tags={tag} src=gen-fill')
+            f'genre={genre} bars={p.bars} steps={p.steps}' + {12: " grid=1/8T", 24: " grid=1/16T"}.get(p.steps, "") +
+            f' voices={p.nv} tags={tag} src=gen-fill')
     out.append(p.render(head))
 
 
@@ -458,8 +549,18 @@ def main():
                     seen.add((p.kind, p.key())); n += 1
                     label = f'4 accords {"–".join(seq)} ({beats} temps/accord, {style})'
                     write_block(out.setdefault("four_chords", []), p, label, "pop", f"four-{style}", n, "four")
+    # Triolets : après les 4 accords pour ne pas changer les tirages précédents
+    for fn, target in TRIPLET_PLAN:
+        made = tries = 0
+        while made < target and tries < target * 80:
+            tries += 1
+            p, label, genre, tag = fn(None)
+            if p.empty() or (p.kind, p.key()) in seen: continue
+            seen.add((p.kind, p.key())); made += 1
+            counters[fn.__name__] = counters.get(fn.__name__, 0) + 1
+            write_block(out.setdefault("triplets", []), p, label, genre, tag, counters[fn.__name__], fn.__name__.replace("_", "-"))
     hdr = ("# Familles complétées et nouvelles catégories — tools/generate_fill.py.\n"
-           "# Tout est en 4 temps, 16 pas par mesure.\n"
+           "# Tout est en 4/4. Grille normale : 16 pas. Triolets : grid=1/8T (12 pas) ou grid=1/16T (24 pas).\n"
            "# Polyphonie N/N2… + V/V2… ; ratchet *n ; notes = intervalles depuis la tonique.\n\n")
     for k, items in out.items():
         (LIB / f"fill_{k}.txt").write_text(hdr + "\n".join(items))

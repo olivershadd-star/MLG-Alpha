@@ -1,5 +1,5 @@
 # Familles complétées et nouvelles catégories — tools/generate_fill.py.
-# Tout est en 4 temps, 16 pas par mesure.
+# Tout est en 4/4. Grille normale : 16 pas. Triolets : grid=1/8T (12 pas) ou grid=1/16T (24 pas).
 # Polyphonie N/N2… + V/V2… ; ratchet *n ; notes = intervalles depuis la tonique.
 
 @acid id=f-acid-line-0001 name="Acid — 1 voix, 1 mes. #001" genre=acid bars=1 steps=16 voices=1 tags=acid2 src=gen-fill
