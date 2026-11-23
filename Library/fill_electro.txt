@@ -1,5 +1,5 @@
 # Familles complétées et nouvelles catégories — tools/generate_fill.py.
-# steps = pas par mesure (12 = 3 temps ou ternaire, 16 = 4 temps, 20 = 5 temps).
+# Tout est en 4 temps, 16 pas par mesure.
 # Polyphonie N/N2… + V/V2… ; ratchet *n ; notes = intervalles depuis la tonique.
 
 @perc id=f-electro-perc-0001 name="Percussion électro — 1 voix, 2 mes. #001" genre=electro bars=2 steps=16 voices=1 tags=electro-perc src=gen-fill

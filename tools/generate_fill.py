@@ -5,9 +5,9 @@
   - Acid : nouvelles lignes 303 (accents, slides, sauts d'octave, silences).
   - Percussions légères : clics, ticks, micro-percussions douces, textures rythmiques (ambient / IDM).
   - Les 4 accords (I, IV, V, vi) : enchaînements cycliques, chaque accord dure 1 à 4 temps.
-  - Batteries complètes : rock, metal, metal industriel, metal progressif, jazz (ternaire), contretemps,
-    mesures à 3 temps (12 pas) et à 5 temps (20 pas).
-Format : comme tex_*.txt ; « steps » = nombre de pas par mesure (12, 16 ou 20).
+  - Batteries complètes : rock, metal, metal industriel, metal progressif, jazz (shuffle), contretemps.
+    Tout est en 4 temps, sur 16 pas par mesure.
+Format : comme tex_*.txt.
 Usage : python3 tools/generate_fill.py   (écrit Library/fill_*.txt, résultat déterministe)"""
 import itertools
 import random
@@ -391,12 +391,15 @@ def drums_prog(_):
 
 
 def drums_jazz(_):
-    """Jazz ternaire sur 12 pas (croches de triolet) : ride « ding ding-a ding », charleston pied sur 2 et 4, comping."""
+    """Jazz sur la grille de 16 pas : triolets arrondis (« ding ding-a ding » = pas 0, 4, 7, 8, 12, 15),
+    charleston au pied sur 2 et 4, comping libre de la caisse et du kick."""
     bars = rng.choice([1, 2, 4])
-    return kit(12, bars, {"CY": [(0, 95), (3, 90), (5, 65), (6, 95), (9, 90), (11, 65)],
-                          "CH": [(3, 70), (9, 70)],
-                          "SN": lambda b: [(s, rng.uniform(35, 75)) for s in rng.sample([2, 5, 8, 11], rng.randint(0, 2))],
-                          "BD": lambda b: [(s, rng.uniform(40, 70)) for s in rng.sample([0, 6, 8, 11], rng.randint(0, 2))]}), "Batterie jazz (ternaire)", "jazz", "jazz-swing"
+    ride = rng.choice([[(0, 95), (4, 90), (7, 65), (8, 95), (12, 90), (15, 65)],
+                       [(0, 95), (4, 90), (8, 95), (12, 90)],
+                       [(0, 95), (3, 60), (4, 90), (7, 65), (8, 95), (11, 60), (12, 90), (15, 65)]])
+    return kit(16, bars, {"CY": ride, "CH": [(4, 70), (12, 70)],
+                          "SN": lambda b: [(s, rng.uniform(35, 75)) for s in rng.sample([3, 7, 10, 11, 15], rng.randint(0, 2))],
+                          "BD": lambda b: [(s, rng.uniform(40, 70)) for s in rng.sample([0, 8, 10, 15], rng.randint(0, 2))]}), "Batterie jazz (shuffle)", "jazz", "jazz-swing"
 
 
 def drums_offbeat(_):
@@ -414,36 +417,6 @@ def drums_offbeat(_):
     return kit(16, bars, rows), f"Batterie à contretemps ({style})", "offbeat", f"offbeat-{style}"
 
 
-def drums_three(_):
-    """Mesures à 3 temps : valse 3/4 (12 pas en doubles croches) ou 6/8."""
-    bars = rng.choice([2, 4])
-    style = rng.choice(["valse", "68", "jazzwaltz", "rock34"])
-    if style == "valse":
-        rows = {"BD": [(0, 110)] + ([(6, 90)] if rng.random() < .4 else []), "SN": [(4, 85), (8, 85)],
-                "CH": [(s, 70) for s in range(0, 12, rng.choice([2, 4, 1]))]}
-    elif style == "68":
-        rows = {"BD": [(0, 110), (rng.choice([5, 10]), 90)], "SN": [(6, 115)], "CH": [(s, 75) for s in range(0, 12, 2)]}
-    elif style == "jazzwaltz":
-        rows = {"CY": [(0, 95), (4, 85), (7, 60), (8, 85)], "CH": [(4, 65), (8, 65)], "BD": [(0, 55)]}
-    else:
-        rows = {"BD": [(0, 115), (6, 100)], "SN": [(4, 120), (8, 120)], "CY": [(s, 90) for s in range(0, 12, 4)]}
-    return kit(12, bars, rows), f"Batterie 3 temps ({style})", "odd-meter", f"3t-{style}"
-
-
-def drums_five(_):
-    """Mesures à 5 temps (20 pas) : groupements 3+2 ou 2+3."""
-    bars = rng.choice([1, 2, 4])
-    group = rng.choice(["3+2", "2+3"])
-    if group == "3+2":
-        rows = {"BD": [(0, 115), (12, 105)] + ([(rng.choice([6, 14]), 95)] if rng.random() < .5 else []),
-                "SN": [(8, 118), (16, 118)], "CH": [(s, 75) for s in range(0, 20, rng.choice([2, 4, 1]))]}
-    else:
-        rows = {"BD": [(0, 115), (8, 105)] + ([(rng.choice([2, 12, 18]), 95)] if rng.random() < .5 else []),
-                "SN": [(4, 118), (14, 118)], "CH": [(s, 75) for s in range(0, 20, rng.choice([2, 4, 1]))]}
-    if rng.random() < .5: rows["CY"] = [(s, 90) for s in range(0, 20, 4)]
-    return kit(20, bars, rows), f"Batterie 5 temps ({group})", "odd-meter", f"5t-{group}"
-
-
 PLAN = [
     (electro_perc, "electro", 400), (ghost_snare, "electro", 150), (electro_lead, "electro", 300),
     (minimal_click, "minimal_dub", 400), (dub_chords, "minimal_dub", 300), (minimal_blip, "minimal_dub", 200),
@@ -452,7 +425,6 @@ PLAN = [
     (light_perc, "light_perc", 500),
     (drums_rock, "drums", 250), (drums_metal, "drums", 250), (drums_indus_metal, "drums", 200),
     (drums_prog, "drums", 200), (drums_jazz, "drums", 200), (drums_offbeat, "drums", 150),
-    (drums_three, "drums", 150), (drums_five, "drums", 150),
 ]
 TYPE = {"pad": "pad", "melody": "melody", "stab": "melody", "bass": "bass", "perc": "perc", "drums": "drums", "acid": "acid"}
 
@@ -487,7 +459,7 @@ def main():
                     label = f'4 accords {"–".join(seq)} ({beats} temps/accord, {style})'
                     write_block(out.setdefault("four_chords", []), p, label, "pop", f"four-{style}", n, "four")
     hdr = ("# Familles complétées et nouvelles catégories — tools/generate_fill.py.\n"
-           "# steps = pas par mesure (12 = 3 temps ou ternaire, 16 = 4 temps, 20 = 5 temps).\n"
+           "# Tout est en 4 temps, 16 pas par mesure.\n"
            "# Polyphonie N/N2… + V/V2… ; ratchet *n ; notes = intervalles depuis la tonique.\n\n")
     for k, items in out.items():
         (LIB / f"fill_{k}.txt").write_text(hdr + "\n".join(items))

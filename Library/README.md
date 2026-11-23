@@ -4,8 +4,8 @@
 
 | Fichier | Contenu | Nombre |
 |---|---|---|
-| `fill_drums.txt` | Batteries complètes : rock, metal (double pédale, galop, blast, demi-temps), metal indus, metal prog (kick en 3/5/7), jazz ternaire (12 pas), contretemps (one drop, steppers), 3 temps (12 pas), 5 temps (20 pas) — avec ghost notes, relances, crashs, roulements | 1 550 |
-| `fill_four_chords.txt` | Les 4 accords I–IV–V–vi : toutes les combinaisons de 2 à 4 accords, 1 à 4 temps par accord, en nappe, stab ou arpège | 564 |
+| `fill_drums.txt` | Batteries complètes en 4 temps : rock, metal (double pédale, galop, blast, demi-temps), metal indus, metal prog (kick en 3/5/7 contre la caisse), jazz shuffle, contretemps (one drop, steppers) — avec ghost notes, relances, crashs, roulements | 1 250 |
+| `fill_four_chords.txt` | Les 4 accords I–IV–V–vi : toutes les combinaisons de 2 à 4 accords, 1 à 4 temps par accord, en nappe, stab ou arpège | 552 |
 | `fill_acid.txt` | Nouvelles lignes acid 303 | 1 000 |
 | `fill_electro.txt` | Percussions électro, caisses de break à ghost notes, leads électro | 850 |
 | `fill_minimal_dub.txt` | Clics minimal, accords dub (m7, m9, m11, sus2, renversements), blips | 900 |
@@ -37,7 +37,7 @@
 | `bass_neuralacid.txt` | Basses NeuralAcid sur 4 mesures, qui suivent une grille d'accords | 8 985 |
 | `acid.txt`, `bass.txt`, `melody.txt` | Acid, basses et mélodies écrites à la main | 87 |
 
-**Total : 32 198 motifs.**
+**Total : 31 886 motifs.**
 
 ## Format
 
@@ -55,7 +55,7 @@ Pour ajouter tes motifs : copier un bloc, changer l'`id`, le nom et les pas.
 
 ## Sources
 
-- `fill_*.txt` : fabriqués par `tools/generate_fill.py` (familles complétées, 4 accords, batteries rock/metal/jazz/mesures impaires). Champ `steps=` : 12, 16 ou 20 pas par mesure.
+- `fill_*.txt` : fabriqués par `tools/generate_fill.py` (familles complétées, 4 accords, batteries rock/metal/jazz/mesures impaires).
 - `tex_*.txt` : fabriqués par `tools/generate_textures.py` (ambient, IDM, Apparat/Moderat, techno industrielle, techno suédoise, noise rock, dark electro).
 - `industrial_*.txt` : fabriqués par `tools/generate_industrial.py` (règles EBM, électro-industriel, aggrotech, rock/metal industriel ; tempo conseillé dans `bpm=`).
 - `techno_*.txt` : fabriqués par `tools/generate_techno.py` (règles de production techno : kick libre, rumble, polymètre, euclidien, accents, question-réponse, relances).

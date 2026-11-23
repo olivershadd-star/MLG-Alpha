@@ -1,5 +1,5 @@
 # Familles complétées et nouvelles catégories — tools/generate_fill.py.
-# steps = pas par mesure (12 = 3 temps ou ternaire, 16 = 4 temps, 20 = 5 temps).
+# Tout est en 4 temps, 16 pas par mesure.
 # Polyphonie N/N2… + V/V2… ; ratchet *n ; notes = intervalles depuis la tonique.
 
 @perc id=f-light-perc-0001 name="Percussion légère (poly) — 1 voix, 4 mes. #001" genre=ambient bars=4 steps=16 voices=1 tags=light-poly src=gen-fill
