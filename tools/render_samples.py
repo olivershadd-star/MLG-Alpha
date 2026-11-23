@@ -70,7 +70,8 @@ def render_notes(head, lines, root):
             end = j * STEP - 10
             if slide and j < len(N): end = j * STEP + 30
             ev.append((i * STEP, end, note, vel))
-    return ev, bars * 16 * STEP
+    steps = int(re.search(r"steps=(\d+)", head).group(1)) if "steps=" in head else 16
+    return ev, bars * steps * STEP
 
 
 def render_drums(head, lines):
@@ -92,7 +93,11 @@ def render_drums(head, lines):
 def main(out, preset="general"):
     out = Path(out); out.mkdir(parents=True, exist_ok=True)
     rng = random.Random(7)
-    if preset == "dark":
+    if preset == "fill":
+        picks = [("fill_drums.txt", 14, 0), ("fill_four_chords.txt", 6, 48), ("fill_acid.txt", 4, 36),
+                 ("fill_electro.txt", 4, 48), ("fill_minimal_dub.txt", 4, 48), ("fill_trance.txt", 4, 36),
+                 ("fill_light_perc.txt", 4, 0)]
+    elif preset == "dark":
         picks = [("tex_dark_electro.txt", 16, 48), ("industrial_bass.txt", 4, 36)]
     elif preset == "textures":
         picks = [("tex_ambient.txt", 10, 48), ("tex_idm.txt", 9, 60), ("tex_moderat.txt", 8, 48),

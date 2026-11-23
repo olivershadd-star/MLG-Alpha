@@ -1,0 +1,3573 @@
+# Familles complétées et nouvelles catégories — tools/generate_fill.py.
+# steps = pas par mesure (12 = 3 temps ou ternaire, 16 = 4 temps, 20 = 5 temps).
+# Polyphonie N/N2… + V/V2… ; ratchet *n ; notes = intervalles depuis la tonique.
+
+@bass id=f-trance-bass-0001 name="Basse trance roulante — 1 voix, 4 mes. #001" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 86 110 80 . 94 110 91 . 87 110 83 . 94 110 82
+N  . -4 -4 -4 . -4 -4 -4 . -4 -4 -4 . -4 -4 -4
+V  . 88 110 93 . 80 110 87 . 90 110 90 . 85 110 84
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 84 110 91 . 87 110 90 . 90 110 92 . 80 110 81
+N  . -4 -4 -4 . -4 -4 -4 . -4 -4 -4 . -4 -4 -4
+V  . 94 110 91 . 82 110 85 . 82 110 94 . 83 110 94
+
+@bass id=f-trance-bass-0002 name="Basse trance roulante — 1 voix, 1 mes. #002" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 93 110 . . 84 110 . . 94 110 . . 84 110 .
+
+@bass id=f-trance-bass-0003 name="Basse trance roulante — 1 voix, 4 mes. #003" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 88 . . 110 88 . . 110 94 . . 110 84
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 88 . . 110 81 . . 110 81 . . 110 88
+N  . . 5 17 . . 5 17 . . 5 17 . . 5 17
+V  . . 110 92 . . 110 87 . . 110 93 . . 110 80
+N  . . 3 15 . . 3 15 . . 3 15 . . 3 15
+V  . . 110 92 . . 110 81 . . 110 80 . . 110 88
+
+@bass id=f-trance-bass-0004 name="Basse trance roulante — 1 voix, 1 mes. #004" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 82 . . 110 83 . . 110 92 . . 110 84
+
+@bass id=f-trance-bass-0005 name="Basse trance roulante — 1 voix, 4 mes. #005" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 88 . . 110 94 . . 110 92 . . 110 92
+N  . . 5 12 . . 5 12 . . 5 12 . . 5 12
+V  . . 110 84 . . 110 91 . . 110 88 . . 110 90
+N  . . 3 10 . . 3 10 . . 3 10 . . 3 10
+V  . . 110 92 . . 110 89 . . 110 87 . . 110 88
+N  . . -2 5 . . -2 5 . . -2 5 . . -2 5
+V  . . 110 87 . . 110 86 . . 110 94 . . 110 80
+
+@bass id=f-trance-bass-0006 name="Basse trance roulante — 1 voix, 1 mes. #006" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 81 . 86 . 93 . 94 . 91 . 88 . 92 . 83
+
+@bass id=f-trance-bass-0007 name="Basse trance roulante — 1 voix, 2 mes. #007" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 94 . . 110 93 . . 110 83 . . 110 86
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 92 . . 110 89 . . 110 91 . . 110 82
+
+@bass id=f-trance-bass-0008 name="Basse trance roulante — 1 voix, 2 mes. #008" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 81 . 94 . 80 . 85 . 80 . 93 . 90 . 93
+N  . 5 . 17 . 5 . 17 . 5 . 17 . 5 . 17
+V  . 83 . 92 . 82 . 91 . 92 . 84 . 90 . 90
+
+@bass id=f-trance-bass-0009 name="Basse trance roulante — 1 voix, 4 mes. #009" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 86 . 88 . 94 . 82 . 89 . 87 . 91 . 87
+N  . -4 . -6 . -4 . -6 . -4 . -6 . -4 . -6
+V  . 81 . 91 . 89 . 86 . 85 . 83 . 81 . 88
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 89 . 90 . 90 . 91 . 87 . 91 . 85 . 91
+N  . -4 . -6 . -4 . -6 . -4 . -6 . -4 . -6
+V  . 88 . 81 . 90 . 87 . 90 . 87 . 94 . 92
+
+@bass id=f-trance-bass-0010 name="Basse trance roulante — 1 voix, 4 mes. #010" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . -4 . . . -4 . . . -4 . . . -4 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . -4 . . . -4 . . . -4 . . . -4 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+
+@bass id=f-trance-bass-0011 name="Basse trance roulante — 1 voix, 1 mes. #011" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 93 . 86 . 88 . 87 . 85 . 85 . 88 . 91
+
+@bass id=f-trance-bass-0012 name="Basse trance roulante — 1 voix, 1 mes. #012" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 82 . . 110 80 . . 110 80 . . 110 87
+
+@bass id=f-trance-bass-0013 name="Basse trance roulante — 1 voix, 2 mes. #013" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 83 . . 110 83 . . 110 88 . . 110 85
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 89 . . 110 89 . . 110 82 . . 110 85
+
+@bass id=f-trance-bass-0014 name="Basse trance roulante — 1 voix, 2 mes. #014" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 87 . . 110 90 . . 110 93 . . 110 91
+N  . . 5 3 . . 5 3 . . 5 3 . . 5 3
+V  . . 110 88 . . 110 83 . . 110 86 . . 110 91
+
+@bass id=f-trance-bass-0015 name="Basse trance roulante — 1 voix, 1 mes. #015" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 83 110 93 . 80 110 91 . 94 110 83 . 87 110 81
+
+@bass id=f-trance-bass-0016 name="Basse trance roulante — 1 voix, 2 mes. #016" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 83 110 . . 88 110 . . 91 110 . . 80 110 .
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 86 110 . . 89 110 . . 87 110 . . 80 110 .
+
+@bass id=f-trance-bass-0017 name="Basse trance roulante — 1 voix, 2 mes. #017" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 86 . 91 . 88 . 91 . 92 . 85 . 94 . 89
+N  . -4 . -6 . -4 . -6 . -4 . -6 . -4 . -6
+V  . 92 . 80 . 91 . 88 . 89 . 89 . 86 . 94
+
+@bass id=f-trance-bass-0018 name="Basse trance roulante — 1 voix, 2 mes. #018" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+
+@bass id=f-trance-bass-0019 name="Basse trance roulante — 1 voix, 2 mes. #019" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 82 . 81 . 82 . 92 . 85 . 84 . 88 . 85
+N  . -4 . 1 . -4 . 1 . -4 . 1 . -4 . 1
+V  . 92 . 80 . 89 . 88 . 86 . 85 . 90 . 80
+
+@bass id=f-trance-bass-0020 name="Basse trance roulante — 1 voix, 2 mes. #020" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 90 110 87 . 84 110 92 . 87 110 82 . 88 110 82
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 92 110 89 . 80 110 87 . 91 110 83 . 81 110 84
+
+@bass id=f-trance-bass-0021 name="Basse trance roulante — 1 voix, 1 mes. #021" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 83 . 86 . 80 . 87 . 87 . 83 . 90 . 94
+
+@bass id=f-trance-bass-0022 name="Basse trance roulante — 1 voix, 4 mes. #022" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 88 . . 110 94 . . 110 87 . . 110 92
+N  . . 5 10 . . 5 10 . . 5 10 . . 5 10
+V  . . 110 80 . . 110 90 . . 110 94 . . 110 93
+N  . . 3 8 . . 3 8 . . 3 8 . . 3 8
+V  . . 110 86 . . 110 86 . . 110 91 . . 110 90
+N  . . -2 3 . . -2 3 . . -2 3 . . -2 3
+V  . . 110 90 . . 110 93 . . 110 88 . . 110 94
+
+@bass id=f-trance-bass-0023 name="Basse trance roulante — 1 voix, 2 mes. #023" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 83 . . 110 94 . . 110 94 . . 110 82
+N  . . -4 -4 . . -4 -4 . . -4 -4 . . -4 -4
+V  . . 110 81 . . 110 82 . . 110 92 . . 110 91
+
+@bass id=f-trance-bass-0024 name="Basse trance roulante — 1 voix, 4 mes. #024" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 87 110 87 . 82 110 86 . 81 110 83 . 91 110 87
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 90 110 94 . 93 110 94 . 88 110 89 . 92 110 94
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 93 110 86 . 88 110 92 . 85 110 81 . 84 110 93
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 83 110 84 . 93 110 89 . 83 110 92 . 93 110 86
+
+@bass id=f-trance-bass-0025 name="Basse trance roulante — 1 voix, 2 mes. #025" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 88 110 91 . 84 110 92 . 80 110 91 . 93 110 94
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 93 110 81 . 89 110 92 . 84 110 81 . 88 110 85
+
+@bass id=f-trance-bass-0026 name="Basse trance roulante — 1 voix, 4 mes. #026" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 80 . . 110 87 . . 110 81 . . 110 83
+N  . . -4 3 . . -4 3 . . -4 3 . . -4 3
+V  . . 110 80 . . 110 90 . . 110 90 . . 110 86
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 81 . . 110 86 . . 110 84 . . 110 86
+N  . . -4 3 . . -4 3 . . -4 3 . . -4 3
+V  . . 110 84 . . 110 88 . . 110 82 . . 110 90
+
+@bass id=f-trance-bass-0027 name="Basse trance roulante — 1 voix, 4 mes. #027" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 90 . 81 . 89 . 82 . 82 . 89 . 91 . 80
+N  . 5 . 17 . 5 . 17 . 5 . 17 . 5 . 17
+V  . 89 . 93 . 93 . 93 . 84 . 92 . 82 . 85
+N  . 3 . 15 . 3 . 15 . 3 . 15 . 3 . 15
+V  . 85 . 89 . 92 . 80 . 94 . 85 . 86 . 94
+N  . -2 . 10 . -2 . 10 . -2 . 10 . -2 . 10
+V  . 83 . 85 . 88 . 93 . 84 . 85 . 91 . 83
+
+@bass id=f-trance-bass-0028 name="Basse trance roulante — 1 voix, 2 mes. #028" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 92 110 89 . 94 110 85 . 81 110 89 . 94 110 92
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 86 110 83 . 84 110 92 . 88 110 87 . 92 110 88
+
+@bass id=f-trance-bass-0029 name="Basse trance roulante — 1 voix, 1 mes. #029" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 93 . . 110 91 . . 110 85 . . 110 81
+
+@bass id=f-trance-bass-0030 name="Basse trance roulante — 1 voix, 4 mes. #030" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 87 . 94 . 86 . 80 . 89 . 81 . 86 . 83
+N  . 5 . 10 . 5 . 10 . 5 . 10 . 5 . 10
+V  . 89 . 92 . 83 . 89 . 82 . 81 . 90 . 86
+N  . 3 . 8 . 3 . 8 . 3 . 8 . 3 . 8
+V  . 94 . 91 . 92 . 86 . 86 . 93 . 91 . 84
+N  . -2 . 3 . -2 . 3 . -2 . 3 . -2 . 3
+V  . 94 . 86 . 87 . 87 . 91 . 86 . 89 . 91
+
+@bass id=f-trance-bass-0031 name="Basse trance roulante — 1 voix, 4 mes. #031" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 91 . 83 . 80 . 94 . 85 . 85 . 85 . 93
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 87 . 85 . 89 . 92 . 89 . 85 . 94 . 86
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 81 . 82 . 94 . 80 . 89 . 80 . 92 . 86
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 80 . 86 . 91 . 81 . 90 . 91 . 80 . 84
+
+@bass id=f-trance-bass-0032 name="Basse trance roulante — 1 voix, 4 mes. #032" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 5 . . . 5 . . . 5 . . . 5 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 3 . . . 3 . . . 3 . . . 3 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . -2 . . . -2 . . . -2 . . . -2 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+
+@bass id=f-trance-bass-0033 name="Basse trance roulante — 1 voix, 2 mes. #033" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 91 . 81 . 80 . 84 . 85 . 80 . 84 . 85
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 86 . 82 . 94 . 84 . 88 . 86 . 93 . 84
+
+@bass id=f-trance-bass-0034 name="Basse trance roulante — 1 voix, 4 mes. #034" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 86 . . 110 88 . . 110 88 . . 110 81
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 85 . . 110 91 . . 110 83 . . 110 93
+N  . . 5 10 . . 5 10 . . 5 10 . . 5 10
+V  . . 110 84 . . 110 81 . . 110 84 . . 110 93
+N  . . 3 8 . . 3 8 . . 3 8 . . 3 8
+V  . . 110 88 . . 110 80 . . 110 94 . . 110 82
+
+@bass id=f-trance-bass-0035 name="Basse trance roulante — 1 voix, 4 mes. #035" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 93 110 . . 94 110 . . 92 110 . . 83 110 .
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 84 110 . . 92 110 . . 88 110 . . 87 110 .
+N  . 5 5 . . 5 5 . . 5 5 . . 5 5 .
+V  . 88 110 . . 84 110 . . 90 110 . . 86 110 .
+N  . 3 3 . . 3 3 . . 3 3 . . 3 3 .
+V  . 83 110 . . 81 110 . . 80 110 . . 93 110 .
+
+@bass id=f-trance-bass-0036 name="Basse trance roulante — 1 voix, 4 mes. #036" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 91 . 84 . 83 . 83 . 90 . 92 . 83 . 86
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 84 . 81 . 92 . 80 . 86 . 89 . 80 . 86
+N  . -4 . 8 . -4 . 8 . -4 . 8 . -4 . 8
+V  . 81 . 84 . 94 . 91 . 81 . 85 . 84 . 87
+N  . -2 . 10 . -2 . 10 . -2 . 10 . -2 . 10
+V  . 85 . 81 . 92 . 86 . 80 . 91 . 93 . 82
+
+@bass id=f-trance-bass-0037 name="Basse trance roulante — 1 voix, 4 mes. #037" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 88 . . 110 94 . . 110 92 . . 110 86
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 82 . . 110 91 . . 110 94 . . 110 86
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 88 . . 110 87 . . 110 94 . . 110 92
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 89 . . 110 94 . . 110 92 . . 110 90
+
+@bass id=f-trance-bass-0038 name="Basse trance roulante — 1 voix, 2 mes. #038" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 83 110 . . 86 110 . . 82 110 . . 89 110 .
+N  . -4 -4 . . -4 -4 . . -4 -4 . . -4 -4 .
+V  . 81 110 . . 89 110 . . 88 110 . . 93 110 .
+
+@bass id=f-trance-bass-0039 name="Basse trance roulante — 1 voix, 4 mes. #039" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 88 110 . . 84 110 . . 81 110 . . 84 110 .
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 86 110 . . 88 110 . . 84 110 . . 86 110 .
+N  . -4 -4 . . -4 -4 . . -4 -4 . . -4 -4 .
+V  . 81 110 . . 81 110 . . 90 110 . . 86 110 .
+N  . -2 -2 . . -2 -2 . . -2 -2 . . -2 -2 .
+V  . 93 110 . . 82 110 . . 93 110 . . 81 110 .
+
+@bass id=f-trance-bass-0040 name="Basse trance roulante — 1 voix, 1 mes. #040" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 83 . . 110 85 . . 110 89 . . 110 80
+
+@bass id=f-trance-bass-0041 name="Basse trance roulante — 1 voix, 2 mes. #041" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 94 . 90 . 94 . 80 . 91 . 80 . 80 . 91
+N  . 5 . 5 . 5 . 5 . 5 . 5 . 5 . 5
+V  . 94 . 88 . 94 . 90 . 88 . 89 . 92 . 85
+
+@bass id=f-trance-bass-0042 name="Basse trance roulante — 1 voix, 1 mes. #042" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 87 . 93 . 87 . 83 . 89 . 84 . 80 . 83
+
+@bass id=f-trance-bass-0043 name="Basse trance roulante — 1 voix, 4 mes. #043" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 93 . . 110 80 . . 110 82 . . 110 85
+N  . . -4 -6 . . -4 -6 . . -4 -6 . . -4 -6
+V  . . 110 94 . . 110 88 . . 110 93 . . 110 92
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 82 . . 110 86 . . 110 82 . . 110 84
+N  . . -4 -6 . . -4 -6 . . -4 -6 . . -4 -6
+V  . . 110 94 . . 110 87 . . 110 91 . . 110 88
+
+@bass id=f-trance-bass-0044 name="Basse trance roulante — 1 voix, 4 mes. #044" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 5 . . . 5 . . . 5 . . . 5 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 3 . . . 3 . . . 3 . . . 3 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+
+@bass id=f-trance-bass-0045 name="Basse trance roulante — 1 voix, 1 mes. #045" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+
+@bass id=f-trance-bass-0046 name="Basse trance roulante — 1 voix, 1 mes. #046" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 87 110 87 . 91 110 92 . 82 110 85 . 87 110 94
+
+@bass id=f-trance-bass-0047 name="Basse trance roulante — 1 voix, 4 mes. #047" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 84 . 87 . 89 . 82 . 82 . 83 . 81 . 84
+N  . -4 . 1 . -4 . 1 . -4 . 1 . -4 . 1
+V  . 88 . 85 . 93 . 89 . 85 . 93 . 91 . 86
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 85 . 87 . 81 . 89 . 86 . 93 . 93 . 88
+N  . -4 . 1 . -4 . 1 . -4 . 1 . -4 . 1
+V  . 82 . 83 . 91 . 94 . 84 . 87 . 91 . 86
+
+@bass id=f-trance-bass-0048 name="Basse trance roulante — 1 voix, 4 mes. #048" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 83 . . 110 83 . . 110 91 . . 110 81
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 82 . . 110 82 . . 110 90 . . 110 90
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 89 . . 110 81 . . 110 80 . . 110 85
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 84 . . 110 87 . . 110 89 . . 110 92
+
+@bass id=f-trance-bass-0049 name="Basse trance roulante — 1 voix, 2 mes. #049" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 83 110 . . 86 110 . . 91 110 . . 94 110 .
+N  . 5 5 . . 5 5 . . 5 5 . . 5 5 .
+V  . 83 110 . . 91 110 . . 93 110 . . 92 110 .
+
+@bass id=f-trance-bass-0050 name="Basse trance roulante — 1 voix, 2 mes. #050" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 93 . . 110 94 . . 110 91 . . 110 88
+N  . . 5 10 . . 5 10 . . 5 10 . . 5 10
+V  . . 110 84 . . 110 88 . . 110 82 . . 110 88
+
+@bass id=f-trance-bass-0051 name="Basse trance roulante — 1 voix, 2 mes. #051" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 86 110 88 . 87 110 82 . 80 110 93 . 90 110 94
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 91 110 81 . 86 110 91 . 91 110 83 . 91 110 86
+
+@bass id=f-trance-bass-0052 name="Basse trance roulante — 1 voix, 2 mes. #052" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 88 . 80 . 82 . 84 . 84 . 80 . 81 . 80
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 80 . 85 . 88 . 81 . 94 . 81 . 84 . 88
+
+@bass id=f-trance-bass-0053 name="Basse trance roulante — 1 voix, 4 mes. #053" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 88 . . 110 80 . . 110 85 . . 110 84
+N  . . -4 -4 . . -4 -4 . . -4 -4 . . -4 -4
+V  . . 110 91 . . 110 85 . . 110 82 . . 110 84
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 89 . . 110 87 . . 110 93 . . 110 81
+N  . . -4 -4 . . -4 -4 . . -4 -4 . . -4 -4
+V  . . 110 94 . . 110 86 . . 110 94 . . 110 93
+
+@bass id=f-trance-bass-0054 name="Basse trance roulante — 1 voix, 1 mes. #054" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 84 . . 110 87 . . 110 92 . . 110 80
+
+@bass id=f-trance-bass-0055 name="Basse trance roulante — 1 voix, 2 mes. #055" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . -4 . . . -4 . . . -4 . . . -4 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+
+@bass id=f-trance-bass-0056 name="Basse trance roulante — 1 voix, 4 mes. #056" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 85 . 80 . 80 . 89 . 85 . 84 . 91 . 87
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 91 . 90 . 87 . 86 . 83 . 87 . 90 . 91
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 82 . 86 . 92 . 81 . 89 . 81 . 82 . 87
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 85 . 90 . 88 . 85 . 93 . 83 . 80 . 94
+
+@bass id=f-trance-bass-0057 name="Basse trance roulante — 1 voix, 2 mes. #057" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 83 . . 110 83 . . 110 86 . . 110 89
+N  . . 5 17 . . 5 17 . . 5 17 . . 5 17
+V  . . 110 92 . . 110 80 . . 110 94 . . 110 94
+
+@bass id=f-trance-bass-0058 name="Basse trance roulante — 1 voix, 4 mes. #058" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 94 . 91 . 90 . 94 . 87 . 89 . 83 . 81
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 86 . 88 . 93 . 84 . 94 . 87 . 91 . 82
+N  . 5 . 5 . 5 . 5 . 5 . 5 . 5 . 5
+V  . 88 . 84 . 82 . 81 . 93 . 80 . 80 . 81
+N  . 3 . 3 . 3 . 3 . 3 . 3 . 3 . 3
+V  . 94 . 88 . 91 . 90 . 81 . 81 . 86 . 83
+
+@bass id=f-trance-bass-0059 name="Basse trance roulante — 1 voix, 2 mes. #059" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 81 . 86 . 80 . 85 . 83 . 81 . 94 . 89
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 87 . 93 . 86 . 83 . 88 . 85 . 89 . 93
+
+@bass id=f-trance-bass-0060 name="Basse trance roulante — 1 voix, 4 mes. #060" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 91 . . 110 94 . . 110 92 . . 110 85
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 89 . . 110 92 . . 110 94 . . 110 92
+N  . . 5 12 . . 5 12 . . 5 12 . . 5 12
+V  . . 110 85 . . 110 91 . . 110 92 . . 110 92
+N  . . 3 10 . . 3 10 . . 3 10 . . 3 10
+V  . . 110 84 . . 110 85 . . 110 84 . . 110 93
+
+@bass id=f-trance-bass-0061 name="Basse trance roulante — 1 voix, 1 mes. #061" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 84 110 83 . 86 110 90 . 94 110 88 . 90 110 90
+
+@bass id=f-trance-bass-0062 name="Basse trance roulante — 1 voix, 2 mes. #062" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 84 . . 110 81 . . 110 80 . . 110 85
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 94 . . 110 84 . . 110 84 . . 110 84
+
+@bass id=f-trance-bass-0063 name="Basse trance roulante — 1 voix, 4 mes. #063" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 84 . . 110 94 . . 110 94 . . 110 87
+N  . . 5 17 . . 5 17 . . 5 17 . . 5 17
+V  . . 110 81 . . 110 91 . . 110 80 . . 110 84
+N  . . 3 15 . . 3 15 . . 3 15 . . 3 15
+V  . . 110 89 . . 110 80 . . 110 83 . . 110 88
+N  . . -2 10 . . -2 10 . . -2 10 . . -2 10
+V  . . 110 89 . . 110 93 . . 110 92 . . 110 92
+
+@bass id=f-trance-bass-0064 name="Basse trance roulante — 1 voix, 4 mes. #064" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 92 110 92 . 83 110 80 . 92 110 83 . 93 110 87
+N  . 5 5 3 . 5 5 3 . 5 5 3 . 5 5 3
+V  . 85 110 91 . 83 110 91 . 90 110 91 . 83 110 91
+N  . 3 3 1 . 3 3 1 . 3 3 1 . 3 3 1
+V  . 85 110 89 . 85 110 87 . 88 110 90 . 92 110 92
+N  . -2 -2 -4 . -2 -2 -4 . -2 -2 -4 . -2 -2 -4
+V  . 82 110 83 . 92 110 86 . 93 110 81 . 86 110 85
+
+@bass id=f-trance-bass-0065 name="Basse trance roulante — 1 voix, 4 mes. #065" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 80 110 . . 92 110 . . 86 110 . . 87 110 .
+N  . 5 5 . . 5 5 . . 5 5 . . 5 5 .
+V  . 89 110 . . 82 110 . . 89 110 . . 91 110 .
+N  . 3 3 . . 3 3 . . 3 3 . . 3 3 .
+V  . 90 110 . . 92 110 . . 93 110 . . 82 110 .
+N  . -2 -2 . . -2 -2 . . -2 -2 . . -2 -2 .
+V  . 94 110 . . 80 110 . . 89 110 . . 90 110 .
+
+@bass id=f-trance-bass-0066 name="Basse trance roulante — 1 voix, 2 mes. #066" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 89 . 87 . 94 . 85 . 85 . 93 . 80 . 87
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 82 . 88 . 86 . 90 . 81 . 82 . 92 . 82
+
+@bass id=f-trance-bass-0067 name="Basse trance roulante — 1 voix, 4 mes. #067" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . -4 . . . -4 . . . -4 . . . -4 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . -2 . . . -2 . . . -2 . . . -2 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+
+@bass id=f-trance-bass-0068 name="Basse trance roulante — 1 voix, 1 mes. #068" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 91 110 88 . 94 110 84 . 82 110 82 . 91 110 83
+
+@bass id=f-trance-bass-0069 name="Basse trance roulante — 1 voix, 2 mes. #069" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 91 110 94 . 82 110 80 . 93 110 93 . 86 110 81
+N  . -4 -4 -4 . -4 -4 -4 . -4 -4 -4 . -4 -4 -4
+V  . 85 110 88 . 83 110 84 . 93 110 93 . 92 110 85
+
+@bass id=f-trance-bass-0070 name="Basse trance roulante — 1 voix, 4 mes. #070" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 91 . 85 . 90 . 84 . 94 . 85 . 81 . 81
+N  . -4 . 8 . -4 . 8 . -4 . 8 . -4 . 8
+V  . 90 . 88 . 90 . 81 . 83 . 87 . 87 . 93
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 88 . 84 . 84 . 88 . 91 . 93 . 80 . 85
+N  . -4 . 8 . -4 . 8 . -4 . 8 . -4 . 8
+V  . 85 . 82 . 80 . 84 . 91 . 89 . 86 . 91
+
+@bass id=f-trance-bass-0071 name="Basse trance roulante — 1 voix, 4 mes. #071" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 88 110 87 . 92 110 91 . 89 110 86 . 83 110 94
+N  . 5 5 12 . 5 5 12 . 5 5 12 . 5 5 12
+V  . 92 110 86 . 81 110 82 . 82 110 87 . 80 110 86
+N  . 3 3 10 . 3 3 10 . 3 3 10 . 3 3 10
+V  . 87 110 81 . 82 110 85 . 80 110 86 . 80 110 87
+N  . -2 -2 5 . -2 -2 5 . -2 -2 5 . -2 -2 5
+V  . 81 110 82 . 81 110 91 . 84 110 87 . 84 110 87
+
+@bass id=f-trance-bass-0072 name="Basse trance roulante — 1 voix, 2 mes. #072" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 88 . . 110 82 . . 110 80 . . 110 83
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 80 . . 110 85 . . 110 92 . . 110 91
+
+@bass id=f-trance-bass-0073 name="Basse trance roulante — 1 voix, 4 mes. #073" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 88 . . 110 88 . . 110 93 . . 110 86
+N  . . -4 1 . . -4 1 . . -4 1 . . -4 1
+V  . . 110 86 . . 110 92 . . 110 80 . . 110 89
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 86 . . 110 86 . . 110 86 . . 110 85
+N  . . -4 1 . . -4 1 . . -4 1 . . -4 1
+V  . . 110 94 . . 110 88 . . 110 93 . . 110 91
+
+@bass id=f-trance-bass-0074 name="Basse trance roulante — 1 voix, 4 mes. #074" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+
+@bass id=f-trance-bass-0075 name="Basse trance roulante — 1 voix, 2 mes. #075" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 87 . . 110 91 . . 110 91 . . 110 94
+N  . . -4 1 . . -4 1 . . -4 1 . . -4 1
+V  . . 110 84 . . 110 82 . . 110 89 . . 110 86
+
+@bass id=f-trance-bass-0076 name="Basse trance roulante — 1 voix, 4 mes. #076" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 83 . . 110 93 . . 110 92 . . 110 89
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 92 . . 110 88 . . 110 94 . . 110 81
+N  . . -4 3 . . -4 3 . . -4 3 . . -4 3
+V  . . 110 83 . . 110 92 . . 110 93 . . 110 82
+N  . . -2 5 . . -2 5 . . -2 5 . . -2 5
+V  . . 110 93 . . 110 86 . . 110 81 . . 110 83
+
+@bass id=f-trance-bass-0077 name="Basse trance roulante — 1 voix, 4 mes. #077" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 90 . . 110 83 . . 110 81 . . 110 90
+N  . . 0 5 . . 0 5 . . 0 5 . . 0 5
+V  . . 110 93 . . 110 85 . . 110 92 . . 110 90
+N  . . -4 1 . . -4 1 . . -4 1 . . -4 1
+V  . . 110 92 . . 110 89 . . 110 90 . . 110 85
+N  . . -2 3 . . -2 3 . . -2 3 . . -2 3
+V  . . 110 94 . . 110 85 . . 110 93 . . 110 80
+
+@bass id=f-trance-bass-0078 name="Basse trance roulante — 1 voix, 1 mes. #078" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 88 . 94 . 93 . 91 . 87 . 92 . 92 . 94
+
+@bass id=f-trance-bass-0079 name="Basse trance roulante — 1 voix, 4 mes. #079" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 80 . 80 . 81 . 93 . 84 . 80 . 86 . 83
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 93 . 83 . 88 . 89 . 93 . 86 . 90 . 90
+N  . 5 . 10 . 5 . 10 . 5 . 10 . 5 . 10
+V  . 82 . 89 . 83 . 83 . 91 . 80 . 88 . 86
+N  . 3 . 8 . 3 . 8 . 3 . 8 . 3 . 8
+V  . 93 . 83 . 88 . 82 . 93 . 81 . 80 . 88
+
+@bass id=f-trance-bass-0080 name="Basse trance roulante — 1 voix, 4 mes. #080" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 88 . . 110 91 . . 110 94 . . 110 90
+N  . . -4 8 . . -4 8 . . -4 8 . . -4 8
+V  . . 110 82 . . 110 93 . . 110 90 . . 110 86
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 88 . . 110 80 . . 110 84 . . 110 88
+N  . . -4 8 . . -4 8 . . -4 8 . . -4 8
+V  . . 110 91 . . 110 90 . . 110 86 . . 110 93
+
+@bass id=f-trance-bass-0081 name="Basse trance roulante — 1 voix, 2 mes. #081" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+N  . . 5 . . . 5 . . . 5 . . . 5 .
+V  . . 110 . . . 110 . . . 110 . . . 110 .
+
+@bass id=f-trance-bass-0082 name="Basse trance roulante — 1 voix, 4 mes. #082" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 90 110 85 . 88 110 91 . 91 110 87 . 81 110 81
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 81 110 94 . 81 110 93 . 92 110 85 . 91 110 90
+N  . -4 -4 3 . -4 -4 3 . -4 -4 3 . -4 -4 3
+V  . 84 110 86 . 91 110 91 . 94 110 93 . 93 110 94
+N  . -2 -2 5 . -2 -2 5 . -2 -2 5 . -2 -2 5
+V  . 87 110 81 . 86 110 81 . 80 110 90 . 94 110 90
+
+@bass id=f-trance-bass-0083 name="Basse trance roulante — 1 voix, 2 mes. #083" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 93 110 89 . 92 110 85 . 82 110 93 . 81 110 83
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 84 110 80 . 93 110 91 . 90 110 91 . 83 110 80
+
+@bass id=f-trance-bass-0084 name="Basse trance roulante — 1 voix, 4 mes. #084" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 83 110 . . 83 110 . . 92 110 . . 91 110 .
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 88 110 . . 92 110 . . 81 110 . . 91 110 .
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 80 110 . . 88 110 . . 94 110 . . 88 110 .
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 85 110 . . 89 110 . . 82 110 . . 87 110 .
+
+@bass id=f-trance-bass-0085 name="Basse trance roulante — 1 voix, 2 mes. #085" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 86 . . 110 92 . . 110 87 . . 110 83
+N  . . 5 5 . . 5 5 . . 5 5 . . 5 5
+V  . . 110 86 . . 110 83 . . 110 88 . . 110 94
+
+@bass id=f-trance-bass-0086 name="Basse trance roulante — 1 voix, 4 mes. #086" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 86 . 80 . 81 . 91 . 91 . 94 . 88 . 93
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 86 . 87 . 86 . 86 . 82 . 94 . 91 . 85
+N  . 5 . 12 . 5 . 12 . 5 . 12 . 5 . 12
+V  . 87 . 94 . 81 . 83 . 94 . 80 . 94 . 91
+N  . 3 . 10 . 3 . 10 . 3 . 10 . 3 . 10
+V  . 87 . 92 . 85 . 89 . 88 . 82 . 81 . 86
+
+@bass id=f-trance-bass-0087 name="Basse trance roulante — 1 voix, 2 mes. #087" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 80 110 87 . 88 110 83 . 84 110 86 . 83 110 88
+N  . 5 5 3 . 5 5 3 . 5 5 3 . 5 5 3
+V  . 86 110 93 . 91 110 89 . 84 110 88 . 84 110 92
+
+@bass id=f-trance-bass-0088 name="Basse trance roulante — 1 voix, 2 mes. #088" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 83 . 88 . 88 . 94 . 88 . 88 . 81 . 85
+N  . 5 . 10 . 5 . 10 . 5 . 10 . 5 . 10
+V  . 92 . 82 . 83 . 91 . 93 . 86 . 92 . 87
+
+@bass id=f-trance-bass-0089 name="Basse trance roulante — 1 voix, 4 mes. #089" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 82 . . 110 89 . . 110 93 . . 110 83
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 94 . . 110 80 . . 110 86 . . 110 92
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 87 . . 110 88 . . 110 86 . . 110 88
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 80 . . 110 94 . . 110 93 . . 110 83
+
+@bass id=f-trance-bass-0090 name="Basse trance roulante — 1 voix, 4 mes. #090" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 82 110 89 . 88 110 82 . 88 110 91 . 93 110 85
+N  . -4 -4 1 . -4 -4 1 . -4 -4 1 . -4 -4 1
+V  . 91 110 93 . 83 110 83 . 90 110 89 . 82 110 86
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 83 110 82 . 87 110 94 . 94 110 80 . 82 110 83
+N  . -4 -4 1 . -4 -4 1 . -4 -4 1 . -4 -4 1
+V  . 80 110 84 . 81 110 89 . 85 110 93 . 81 110 81
+
+@bass id=f-trance-bass-0091 name="Basse trance roulante — 1 voix, 2 mes. #091" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 85 . . 110 93 . . 110 81 . . 110 94
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 82 . . 110 90 . . 110 87 . . 110 80
+
+@bass id=f-trance-bass-0092 name="Basse trance roulante — 1 voix, 4 mes. #092" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 84 110 . . 80 110 . . 87 110 . . 82 110 .
+N  . -4 -4 . . -4 -4 . . -4 -4 . . -4 -4 .
+V  . 85 110 . . 88 110 . . 81 110 . . 88 110 .
+N  . 0 0 . . 0 0 . . 0 0 . . 0 0 .
+V  . 80 110 . . 87 110 . . 80 110 . . 92 110 .
+N  . -4 -4 . . -4 -4 . . -4 -4 . . -4 -4 .
+V  . 83 110 . . 86 110 . . 83 110 . . 87 110 .
+
+@bass id=f-trance-bass-0093 name="Basse trance roulante — 1 voix, 1 mes. #093" genre=trance bars=1 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 87 110 90 . 81 110 91 . 85 110 81 . 86 110 85
+
+@bass id=f-trance-bass-0094 name="Basse trance roulante — 1 voix, 4 mes. #094" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 82 . . 110 89 . . 110 89 . . 110 88
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 92 . . 110 86 . . 110 91 . . 110 94
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 89 . . 110 84 . . 110 80 . . 110 94
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 94 . . 110 87 . . 110 82 . . 110 80
+
+@bass id=f-trance-bass-0095 name="Basse trance roulante — 1 voix, 4 mes. #095" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 93 . . 110 90 . . 110 88 . . 110 80
+N  . . 5 3 . . 5 3 . . 5 3 . . 5 3
+V  . . 110 83 . . 110 90 . . 110 86 . . 110 93
+N  . . 3 1 . . 3 1 . . 3 1 . . 3 1
+V  . . 110 88 . . 110 87 . . 110 87 . . 110 80
+N  . . -2 -4 . . -2 -4 . . -2 -4 . . -2 -4
+V  . . 110 87 . . 110 86 . . 110 94 . . 110 94
+
+@bass id=f-trance-bass-0096 name="Basse trance roulante — 1 voix, 4 mes. #096" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 88 . 84 . 85 . 93 . 80 . 87 . 94 . 88
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 80 . 94 . 83 . 94 . 92 . 86 . 86 . 91
+N  . -4 . 3 . -4 . 3 . -4 . 3 . -4 . 3
+V  . 80 . 86 . 87 . 94 . 94 . 88 . 91 . 91
+N  . -2 . 5 . -2 . 5 . -2 . 5 . -2 . 5
+V  . 94 . 87 . 92 . 82 . 93 . 89 . 83 . 86
+
+@bass id=f-trance-bass-0097 name="Basse trance roulante — 1 voix, 4 mes. #097" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 84 . . 110 93 . . 110 80 . . 110 85
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 93 . . 110 85 . . 110 87 . . 110 90
+N  . . 5 3 . . 5 3 . . 5 3 . . 5 3
+V  . . 110 89 . . 110 91 . . 110 92 . . 110 80
+N  . . 3 1 . . 3 1 . . 3 1 . . 3 1
+V  . . 110 92 . . 110 91 . . 110 89 . . 110 81
+
+@bass id=f-trance-bass-0098 name="Basse trance roulante — 1 voix, 4 mes. #098" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 83 . . 110 88 . . 110 89 . . 110 89
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 82 . . 110 92 . . 110 82 . . 110 94
+N  . . 5 5 . . 5 5 . . 5 5 . . 5 5
+V  . . 110 85 . . 110 94 . . 110 90 . . 110 89
+N  . . 3 3 . . 3 3 . . 3 3 . . 3 3
+V  . . 110 93 . . 110 88 . . 110 81 . . 110 82
+
+@bass id=f-trance-bass-0099 name="Basse trance roulante — 1 voix, 4 mes. #099" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 87 . . 110 83 . . 110 90 . . 110 83
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 83 . . 110 92 . . 110 80 . . 110 83
+N  . . -4 -6 . . -4 -6 . . -4 -6 . . -4 -6
+V  . . 110 94 . . 110 94 . . 110 91 . . 110 88
+N  . . -2 -4 . . -2 -4 . . -2 -4 . . -2 -4
+V  . . 110 86 . . 110 88 . . 110 88 . . 110 88
+
+@bass id=f-trance-bass-0100 name="Basse trance roulante — 1 voix, 4 mes. #100" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 89 . 91 . 93 . 83 . 86 . 87 . 81 . 90
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 83 . 88 . 81 . 81 . 86 . 90 . 89 . 88
+N  . -4 . -6 . -4 . -6 . -4 . -6 . -4 . -6
+V  . 93 . 83 . 94 . 87 . 88 . 81 . 93 . 85
+N  . -2 . -4 . -2 . -4 . -2 . -4 . -2 . -4
+V  . 92 . 84 . 81 . 82 . 85 . 82 . 90 . 92
+
+@bass id=f-trance-bass-0101 name="Basse trance roulante — 1 voix, 4 mes. #101" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 87 . 93 . 93 . 93 . 92 . 88 . 93 . 84
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 94 . 85 . 80 . 83 . 91 . 84 . 91 . 83
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 84 . 88 . 88 . 92 . 84 . 94 . 85 . 85
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 91 . 88 . 88 . 91 . 90 . 86 . 87 . 84
+
+@bass id=f-trance-bass-0102 name="Basse trance roulante — 1 voix, 2 mes. #102" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 -2 . . 0 -2 . . 0 -2 . . 0 -2
+V  . . 110 92 . . 110 92 . . 110 87 . . 110 94
+N  . . -4 -6 . . -4 -6 . . -4 -6 . . -4 -6
+V  . . 110 92 . . 110 91 . . 110 80 . . 110 85
+
+@bass id=f-trance-bass-0103 name="Basse trance roulante — 1 voix, 2 mes. #103" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 92 . 87 . 82 . 86 . 88 . 80 . 93 . 81
+N  . 5 . 3 . 5 . 3 . 5 . 3 . 5 . 3
+V  . 85 . 89 . 83 . 80 . 82 . 81 . 85 . 86
+
+@bass id=f-trance-bass-0104 name="Basse trance roulante — 1 voix, 2 mes. #104" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 93 110 93 . 81 110 91 . 83 110 94 . 92 110 90
+N  . -4 -4 3 . -4 -4 3 . -4 -4 3 . -4 -4 3
+V  . 82 110 93 . 85 110 85 . 92 110 92 . 83 110 86
+
+@bass id=f-trance-bass-0105 name="Basse trance roulante — 1 voix, 2 mes. #105" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 91 . . 110 89 . . 110 82 . . 110 88
+N  . . -4 8 . . -4 8 . . -4 8 . . -4 8
+V  . . 110 88 . . 110 90 . . 110 81 . . 110 83
+
+@bass id=f-trance-bass-0106 name="Basse trance roulante — 1 voix, 2 mes. #106" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 80 . 86 . 89 . 88 . 90 . 92 . 87 . 92
+N  . -4 . 3 . -4 . 3 . -4 . 3 . -4 . 3
+V  . 90 . 93 . 81 . 92 . 88 . 83 . 94 . 88
+
+@bass id=f-trance-bass-0107 name="Basse trance roulante — 1 voix, 4 mes. #107" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 89 . . 110 88 . . 110 94 . . 110 87
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 84 . . 110 89 . . 110 87 . . 110 91
+N  . . -4 -4 . . -4 -4 . . -4 -4 . . -4 -4
+V  . . 110 84 . . 110 82 . . 110 80 . . 110 89
+N  . . -2 -2 . . -2 -2 . . -2 -2 . . -2 -2
+V  . . 110 88 . . 110 82 . . 110 88 . . 110 90
+
+@bass id=f-trance-bass-0108 name="Basse trance roulante — 1 voix, 4 mes. #108" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 93 110 89 . 88 110 90 . 87 110 93 . 91 110 82
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 93 110 85 . 85 110 86 . 92 110 93 . 89 110 82
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 81 110 90 . 92 110 83 . 89 110 90 . 91 110 80
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 94 110 88 . 83 110 83 . 81 110 83 . 93 110 94
+
+@bass id=f-trance-bass-0109 name="Basse trance roulante — 1 voix, 2 mes. #109" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 92 . 82 . 81 . 84 . 80 . 84 . 89 . 88
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 88 . 93 . 85 . 84 . 86 . 82 . 90 . 92
+
+@bass id=f-trance-bass-0110 name="Basse trance roulante — 1 voix, 2 mes. #110" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 84 110 85 . 81 110 80 . 87 110 91 . 85 110 89
+N  . 5 5 10 . 5 5 10 . 5 5 10 . 5 5 10
+V  . 91 110 84 . 82 110 86 . 83 110 85 . 90 110 85
+
+@bass id=f-trance-bass-0111 name="Basse trance roulante — 1 voix, 4 mes. #111" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 80 . 87 . 81 . 94 . 88 . 83 . 87 . 87
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 91 . 87 . 81 . 86 . 82 . 93 . 90 . 88
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 89 . 93 . 80 . 93 . 94 . 80 . 89 . 80
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 90 . 81 . 90 . 94 . 82 . 81 . 87 . 90
+
+@bass id=f-trance-bass-0112 name="Basse trance roulante — 1 voix, 4 mes. #112" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 81 . . 110 80 . . 110 82 . . 110 80
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 84 . . 110 85 . . 110 86 . . 110 94
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 88 . . 110 82 . . 110 88 . . 110 90
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 81 . . 110 94 . . 110 80 . . 110 82
+
+@bass id=f-trance-bass-0113 name="Basse trance roulante — 1 voix, 2 mes. #113" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 83 . 93 . 93 . 82 . 81 . 89 . 86 . 81
+N  . -4 . 8 . -4 . 8 . -4 . 8 . -4 . 8
+V  . 86 . 94 . 86 . 90 . 80 . 93 . 80 . 91
+
+@bass id=f-trance-bass-0114 name="Basse trance roulante — 1 voix, 2 mes. #114" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 94 . . 110 81 . . 110 81 . . 110 83
+N  . . 5 12 . . 5 12 . . 5 12 . . 5 12
+V  . . 110 81 . . 110 93 . . 110 92 . . 110 91
+
+@bass id=f-trance-bass-0115 name="Basse trance roulante — 1 voix, 4 mes. #115" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 88 110 84 . 82 110 81 . 92 110 81 . 85 110 87
+N  . -4 -4 8 . -4 -4 8 . -4 -4 8 . -4 -4 8
+V  . 90 110 82 . 94 110 93 . 85 110 85 . 89 110 86
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 88 110 93 . 90 110 88 . 83 110 86 . 94 110 85
+N  . -4 -4 8 . -4 -4 8 . -4 -4 8 . -4 -4 8
+V  . 80 110 87 . 80 110 91 . 85 110 84 . 92 110 81
+
+@bass id=f-trance-bass-0116 name="Basse trance roulante — 1 voix, 4 mes. #116" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 90 110 89 . 94 110 81 . 89 110 82 . 85 110 84
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 91 110 88 . 83 110 91 . 86 110 89 . 80 110 89
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 81 110 89 . 92 110 81 . 94 110 87 . 82 110 85
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 81 110 81 . 88 110 87 . 89 110 91 . 87 110 93
+
+@bass id=f-trance-bass-0117 name="Basse trance roulante — 1 voix, 2 mes. #117" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 7 . . 0 7 . . 0 7 . . 0 7
+V  . . 110 91 . . 110 84 . . 110 89 . . 110 85
+N  . . -4 3 . . -4 3 . . -4 3 . . -4 3
+V  . . 110 90 . . 110 86 . . 110 90 . . 110 84
+
+@bass id=f-trance-bass-0118 name="Basse trance roulante — 1 voix, 4 mes. #118" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 93 110 93 . 86 110 94 . 91 110 94 . 84 110 82
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 88 110 83 . 85 110 92 . 84 110 90 . 89 110 82
+N  . 5 5 17 . 5 5 17 . 5 5 17 . 5 5 17
+V  . 80 110 88 . 80 110 93 . 92 110 89 . 86 110 81
+N  . 3 3 15 . 3 3 15 . 3 3 15 . 3 3 15
+V  . 84 110 84 . 92 110 90 . 86 110 88 . 92 110 86
+
+@bass id=f-trance-bass-0119 name="Basse trance roulante — 1 voix, 2 mes. #119" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 85 110 87 . 89 110 84 . 86 110 89 . 88 110 83
+N  . 5 5 17 . 5 5 17 . 5 5 17 . 5 5 17
+V  . 81 110 90 . 86 110 86 . 83 110 81 . 82 110 82
+
+@bass id=f-trance-bass-0120 name="Basse trance roulante — 1 voix, 4 mes. #120" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 80 110 90 . 90 110 89 . 86 110 89 . 86 110 86
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 83 110 90 . 93 110 88 . 92 110 92 . 85 110 93
+N  . 5 5 10 . 5 5 10 . 5 5 10 . 5 5 10
+V  . 89 110 84 . 93 110 89 . 81 110 92 . 93 110 93
+N  . 3 3 8 . 3 3 8 . 3 3 8 . 3 3 8
+V  . 93 110 92 . 93 110 88 . 90 110 86 . 80 110 93
+
+@bass id=f-trance-bass-0121 name="Basse trance roulante — 1 voix, 2 mes. #121" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 92 110 89 . 80 110 94 . 92 110 94 . 93 110 87
+N  . -4 -4 8 . -4 -4 8 . -4 -4 8 . -4 -4 8
+V  . 81 110 86 . 86 110 89 . 80 110 85 . 87 110 80
+
+@bass id=f-trance-bass-0122 name="Basse trance roulante — 1 voix, 4 mes. #122" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 84 110 94 . 93 110 89 . 81 110 83 . 91 110 94
+N  . 5 5 17 . 5 5 17 . 5 5 17 . 5 5 17
+V  . 85 110 81 . 92 110 83 . 80 110 94 . 92 110 85
+N  . 3 3 15 . 3 3 15 . 3 3 15 . 3 3 15
+V  . 82 110 81 . 89 110 89 . 94 110 92 . 89 110 94
+N  . -2 -2 10 . -2 -2 10 . -2 -2 10 . -2 -2 10
+V  . 82 110 87 . 80 110 83 . 87 110 82 . 94 110 83
+
+@bass id=f-trance-bass-0123 name="Basse trance roulante — 1 voix, 2 mes. #123" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 80 110 82 . 83 110 88 . 81 110 87 . 90 110 85
+N  . 5 5 12 . 5 5 12 . 5 5 12 . 5 5 12
+V  . 94 110 84 . 88 110 87 . 90 110 81 . 81 110 85
+
+@bass id=f-trance-bass-0124 name="Basse trance roulante — 1 voix, 4 mes. #124" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 83 110 92 . 87 110 84 . 92 110 81 . 92 110 90
+N  . 5 5 10 . 5 5 10 . 5 5 10 . 5 5 10
+V  . 88 110 84 . 94 110 91 . 94 110 83 . 90 110 94
+N  . 3 3 8 . 3 3 8 . 3 3 8 . 3 3 8
+V  . 93 110 81 . 82 110 87 . 81 110 87 . 89 110 90
+N  . -2 -2 3 . -2 -2 3 . -2 -2 3 . -2 -2 3
+V  . 88 110 83 . 86 110 80 . 86 110 86 . 82 110 92
+
+@bass id=f-trance-bass-0125 name="Basse trance roulante — 1 voix, 4 mes. #125" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 81 . 85 . 82 . 90 . 82 . 80 . 87 . 89
+N  . -4 . -4 . -4 . -4 . -4 . -4 . -4 . -4
+V  . 84 . 80 . 89 . 82 . 86 . 81 . 82 . 86
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 80 . 86 . 92 . 91 . 86 . 81 . 83 . 80
+N  . -4 . -4 . -4 . -4 . -4 . -4 . -4 . -4
+V  . 80 . 88 . 80 . 91 . 87 . 90 . 83 . 90
+
+@bass id=f-trance-bass-0126 name="Basse trance roulante — 1 voix, 4 mes. #126" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 85 110 84 . 89 110 80 . 87 110 89 . 91 110 82
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 91 110 88 . 87 110 88 . 92 110 87 . 86 110 91
+N  . -4 -4 1 . -4 -4 1 . -4 -4 1 . -4 -4 1
+V  . 93 110 93 . 86 110 93 . 83 110 94 . 93 110 86
+N  . -2 -2 3 . -2 -2 3 . -2 -2 3 . -2 -2 3
+V  . 93 110 94 . 91 110 80 . 82 110 90 . 81 110 86
+
+@bass id=f-trance-bass-0127 name="Basse trance roulante — 1 voix, 2 mes. #127" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 86 . 92 . 91 . 89 . 84 . 87 . 92 . 89
+N  . 5 . 12 . 5 . 12 . 5 . 12 . 5 . 12
+V  . 80 . 90 . 87 . 82 . 90 . 92 . 87 . 82
+
+@bass id=f-trance-bass-0128 name="Basse trance roulante — 1 voix, 4 mes. #128" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 81 . 80 . 91 . 93 . 88 . 81 . 84 . 88
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 84 . 85 . 90 . 94 . 91 . 85 . 91 . 92
+N  . 5 . 17 . 5 . 17 . 5 . 17 . 5 . 17
+V  . 91 . 82 . 88 . 80 . 82 . 94 . 80 . 92
+N  . 3 . 15 . 3 . 15 . 3 . 15 . 3 . 15
+V  . 84 . 92 . 90 . 81 . 90 . 90 . 90 . 91
+
+@bass id=f-trance-bass-0129 name="Basse trance roulante — 1 voix, 4 mes. #129" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 89 110 94 . 87 110 87 . 88 110 87 . 91 110 92
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 83 110 81 . 94 110 87 . 85 110 93 . 85 110 85
+N  . -4 -4 -4 . -4 -4 -4 . -4 -4 -4 . -4 -4 -4
+V  . 80 110 90 . 94 110 94 . 83 110 91 . 90 110 90
+N  . -2 -2 -2 . -2 -2 -2 . -2 -2 -2 . -2 -2 -2
+V  . 85 110 83 . 90 110 92 . 86 110 82 . 83 110 93
+
+@bass id=f-trance-bass-0130 name="Basse trance roulante — 1 voix, 4 mes. #130" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 82 . 88 . 90 . 87 . 84 . 82 . 87 . 83
+N  . 5 . 3 . 5 . 3 . 5 . 3 . 5 . 3
+V  . 85 . 93 . 80 . 85 . 89 . 83 . 91 . 83
+N  . 3 . 1 . 3 . 1 . 3 . 1 . 3 . 1
+V  . 94 . 89 . 92 . 85 . 87 . 83 . 87 . 91
+N  . -2 . -4 . -2 . -4 . -2 . -4 . -2 . -4
+V  . 83 . 84 . 89 . 80 . 93 . 93 . 86 . 86
+
+@bass id=f-trance-bass-0131 name="Basse trance roulante — 1 voix, 4 mes. #131" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 81 . 94 . 85 . 85 . 81 . 83 . 89 . 90
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 94 . 93 . 93 . 93 . 91 . 90 . 90 . 86
+N  . -4 . -4 . -4 . -4 . -4 . -4 . -4 . -4
+V  . 90 . 93 . 88 . 84 . 85 . 80 . 92 . 86
+N  . -2 . -2 . -2 . -2 . -2 . -2 . -2 . -2
+V  . 89 . 82 . 86 . 88 . 85 . 84 . 85 . 82
+
+@bass id=f-trance-bass-0132 name="Basse trance roulante — 1 voix, 4 mes. #132" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+V  . . 110 88 . . 110 93 . . 110 85 . . 110 81
+N  . . 5 5 . . 5 5 . . 5 5 . . 5 5
+V  . . 110 88 . . 110 80 . . 110 94 . . 110 91
+N  . . 3 3 . . 3 3 . . 3 3 . . 3 3
+V  . . 110 89 . . 110 91 . . 110 85 . . 110 82
+N  . . -2 -2 . . -2 -2 . . -2 -2 . . -2 -2
+V  . . 110 90 . . 110 87 . . 110 88 . . 110 93
+
+@bass id=f-trance-bass-0133 name="Basse trance roulante — 1 voix, 4 mes. #133" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 91 110 93 . 80 110 85 . 82 110 89 . 85 110 82
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 91 110 91 . 81 110 81 . 93 110 84 . 89 110 88
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 83 110 84 . 93 110 84 . 88 110 81 . 92 110 81
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 88 110 80 . 81 110 94 . 85 110 90 . 82 110 92
+
+@bass id=f-trance-bass-0134 name="Basse trance roulante — 1 voix, 4 mes. #134" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 83 . 94 . 93 . 82 . 93 . 88 . 94 . 85
+N  . -4 . 3 . -4 . 3 . -4 . 3 . -4 . 3
+V  . 80 . 88 . 91 . 87 . 82 . 84 . 85 . 88
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 90 . 90 . 88 . 81 . 93 . 84 . 90 . 86
+N  . -4 . 3 . -4 . 3 . -4 . 3 . -4 . 3
+V  . 90 . 82 . 87 . 84 . 82 . 89 . 90 . 89
+
+@bass id=f-trance-bass-0135 name="Basse trance roulante — 1 voix, 4 mes. #135" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 84 . 94 . 93 . 93 . 82 . 80 . 80 . 84
+N  . 0 . 5 . 0 . 5 . 0 . 5 . 0 . 5
+V  . 84 . 85 . 94 . 86 . 93 . 85 . 91 . 85
+N  . -4 . 1 . -4 . 1 . -4 . 1 . -4 . 1
+V  . 94 . 88 . 84 . 94 . 94 . 82 . 82 . 83
+N  . -2 . 3 . -2 . 3 . -2 . 3 . -2 . 3
+V  . 91 . 87 . 93 . 80 . 90 . 88 . 93 . 82
+
+@bass id=f-trance-bass-0136 name="Basse trance roulante — 1 voix, 4 mes. #136" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 92 110 90 . 91 110 87 . 87 110 91 . 84 110 83
+N  . 0 0 12 . 0 0 12 . 0 0 12 . 0 0 12
+V  . 87 110 86 . 80 110 80 . 94 110 90 . 88 110 86
+N  . -4 -4 8 . -4 -4 8 . -4 -4 8 . -4 -4 8
+V  . 92 110 88 . 88 110 91 . 93 110 84 . 91 110 94
+N  . -2 -2 10 . -2 -2 10 . -2 -2 10 . -2 -2 10
+V  . 91 110 94 . 94 110 90 . 87 110 94 . 86 110 92
+
+@bass id=f-trance-bass-0137 name="Basse trance roulante — 1 voix, 2 mes. #137" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 93 . 83 . 94 . 83 . 85 . 94 . 87 . 84
+N  . -4 . -4 . -4 . -4 . -4 . -4 . -4 . -4
+V  . 84 . 86 . 85 . 81 . 90 . 81 . 81 . 80
+
+@bass id=f-trance-bass-0138 name="Basse trance roulante — 1 voix, 4 mes. #138" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 0 . 0 . 0 . 0 . 0 . 0 . 0
+V  . 93 . 88 . 86 . 94 . 91 . 92 . 89 . 80
+N  . 5 . 5 . 5 . 5 . 5 . 5 . 5 . 5
+V  . 93 . 88 . 80 . 93 . 84 . 83 . 88 . 80
+N  . 3 . 3 . 3 . 3 . 3 . 3 . 3 . 3
+V  . 84 . 94 . 92 . 91 . 94 . 83 . 82 . 85
+N  . -2 . -2 . -2 . -2 . -2 . -2 . -2 . -2
+V  . 81 . 91 . 81 . 94 . 85 . 89 . 83 . 89
+
+@bass id=f-trance-bass-0139 name="Basse trance roulante — 1 voix, 4 mes. #139" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 84 110 81 . 85 110 93 . 92 110 82 . 84 110 91
+N  . -4 -4 -6 . -4 -4 -6 . -4 -4 -6 . -4 -4 -6
+V  . 89 110 91 . 82 110 83 . 83 110 83 . 87 110 86
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 94 110 91 . 83 110 83 . 87 110 92 . 86 110 81
+N  . -4 -4 -6 . -4 -4 -6 . -4 -4 -6 . -4 -4 -6
+V  . 80 110 90 . 88 110 92 . 86 110 91 . 84 110 94
+
+@bass id=f-trance-bass-0140 name="Basse trance roulante — 1 voix, 4 mes. #140" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 91 110 90 . 87 110 89 . 88 110 83 . 87 110 90
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 85 110 94 . 91 110 81 . 92 110 87 . 87 110 91
+N  . 5 5 12 . 5 5 12 . 5 5 12 . 5 5 12
+V  . 93 110 91 . 85 110 92 . 84 110 82 . 94 110 92
+N  . 3 3 10 . 3 3 10 . 3 3 10 . 3 3 10
+V  . 88 110 86 . 94 110 81 . 94 110 94 . 91 110 85
+
+@bass id=f-trance-bass-0141 name="Basse trance roulante — 1 voix, 4 mes. #141" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 92 110 82 . 93 110 91 . 88 110 94 . 86 110 93
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 89 110 82 . 84 110 85 . 90 110 81 . 88 110 83
+N  . 5 5 5 . 5 5 5 . 5 5 5 . 5 5 5
+V  . 85 110 86 . 84 110 93 . 82 110 87 . 94 110 87
+N  . 3 3 3 . 3 3 3 . 3 3 3 . 3 3 3
+V  . 84 110 93 . 92 110 85 . 92 110 83 . 93 110 87
+
+@bass id=f-trance-bass-0142 name="Basse trance roulante — 1 voix, 4 mes. #142" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 94 . . 110 80 . . 110 81 . . 110 87
+N  . . 0 12 . . 0 12 . . 0 12 . . 0 12
+V  . . 110 90 . . 110 88 . . 110 82 . . 110 80
+N  . . -4 8 . . -4 8 . . -4 8 . . -4 8
+V  . . 110 81 . . 110 81 . . 110 81 . . 110 91
+N  . . -2 10 . . -2 10 . . -2 10 . . -2 10
+V  . . 110 87 . . 110 86 . . 110 83 . . 110 92
+
+@bass id=f-trance-bass-0143 name="Basse trance roulante — 1 voix, 4 mes. #143" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 87 . 83 . 80 . 88 . 84 . 80 . 86 . 84
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 85 . 90 . 85 . 93 . 80 . 93 . 87 . 87
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 86 . 85 . 87 . 85 . 80 . 83 . 93 . 89
+N  . 0 . 12 . 0 . 12 . 0 . 12 . 0 . 12
+V  . 81 . 91 . 82 . 94 . 86 . 84 . 88 . 91
+
+@bass id=f-trance-bass-0144 name="Basse trance roulante — 1 voix, 2 mes. #144" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 83 110 92 . 91 110 86 . 88 110 80 . 85 110 86
+N  . -4 -4 -6 . -4 -4 -6 . -4 -4 -6 . -4 -4 -6
+V  . 93 110 91 . 84 110 87 . 86 110 91 . 88 110 85
+
+@bass id=f-trance-bass-0145 name="Basse trance roulante — 1 voix, 4 mes. #145" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 89 110 88 . 83 110 94 . 84 110 85 . 80 110 91
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 84 110 85 . 86 110 84 . 89 110 85 . 85 110 85
+N  . -4 -4 -6 . -4 -4 -6 . -4 -4 -6 . -4 -4 -6
+V  . 81 110 88 . 92 110 87 . 82 110 82 . 91 110 94
+N  . -2 -2 -4 . -2 -2 -4 . -2 -2 -4 . -2 -2 -4
+V  . 84 110 85 . 88 110 83 . 84 110 87 . 84 110 83
+
+@bass id=f-trance-bass-0146 name="Basse trance roulante — 1 voix, 4 mes. #146" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . 7 . 0 . 7 . 0 . 7 . 0 . 7
+V  . 88 . 85 . 93 . 92 . 94 . 89 . 91 . 88
+N  . 5 . 12 . 5 . 12 . 5 . 12 . 5 . 12
+V  . 85 . 80 . 87 . 88 . 89 . 84 . 85 . 83
+N  . 3 . 10 . 3 . 10 . 3 . 10 . 3 . 10
+V  . 82 . 89 . 88 . 86 . 85 . 83 . 92 . 85
+N  . -2 . 5 . -2 . 5 . -2 . 5 . -2 . 5
+V  . 84 . 87 . 85 . 91 . 88 . 92 . 83 . 92
+
+@bass id=f-trance-bass-0147 name="Basse trance roulante — 1 voix, 2 mes. #147" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 85 110 84 . 84 110 89 . 92 110 85 . 89 110 94
+N  . -4 -4 1 . -4 -4 1 . -4 -4 1 . -4 -4 1
+V  . 84 110 94 . 94 110 84 . 92 110 82 . 94 110 81
+
+@bass id=f-trance-bass-0148 name="Basse trance roulante — 1 voix, 4 mes. #148" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 83 110 87 . 80 110 90 . 89 110 94 . 89 110 82
+N  . -4 -4 3 . -4 -4 3 . -4 -4 3 . -4 -4 3
+V  . 83 110 94 . 84 110 91 . 84 110 82 . 84 110 84
+N  . 0 0 7 . 0 0 7 . 0 0 7 . 0 0 7
+V  . 89 110 85 . 91 110 81 . 92 110 89 . 87 110 84
+N  . -4 -4 3 . -4 -4 3 . -4 -4 3 . -4 -4 3
+V  . 85 110 93 . 85 110 85 . 89 110 93 . 80 110 87
+
+@bass id=f-trance-bass-0149 name="Basse trance roulante — 1 voix, 4 mes. #149" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 89 110 90 . 87 110 87 . 81 110 89 . 83 110 91
+N  . 5 5 5 . 5 5 5 . 5 5 5 . 5 5 5
+V  . 83 110 91 . 93 110 93 . 93 110 86 . 90 110 94
+N  . 3 3 3 . 3 3 3 . 3 3 3 . 3 3 3
+V  . 85 110 91 . 87 110 92 . 81 110 90 . 89 110 89
+N  . -2 -2 -2 . -2 -2 -2 . -2 -2 -2 . -2 -2 -2
+V  . 82 110 88 . 89 110 81 . 81 110 88 . 92 110 83
+
+@bass id=f-trance-bass-0150 name="Basse trance roulante — 1 voix, 2 mes. #150" genre=trance bars=2 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+V  . 84 110 85 . 91 110 92 . 91 110 84 . 93 110 89
+N  . 5 5 5 . 5 5 5 . 5 5 5 . 5 5 5
+V  . 92 110 80 . 84 110 87 . 92 110 81 . 89 110 93
+
+@bass id=f-trance-bass-0151 name="Basse trance roulante — 1 voix, 4 mes. #151" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 94 110 83 . 89 110 90 . 92 110 93 . 84 110 88
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 82 110 89 . 83 110 94 . 84 110 90 . 83 110 81
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 89 110 86 . 84 110 86 . 81 110 91 . 92 110 85
+N  . 0 0 5 . 0 0 5 . 0 0 5 . 0 0 5
+V  . 91 110 93 . 87 110 84 . 80 110 93 . 83 110 85
+
+@bass id=f-trance-bass-0152 name="Basse trance roulante — 1 voix, 4 mes. #152" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 89 . 85 . 82 . 81 . 93 . 90 . 87 . 87
+N  . 0 . -2 . 0 . -2 . 0 . -2 . 0 . -2
+V  . 82 . 93 . 93 . 87 . 82 . 91 . 89 . 88
+N  . 5 . 3 . 5 . 3 . 5 . 3 . 5 . 3
+V  . 93 . 81 . 92 . 88 . 85 . 81 . 94 . 94
+N  . 3 . 1 . 3 . 1 . 3 . 1 . 3 . 1
+V  . 80 . 88 . 85 . 87 . 84 . 85 . 92 . 83
+
+@bass id=f-trance-bass-0153 name="Basse trance roulante — 1 voix, 4 mes. #153" genre=trance bars=4 steps=16 voices=1 tags=trance-bass src=gen-fill
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 83 110 86 . 83 110 89 . 93 110 93 . 84 110 91
+N  . 0 0 -2 . 0 0 -2 . 0 0 -2 . 0 0 -2
+V  . 81 110 93 . 82 110 83 . 89 110 84 . 83 110 81
+N  . 5 5 3 . 5 5 3 . 5 5 3 . 5 5 3
+V  . 83 110 87 . 85 110 93 . 90 110 86 . 87 110 84
+N  . 3 3 1 . 3 3 1 . 3 3 1 . 3 3 1
+V  . 93 110 80 . 82 110 88 . 86 110 84 . 81 110 85
+
+@perc id=f-trance-perc-0001 name="Percussion trance (roll) — 1 voix, 1 mes. #001" genre=trance bars=1 steps=16 voices=1 tags=trance-roll src=gen-fill
+N  SN . . . SN . . . SN SN SN SN SN SN SN SN
+V  70 . . . 70 . . . 50 59 68 77 86 95 104 113
+
+@perc id=f-trance-perc-0002 name="Percussion trance (roll) — 1 voix, 4 mes. #002" genre=trance bars=4 steps=16 voices=1 tags=trance-roll src=gen-fill
+N  SN . . . SN . . . SN . . . SN . . .
+V  70 . . . 70 . . . 70 . . . 70 . . .
+N  SN . . . SN . . . SN . . . SN . . .
+V  70 . . . 70 . . . 70 . . . 70 . . .
+N  SN . . . SN . . . SN . . . SN . . .
+V  70 . . . 70 . . . 70 . . . 70 . . .
+N  SN . . . SN . . . SN SN SN SN SN SN SN SN
+V  70 . . . 70 . . . 50 59 68 77 86 95 104 113
+
+@perc id=f-trance-perc-0003 name="Percussion trance (clap) — 1 voix, 4 mes. #003" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0004 name="Percussion trance (oh) — 1 voix, 4 mes. #004" genre=trance bars=4 steps=16 voices=1 tags=trance-oh src=gen-fill
+N  . . OH . . . OH . . . OH . . . OH .
+V  . . 101 . . . 111 . . . 109 . . . 110 .
+N  . . OH . . . OH . . . OH . . . OH .
+V  . . 105 . . . 104 . . . 100 . . . 97 .
+N  . . OH . . . OH . . . OH . . . OH .
+V  . . 107 . . . 114 . . . 103 . . . 107 .
+N  . . OH . . . OH . . . OH . . . OH .
+V  . . 96 . . . 96 . . . 110 . . . 112 .
+
+@perc id=f-trance-perc-0005 name="Percussion trance (roll) — 1 voix, 2 mes. #005" genre=trance bars=2 steps=16 voices=1 tags=trance-roll src=gen-fill
+N  SN . . . SN . . . SN . . . SN . . .
+V  70 . . . 70 . . . 70 . . . 70 . . .
+N  SN . . . SN . . . SN SN SN SN SN SN SN SN
+V  70 . . . 70 . . . 50 59 68 77 86 95 104 113
+
+@perc id=f-trance-perc-0006 name="Percussion trance (clap) — 1 voix, 1 mes. #006" genre=trance bars=1 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0007 name="Percussion trance (16th) — 1 voix, 1 mes. #007" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  56 50 108 63 56 55 99 62 56 49 104 60 56 50 100 61
+
+@perc id=f-trance-perc-0008 name="Percussion trance (clap) — 1 voix, 4 mes. #008" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0009 name="Percussion trance (16th) — 1 voix, 1 mes. #009" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  59 50 108 59 60 52 106 59 57 51 106 61 61 54 105 61
+
+@perc id=f-trance-perc-0010 name="Percussion trance (clap) — 1 voix, 2 mes. #010" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0011 name="Percussion trance (16th) — 1 voix, 4 mes. #011" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  55 . 106 59 59 53 107 59 62 . 101 69 60 47 103 59
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  54 . 100 60 60 54 107 68 60 . 103 70 54 48 110 62
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  55 . 101 63 58 50 107 67 62 . 100 64 58 47 99 61
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  55 52 101 . 62 45 102 59 55 45 106 . 62 47 110 61
+
+@perc id=f-trance-perc-0012 name="Percussion trance (16th) — 1 voix, 2 mes. #012" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  55 . 105 61 61 54 108 68 59 . 108 59 54 45 104 66
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  57 . 107 62 58 50 101 70 60 . 109 67 59 44 109 65
+
+@perc id=f-trance-perc-0013 name="Percussion trance (oh) — 1 voix, 1 mes. #013" genre=trance bars=1 steps=16 voices=1 tags=trance-oh src=gen-fill
+N  . . OH . . . OH . . . OH . . . OH .
+V  . . 106 . . . 97 . . . 97 . . . 95 .
+
+@perc id=f-trance-perc-0014 name="Percussion trance (16th) — 1 voix, 1 mes. #014" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  56 45 110 . 64 53 107 68 54 54 109 . 57 47 99 60
+
+@perc id=f-trance-perc-0015 name="Percussion trance (16th) — 1 voix, 2 mes. #015" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  54 . 100 59 59 47 108 59 62 . 108 61 62 50 104 63
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  55 . 101 61 57 51 99 64 60 . 100 60 57 45 104 59
+
+@perc id=f-trance-perc-0016 name="Percussion trance (16th) — 1 voix, 4 mes. #016" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  60 52 100 60 54 44 107 67 64 52 107 65 62 52 105 70
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  60 55 108 . 54 53 103 68 64 51 109 . 57 50 109 61
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  61 51 110 . 64 48 108 65 57 49 108 . 56 55 100 61
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 44 108 59 . 51 106 67 . 50 103 59 . 47 101 60
+
+@perc id=f-trance-perc-0017 name="Percussion trance (clap) — 1 voix, 4 mes. #017" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0018 name="Percussion trance (clap) — 1 voix, 1 mes. #018" genre=trance bars=1 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0019 name="Percussion trance (16th) — 1 voix, 4 mes. #019" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 55 99 62 . 50 104 62 . 51 100 66 . 48 99 65
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 55 110 65 . 47 102 65 . 47 99 63 . 53 101 65
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  54 47 102 . 62 48 106 59 61 47 106 . 63 55 100 59
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 48 103 68 . 50 103 66 . 49 103 68 . 47 101 60
+
+@perc id=f-trance-perc-0020 name="Percussion trance (oh) — 1 voix, 2 mes. #020" genre=trance bars=2 steps=16 voices=1 tags=trance-oh src=gen-fill
+N  . . OH . . . OH . . . OH . . . OH .
+V  . . 101 . . . 103 . . . 102 . . . 95 .
+N  . . OH . . . OH . . . OH . . . OH .
+V  . . 112 . . . 97 . . . 110 . . . 96 .
+
+@perc id=f-trance-perc-0021 name="Percussion trance (clap) — 1 voix, 2 mes. #021" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0022 name="Percussion trance (16th) — 1 voix, 4 mes. #022" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 45 99 63 . 46 105 69 . 53 103 66 . 49 100 59
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  65 53 105 64 55 52 99 67 62 51 107 60 56 45 100 61
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  55 52 108 . 64 50 107 70 60 54 106 . 58 53 107 60
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  64 49 105 . 57 51 104 65 62 52 108 . 57 45 101 68
+
+@perc id=f-trance-perc-0023 name="Percussion trance (clap) — 1 voix, 4 mes. #023" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0024 name="Percussion trance (clap) — 1 voix, 4 mes. #024" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0025 name="Percussion trance (clap) — 1 voix, 2 mes. #025" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0026 name="Percussion trance (clap) — 1 voix, 4 mes. #026" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0027 name="Percussion trance (clap) — 1 voix, 2 mes. #027" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0028 name="Percussion trance (clap) — 1 voix, 4 mes. #028" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0029 name="Percussion trance (16th) — 1 voix, 2 mes. #029" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  57 . 100 67 59 52 108 67 61 . 106 62 60 52 104 70
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 50 99 69 . 48 99 69 . 49 101 60 . 53 108 69
+
+@perc id=f-trance-perc-0030 name="Percussion trance (clap) — 1 voix, 2 mes. #030" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0031 name="Percussion trance (16th) — 1 voix, 4 mes. #031" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  65 54 109 63 64 51 105 65 59 53 106 65 64 50 107 60
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  57 51 101 . 60 52 109 62 55 45 100 . 54 51 106 65
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  62 . 99 61 61 52 105 67 55 . 103 59 54 51 101 68
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 44 100 64 . 44 100 61 . 49 108 70 . 48 110 70
+
+@perc id=f-trance-perc-0032 name="Percussion trance (clap) — 1 voix, 1 mes. #032" genre=trance bars=1 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0033 name="Percussion trance (16th) — 1 voix, 2 mes. #033" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  58 . 100 59 58 52 107 63 56 . 110 70 55 48 109 61
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  54 52 110 60 60 46 109 63 55 50 108 68 62 52 105 63
+
+@perc id=f-trance-perc-0034 name="Percussion trance (16th) — 1 voix, 2 mes. #034" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 47 104 61 . 46 102 64 . 54 110 69 . 53 100 63
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 53 103 69 . 46 99 65 . 44 99 64 . 45 105 64
+
+@perc id=f-trance-perc-0035 name="Percussion trance (clap) — 1 voix, 2 mes. #035" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0036 name="Percussion trance (clap) — 1 voix, 2 mes. #036" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0037 name="Percussion trance (16th) — 1 voix, 4 mes. #037" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 50 103 64 . 47 101 66 . 53 102 63 . 55 99 66
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  64 . 102 67 56 51 109 65 65 . 107 59 55 54 106 66
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 55 106 65 . 45 100 63 . 54 103 60 . 53 104 70
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  63 . 107 59 62 50 108 69 54 . 99 59 56 55 107 60
+
+@perc id=f-trance-perc-0038 name="Percussion trance (16th) — 1 voix, 4 mes. #038" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 51 101 68 . 46 104 67 . 54 101 62 . 52 102 62
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  60 49 104 . 62 47 104 60 64 46 106 . 55 47 100 70
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  55 . 99 66 59 44 101 61 56 . 109 60 54 53 103 60
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 55 110 69 . 46 99 59 . 50 101 70 . 54 106 59
+
+@perc id=f-trance-perc-0039 name="Percussion trance (16th) — 1 voix, 4 mes. #039" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  60 . 105 70 54 47 105 70 57 . 103 70 65 50 103 60
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  63 47 100 67 61 53 107 68 56 53 102 66 62 48 101 64
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  61 . 101 59 58 47 108 65 63 . 103 64 63 54 104 68
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  65 51 109 63 64 54 102 59 63 55 106 59 61 46 102 59
+
+@perc id=f-trance-perc-0040 name="Percussion trance (16th) — 1 voix, 2 mes. #040" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 53 99 64 . 46 103 59 . 47 108 64 . 50 103 63
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 55 102 64 . 50 106 67 . 48 106 62 . 44 107 69
+
+@perc id=f-trance-perc-0041 name="Percussion trance (clap) — 1 voix, 2 mes. #041" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0042 name="Percussion trance (16th) — 1 voix, 4 mes. #042" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  56 . 107 61 56 45 110 62 62 . 110 64 64 44 107 60
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  64 54 110 . 60 52 101 67 62 54 104 . 61 49 105 67
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  59 46 108 59 59 47 106 64 58 51 108 63 55 46 107 68
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  63 47 103 62 60 49 109 62 59 48 100 65 58 51 99 67
+
+@perc id=f-trance-perc-0043 name="Percussion trance (16th) — 1 voix, 1 mes. #043" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  63 45 100 70 57 50 99 70 60 44 99 60 59 47 101 70
+
+@perc id=f-trance-perc-0044 name="Percussion trance (16th) — 1 voix, 2 mes. #044" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  57 . 102 69 56 45 99 60 64 . 102 63 57 45 110 65
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 53 105 67 . 49 110 69 . 55 109 62 . 47 104 69
+
+@perc id=f-trance-perc-0045 name="Percussion trance (clap) — 1 voix, 2 mes. #045" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0046 name="Percussion trance (clap) — 1 voix, 2 mes. #046" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0047 name="Percussion trance (16th) — 1 voix, 4 mes. #047" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  60 45 100 . 65 46 110 68 54 53 100 . 65 47 99 60
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 51 103 66 . 50 110 65 . 55 100 62 . 53 102 63
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 54 109 62 . 46 105 68 . 44 104 65 . 47 99 63
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 51 101 63 . 50 106 64 . 45 110 59 . 54 108 61
+
+@perc id=f-trance-perc-0048 name="Percussion trance (16th) — 1 voix, 4 mes. #048" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  63 44 109 65 55 49 104 64 62 48 103 70 54 51 102 63
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  64 . 110 68 54 44 101 61 59 . 101 60 62 45 100 61
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  60 45 104 . 54 45 110 60 60 44 109 . 63 55 110 66
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  54 . 106 63 63 55 110 65 56 . 101 60 54 50 110 65
+
+@perc id=f-trance-perc-0049 name="Percussion trance (16th) — 1 voix, 1 mes. #049" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  61 46 109 . 58 51 103 70 59 46 101 . 56 50 107 67
+
+@perc id=f-trance-perc-0050 name="Percussion trance (16th) — 1 voix, 2 mes. #050" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  64 55 109 . 64 48 99 61 62 47 100 . 65 48 101 61
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  59 46 100 59 65 44 99 61 63 46 109 70 62 53 105 67
+
+@perc id=f-trance-perc-0051 name="Percussion trance (16th) — 1 voix, 4 mes. #051" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  60 52 101 67 60 52 104 64 64 46 108 62 61 53 105 64
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  59 52 99 . 58 46 105 64 56 53 102 . 59 44 104 69
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  60 49 101 . 63 47 99 64 65 44 101 . 64 45 109 64
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  62 50 100 . 64 48 100 69 64 45 107 . 64 51 103 65
+
+@perc id=f-trance-perc-0052 name="Percussion trance (clap) — 1 voix, 4 mes. #052" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0053 name="Percussion trance (16th) — 1 voix, 2 mes. #053" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 55 106 70 . 49 108 65 . 55 107 60 . 47 104 59
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  59 48 102 60 58 50 101 70 62 53 101 60 57 54 107 69
+
+@perc id=f-trance-perc-0054 name="Percussion trance (16th) — 1 voix, 2 mes. #054" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  58 52 110 . 59 50 107 64 65 51 108 . 62 47 106 63
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 45 108 65 . 53 102 67 . 45 109 60 . 53 109 68
+
+@perc id=f-trance-perc-0055 name="Percussion trance (16th) — 1 voix, 4 mes. #055" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  62 . 102 66 59 46 102 66 65 . 101 64 59 46 109 60
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  55 . 106 64 57 50 100 68 62 . 103 59 61 46 109 64
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  58 51 109 68 60 52 99 62 65 52 100 66 56 51 105 64
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  54 47 109 62 54 44 108 65 54 44 110 67 61 52 104 65
+
+@perc id=f-trance-perc-0056 name="Percussion trance (16th) — 1 voix, 2 mes. #056" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  62 45 99 60 62 53 108 69 60 55 104 65 54 52 99 66
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  56 55 102 . 58 54 100 63 59 48 100 . 60 49 104 62
+
+@perc id=f-trance-perc-0057 name="Percussion trance (16th) — 1 voix, 4 mes. #057" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 54 106 70 . 45 109 61 . 53 107 60 . 46 104 66
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  65 . 100 63 62 54 107 64 55 . 103 62 56 50 107 60
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  62 44 106 . 61 45 109 67 62 50 101 . 57 54 100 68
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  64 47 107 62 58 45 108 60 59 50 101 69 57 54 108 65
+
+@perc id=f-trance-perc-0058 name="Percussion trance (16th) — 1 voix, 2 mes. #058" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 55 107 63 . 47 108 70 . 55 110 65 . 44 103 63
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  56 . 99 59 63 48 109 69 62 . 109 66 65 48 100 62
+
+@perc id=f-trance-perc-0059 name="Percussion trance (16th) — 1 voix, 2 mes. #059" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  64 52 109 . 62 48 99 60 58 51 105 . 59 55 105 59
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  55 54 107 . 54 55 101 61 56 49 103 . 58 46 103 61
+
+@perc id=f-trance-perc-0060 name="Percussion trance (clap) — 1 voix, 4 mes. #060" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0061 name="Percussion trance (clap) — 1 voix, 4 mes. #061" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0062 name="Percussion trance (16th) — 1 voix, 2 mes. #062" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 52 110 63 . 47 102 62 . 49 104 68 . 44 103 66
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  64 55 104 64 55 44 109 64 60 45 108 60 58 49 103 63
+
+@perc id=f-trance-perc-0063 name="Percussion trance (clap) — 1 voix, 4 mes. #063" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0064 name="Percussion trance (clap) — 1 voix, 2 mes. #064" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0065 name="Percussion trance (16th) — 1 voix, 4 mes. #065" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 55 102 62 . 54 107 67 . 49 106 61 . 47 104 67
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  55 . 110 69 57 50 102 69 64 . 107 68 62 48 99 69
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  55 44 103 . 55 44 100 63 63 52 99 . 63 49 107 60
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  60 . 104 64 56 52 109 61 58 . 103 61 63 47 100 61
+
+@perc id=f-trance-perc-0066 name="Percussion trance (clap) — 1 voix, 1 mes. #066" genre=trance bars=1 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0067 name="Percussion trance (16th) — 1 voix, 4 mes. #067" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 55 99 67 . 48 108 62 . 46 103 66 . 54 107 65
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  59 46 103 . 62 44 109 69 60 55 106 . 57 45 108 60
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  56 51 103 . 60 44 99 64 60 52 105 . 64 45 104 66
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  55 47 107 . 63 50 109 60 57 48 103 . 63 46 108 65
+
+@perc id=f-trance-perc-0068 name="Percussion trance (16th) — 1 voix, 2 mes. #068" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 51 99 64 . 53 101 65 . 48 101 66 . 44 103 61
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  65 52 107 . 57 48 106 66 56 54 109 . 65 45 104 59
+
+@perc id=f-trance-perc-0069 name="Percussion trance (16th) — 1 voix, 4 mes. #069" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  56 49 107 . 63 44 107 66 61 51 107 . 54 46 99 66
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  65 48 100 . 59 47 102 62 54 45 105 . 61 46 101 59
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  60 . 110 69 60 51 103 59 56 . 103 66 57 49 110 67
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  60 45 101 61 62 47 104 63 57 48 100 69 57 55 109 67
+
+@perc id=f-trance-perc-0070 name="Percussion trance (clap) — 1 voix, 4 mes. #070" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0071 name="Percussion trance (clap) — 1 voix, 2 mes. #071" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0072 name="Percussion trance (16th) — 1 voix, 2 mes. #072" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  54 . 101 67 60 52 101 64 61 . 100 69 64 46 109 67
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 53 105 64 . 46 103 61 . 54 110 60 . 51 109 60
+
+@perc id=f-trance-perc-0073 name="Percussion trance (16th) — 1 voix, 4 mes. #073" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  59 . 102 66 55 49 104 69 60 . 110 67 56 45 109 68
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  60 50 109 . 56 48 100 68 63 48 106 . 63 47 104 61
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  61 50 102 61 54 48 106 61 58 45 102 60 64 47 102 69
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  60 46 108 63 58 49 110 68 60 49 105 68 55 46 108 64
+
+@perc id=f-trance-perc-0074 name="Percussion trance (16th) — 1 voix, 2 mes. #074" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  64 48 101 . 63 52 110 64 58 47 103 . 60 49 109 69
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  65 . 103 64 63 44 106 61 63 . 107 60 62 45 104 62
+
+@perc id=f-trance-perc-0075 name="Percussion trance (16th) — 1 voix, 2 mes. #075" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  63 48 106 . 55 51 103 64 55 44 101 . 64 46 104 69
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 52 104 68 . 51 109 67 . 45 105 67 . 51 109 65
+
+@perc id=f-trance-perc-0076 name="Percussion trance (16th) — 1 voix, 4 mes. #076" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 48 105 63 . 53 109 67 . 55 103 62 . 46 103 66
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  63 . 105 63 59 55 103 60 65 . 110 59 59 54 106 61
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  58 50 104 67 65 45 103 59 56 51 104 63 57 45 109 67
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  59 . 107 69 54 54 110 67 54 . 109 68 64 46 107 63
+
+@perc id=f-trance-perc-0077 name="Percussion trance (16th) — 1 voix, 4 mes. #077" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 46 101 61 . 48 99 67 . 47 100 64 . 45 103 60
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  59 46 101 66 57 53 105 63 61 47 106 61 56 47 104 66
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 50 103 64 . 53 107 61 . 48 103 69 . 47 107 60
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  65 44 108 . 65 50 110 60 54 49 105 . 63 48 109 64
+
+@perc id=f-trance-perc-0078 name="Percussion trance (16th) — 1 voix, 2 mes. #078" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  58 55 106 . 57 47 104 70 63 44 105 . 60 51 99 61
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 45 103 64 . 49 103 67 . 51 109 67 . 44 103 68
+
+@perc id=f-trance-perc-0079 name="Percussion trance (clap) — 1 voix, 4 mes. #079" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0080 name="Percussion trance (clap) — 1 voix, 4 mes. #080" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0081 name="Percussion trance (16th) — 1 voix, 2 mes. #081" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 47 104 60 . 55 104 64 . 54 105 59 . 44 110 63
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  55 47 110 69 54 47 105 63 63 49 103 70 64 45 101 65
+
+@perc id=f-trance-perc-0082 name="Percussion trance (16th) — 1 voix, 2 mes. #082" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  64 47 109 . 58 52 102 60 60 52 109 . 65 53 110 70
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  62 47 107 . 65 45 103 63 64 54 101 . 63 52 100 62
+
+@perc id=f-trance-perc-0083 name="Percussion trance (16th) — 1 voix, 1 mes. #083" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 48 100 62 . 48 108 64 . 55 104 61 . 47 106 67
+
+@perc id=f-trance-perc-0084 name="Percussion trance (16th) — 1 voix, 4 mes. #084" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  64 49 105 66 59 51 99 59 56 49 109 65 59 52 109 69
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 50 99 68 . 47 100 67 . 49 106 63 . 46 105 59
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  58 49 107 . 57 52 99 66 54 51 110 . 65 45 110 63
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  63 46 104 60 55 48 103 64 54 48 110 59 62 50 99 62
+
+@perc id=f-trance-perc-0085 name="Percussion trance (16th) — 1 voix, 2 mes. #085" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  64 47 104 . 55 53 101 70 65 46 110 . 61 47 109 64
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 44 110 61 . 55 110 59 . 46 110 59 . 49 107 59
+
+@perc id=f-trance-perc-0086 name="Percussion trance (16th) — 1 voix, 1 mes. #086" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 54 110 60 . 53 107 62 . 49 106 68 . 50 108 67
+
+@perc id=f-trance-perc-0087 name="Percussion trance (clap) — 1 voix, 4 mes. #087" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0088 name="Percussion trance (16th) — 1 voix, 2 mes. #088" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 48 100 62 . 49 100 67 . 45 101 63 . 50 99 63
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  63 . 104 69 58 45 107 67 56 . 107 66 64 50 106 70
+
+@perc id=f-trance-perc-0089 name="Percussion trance (16th) — 1 voix, 2 mes. #089" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  65 53 107 . 56 54 107 65 58 47 109 . 63 55 102 63
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  63 55 102 . 63 55 101 61 54 51 110 . 65 45 105 66
+
+@perc id=f-trance-perc-0090 name="Percussion trance (16th) — 1 voix, 2 mes. #090" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  61 50 104 59 59 49 101 59 56 51 101 62 57 50 109 67
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 50 100 60 . 54 107 62 . 48 102 64 . 54 109 70
+
+@perc id=f-trance-perc-0091 name="Percussion trance (clap) — 1 voix, 4 mes. #091" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0092 name="Percussion trance (clap) — 1 voix, 4 mes. #092" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0093 name="Percussion trance (16th) — 1 voix, 1 mes. #093" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  60 . 109 66 65 53 106 69 64 . 101 65 60 55 102 70
+
+@perc id=f-trance-perc-0094 name="Percussion trance (16th) — 1 voix, 4 mes. #094" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 51 104 66 . 45 110 68 . 45 103 59 . 52 107 61
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  58 . 109 70 64 49 109 68 64 . 109 70 55 51 101 69
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  65 54 108 67 62 52 104 63 57 49 106 65 58 51 102 63
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 49 105 69 . 48 104 66 . 47 109 62 . 48 110 59
+
+@perc id=f-trance-perc-0095 name="Percussion trance (16th) — 1 voix, 4 mes. #095" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 44 108 59 . 47 104 65 . 55 107 70 . 55 102 65
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  56 . 105 65 56 55 106 63 61 . 109 63 62 55 99 66
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  59 53 104 64 65 53 101 61 63 53 108 61 59 54 110 65
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  64 . 110 65 64 52 110 60 62 . 108 62 60 48 109 63
+
+@perc id=f-trance-perc-0096 name="Percussion trance (16th) — 1 voix, 2 mes. #096" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  59 49 103 59 61 53 108 69 64 48 109 68 65 50 108 61
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  56 48 104 . 60 52 109 59 57 50 105 . 60 54 101 62
+
+@perc id=f-trance-perc-0097 name="Percussion trance (16th) — 1 voix, 2 mes. #097" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  63 . 99 59 59 55 107 68 54 . 107 59 57 46 99 59
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  54 . 110 66 65 54 109 69 65 . 107 70 63 54 104 67
+
+@perc id=f-trance-perc-0098 name="Percussion trance (16th) — 1 voix, 1 mes. #098" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  57 49 104 . 54 47 110 67 64 49 99 . 57 45 109 67
+
+@perc id=f-trance-perc-0099 name="Percussion trance (clap) — 1 voix, 4 mes. #099" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0100 name="Percussion trance (clap) — 1 voix, 4 mes. #100" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0101 name="Percussion trance (16th) — 1 voix, 2 mes. #101" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  60 . 110 62 61 47 104 67 55 . 101 65 60 54 108 59
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  55 44 100 66 64 54 103 60 65 47 109 61 58 55 101 70
+
+@perc id=f-trance-perc-0102 name="Percussion trance (clap) — 1 voix, 4 mes. #102" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0103 name="Percussion trance (clap) — 1 voix, 4 mes. #103" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0104 name="Percussion trance (16th) — 1 voix, 2 mes. #104" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 50 102 59 . 46 108 61 . 50 109 65 . 53 106 69
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 46 103 65 . 52 105 65 . 55 106 65 . 50 105 68
+
+@perc id=f-trance-perc-0105 name="Percussion trance (16th) — 1 voix, 2 mes. #105" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  59 55 99 64 61 50 104 61 58 47 107 67 63 53 104 62
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  64 . 100 62 58 47 100 60 55 . 107 63 63 49 102 60
+
+@perc id=f-trance-perc-0106 name="Percussion trance (16th) — 1 voix, 4 mes. #106" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  59 48 105 . 60 55 99 70 61 55 110 . 54 53 109 63
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  58 52 105 . 55 55 100 68 60 55 103 . 61 47 105 61
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 54 104 67 . 54 103 61 . 46 110 66 . 55 107 67
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  60 55 104 61 57 51 106 70 57 47 108 69 65 54 100 69
+
+@perc id=f-trance-perc-0107 name="Percussion trance (16th) — 1 voix, 2 mes. #107" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  54 45 104 . 60 55 100 69 65 50 99 . 54 55 107 61
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  62 46 102 62 62 49 102 69 55 54 108 65 65 48 102 62
+
+@perc id=f-trance-perc-0108 name="Percussion trance (16th) — 1 voix, 1 mes. #108" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  54 . 99 60 54 49 108 60 59 . 101 63 56 51 109 59
+
+@perc id=f-trance-perc-0109 name="Percussion trance (clap) — 1 voix, 4 mes. #109" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0110 name="Percussion trance (16th) — 1 voix, 1 mes. #110" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 48 107 66 . 47 102 65 . 54 105 67 . 52 103 69
+
+@perc id=f-trance-perc-0111 name="Percussion trance (16th) — 1 voix, 2 mes. #111" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 54 109 61 . 52 110 67 . 46 105 61 . 54 110 67
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  59 . 104 64 58 45 103 70 55 . 105 66 55 46 106 60
+
+@perc id=f-trance-perc-0112 name="Percussion trance (16th) — 1 voix, 2 mes. #112" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  62 51 109 . 61 55 100 65 64 53 102 . 55 50 100 65
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  58 52 109 70 55 48 109 60 55 49 100 69 64 46 110 62
+
+@perc id=f-trance-perc-0113 name="Percussion trance (16th) — 1 voix, 1 mes. #113" genre=trance bars=1 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  60 . 110 68 63 45 103 59 58 . 109 59 54 50 102 62
+
+@perc id=f-trance-perc-0114 name="Percussion trance (16th) — 1 voix, 4 mes. #114" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 55 100 64 . 45 107 59 . 55 103 70 . 50 104 65
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 44 109 64 . 55 110 59 . 50 104 62 . 47 102 67
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  64 . 108 66 60 53 106 63 60 . 105 70 62 48 101 61
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 53 101 69 . 49 109 61 . 55 100 59 . 55 110 65
+
+@perc id=f-trance-perc-0115 name="Percussion trance (clap) — 1 voix, 4 mes. #115" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0116 name="Percussion trance (clap) — 1 voix, 2 mes. #116" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0117 name="Percussion trance (16th) — 1 voix, 2 mes. #117" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  57 55 102 . 57 52 99 70 56 45 102 . 62 51 106 61
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 46 110 62 . 52 103 68 . 52 103 60 . 49 104 59
+
+@perc id=f-trance-perc-0118 name="Percussion trance (16th) — 1 voix, 2 mes. #118" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  62 52 107 . 59 45 99 64 65 53 110 . 61 44 100 67
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  56 54 106 . 63 48 105 62 55 45 106 . 65 50 109 62
+
+@perc id=f-trance-perc-0119 name="Percussion trance (clap) — 1 voix, 4 mes. #119" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0120 name="Percussion trance (16th) — 1 voix, 2 mes. #120" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  57 53 100 62 57 44 102 61 59 51 109 66 58 47 110 68
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 49 108 60 . 47 107 70 . 47 105 67 . 54 110 66
+
+@perc id=f-trance-perc-0121 name="Percussion trance (16th) — 1 voix, 4 mes. #121" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  65 . 107 65 62 45 110 62 54 . 102 61 58 44 110 61
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 48 107 61 . 53 105 59 . 49 106 60 . 51 107 67
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  63 48 108 62 62 53 106 70 62 51 109 65 65 55 99 59
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  62 45 108 . 64 49 110 68 54 45 103 . 64 53 99 68
+
+@perc id=f-trance-perc-0122 name="Percussion trance (clap) — 1 voix, 4 mes. #122" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0123 name="Percussion trance (16th) — 1 voix, 4 mes. #123" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  54 55 108 70 55 48 107 59 56 46 103 62 59 48 109 62
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  59 53 100 . 54 54 100 59 57 46 105 . 65 45 107 65
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 44 101 70 . 50 108 69 . 51 107 64 . 46 104 65
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  63 49 99 . 59 54 108 69 64 53 107 . 65 53 101 64
+
+@perc id=f-trance-perc-0124 name="Percussion trance (16th) — 1 voix, 4 mes. #124" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  61 52 106 59 59 54 103 62 64 49 103 59 54 51 102 70
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 47 100 66 . 53 110 59 . 50 102 61 . 50 109 60
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 52 105 63 . 54 101 63 . 52 105 70 . 55 102 68
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  62 . 107 68 57 47 108 60 61 . 106 59 63 49 110 60
+
+@perc id=f-trance-perc-0125 name="Percussion trance (16th) — 1 voix, 4 mes. #125" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  56 45 108 70 58 45 109 66 61 50 107 70 58 46 100 60
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  55 . 110 67 56 48 109 65 63 . 104 70 60 55 101 60
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  54 53 103 . 62 55 99 69 62 45 109 . 56 50 105 64
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  59 51 100 68 63 49 105 68 63 49 100 60 61 55 100 65
+
+@perc id=f-trance-perc-0126 name="Percussion trance (clap) — 1 voix, 4 mes. #126" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0127 name="Percussion trance (16th) — 1 voix, 2 mes. #127" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  64 44 99 61 65 50 102 59 62 49 109 61 64 51 108 68
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  58 . 99 60 56 55 101 59 64 . 105 59 63 46 110 59
+
+@perc id=f-trance-perc-0128 name="Percussion trance (16th) — 1 voix, 2 mes. #128" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  63 54 102 60 60 55 109 68 64 49 109 59 65 52 106 69
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  63 44 103 68 57 49 104 65 55 52 107 66 59 48 103 61
+
+@perc id=f-trance-perc-0129 name="Percussion trance (clap) — 1 voix, 4 mes. #129" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0130 name="Percussion trance (clap) — 1 voix, 4 mes. #130" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0131 name="Percussion trance (16th) — 1 voix, 2 mes. #131" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  59 . 105 64 58 51 99 69 61 . 103 61 59 51 105 66
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  55 47 108 . 64 48 100 68 62 50 100 . 63 46 105 66
+
+@perc id=f-trance-perc-0132 name="Percussion trance (clap) — 1 voix, 2 mes. #132" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0133 name="Percussion trance (16th) — 1 voix, 4 mes. #133" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 45 102 66 . 52 110 66 . 51 107 61 . 51 100 60
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  58 48 108 68 60 48 107 61 63 47 108 60 63 46 109 60
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  62 . 109 69 57 48 103 67 61 . 109 59 56 51 103 60
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  60 45 100 69 58 47 101 68 60 54 99 64 54 49 110 60
+
+@perc id=f-trance-perc-0134 name="Percussion trance (16th) — 1 voix, 2 mes. #134" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 50 108 70 . 44 100 60 . 48 103 67 . 51 102 70
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  63 54 106 60 54 55 102 60 59 54 101 70 63 44 110 69
+
+@perc id=f-trance-perc-0135 name="Percussion trance (clap) — 1 voix, 4 mes. #135" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0136 name="Percussion trance (clap) — 1 voix, 4 mes. #136" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0137 name="Percussion trance (clap) — 1 voix, 4 mes. #137" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0138 name="Percussion trance (16th) — 1 voix, 2 mes. #138" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 47 100 62 . 52 108 67 . 44 107 62 . 52 107 61
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  54 . 109 66 60 47 106 64 65 . 100 70 64 49 106 62
+
+@perc id=f-trance-perc-0139 name="Percussion trance (16th) — 1 voix, 4 mes. #139" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  61 . 105 66 65 54 101 67 62 . 108 64 55 47 99 68
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  64 45 105 62 56 44 105 62 57 46 100 67 58 49 107 63
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 44 107 66 . 49 104 59 . 53 108 65 . 55 102 66
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  59 . 103 62 58 53 106 61 56 . 102 68 60 52 107 69
+
+@perc id=f-trance-perc-0140 name="Percussion trance (clap) — 1 voix, 2 mes. #140" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0141 name="Percussion trance (16th) — 1 voix, 4 mes. #141" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  65 49 109 70 60 52 109 62 64 47 108 66 56 53 110 69
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 46 101 69 . 46 109 69 . 52 110 70 . 54 101 60
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  59 . 107 63 62 54 104 70 59 . 109 60 55 55 106 59
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  65 53 102 61 58 45 109 69 65 48 100 64 58 46 102 70
+
+@perc id=f-trance-perc-0142 name="Percussion trance (16th) — 1 voix, 2 mes. #142" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  56 50 100 59 55 53 105 68 62 45 101 59 54 48 110 61
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  56 45 109 63 57 54 103 68 60 54 100 62 61 47 101 62
+
+@perc id=f-trance-perc-0143 name="Percussion trance (16th) — 1 voix, 2 mes. #143" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  55 52 105 65 56 45 107 67 54 49 108 62 59 49 101 64
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 48 100 63 . 51 101 69 . 49 106 70 . 44 110 70
+
+@perc id=f-trance-perc-0144 name="Percussion trance (16th) — 1 voix, 2 mes. #144" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 47 107 63 . 45 109 62 . 50 108 66 . 52 106 69
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 45 105 59 . 50 107 70 . 49 102 67 . 54 100 60
+
+@perc id=f-trance-perc-0145 name="Percussion trance (16th) — 1 voix, 4 mes. #145" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  63 52 102 62 63 53 104 64 57 45 109 68 64 54 104 62
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 54 99 66 . 51 106 62 . 51 100 70 . 46 101 66
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  60 44 101 67 55 45 103 63 63 45 99 70 57 53 107 61
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  62 . 100 62 65 49 108 68 56 . 100 66 64 50 99 70
+
+@perc id=f-trance-perc-0146 name="Percussion trance (clap) — 1 voix, 4 mes. #146" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0147 name="Percussion trance (16th) — 1 voix, 2 mes. #147" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  57 50 106 68 60 51 107 64 58 44 100 60 59 45 105 61
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  65 . 105 69 62 45 100 69 62 . 110 61 61 50 104 65
+
+@perc id=f-trance-perc-0148 name="Percussion trance (16th) — 1 voix, 4 mes. #148" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  62 49 105 63 56 50 99 70 60 48 107 61 61 53 110 61
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  63 52 104 61 57 44 100 66 61 49 105 63 54 54 99 65
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  63 . 100 69 62 54 106 67 65 . 99 70 58 50 109 66
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  55 47 107 64 60 50 105 65 56 55 109 61 56 45 102 68
+
+@perc id=f-trance-perc-0149 name="Percussion trance (16th) — 1 voix, 4 mes. #149" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  65 . 101 67 60 44 103 68 65 . 103 67 58 44 109 70
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  54 54 107 . 58 52 103 70 57 51 109 . 56 49 101 68
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  62 . 109 70 60 50 99 64 56 . 104 66 57 48 110 68
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 54 106 62 . 52 101 66 . 46 109 60 . 47 107 70
+
+@perc id=f-trance-perc-0150 name="Percussion trance (16th) — 1 voix, 2 mes. #150" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 52 109 66 . 50 109 65 . 50 106 60 . 51 108 68
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  60 . 99 64 54 53 106 67 65 . 104 70 58 48 110 67
+
+@perc id=f-trance-perc-0151 name="Percussion trance (16th) — 1 voix, 2 mes. #151" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 47 103 59 . 44 99 64 . 52 104 69 . 48 103 64
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  58 49 105 . 61 47 100 62 55 50 103 . 65 53 110 65
+
+@perc id=f-trance-perc-0152 name="Percussion trance (16th) — 1 voix, 2 mes. #152" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  63 . 105 61 63 51 104 68 63 . 100 63 59 55 107 59
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 47 107 64 . 53 104 61 . 46 104 66 . 47 102 68
+
+@perc id=f-trance-perc-0153 name="Percussion trance (16th) — 1 voix, 2 mes. #153" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  54 45 110 . 61 54 108 59 56 48 101 . 59 54 99 61
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  56 46 106 60 57 51 109 59 64 52 108 59 54 49 104 68
+
+@perc id=f-trance-perc-0154 name="Percussion trance (16th) — 1 voix, 2 mes. #154" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  62 . 99 66 58 53 109 66 58 . 101 62 58 50 101 70
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  54 53 104 62 63 48 104 62 61 47 108 61 60 51 99 68
+
+@perc id=f-trance-perc-0155 name="Percussion trance (16th) — 1 voix, 4 mes. #155" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  60 53 105 59 63 50 110 63 60 50 102 62 60 48 103 70
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 45 110 63 . 53 110 69 . 50 110 69 . 47 109 64
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  64 51 102 . 56 44 107 65 64 47 101 . 55 51 104 66
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  64 55 102 61 54 54 105 70 58 45 107 63 60 46 105 60
+
+@perc id=f-trance-perc-0156 name="Percussion trance (clap) — 1 voix, 4 mes. #156" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0157 name="Percussion trance (16th) — 1 voix, 4 mes. #157" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 54 99 68 . 49 102 68 . 48 99 70 . 45 104 65
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  55 47 99 . 58 44 103 61 61 49 109 . 63 49 109 59
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  57 . 110 69 62 52 107 66 65 . 104 70 62 46 101 59
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  60 52 99 . 59 45 103 65 64 50 99 . 62 45 101 70
+
+@perc id=f-trance-perc-0158 name="Percussion trance (16th) — 1 voix, 2 mes. #158" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  65 . 108 63 65 54 104 66 62 . 102 70 56 52 101 61
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  61 . 106 59 65 55 100 67 57 . 105 67 54 46 100 64
+
+@perc id=f-trance-perc-0159 name="Percussion trance (16th) — 1 voix, 4 mes. #159" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  61 . 103 60 55 51 109 66 56 . 109 64 60 47 104 69
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  56 47 108 . 62 51 104 66 62 55 103 . 65 46 101 68
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  58 . 109 59 56 44 104 61 58 . 103 63 65 52 109 68
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 46 104 69 . 53 109 62 . 50 103 64 . 49 105 66
+
+@perc id=f-trance-perc-0160 name="Percussion trance (clap) — 1 voix, 4 mes. #160" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0161 name="Percussion trance (16th) — 1 voix, 2 mes. #161" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  59 . 108 65 63 44 99 61 64 . 103 68 64 46 107 68
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  61 53 107 61 65 54 107 61 55 46 104 64 64 50 99 67
+
+@perc id=f-trance-perc-0162 name="Percussion trance (16th) — 1 voix, 2 mes. #162" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 46 110 63 . 55 103 68 . 54 108 69 . 49 110 65
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  62 54 105 69 62 49 105 63 57 52 108 64 57 55 100 66
+
+@perc id=f-trance-perc-0163 name="Percussion trance (16th) — 1 voix, 2 mes. #163" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  64 51 105 69 58 51 106 61 57 44 108 67 64 54 105 60
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 44 108 60 . 48 106 68 . 52 105 67 . 51 108 68
+
+@perc id=f-trance-perc-0164 name="Percussion trance (16th) — 1 voix, 4 mes. #164" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  62 55 104 70 58 50 103 70 54 44 104 61 59 54 102 59
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  58 . 102 60 55 47 103 62 64 . 101 66 64 47 106 59
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  64 51 101 68 60 48 103 62 59 48 105 65 54 44 100 66
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  65 55 104 . 59 55 101 70 54 51 110 . 61 49 104 62
+
+@perc id=f-trance-perc-0165 name="Percussion trance (16th) — 1 voix, 2 mes. #165" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  58 . 107 60 60 44 107 62 54 . 106 65 63 52 107 59
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  62 54 104 . 63 52 101 65 64 50 105 . 59 52 106 66
+
+@perc id=f-trance-perc-0166 name="Percussion trance (clap) — 1 voix, 4 mes. #166" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0167 name="Percussion trance (clap) — 1 voix, 4 mes. #167" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0168 name="Percussion trance (16th) — 1 voix, 2 mes. #168" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 48 99 70 . 51 103 68 . 48 107 69 . 54 106 67
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  56 46 100 70 62 55 108 65 58 50 100 69 64 54 104 65
+
+@perc id=f-trance-perc-0169 name="Percussion trance (16th) — 1 voix, 4 mes. #169" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 53 107 61 . 44 105 63 . 45 99 69 . 52 102 68
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  62 52 106 70 63 47 107 65 56 55 101 64 54 47 101 66
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  55 46 110 61 58 48 100 65 59 45 107 59 61 52 110 62
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  57 44 99 . 58 44 99 59 65 54 104 . 56 49 105 59
+
+@perc id=f-trance-perc-0170 name="Percussion trance (16th) — 1 voix, 2 mes. #170" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  54 45 100 . 60 49 106 65 61 46 110 . 58 45 105 70
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 54 109 70 . 52 108 67 . 47 108 66 . 49 101 63
+
+@perc id=f-trance-perc-0171 name="Percussion trance (clap) — 1 voix, 4 mes. #171" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0172 name="Percussion trance (16th) — 1 voix, 4 mes. #172" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  62 44 101 66 58 53 102 63 61 50 107 66 55 49 109 69
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  58 48 109 . 55 52 105 70 60 50 102 . 64 51 100 63
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  60 52 106 65 63 45 110 66 62 45 101 61 59 53 107 66
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  57 . 105 59 59 51 105 68 62 . 101 62 59 55 109 67
+
+@perc id=f-trance-perc-0173 name="Percussion trance (16th) — 1 voix, 4 mes. #173" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  54 54 106 . 55 54 100 69 59 44 103 . 63 53 108 68
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 45 104 69 . 53 108 66 . 47 101 61 . 53 109 65
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  65 51 101 . 64 44 109 61 64 50 110 . 58 47 101 63
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 55 106 61 . 55 101 63 . 53 99 70 . 49 109 62
+
+@perc id=f-trance-perc-0174 name="Percussion trance (16th) — 1 voix, 2 mes. #174" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 55 109 59 . 50 110 68 . 47 109 60 . 44 109 65
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 44 103 62 . 51 105 59 . 50 100 70 . 50 101 60
+
+@perc id=f-trance-perc-0175 name="Percussion trance (clap) — 1 voix, 4 mes. #175" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0176 name="Percussion trance (clap) — 1 voix, 4 mes. #176" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0177 name="Percussion trance (16th) — 1 voix, 4 mes. #177" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 51 110 60 . 53 104 68 . 48 106 67 . 46 99 62
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  59 47 110 . 62 51 105 60 59 44 105 . 57 53 105 62
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 47 108 60 . 55 105 65 . 53 106 69 . 44 105 60
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  54 . 103 61 63 54 105 64 61 . 110 63 55 44 103 60
+
+@perc id=f-trance-perc-0178 name="Percussion trance (16th) — 1 voix, 2 mes. #178" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  65 . 100 60 58 44 100 59 61 . 102 65 54 47 109 60
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  55 49 104 68 60 51 102 70 56 54 103 66 56 53 102 59
+
+@perc id=f-trance-perc-0179 name="Percussion trance (clap) — 1 voix, 4 mes. #179" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0180 name="Percussion trance (16th) — 1 voix, 2 mes. #180" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  65 52 107 . 64 52 105 63 64 44 99 . 57 45 104 70
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  65 46 108 64 54 45 103 65 62 46 108 67 64 47 104 65
+
+@perc id=f-trance-perc-0181 name="Percussion trance (16th) — 1 voix, 2 mes. #181" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  59 47 110 66 56 45 105 59 63 48 100 68 63 55 100 63
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  62 48 107 . 64 44 103 61 59 53 103 . 59 49 100 65
+
+@perc id=f-trance-perc-0182 name="Percussion trance (16th) — 1 voix, 4 mes. #182" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 52 108 61 . 44 105 66 . 44 108 67 . 49 102 59
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 44 107 62 . 44 108 59 . 45 110 64 . 53 107 64
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  60 45 99 59 64 54 104 60 61 46 110 66 58 49 110 66
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  55 . 104 67 59 53 106 64 63 . 103 65 58 48 110 66
+
+@perc id=f-trance-perc-0183 name="Percussion trance (16th) — 1 voix, 4 mes. #183" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  65 52 100 . 59 47 99 64 56 48 103 . 56 52 103 63
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  57 53 107 59 59 49 104 67 56 44 108 61 58 50 105 67
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 45 105 70 . 48 100 67 . 54 100 70 . 49 100 67
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  57 48 109 . 57 44 106 63 63 46 109 . 65 48 103 67
+
+@perc id=f-trance-perc-0184 name="Percussion trance (16th) — 1 voix, 4 mes. #184" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  65 . 109 67 65 48 110 66 59 . 108 60 55 44 102 69
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 50 104 60 . 55 105 65 . 51 107 59 . 48 100 67
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  57 55 105 64 56 49 99 64 59 48 103 69 54 49 101 70
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  60 . 108 68 60 51 108 69 59 . 108 63 65 53 99 67
+
+@perc id=f-trance-perc-0185 name="Percussion trance (clap) — 1 voix, 4 mes. #185" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0186 name="Percussion trance (16th) — 1 voix, 4 mes. #186" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 44 103 60 . 52 107 61 . 50 104 60 . 50 102 59
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  56 55 104 . 57 50 102 62 61 48 108 . 58 48 103 70
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  57 53 105 64 65 46 107 61 62 53 104 64 64 45 99 68
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 51 108 63 . 52 105 60 . 50 102 67 . 54 110 68
+
+@perc id=f-trance-perc-0187 name="Percussion trance (16th) — 1 voix, 4 mes. #187" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  61 . 101 66 54 51 100 59 59 . 103 66 61 53 105 65
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  61 53 110 70 55 49 99 70 63 47 110 62 62 47 109 60
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  62 48 103 69 57 49 99 64 63 45 105 62 55 46 110 69
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  56 50 105 . 64 51 103 61 65 54 105 . 56 53 100 70
+
+@perc id=f-trance-perc-0188 name="Percussion trance (16th) — 1 voix, 2 mes. #188" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  57 . 101 69 55 51 103 69 57 . 102 62 54 54 99 59
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 44 109 66 . 44 110 67 . 47 101 61 . 46 100 62
+
+@perc id=f-trance-perc-0189 name="Percussion trance (16th) — 1 voix, 2 mes. #189" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 48 110 69 . 54 103 63 . 52 106 61 . 55 100 67
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 50 102 62 . 55 100 60 . 46 108 64 . 46 100 67
+
+@perc id=f-trance-perc-0190 name="Percussion trance (clap) — 1 voix, 4 mes. #190" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0191 name="Percussion trance (16th) — 1 voix, 4 mes. #191" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 51 109 59 . 51 101 68 . 47 107 66 . 46 110 67
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  54 48 102 67 65 46 107 62 54 49 110 59 54 51 104 60
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  63 52 99 63 54 48 104 67 62 49 100 64 54 49 104 60
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  56 44 101 . 56 45 106 66 54 44 100 . 57 45 108 66
+
+@perc id=f-trance-perc-0192 name="Percussion trance (16th) — 1 voix, 2 mes. #192" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  62 . 108 68 64 51 101 67 56 . 104 69 63 52 109 64
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  57 50 105 64 62 48 110 65 65 46 106 69 58 47 104 65
+
+@perc id=f-trance-perc-0193 name="Percussion trance (clap) — 1 voix, 4 mes. #193" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0194 name="Percussion trance (clap) — 1 voix, 4 mes. #194" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0195 name="Percussion trance (clap) — 1 voix, 4 mes. #195" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0196 name="Percussion trance (16th) — 1 voix, 4 mes. #196" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  60 44 103 64 65 50 99 59 55 54 106 68 65 49 110 62
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  54 46 109 . 57 49 103 60 62 49 109 . 60 44 107 67
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  61 . 108 65 63 50 103 67 60 . 110 61 58 50 102 61
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 51 106 69 . 48 104 60 . 53 105 64 . 47 99 64
+
+@perc id=f-trance-perc-0197 name="Percussion trance (16th) — 1 voix, 4 mes. #197" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  55 . 108 64 55 49 107 61 61 . 106 69 56 48 110 64
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  65 . 100 68 64 48 101 70 59 . 101 59 64 53 103 70
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  62 50 103 65 59 46 99 62 54 47 108 60 59 54 101 66
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  60 48 107 . 54 49 103 65 63 47 104 . 58 47 105 69
+
+@perc id=f-trance-perc-0198 name="Percussion trance (16th) — 1 voix, 2 mes. #198" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  65 . 109 61 64 48 109 66 65 . 100 62 54 49 104 59
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  65 46 106 . 64 51 103 62 56 55 110 . 64 48 107 60
+
+@perc id=f-trance-perc-0199 name="Percussion trance (16th) — 1 voix, 4 mes. #199" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  58 48 99 68 64 50 107 59 64 53 105 60 59 46 107 66
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  56 47 103 . 63 44 103 67 59 49 109 . 61 44 101 63
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 50 109 65 . 52 103 64 . 51 108 62 . 51 107 67
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 49 103 61 . 46 101 59 . 46 105 64 . 55 110 66
+
+@perc id=f-trance-perc-0200 name="Percussion trance (clap) — 1 voix, 4 mes. #200" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0201 name="Percussion trance (16th) — 1 voix, 4 mes. #201" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  56 54 106 63 65 55 110 64 64 50 102 64 55 50 100 59
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  64 . 103 66 65 48 104 62 65 . 110 68 62 51 103 59
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  60 . 109 63 54 54 108 66 65 . 101 64 58 55 110 66
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  55 55 105 63 55 51 101 64 60 51 105 59 64 46 105 64
+
+@perc id=f-trance-perc-0202 name="Percussion trance (clap) — 1 voix, 4 mes. #202" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0203 name="Percussion trance (clap) — 1 voix, 4 mes. #203" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0204 name="Percussion trance (clap) — 1 voix, 4 mes. #204" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0205 name="Percussion trance (clap) — 1 voix, 4 mes. #205" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0206 name="Percussion trance (clap) — 1 voix, 4 mes. #206" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0207 name="Percussion trance (16th) — 1 voix, 4 mes. #207" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 51 108 62 . 48 108 67 . 48 105 61 . 49 105 61
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  57 52 107 60 56 54 107 68 62 44 108 63 58 50 108 61
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  56 44 110 60 56 55 102 67 57 52 106 61 64 53 101 64
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  57 45 107 61 59 54 101 64 61 46 105 68 57 46 103 64
+
+@perc id=f-trance-perc-0208 name="Percussion trance (16th) — 1 voix, 2 mes. #208" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  55 45 107 65 64 44 102 67 58 53 108 69 64 52 102 59
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  60 48 100 61 58 46 109 61 64 49 109 67 57 48 104 70
+
+@perc id=f-trance-perc-0209 name="Percussion trance (16th) — 1 voix, 4 mes. #209" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  56 51 103 69 65 54 109 69 55 44 109 70 54 55 100 63
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  60 54 106 . 65 47 103 66 65 46 108 . 54 52 106 63
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  63 . 106 65 64 47 106 59 61 . 105 67 62 47 107 67
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  58 . 102 67 65 53 99 60 55 . 104 64 57 54 100 70
+
+@perc id=f-trance-perc-0210 name="Percussion trance (16th) — 1 voix, 2 mes. #210" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  62 51 101 66 57 48 108 66 60 50 106 61 57 53 104 60
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  62 51 103 62 59 54 99 63 61 53 109 68 56 50 102 65
+
+@perc id=f-trance-perc-0211 name="Percussion trance (16th) — 1 voix, 2 mes. #211" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  60 . 99 68 62 50 100 64 60 . 108 67 61 53 101 60
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  59 . 101 70 62 46 102 68 65 . 106 70 64 54 104 70
+
+@perc id=f-trance-perc-0212 name="Percussion trance (16th) — 1 voix, 4 mes. #212" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  63 46 110 . 60 51 106 65 56 55 108 . 62 55 101 61
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  58 45 100 67 62 50 107 60 58 51 106 62 61 54 105 63
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 54 108 66 . 49 105 63 . 44 101 67 . 47 104 59
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  57 51 110 . 58 51 102 62 64 47 106 . 55 54 99 63
+
+@perc id=f-trance-perc-0213 name="Percussion trance (16th) — 1 voix, 2 mes. #213" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  54 54 101 66 63 44 102 67 64 45 106 64 56 50 99 66
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  60 . 107 69 60 44 106 68 54 . 105 63 56 52 99 60
+
+@perc id=f-trance-perc-0214 name="Percussion trance (16th) — 1 voix, 4 mes. #214" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  61 51 99 63 62 52 110 59 61 45 110 62 65 54 101 68
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  61 51 103 . 65 51 106 59 55 46 110 . 62 52 110 66
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  59 44 110 . 59 48 105 61 58 45 109 . 62 52 104 59
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 53 100 69 . 55 110 63 . 53 102 59 . 49 107 60
+
+@perc id=f-trance-perc-0215 name="Percussion trance (clap) — 1 voix, 2 mes. #215" genre=trance bars=2 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0216 name="Percussion trance (clap) — 1 voix, 4 mes. #216" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0217 name="Percussion trance (16th) — 1 voix, 4 mes. #217" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  63 50 99 63 65 53 101 70 61 52 107 61 63 55 106 64
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  57 52 108 . 59 53 107 68 65 51 103 . 65 54 104 64
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  59 47 105 . 59 45 104 65 54 51 101 . 60 48 107 66
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  54 . 106 69 56 54 107 60 64 . 105 69 62 47 106 61
+
+@perc id=f-trance-perc-0218 name="Percussion trance (16th) — 1 voix, 4 mes. #218" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  64 44 104 69 54 45 108 63 60 44 106 67 56 50 108 67
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  58 55 109 63 60 48 103 66 63 47 101 70 55 48 106 59
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  64 44 100 . 61 50 102 68 61 49 109 . 64 49 99 61
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 49 105 62 . 49 104 67 . 52 110 65 . 55 101 59
+
+@perc id=f-trance-perc-0219 name="Percussion trance (16th) — 1 voix, 4 mes. #219" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 48 107 67 . 51 103 65 . 44 107 66 . 55 105 61
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  57 49 109 . 64 50 109 66 54 44 106 . 63 46 107 61
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  63 46 105 59 58 49 106 65 60 53 104 68 61 49 100 62
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 47 108 70 . 44 109 59 . 49 102 70 . 44 102 61
+
+@perc id=f-trance-perc-0220 name="Percussion trance (16th) — 1 voix, 4 mes. #220" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  58 . 109 63 57 44 107 59 56 . 109 60 58 55 106 62
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  55 51 106 70 62 52 106 62 56 44 107 63 59 50 102 60
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  65 50 110 . 55 52 105 70 63 48 100 . 60 50 106 67
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 52 99 68 . 47 103 70 . 49 107 65 . 48 99 59
+
+@perc id=f-trance-perc-0221 name="Percussion trance (16th) — 1 voix, 4 mes. #221" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  61 48 99 . 59 53 108 67 64 52 99 . 57 50 106 69
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  64 54 102 . 58 46 106 62 62 53 108 . 64 49 105 61
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  54 55 100 61 58 46 110 68 58 48 100 65 59 45 108 66
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  62 . 109 63 65 49 107 64 63 . 108 66 56 51 99 62
+
+@perc id=f-trance-perc-0222 name="Percussion trance (16th) — 1 voix, 4 mes. #222" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  64 . 103 59 54 52 105 63 58 . 102 64 65 50 102 63
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  57 . 106 69 55 45 110 68 61 . 109 60 65 49 110 61
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  58 . 103 63 56 48 106 67 63 . 104 60 63 50 108 68
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 53 103 67 . 49 107 66 . 51 108 69 . 52 108 64
+
+@perc id=f-trance-perc-0223 name="Percussion trance (clap) — 1 voix, 4 mes. #223" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0224 name="Percussion trance (16th) — 1 voix, 4 mes. #224" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  55 52 110 . 62 45 108 66 65 55 109 . 61 47 102 62
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  57 50 103 62 57 44 102 69 60 45 110 60 59 54 101 60
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  60 . 101 68 63 48 100 67 57 . 110 66 55 53 105 70
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  57 45 110 60 58 53 110 68 65 49 101 62 60 48 106 70
+
+@perc id=f-trance-perc-0225 name="Percussion trance (16th) — 1 voix, 2 mes. #225" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 54 99 67 . 52 110 67 . 55 108 70 . 55 103 66
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 47 100 63 . 50 103 59 . 53 105 60 . 53 100 64
+
+@perc id=f-trance-perc-0226 name="Percussion trance (clap) — 1 voix, 4 mes. #226" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+
+@perc id=f-trance-perc-0227 name="Percussion trance (16th) — 1 voix, 4 mes. #227" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  58 . 101 65 58 45 103 62 59 . 103 62 60 52 99 66
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  57 . 106 62 64 48 103 64 59 . 110 63 54 51 105 60
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 49 108 62 . 53 100 61 . 55 105 63 . 49 103 70
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  62 . 99 59 61 52 110 67 65 . 107 67 63 46 104 65
+
+@perc id=f-trance-perc-0228 name="Percussion trance (16th) — 1 voix, 2 mes. #228" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 44 99 68 . 49 99 70 . 45 101 67 . 55 103 59
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 47 99 62 . 54 104 66 . 48 101 60 . 53 103 60
+
+@perc id=f-trance-perc-0229 name="Percussion trance (16th) — 1 voix, 4 mes. #229" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 46 106 63 . 55 99 70 . 53 110 65 . 54 109 70
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  55 51 101 66 59 44 99 64 57 49 105 61 62 45 100 64
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  62 49 101 68 55 53 108 66 57 49 102 59 56 50 105 70
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  64 44 103 65 54 51 99 64 63 44 103 63 59 50 103 69
+
+@perc id=f-trance-perc-0230 name="Percussion trance (16th) — 1 voix, 2 mes. #230" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  58 49 106 . 63 45 104 69 61 47 105 . 57 44 105 64
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  61 . 107 61 58 55 103 65 60 . 107 61 60 48 99 60
+
+@perc id=f-trance-perc-0231 name="Percussion trance (clap) — 1 voix, 4 mes. #231" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+
+@perc id=f-trance-perc-0232 name="Percussion trance (16th) — 1 voix, 4 mes. #232" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 44 108 64 . 44 105 70 . 48 108 66 . 51 110 64
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  54 55 110 . 59 55 105 68 60 44 106 . 61 53 105 61
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  59 . 110 67 62 53 107 70 64 . 109 64 63 50 99 67
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  60 . 102 67 63 45 99 63 57 . 99 69 59 52 109 65
+
+@perc id=f-trance-perc-0233 name="Percussion trance (16th) — 1 voix, 4 mes. #233" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  58 51 104 61 58 47 104 64 54 50 106 67 59 46 104 66
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  61 . 100 59 58 44 106 68 61 . 108 60 57 53 103 63
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 46 108 69 . 52 105 69 . 45 100 61 . 47 100 69
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  54 . 107 69 58 50 100 62 59 . 103 66 61 51 100 70
+
+@perc id=f-trance-perc-0234 name="Percussion trance (clap) — 1 voix, 4 mes. #234" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0235 name="Percussion trance (16th) — 1 voix, 2 mes. #235" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  63 54 100 . 64 48 105 63 65 50 107 . 58 49 102 66
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  59 50 108 . 65 46 101 62 59 54 103 . 62 55 106 64
+
+@perc id=f-trance-perc-0236 name="Percussion trance (16th) — 1 voix, 2 mes. #236" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 50 109 60 . 55 102 62 . 48 99 59 . 55 100 61
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  54 50 104 66 60 46 109 63 58 52 106 59 54 46 109 60
+
+@perc id=f-trance-perc-0237 name="Percussion trance (16th) — 1 voix, 4 mes. #237" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  63 . 105 66 59 50 102 60 58 . 105 61 63 54 108 61
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  60 . 103 61 56 48 107 62 57 . 108 65 54 44 101 70
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  57 44 104 . 65 48 100 65 58 50 102 . 57 50 110 64
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  64 . 100 69 60 46 100 66 62 . 99 61 65 53 99 62
+
+@perc id=f-trance-perc-0238 name="Percussion trance (16th) — 1 voix, 2 mes. #238" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  63 51 106 . 59 49 110 62 63 48 101 . 58 47 99 69
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 55 106 66 . 48 105 70 . 45 105 60 . 51 101 62
+
+@perc id=f-trance-perc-0239 name="Percussion trance (clap) — 1 voix, 4 mes. #239" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+
+@perc id=f-trance-perc-0240 name="Percussion trance (clap) — 1 voix, 4 mes. #240" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0241 name="Percussion trance (16th) — 1 voix, 4 mes. #241" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  62 46 105 . 64 51 102 65 63 51 106 . 57 47 99 69
+N  CY . CY CY CY CY CY CY CY . CY CY CY CY CY CY
+V  57 . 104 70 58 48 104 69 64 . 110 67 58 47 105 65
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  64 49 106 . 55 44 108 61 63 53 104 . 55 53 100 66
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  65 47 110 66 60 45 104 64 62 47 102 68 63 54 102 67
+
+@perc id=f-trance-perc-0242 name="Percussion trance (16th) — 1 voix, 4 mes. #242" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  58 54 109 65 64 52 107 65 61 48 108 68 62 46 99 61
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  56 54 106 68 55 48 101 64 63 47 107 62 59 44 100 61
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  56 44 101 66 54 54 103 64 58 45 108 62 65 55 103 66
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  63 55 110 . 56 48 110 61 55 52 107 . 65 52 99 69
+
+@perc id=f-trance-perc-0243 name="Percussion trance (16th) — 1 voix, 2 mes. #243" genre=trance bars=2 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  65 . 109 62 60 51 103 61 60 . 100 59 55 53 108 62
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 44 106 64 . 50 100 66 . 52 107 59 . 55 110 60
+
+@perc id=f-trance-perc-0244 name="Percussion trance (16th) — 1 voix, 4 mes. #244" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  64 48 103 60 61 51 104 66 59 51 105 66 54 54 106 69
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  54 53 102 . 62 55 110 66 58 54 106 . 59 44 100 59
+N  CH . CH CH CH CH CH CH CH . CH CH CH CH CH CH
+V  63 . 100 62 63 44 106 66 63 . 105 64 63 46 105 66
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 45 107 63 . 45 107 68 . 45 110 68 . 52 101 61
+
+@perc id=f-trance-perc-0245 name="Percussion trance (16th) — 1 voix, 4 mes. #245" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  61 45 105 . 63 47 105 66 56 48 104 . 60 47 110 65
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  59 48 104 63 64 53 100 66 64 51 103 61 54 47 101 69
+N  SH . SH SH SH SH SH SH SH . SH SH SH SH SH SH
+V  56 . 109 70 60 54 99 62 61 . 105 60 60 50 107 66
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  57 47 110 65 65 53 100 62 65 53 107 65 55 45 100 64
+
+@perc id=f-trance-perc-0246 name="Percussion trance (16th) — 1 voix, 4 mes. #246" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 44 102 62 . 48 106 64 . 48 106 70 . 52 108 70
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  57 48 110 60 57 47 104 68 57 49 109 60 63 48 101 65
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  64 50 108 . 57 49 108 59 62 55 110 . 58 53 110 67
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  65 53 106 . 65 55 101 61 56 54 100 . 65 47 99 67
+
+@perc id=f-trance-perc-0247 name="Percussion trance (clap) — 1 voix, 4 mes. #247" genre=trance bars=4 steps=16 voices=1 tags=trance-clap src=gen-fill
+N  . . . . CL . . . . . . CL CL . . .
+V  . . . . 115 . . . . . . 115 115 . . .
+N  . . . . CL . . . . . . . CL . . CL
+V  . . . . 115 . . . . . . . 115 . . 115
+N  . . . . CL . . . . . . . CL . . .
+V  . . . . 115 . . . . . . . 115 . . .
+N  . . . . CL . . CL . . . . CL . . .
+V  . . . . 115 . . 115 . . . . 115 . . .
+
+@perc id=f-trance-perc-0248 name="Percussion trance (16th) — 1 voix, 4 mes. #248" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  64 48 107 . 64 45 107 62 63 44 106 . 63 46 108 66
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 55 106 60 . 48 110 61 . 45 109 68 . 44 101 61
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 46 107 59 . 49 100 59 . 44 103 69 . 52 107 60
+N  . CY CY CY . CY CY CY . CY CY CY . CY CY CY
+V  . 52 110 61 . 51 105 60 . 52 103 67 . 50 101 68
+
+@perc id=f-trance-perc-0249 name="Percussion trance (16th) — 1 voix, 4 mes. #249" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  62 49 102 . 54 47 104 69 64 47 108 . 65 54 103 66
+N  SH SH SH . SH SH SH SH SH SH SH . SH SH SH SH
+V  60 54 107 . 65 47 107 69 55 54 102 . 55 45 99 70
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  54 47 103 70 59 50 105 61 58 44 99 61 58 44 100 68
+N  . CH CH CH . CH CH CH . CH CH CH . CH CH CH
+V  . 45 105 61 . 48 106 60 . 55 109 67 . 44 108 63
+
+@perc id=f-trance-perc-0250 name="Percussion trance (16th) — 1 voix, 4 mes. #250" genre=trance bars=4 steps=16 voices=1 tags=trance-16th src=gen-fill
+N  . SH SH SH . SH SH SH . SH SH SH . SH SH SH
+V  . 51 109 66 . 44 110 69 . 45 104 60 . 52 107 70
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  56 44 99 70 55 54 104 66 57 48 99 65 54 52 103 60
+N  CY CY CY . CY CY CY CY CY CY CY . CY CY CY CY
+V  64 44 106 . 56 54 104 62 55 52 103 . 55 48 100 63
+N  CH CH CH . CH CH CH CH CH CH CH . CH CH CH CH
+V  63 47 109 . 61 48 105 67 54 50 102 . 54 47 102 70
+
+@melody id=f-rave-stab-0001 name="Stab rave — 3 voix, 2 mes. #001" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  20 . . 20 . . 20 . 20 . . 20 . . 20 .
+V  96 . . 101 . . 98 . 106 . . 115 . . 101 .
+N2 24 . . 24 . . 24 . 24 . . 24 . . 24 .
+V2 119 . . 108 . . 108 . 113 . . 113 . . 106 .
+N3 27 . . 27 . . 27 . 27 . . 27 . . 27 .
+V3 116 . . 117 . . 104 . 96 . . 109 . . 106 .
+N  20 . . 20 . . 20 . 20 . . 20 . . 20 .
+V  112 . . 110 . . 118 . 95 . . 105 . . 118 .
+N2 24 . . 24 . . 24 . 24 . . 24 . . 24 .
+V2 98 . . 113 . . 96 . 117 . . 114 . . 99 .
+N3 27 . . 27 . . 27 . 27 . . 27 . . 27 .
+V3 95 . . 115 . . 96 . 105 . . 116 . . 112 .
+
+@melody id=f-rave-stab-0002 name="Stab rave — 3 voix, 2 mes. #002" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  . . 20 . . . 20 . . . 20 . . . 20 .
+V  . . 109 . . . 107 . . . 95 . . . 99 .
+N2 . . 24 . . . 24 . . . 24 . . . 24 .
+V2 . . 96 . . . 115 . . . 116 . . . 110 .
+N3 . . 27 . . . 27 . . . 27 . . . 27 .
+V3 . . 112 . . . 98 . . . 107 . . . 106 .
+N  . . 20 . . . 20 . . . 20 . . . 20 .
+V  . . 113 . . . 100 . . . 114 . . . 100 .
+N2 . . 24 . . . 24 . . . 24 . . . 24 .
+V2 . . 97 . . . 110 . . . 100 . . . 105 .
+N3 . . 27 . . . 27 . . . 27 . . . 27 .
+V3 . . 103 . . . 112 . . . 109 . . . 103 .
+
+@melody id=f-rave-stab-0003 name="Stab rave — 3 voix, 2 mes. #003" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  20 . . 20 . . 20 . . . 20 . . . . .
+V  105 . . 111 . . 118 . . . 103 . . . . .
+N2 24 . . 24 . . 24 . . . 24 . . . . .
+V2 116 . . 108 . . 100 . . . 119 . . . . .
+N3 27 . . 27 . . 27 . . . 27 . . . . .
+V3 104 . . 100 . . 113 . . . 107 . . . . .
+N  20 . . 20 . . 20 . . . 20 . . . . .
+V  109 . . 119 . . 119 . . . 118 . . . . .
+N2 24 . . 24 . . 24 . . . 24 . . . . .
+V2 111 . . 118 . . 103 . . . 98 . . . . .
+N3 27 . . 27 . . 27 . . . 27 . . . . .
+V3 108 . . 105 . . 110 . . . 105 . . . . .
+
+@melody id=f-rave-stab-0004 name="Stab rave — 3 voix, 2 mes. #004" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  17 . . 17 . . 17 . . . 17 . . . . .
+V  114 . . 100 . . 96 . . . 95 . . . . .
+N2 20 . . 20 . . 20 . . . 20 . . . . .
+V2 114 . . 119 . . 102 . . . 118 . . . . .
+N3 24 . . 24 . . 24 . . . 24 . . . . .
+V3 119 . . 100 . . 114 . . . 107 . . . . .
+N  17 . . 17 . . 17 . . . 17 . . . . .
+V  108 . . 112 . . 100 . . . 95 . . . . .
+N2 20 . . 20 . . 20 . . . 20 . . . . .
+V2 102 . . 109 . . 112 . . . 111 . . . . .
+N3 24 . . 24 . . 24 . . . 24 . . . . .
+V3 113 . . 117 . . 118 . . . 116 . . . . .
+
+@melody id=f-rave-stab-0005 name="Stab rave — 3 voix, 1 mes. #005" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  20 . . . . . 20 . . . . . 20 . . .
+V  113 . . . . . 118 . . . . . 104 . . .
+N2 24 . . . . . 24 . . . . . 24 . . .
+V2 113 . . . . . 116 . . . . . 97 . . .
+N3 27 . . . . . 27 . . . . . 27 . . .
+V3 106 . . . . . 96 . . . . . 116 . . .
+
+@melody id=f-rave-stab-0006 name="Stab rave — 3 voix, 2 mes. #006" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  12 . . . . . 12 . . . . . 12 . . .
+V  97 . . . . . 105 . . . . . 117 . . .
+N2 15 . . . . . 15 . . . . . 15 . . .
+V2 98 . . . . . 102 . . . . . 119 . . .
+N3 19 . . . . . 19 . . . . . 19 . . .
+V3 107 . . . . . 107 . . . . . 101 . . .
+N  12 . . . . . 12 . . . . . 12 . . .
+V  101 . . . . . 97 . . . . . 104 . . .
+N2 15 . . . . . 15 . . . . . 15 . . .
+V2 109 . . . . . 119 . . . . . 106 . . .
+N3 19 . . . . . 19 . . . . . 19 . . .
+V3 112 . . . . . 104 . . . . . 99 . . .
+
+@melody id=f-rave-stab-0007 name="Stab rave — 3 voix, 1 mes. #007" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  . . 17 . . . 17 . . . 17 . . . 17 .
+V  . . 100 . . . 97 . . . 100 . . . 119 .
+N2 . . 20 . . . 20 . . . 20 . . . 20 .
+V2 . . 99 . . . 105 . . . 118 . . . 118 .
+N3 . . 24 . . . 24 . . . 24 . . . 24 .
+V3 . . 110 . . . 117 . . . 117 . . . 109 .
+
+@melody id=f-rave-stab-0008 name="Stab rave — 3 voix, 1 mes. #008" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  12 . . . . . 12 . . . . . 12 . . .
+V  119 . . . . . 119 . . . . . 115 . . .
+N2 15 . . . . . 15 . . . . . 15 . . .
+V2 100 . . . . . 110 . . . . . 113 . . .
+N3 19 . . . . . 19 . . . . . 19 . . .
+V3 116 . . . . . 114 . . . . . 96 . . .
+
+@melody id=f-rave-stab-0009 name="Stab rave — 3 voix, 2 mes. #009" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  . . 17 . . . 17 . . . 17 . . . 17 .
+V  . . 118 . . . 95 . . . 109 . . . 104 .
+N2 . . 20 . . . 20 . . . 20 . . . 20 .
+V2 . . 112 . . . 113 . . . 111 . . . 106 .
+N3 . . 24 . . . 24 . . . 24 . . . 24 .
+V3 . . 97 . . . 100 . . . 114 . . . 111 .
+N  . . 17 . . . 17 . . . 17 . . . 17 .
+V  . . 112 . . . 110 . . . 108 . . . 119 .
+N2 . . 20 . . . 20 . . . 20 . . . 20 .
+V2 . . 105 . . . 98 . . . 114 . . . 114 .
+N3 . . 24 . . . 24 . . . 24 . . . 24 .
+V3 . . 105 . . . 112 . . . 119 . . . 117 .
+
+@melody id=f-rave-stab-0010 name="Stab rave — 3 voix, 1 mes. #010" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  12 . . 12 . . 12 . 12 . . 12 . . 12 .
+V  98 . . 116 . . 100 . 111 . . 96 . . 102 .
+N2 15 . . 15 . . 15 . 15 . . 15 . . 15 .
+V2 119 . . 117 . . 119 . 107 . . 99 . . 100 .
+N3 19 . . 19 . . 19 . 19 . . 19 . . 19 .
+V3 109 . . 112 . . 109 . 117 . . 98 . . 104 .
+
+@melody id=f-rave-stab-0011 name="Stab rave — 3 voix, 2 mes. #011" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  12 . . 12 . . . 12 . . 12 . . 12 . .
+V  109 . . 103 . . . 117 . . 102 . . 118 . .
+N2 15 . . 15 . . . 15 . . 15 . . 15 . .
+V2 97 . . 99 . . . 117 . . 103 . . 115 . .
+N3 19 . . 19 . . . 19 . . 19 . . 19 . .
+V3 103 . . 95 . . . 102 . . 98 . . 102 . .
+N  12 . . 12 . . . 12 . . 12 . . 12 . .
+V  105 . . 118 . . . 108 . . 108 . . 112 . .
+N2 15 . . 15 . . . 15 . . 15 . . 15 . .
+V2 95 . . 115 . . . 98 . . 118 . . 104 . .
+N3 19 . . 19 . . . 19 . . 19 . . 19 . .
+V3 104 . . 101 . . . 118 . . 113 . . 107 . .
+
+@melody id=f-rave-stab-0012 name="Stab rave — 3 voix, 2 mes. #012" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  12 . . 12 . . 12 . . . 12 . . . . .
+V  107 . . 98 . . 119 . . . 112 . . . . .
+N2 15 . . 15 . . 15 . . . 15 . . . . .
+V2 115 . . 103 . . 115 . . . 118 . . . . .
+N3 19 . . 19 . . 19 . . . 19 . . . . .
+V3 98 . . 95 . . 116 . . . 117 . . . . .
+N  12 . . 12 . . 12 . . . 12 . . . . .
+V  111 . . 97 . . 105 . . . 97 . . . . .
+N2 15 . . 15 . . 15 . . . 15 . . . . .
+V2 106 . . 105 . . 107 . . . 101 . . . . .
+N3 19 . . 19 . . 19 . . . 19 . . . . .
+V3 108 . . 116 . . 108 . . . 96 . . . . .
+
+@melody id=f-rave-stab-0013 name="Stab rave — 3 voix, 2 mes. #013" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  20 . . . . . 20 . . . . . 20 . . .
+V  96 . . . . . 119 . . . . . 104 . . .
+N2 24 . . . . . 24 . . . . . 24 . . .
+V2 100 . . . . . 115 . . . . . 97 . . .
+N3 27 . . . . . 27 . . . . . 27 . . .
+V3 96 . . . . . 113 . . . . . 110 . . .
+N  20 . . . . . 20 . . . . . 20 . . .
+V  111 . . . . . 103 . . . . . 98 . . .
+N2 24 . . . . . 24 . . . . . 24 . . .
+V2 103 . . . . . 114 . . . . . 115 . . .
+N3 27 . . . . . 27 . . . . . 27 . . .
+V3 117 . . . . . 102 . . . . . 111 . . .
+
+@melody id=f-rave-stab-0014 name="Stab rave — 3 voix, 1 mes. #014" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  12 . . 12 . . 12 . . . 12 . . . . .
+V  115 . . 119 . . 98 . . . 112 . . . . .
+N2 15 . . 15 . . 15 . . . 15 . . . . .
+V2 112 . . 113 . . 118 . . . 119 . . . . .
+N3 19 . . 19 . . 19 . . . 19 . . . . .
+V3 106 . . 100 . . 108 . . . 115 . . . . .
+
+@melody id=f-rave-stab-0015 name="Stab rave — 3 voix, 1 mes. #015" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  20 . . 20 . . 20 . . . 20 . . . . .
+V  97 . . 117 . . 114 . . . 95 . . . . .
+N2 24 . . 24 . . 24 . . . 24 . . . . .
+V2 115 . . 110 . . 111 . . . 110 . . . . .
+N3 27 . . 27 . . 27 . . . 27 . . . . .
+V3 101 . . 117 . . 106 . . . 97 . . . . .
+
+@melody id=f-rave-stab-0016 name="Stab rave — 3 voix, 1 mes. #016" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  12 . . 12 . . . 12 . . 12 . . 12 . .
+V  103 . . 112 . . . 101 . . 100 . . 99 . .
+N2 15 . . 15 . . . 15 . . 15 . . 15 . .
+V2 99 . . 110 . . . 114 . . 102 . . 116 . .
+N3 19 . . 19 . . . 19 . . 19 . . 19 . .
+V3 104 . . 113 . . . 118 . . 102 . . 116 . .
+
+@melody id=f-rave-stab-0017 name="Stab rave — 3 voix, 1 mes. #017" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  20 . . 20 . . . 20 . . 20 . . 20 . .
+V  101 . . 102 . . . 98 . . 97 . . 105 . .
+N2 24 . . 24 . . . 24 . . 24 . . 24 . .
+V2 108 . . 117 . . . 102 . . 108 . . 116 . .
+N3 27 . . 27 . . . 27 . . 27 . . 27 . .
+V3 104 . . 97 . . . 102 . . 108 . . 102 . .
+
+@melody id=f-rave-stab-0018 name="Stab rave — 3 voix, 1 mes. #018" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  17 . . 17 . . . 17 . . 17 . . 17 . .
+V  115 . . 115 . . . 108 . . 112 . . 113 . .
+N2 20 . . 20 . . . 20 . . 20 . . 20 . .
+V2 111 . . 101 . . . 103 . . 97 . . 102 . .
+N3 24 . . 24 . . . 24 . . 24 . . 24 . .
+V3 112 . . 115 . . . 95 . . 101 . . 115 . .
+
+@melody id=f-rave-stab-0019 name="Stab rave — 3 voix, 2 mes. #019" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  17 . . 17 . . . 17 . . 17 . . 17 . .
+V  117 . . 110 . . . 101 . . 108 . . 119 . .
+N2 20 . . 20 . . . 20 . . 20 . . 20 . .
+V2 113 . . 119 . . . 96 . . 115 . . 101 . .
+N3 24 . . 24 . . . 24 . . 24 . . 24 . .
+V3 119 . . 99 . . . 105 . . 102 . . 112 . .
+N  17 . . 17 . . . 17 . . 17 . . 17 . .
+V  107 . . 104 . . . 110 . . 106 . . 114 . .
+N2 20 . . 20 . . . 20 . . 20 . . 20 . .
+V2 111 . . 103 . . . 119 . . 99 . . 98 . .
+N3 24 . . 24 . . . 24 . . 24 . . 24 . .
+V3 118 . . 107 . . . 109 . . 109 . . 117 . .
+
+@melody id=f-rave-stab-0020 name="Stab rave — 3 voix, 2 mes. #020" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  17 . . 17 . . 17 . 17 . . 17 . . 17 .
+V  95 . . 106 . . 119 . 102 . . 117 . . 106 .
+N2 20 . . 20 . . 20 . 20 . . 20 . . 20 .
+V2 97 . . 118 . . 102 . 107 . . 107 . . 102 .
+N3 24 . . 24 . . 24 . 24 . . 24 . . 24 .
+V3 103 . . 110 . . 104 . 118 . . 100 . . 116 .
+N  17 . . 17 . . 17 . 17 . . 17 . . 17 .
+V  95 . . 104 . . 101 . 118 . . 99 . . 106 .
+N2 20 . . 20 . . 20 . 20 . . 20 . . 20 .
+V2 111 . . 114 . . 96 . 111 . . 118 . . 110 .
+N3 24 . . 24 . . 24 . 24 . . 24 . . 24 .
+V3 100 . . 98 . . 97 . 119 . . 114 . . 119 .
+
+@melody id=f-rave-stab-0021 name="Stab rave — 3 voix, 1 mes. #021" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  17 . . 17 . . 17 . 17 . . 17 . . 17 .
+V  98 . . 115 . . 110 . 103 . . 114 . . 99 .
+N2 20 . . 20 . . 20 . 20 . . 20 . . 20 .
+V2 117 . . 108 . . 119 . 102 . . 115 . . 114 .
+N3 24 . . 24 . . 24 . 24 . . 24 . . 24 .
+V3 95 . . 112 . . 115 . 110 . . 116 . . 112 .
+
+@melody id=f-rave-stab-0022 name="Stab rave — 3 voix, 2 mes. #022" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  17 . . . . . 17 . . . . . 17 . . .
+V  114 . . . . . 112 . . . . . 97 . . .
+N2 20 . . . . . 20 . . . . . 20 . . .
+V2 99 . . . . . 118 . . . . . 104 . . .
+N3 24 . . . . . 24 . . . . . 24 . . .
+V3 105 . . . . . 109 . . . . . 97 . . .
+N  17 . . . . . 17 . . . . . 17 . . .
+V  112 . . . . . 115 . . . . . 119 . . .
+N2 20 . . . . . 20 . . . . . 20 . . .
+V2 112 . . . . . 118 . . . . . 112 . . .
+N3 24 . . . . . 24 . . . . . 24 . . .
+V3 104 . . . . . 113 . . . . . 110 . . .
+
+@melody id=f-rave-stab-0023 name="Stab rave — 3 voix, 2 mes. #023" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  . . 12 . . . 12 . . . 12 . . . 12 .
+V  . . 103 . . . 118 . . . 108 . . . 98 .
+N2 . . 15 . . . 15 . . . 15 . . . 15 .
+V2 . . 97 . . . 102 . . . 101 . . . 99 .
+N3 . . 19 . . . 19 . . . 19 . . . 19 .
+V3 . . 95 . . . 113 . . . 105 . . . 95 .
+N  . . 12 . . . 12 . . . 12 . . . 12 .
+V  . . 108 . . . 107 . . . 108 . . . 105 .
+N2 . . 15 . . . 15 . . . 15 . . . 15 .
+V2 . . 105 . . . 95 . . . 117 . . . 111 .
+N3 . . 19 . . . 19 . . . 19 . . . 19 .
+V3 . . 105 . . . 105 . . . 114 . . . 116 .
+
+@melody id=f-rave-stab-0024 name="Stab rave — 3 voix, 1 mes. #024" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  . . 12 . . . 12 . . . 12 . . . 12 .
+V  . . 103 . . . 116 . . . 111 . . . 106 .
+N2 . . 15 . . . 15 . . . 15 . . . 15 .
+V2 . . 115 . . . 100 . . . 109 . . . 104 .
+N3 . . 19 . . . 19 . . . 19 . . . 19 .
+V3 . . 117 . . . 105 . . . 105 . . . 110 .
+
+@melody id=f-rave-stab-0025 name="Stab rave — 3 voix, 2 mes. #025" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  12 . . 12 . . 12 . 12 . . 12 . . 12 .
+V  107 . . 97 . . 100 . 118 . . 111 . . 108 .
+N2 15 . . 15 . . 15 . 15 . . 15 . . 15 .
+V2 115 . . 119 . . 118 . 113 . . 106 . . 113 .
+N3 19 . . 19 . . 19 . 19 . . 19 . . 19 .
+V3 113 . . 105 . . 97 . 108 . . 98 . . 95 .
+N  12 . . 12 . . 12 . 12 . . 12 . . 12 .
+V  116 . . 98 . . 102 . 102 . . 100 . . 97 .
+N2 15 . . 15 . . 15 . 15 . . 15 . . 15 .
+V2 103 . . 102 . . 117 . 109 . . 114 . . 100 .
+N3 19 . . 19 . . 19 . 19 . . 19 . . 19 .
+V3 116 . . 118 . . 113 . 101 . . 101 . . 116 .
+
+@melody id=f-rave-stab-0026 name="Stab rave — 3 voix, 1 mes. #026" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  . . 20 . . . 20 . . . 20 . . . 20 .
+V  . . 98 . . . 106 . . . 114 . . . 105 .
+N2 . . 24 . . . 24 . . . 24 . . . 24 .
+V2 . . 103 . . . 100 . . . 104 . . . 109 .
+N3 . . 27 . . . 27 . . . 27 . . . 27 .
+V3 . . 115 . . . 114 . . . 99 . . . 119 .
+
+@melody id=f-rave-stab-0027 name="Stab rave — 3 voix, 1 mes. #027" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  20 . . 20 . . 20 . 20 . . 20 . . 20 .
+V  107 . . 95 . . 97 . 114 . . 102 . . 110 .
+N2 24 . . 24 . . 24 . 24 . . 24 . . 24 .
+V2 96 . . 108 . . 95 . 107 . . 118 . . 113 .
+N3 27 . . 27 . . 27 . 27 . . 27 . . 27 .
+V3 101 . . 107 . . 96 . 102 . . 114 . . 109 .
+
+@melody id=f-rave-stab-0028 name="Stab rave — 3 voix, 2 mes. #028" genre=rave bars=2 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  20 . . 20 . . . 20 . . 20 . . 20 . .
+V  112 . . 108 . . . 96 . . 96 . . 101 . .
+N2 24 . . 24 . . . 24 . . 24 . . 24 . .
+V2 119 . . 99 . . . 97 . . 116 . . 114 . .
+N3 27 . . 27 . . . 27 . . 27 . . 27 . .
+V3 104 . . 99 . . . 108 . . 119 . . 95 . .
+N  20 . . 20 . . . 20 . . 20 . . 20 . .
+V  107 . . 99 . . . 101 . . 115 . . 113 . .
+N2 24 . . 24 . . . 24 . . 24 . . 24 . .
+V2 111 . . 99 . . . 106 . . 105 . . 97 . .
+N3 27 . . 27 . . . 27 . . 27 . . 27 . .
+V3 106 . . 95 . . . 96 . . 102 . . 107 . .
+
+@melody id=f-rave-stab-0029 name="Stab rave — 3 voix, 1 mes. #029" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  17 . . 17 . . 17 . . . 17 . . . . .
+V  106 . . 105 . . 95 . . . 104 . . . . .
+N2 20 . . 20 . . 20 . . . 20 . . . . .
+V2 103 . . 95 . . 107 . . . 110 . . . . .
+N3 24 . . 24 . . 24 . . . 24 . . . . .
+V3 108 . . 106 . . 111 . . . 99 . . . . .
+
+@melody id=f-rave-stab-0030 name="Stab rave — 3 voix, 1 mes. #030" genre=rave bars=1 steps=16 voices=3 tags=rave-stab src=gen-fill
+N  17 . . . . . 17 . . . . . 17 . . .
+V  107 . . . . . 111 . . . . . 119 . . .
+N2 20 . . . . . 20 . . . . . 20 . . .
+V2 102 . . . . . 104 . . . . . 98 . . .
+N3 24 . . . . . 24 . . . . . 24 . . .
+V3 109 . . . . . 112 . . . . . 102 . . .
