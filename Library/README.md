@@ -4,6 +4,9 @@
 
 | Fichier | Contenu | Nombre |
 |---|---|---|
+| `industrial_bass.txt` | EBM (doubles croches entre les kicks, gate), basses électro-industrielles / dark electro | 900 |
+| `industrial_synth.txt` | Riffs chug de rock/metal indus, riffs sur pédale, leads aggrotech | 764 |
+| `industrial_perc.txt` | Caisse martiale EBM, kick + caisse de rock indus (dont demi-temps), noise stabs métalliques, « usine » en 3/5/6/7 | 903 |
 | `techno_bass.txt` | Techno : basses roulantes qui laissent la place au kick, rumble, contretemps | 1 020 |
 | `techno_synth.txt` | Techno : polymètres, euclidiens, accents, courbes de vélocité, lignes atonales/industrielles, question-réponse | 1 970 |
 | `techno_perc.txt` | Techno : polymètres et euclidiens de percussions, accents toutes les 3/5/7, courbes de vélocité, relances | 1 430 |
@@ -20,7 +23,7 @@
 | `bass_neuralacid.txt` | Basses NeuralAcid sur 4 mesures, qui suivent une grille d'accords | 8 985 |
 | `acid.txt`, `bass.txt`, `melody.txt` | Acid, basses et mélodies écrites à la main | 87 |
 
-**Total : 18 225 motifs.**
+**Total : 20 792 motifs.**
 
 ## Format
 
@@ -36,6 +39,7 @@ Pour ajouter tes motifs : copier un bloc, changer l'`id`, le nom et les pas.
 
 ## Sources
 
+- `industrial_*.txt` : fabriqués par `tools/generate_industrial.py` (règles EBM, électro-industriel, aggrotech, rock/metal industriel ; tempo conseillé dans `bpm=`).
 - `techno_*.txt` : fabriqués par `tools/generate_techno.py` (règles de production techno : kick libre, rumble, polymètre, euclidien, accents, question-réponse, relances).
 - `gen_*.txt` : fabriqués par `tools/generate_patterns.py` (règles : hiérarchie des temps, cellules rythmiques par style, phrasé AAAA'/ABAB'/AABB, tonique sur les temps forts, vélocités accentuées). Relancer le script redonne exactement les mêmes motifs.
 - `drums_bardet.txt` : rythmes de René-Pierre Bardet, données JSON de [gvellut/dmp_midi](https://github.com/gvellut/dmp_midi) (`tools/import_bardet.py`).

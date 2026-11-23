@@ -78,7 +78,9 @@ def render_drums(head, lines):
 def main(out, preset="general"):
     out = Path(out); out.mkdir(parents=True, exist_ok=True)
     rng = random.Random(7)
-    if preset == "techno":
+    if preset == "industrial":
+        picks = [("industrial_bass.txt", 10, 36), ("industrial_synth.txt", 12, 48), ("industrial_perc.txt", 12, 0)]
+    elif preset == "techno":
         picks = [("techno_bass.txt", 10, 36), ("techno_synth.txt", 12, 60), ("techno_perc.txt", 14, 0)]
     else:
       picks = [("gen_bass.txt", 8, 36), ("gen_acid.txt", 5, 36), ("gen_synth.txt", 6, 60), ("gen_perc.txt", 5, 0),
