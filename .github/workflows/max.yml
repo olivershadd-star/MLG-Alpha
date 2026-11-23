@@ -1,0 +1,33 @@
+name: Max for Live
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  device:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Tests du cœur et du lecteur
+        run: |
+          APPDATA=$RUNNER_TEMP node max/tests/test_core.js
+          node max/tests/test_player.js
+          APPDATA=$RUNNER_TEMP node max/tests/test_maxapi.js
+
+      - name: Fabriquer l'appareil
+        run: python3 tools/build_device.py
+
+      - name: Upload
+        uses: actions/upload-artifact@v4
+        with:
+          name: MLG-Alpha-Max-for-Live
+          path: dist/MLG Alpha/
+          if-no-files-found: error

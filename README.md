@@ -1,6 +1,6 @@
 # MLG Alpha — MIDI Line Generator
 
-*par ANKS Labs · VST3 gratuit pour Ableton Live (Lite compris)*
+*par ANKS Labs · appareil Max for Live gratuit pour Ableton Live*
 
 ---
 
@@ -100,44 +100,71 @@ Le but : quand tu sèches, voir ce qui pourrait coller sur ton morceau et **l'en
 
 ---
 
-## Installation dans Ableton (routage sur 2 pistes)
+## Installation : l'appareil Max for Live
 
-1. Télécharger le VST3 : onglet **Actions** de ce dépôt, dernier « Build VST3 » en vert, puis l'artefact `MLG-Alpha-VST3-Windows`.
-2. Copier `MLG Alpha.vst3` dans `C:\Program Files\Common Files\VST3`, puis rescanner les plugins dans Ableton.
-3. **Piste 1** : charger MLG Alpha (il apparaît comme instrument, éditeur ANKS Labs). Il ne fait aucun son.
-4. **Piste 2** : charger l'instrument (Serum, Massive, Operator…).
-   - *MIDI From* : choisir la piste 1, puis **MLG Alpha** dans le second menu.
-   - *Monitor* : **In**.
-5. Lancer la lecture : la ligne joue en boucle, calée sur le tempo.
+MLG Alpha est un **effet MIDI Max for Live**. Il se pose sur la piste MIDI, juste devant ton synthé :
+
+**[MLG Alpha] → [ton synthé]**
+
+Une seule piste, pas de routage. Il faut Live avec Max for Live (Suite, ou Standard avec Max for Live).
+
+1. Télécharger l'appareil : onglet **Actions** de ce dépôt, dernier « Max for Live » en vert, artefact `MLG-Alpha-Max-for-Live`.
+2. Dézipper. Le dossier `MLG Alpha` contient l'appareil, quatre scripts et la bibliothèque. **Ils doivent rester ensemble dans le même dossier.**
+3. Copier ce dossier dans ta User Library d'Ableton, par exemple `Documents\Ableton\User Library\Presets\MIDI Effects\Max MIDI Effect\MLG Alpha\`.
+4. Dans Live, glisser `MLG Alpha.amxd` sur une piste MIDI, devant l'instrument.
+5. Lancer la lecture : la ligne joue en boucle, calée sur le tempo. Les notes jouées au clavier passent à travers.
+
+Si l'appareil reste vide ou affiche « Bibliothèque : chargement… », ouvre l'éditeur Max (bouton crayon de l'appareil) et regarde la fenêtre Max (console) : le message d'erreur dit quel fichier manque.
+
+**Secours** : si Live refuse le fichier `.amxd`, glisse un « Max MIDI Effect » vide sur la piste, ouvre son éditeur, ouvre `MLG Alpha.maxpat` dans Max, sélectionne tout, copie, colle dans l'appareil vide, puis enregistre-le dans le dossier `MLG Alpha` sous le nom `MLG Alpha.amxd`.
+
+### Comment l'appareil est construit (pour bidouiller dans Max)
+
+En ouvrant l'éditeur Max, tu trouves trois zones titrées :
+
+1. **CŒUR** : `node.script mlg_core.js`. Tout le cerveau est là : générateur, bibliothèque, traducteur, tirage, fiche technique, apprentissage. Il reçoit des messages simples (`param density 40`, `words basse sombre`, `generate`…) et en renvoie (`clip …`, `place p_density 40`, `understood …`). Un `[route]` les distribue.
+2. **LECTURE** : `js mlg_player.js`. Il lit la position du transport de Live (`[metro]` → `[transport]`), joue la ligne vers `[midiformat]` → `[midiout]`, et écrit la ligne dans un clip quand on le lui demande.
+3. **INTERFACE** : les potards (`live.dial`, `live.menu`), les boutons (`live.text`), les cases de texte (`textedit`), le piano roll (`jsui mlg_roll.js`) et les zones de texte (`jsui mlg_text.js`). En mode présentation, c'est ce que tu vois dans Live.
+
+Le patch n'est pas dessiné à la main : il est fabriqué par `tools/build_device.py`. Pour une modification durable, c'est ce script qu'il faut changer, puis relancer `python3 tools/build_device.py`.
 
 ## Mode d'emploi
 
-### Panneau mécanique
+L'appareil fait 1 180 pixels de large, en trois zones.
+
+### Panneau mécanique (à gauche)
 
 - **GÉNÉRER** : nouvelle ligne avec les potards. Ce qui est verrouillé ne change pas.
 - **MUTER** : petites variations de la ligne actuelle.
 - **Verrou rythme / Verrou hauteurs** : garde l'une des deux couches.
-- **Seeds** : identifiants de la ligne. Double-clic pour en saisir une et retrouver une ligne.
-- Potards : rythme aléatoire (densité) ou euclidien (impulsions, rotation), division de 1/4 à 1/32 avec triolets, jusqu'à 128 pas (8 mesures), swing, tonique, 13 gammes, notes basse et haute, écart max, durées, legato, vélocités, accent.
+- **Garder** : garde la ligne dans ta bibliothèque perso, avec les mots tapés dans la case de texte.
+- **Seeds** : identifiants de la ligne. Tape un nombre puis Entrée pour retrouver une ligne.
+- **Menus** : moteur (aléatoire ou euclidien), division (1/4 à 1/32, triolets compris), tonique, gamme (13), octave, changement de ligne (immédiat ou à la mesure suivante), legato.
+- **Potards** : pas (jusqu'à 128, soit 8 mesures), densité, impulsions, rotation, swing, note basse, note haute, écart max, accent, durées min et max, vélocités min et max. Tous automatisables et mappables dans Live.
 
-### Panneau texte
+### Panneau texte (au milieu)
 
-- **Vocabulaire normal** : tape (ou dicte avec Win+H) ce que tu cherches, puis Entrée ou **CHERCHER**. Exemples : « basse sombre et roulante », « nappe mélancolique aérée », « kick techno très lourd », « arpège triste en triolets, 2 mesures », « pas trop dense façon Boards of Canada ».
+- **Case de texte** : tape (ou dicte avec Win+H) ce que tu cherches, puis Entrée ou **CHERCHER**. Exemples : « basse sombre et roulante », « nappe mélancolique aérée », « kick techno très lourd », « arpège triste en triolets, 2 mesures », « pas trop dense façon Boards of Canada ».
   - Le traducteur reconnaît les 100 mots, leurs synonymes, les styles (techno, EBM, acid, IDM, Moderat, NIN…), les rôles (kick, batterie, percu, basse, mélodie, accords, nappe), « très » / « un peu », « pas … », les triolets et le nombre de mesures.
-  - **Une autre** : nouveau tirage avec les mêmes mots.
-  - S'il n'y a rien qui réunit tout, MLG Alpha prend la ligne la plus proche et le dit.
+  - En dessous s'affiche ce qui a été compris. S'il n'y a rien qui réunit tout, MLG Alpha prend la ligne la plus proche et le dit.
   - Une basse tirée après un kick évite de tomber sur les coups du kick.
-- **Les potards se placent** sur les réglages équivalents de la ligne tirée. Tourner un potard repasse sur le moteur des potards avec ces réglages. La tonique et l'octave, elles, transposent la ligne de la bibliothèque.
-- **Vocabulaire technique** : la fiche de la ligne en langage MIDI (mesures, grille, densité, placement sur les temps, durées, vélocités, hauteurs, intervalles, structure). En dessous, tu peux taper des commandes : « 2 mesures », « division 1/16 », « triolets », « densité 40 », « euclidien 5 », « swing 30 », « tonique la », « gamme dorien », « notes C1 à C3 », « legato », « vélocité 80 120 », « durée 50 100 », « écart 4 », « génère », « mute ».
+- **Une autre** : nouveau tirage avec les mêmes mots.
+- **Les potards se placent** sur les réglages équivalents de la ligne tirée. Tourner un potard repasse sur le moteur des potards avec ces réglages. La tonique et l'octave transposent la ligne de la bibliothèque.
 - **J'aime / Bof** : renforce ou affaiblit les étiquettes de la ligne pour les mots que tu as tapés. Le style et le rôle d'une ligne ne changent jamais. Rien n'est obligatoire.
-- **Sauvegarder** (sur les deux panneaux) : garde la ligne dans ta bibliothèque perso, avec tes mots. Les doublons sont détectés (même rythme, mêmes notes par rapport à la tonique). Les lignes des potards gardent aussi leurs réglages et leurs seeds.
-- **Bilan** : lignes proposées, écartées vite (moins de 4 s), écoutées longtemps (plus de 30 s), aimées, gardées, par style, et ce qui n'a jamais été entendu. Bouton pour remettre l'apprentissage à zéro.
+- **Garder** : comme à gauche.
+- **Fiche** : ouvre une fenêtre avec la fiche de la ligne en langage MIDI (mesures, grille, densité, placement sur les temps, durées, vélocités, hauteurs, intervalles, structure).
+- **Bilan** : ouvre une fenêtre avec les statistiques (proposées, écartées vite, écoutées longtemps, aimées, gardées, par style, jamais entendues) et un bouton pour effacer les J'aime / Bof.
+- **Commande technique** : « 2 mesures », « division 1/16 », « triolets », « densité 40 », « euclidien 5 », « swing 30 », « tonique la », « gamme dorien », « notes C1 à C3 », « legato », « vélocité 80 120 », « durée 50 100 », « écart 4 », « génère », « mute ».
 
-### Lecture
+### Ligne en cours (à droite)
 
-- **Changement de ligne** : immédiat, ou à la mesure suivante.
-- **Glisser le clip .mid vers Ableton** : fige la ligne en clip.
-- Tes fichiers (bibliothèque perso, apprentissage, statistiques) sont dans `%APPDATA%\ANKS Labs\MLG Alpha\`, en texte lisible.
+- Le nom de la ligne, son rôle et son style, et le piano roll avec la tête de lecture.
+- **→ Écrire dans un clip** : écrit la ligne dans la case sélectionnée de la piste (vue Session), ou dans la première case libre. C'est la façon de la garder dans ton morceau.
+- Tes fichiers (bibliothèque perso, apprentissage, statistiques) sont dans `%APPDATA%\ANKS Labs\MLG Alpha\`, en texte lisible. Ce sont les mêmes que ceux de la version VST.
+
+### Et le VST3 ?
+
+Le VST3 (dossier `Source/`) marche, mais dans Ableton il ne peut pas se placer devant un instrument : il faut deux pistes et un routage MIDI. La version Max for Live est la version principale. Le VST3 reste compilé à chaque push (artefact `MLG-Alpha-VST3-Windows`) pour d'autres logiciels.
 
 ## La bibliothèque
 
@@ -149,9 +176,12 @@ Après une modification : `python3 tools/build_dictionary.py && python3 tools/cl
 
 ## Compilation
 
+Les tests de l'appareil Max tournent avec Node : `node max/tests/test_core.js`, `node max/tests/test_player.js`, `node max/tests/test_maxapi.js`. GitHub Actions les lance, puis fabrique l'appareil (artefact `MLG-Alpha-Max-for-Live`).
+
+
 GitHub Actions compile le VST3 Windows à chaque push : onglet *Actions*, artefact `MLG-Alpha-VST3-Windows`.
 
-Pour compiler les tests (moteur, bibliothèque, lecture) :
+Pour compiler les tests du VST3 (moteur, bibliothèque, lecture) :
 
 ```
 cmake -B build -DMLGALPHA_TESTS=ON

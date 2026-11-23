@@ -1,0 +1,32 @@
+// Lance mlg_core.js comme dans Max, avec un faux module « max-api », et rejoue une séance.
+const path = require("path"), Module = require("module");
+const sent = []; let handlers = {};
+const fake = { outlet: (...a) => sent.push(a), addHandlers: (h) => { handlers = h; }, post: () => {} };
+const orig = Module._resolveFilename;
+Module._resolveFilename = function (req, ...rest) { return req === "max-api" ? "max-api" : orig.call(this, req, ...rest); };
+require.cache["max-api"] = { id: "max-api", filename: "max-api", loaded: true, exports: fake };
+require(path.join(__dirname, "..", "mlg_core.js"));
+let fails = 0; const check = (c, m) => { if (!c) { console.log("ECHEC", m); fails++; } };
+const last = (sel) => { for (let i = sent.length - 1; i >= 0; --i) if (sent[i][0] === sel) return sent[i]; return null; };
+check(last("ready"), "ready");
+check(last("clip"), "clip au démarrage");
+const R = path.join(__dirname, "..", "..", "Resources");
+handlers.libfile(path.join(R, "mlg_library.txt.gz")); handlers.dictfile(path.join(R, "mlg_dictionary.txt"));
+setTimeout(() => {
+  check(/lignes/.test((last("status") || [])[1] || ""), "bibliothèque chargée à côté du script");
+  handlers.param("density", 80); handlers.param("steps", 32);
+  check(last("clip")[1] === 8, "32 pas = 8 noires");
+  handlers.words("text", "basse", "sombre", "roulante");
+  console.log(last("understood")[1]); console.log(last("line")[1]);
+  check(last("place") && last("place")[1].startsWith("p_"), "place p_…");
+  handlers.tech("text", "2", "mesures,", "tonique", "la");
+  console.log(last("techfeedback")[1]);
+  handlers.like(1); handlers.keep("text", "ma", "basse");
+  console.log(last("understood")[1]);
+  handlers.seedr("12345"); check(last("seeds")[1] === "12345", "seed rythme");
+  const st = last("state")[1]; handlers.restore(st);
+  handlers.bilan(); check(/BILAN/.test(last("bilan")[1]), "bilan");
+  handlers.written(); handlers.reset();
+  console.log(fails ? "ECHECS " + fails : "OK max-api");
+  process.exit(fails ? 1 : 0);
+}, 1500);
