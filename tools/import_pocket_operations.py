@@ -1,8 +1,8 @@
 """Importe les familles électroniques de Pocket Operations (données MIT de darosh/pocket-patterns)
-vers le format texte de la bibliothèque LINEGEN.  Usage : python3 import_pocket_operations.py groups.json > drums_po.txt"""
+vers le format texte de la bibliothèque MIDI LINES.  Usage : python3 import_pocket_operations.py groups.json > drums_po.txt"""
 import json, re, sys
 
-KEEP = {  # famille PO -> genre LINEGEN
+KEEP = {  # famille PO -> genre MIDI LINES
     "Basic Patterns": "basic", "Standard Breaks": "breaks", "Electro": "electro", "House": "house",
     "Miami Bass": "miami-bass", "Hip Hop": "hiphop", "Drum And Bass": "dnb", "EDM": "edm",
     "Dub": "dub", "Breaks": "breaks", "Hybrid Breaks": "breaks", "Irregular Breaks": "breaks",

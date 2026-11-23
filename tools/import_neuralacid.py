@@ -1,4 +1,4 @@
-"""Importe les basses NeuralAcid (intrect/neuralacid-basslines, CC BY 4.0) vers le format LINEGEN.
+"""Importe les basses NeuralAcid (intrect/neuralacid-basslines, CC BY 4.0) vers le format MIDI LINES.
 Les notes (hauteur, durée, ordre) viennent du fichier .jsonl ; leur position dans la mesure vient du
 piano roll .npy (indexé par roll_idx).  Usage :
   python3 -I import_neuralacid.py <out.txt> <jsonl> <pianorolls.npy> [<jsonl> <pianorolls.npy> ...]"""

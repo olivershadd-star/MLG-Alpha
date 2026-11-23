@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <vector>
 
-namespace linegen
+namespace midilines
 {
 namespace
 {
@@ -240,4 +240,4 @@ juce::MidiFile toMidiFile (const Pattern& p)
     file.addTrack (seq);
     return file;
 }
-} // namespace linegen
+} // namespace midilines

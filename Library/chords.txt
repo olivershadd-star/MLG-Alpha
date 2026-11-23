@@ -1,4 +1,4 @@
-# Grilles d'accords et nappes : degrés en chiffres romains dans la gamme choisie dans LINEGEN.
+# Grilles d'accords et nappes : degrés en chiffres romains dans la gamme choisie dans MIDI LINES.
 # Minuscule = accord mineur, majuscule = majeur, ° = diminué ; 7, maj7, 9, sus2, sus4 acceptés.
 # Une case = une mesure ; « - » = l'accord précédent continue.  @rhythm = rythme de jeu des accords.
 

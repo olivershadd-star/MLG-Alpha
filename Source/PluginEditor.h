@@ -8,11 +8,11 @@
 class StepView : public juce::Component
 {
 public:
-    explicit StepView (LineGenProcessor& p) : proc (p) {}
+    explicit StepView (MidiLinesProcessor& p) : proc (p) {}
     void paint (juce::Graphics&) override;
 
 private:
-    LineGenProcessor& proc;
+    MidiLinesProcessor& proc;
 };
 
 // Zone à glisser vers une piste Ableton : crée un fichier .mid du cycle.
@@ -28,11 +28,11 @@ private:
     bool dragging = false;
 };
 
-class LineGenEditor : public juce::AudioProcessorEditor, private juce::Timer
+class MidiLinesEditor : public juce::AudioProcessorEditor, private juce::Timer
 {
 public:
-    explicit LineGenEditor (LineGenProcessor&);
-    ~LineGenEditor() override;
+    explicit MidiLinesEditor (MidiLinesProcessor&);
+    ~MidiLinesEditor() override;
 
     void paint (juce::Graphics&) override;
     void resized() override;
@@ -57,7 +57,7 @@ private:
     void timerCallback() override;
     void refreshSeedLabels();
 
-    LineGenProcessor& proc;
+    MidiLinesProcessor& proc;
     juce::LookAndFeel_V4 laf;
 
     StepView stepView;
@@ -73,5 +73,5 @@ private:
     juce::Rectangle<int> rhythmArea, pitchArea, notesArea;
     int lastVersion = -1, lastStep = -2;
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (LineGenEditor)
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MidiLinesEditor)
 };

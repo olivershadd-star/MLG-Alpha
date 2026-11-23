@@ -1,4 +1,4 @@
-"""Construit les fichiers de la bibliothèque LINEGEN écrits pour le projet (motifs de base de la musique
+"""Construit les fichiers de la bibliothèque MIDI LINES écrits pour le projet (motifs de base de la musique
 électronique, écrits à partir des règles de chaque genre).  Usage : python3 tools/build_library.py
 Les positions de pas sont comptées à partir de 1 (1, 5, 9, 13 = les quatre temps d'une mesure de 16 pas)."""
 from pathlib import Path
@@ -131,7 +131,7 @@ def build_drums():
     add("fill-toms", "Toms descendants", "fill", {"HT": [9, 10], "MT": [11, 12], "LT": [13, 14], "BD": [1, 5, 15, 16]})
     add("fill-stop", "Coupure", "fill", {"BD": [1], "CY": [1]})
 
-    head = ("# Motifs de batterie électroniques écrits pour LINEGEN (motifs de base des genres, libres).\n"
+    head = ("# Motifs de batterie électroniques écrits pour MIDI LINES (motifs de base des genres, libres).\n"
             "# Format identique à drums_pocket_operations.txt. Notes : BD 36, RS 37, SN 38, CL 39, CH 42, OH 46,\n"
             "# LT 45, MT 47, HT 50, CY (ride) 51, CB 56, SH 70, PC (percussion) 75.\n\n")
     return head + "\n".join(out)
@@ -323,7 +323,7 @@ def build_lines(kind, items, default_genre=None, extra=""):
     return "\n".join(out)
 
 def build_chords():
-    out = ["# Grilles d'accords et nappes : degrés en chiffres romains dans la gamme choisie dans LINEGEN.",
+    out = ["# Grilles d'accords et nappes : degrés en chiffres romains dans la gamme choisie dans MIDI LINES.",
            "# Minuscule = accord mineur, majuscule = majeur, ° = diminué ; 7, maj7, 9, sus2, sus4 acceptés.",
            "# Une case = une mesure ; « - » = l'accord précédent continue.  @rhythm = rythme de jeu des accords.\n"]
     for pid, name, genre, prog in CHORDS:
@@ -340,7 +340,7 @@ if __name__ == "__main__":
     (LIB / "drums_electronic.txt").write_text(build_drums())
     (LIB / "acid.txt").write_text(
         "# Lignes acid (notation 303) : intervalle en demi-tons depuis la tonique ; a = accent, s = slide ;\n"
-        "# . = silence ; - = note tenue.  Transposées dans la tonique choisie dans LINEGEN.\n\n"
+        "# . = silence ; - = note tenue.  Transposées dans la tonique choisie dans MIDI LINES.\n\n"
         + build_lines("acid", ACID, default_genre="acid"))
     (LIB / "bass.txt").write_text(
         "# Lignes de basse électroniques : même notation que acid.txt (sans accents ni slides).\n\n"

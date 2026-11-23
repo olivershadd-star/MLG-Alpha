@@ -1,4 +1,4 @@
-# Bibliothèque de motifs LINEGEN
+# Bibliothèque de motifs MIDI LINES
 
 332 motifs de base orientés musique électronique, en texte lisible et modifiable à la main.
 
@@ -68,4 +68,4 @@ Pour ajouter tes motifs : copier un bloc, changer l'`id`, le nom et les pas.
 - `chords_drolez.txt` : [ldrolez/free-midi-chords](https://github.com/ldrolez/free-midi-chords), licence MIT (`tools/import_drolez.py`).
 
 - `drums_pocket_operations.txt` : données de [darosh/pocket-patterns](https://github.com/darosh/pocket-patterns) (licence MIT), d'après la collection *Pocket Operations* (Shitty Recording Studio / Paul Wenzel). Import : `tools/import_pocket_operations.py`.
-- Tous les autres fichiers : motifs de base des genres écrits pour LINEGEN (`tools/build_library.py`).
+- Tous les autres fichiers : motifs de base des genres écrits pour MIDI LINES (`tools/build_library.py`).

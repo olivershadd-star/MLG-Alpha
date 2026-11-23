@@ -1,6 +1,6 @@
 #include "PluginEditor.h"
 
-using linegen::fr;
+using midilines::fr;
 
 namespace colours
 {
@@ -52,7 +52,7 @@ void StepView::paint (juce::Graphics& g)
             {
                 g.setColour (colours::text);
                 g.setFont (juce::FontOptions (10.0f));
-                g.drawText (linegen::noteName (st.pitch), r.withHeight (14.0f), juce::Justification::centred);
+                g.drawText (midilines::noteName (st.pitch), r.withHeight (14.0f), juce::Justification::centred);
             }
         }
 
@@ -92,7 +92,7 @@ void MidiDragZone::mouseDrag (const juce::MouseEvent& e)
 
 // ---------------------------------------------------------------------------
 
-LineGenEditor::LineGenEditor (LineGenProcessor& p)
+MidiLinesEditor::MidiLinesEditor (MidiLinesProcessor& p)
     : AudioProcessorEditor (&p), proc (p), stepView (p)
 {
     laf.setColour (juce::Slider::rotarySliderFillColourId, colours::accent);
@@ -193,13 +193,13 @@ LineGenEditor::LineGenEditor (LineGenProcessor& p)
     startTimerHz (30);
 }
 
-LineGenEditor::~LineGenEditor()
+MidiLinesEditor::~MidiLinesEditor()
 {
     stopTimer();
     setLookAndFeel (nullptr);
 }
 
-LineGenEditor::Knob& LineGenEditor::addKnob (const char* paramId, const juce::String& text)
+MidiLinesEditor::Knob& MidiLinesEditor::addKnob (const char* paramId, const juce::String& text)
 {
     auto k = std::make_unique<Knob>();
     k->slider.setSliderStyle (juce::Slider::RotaryHorizontalVerticalDrag);
@@ -215,7 +215,7 @@ LineGenEditor::Knob& LineGenEditor::addKnob (const char* paramId, const juce::St
     return ref;
 }
 
-LineGenEditor::Choice& LineGenEditor::addChoice (const char* paramId, const juce::String& text)
+MidiLinesEditor::Choice& MidiLinesEditor::addChoice (const char* paramId, const juce::String& text)
 {
     auto c = std::make_unique<Choice>();
     if (auto* param = dynamic_cast<juce::AudioParameterChoice*> (proc.apvts.getParameter (paramId)))
@@ -231,14 +231,14 @@ LineGenEditor::Choice& LineGenEditor::addChoice (const char* paramId, const juce
     return ref;
 }
 
-void LineGenEditor::refreshSeedLabels()
+void MidiLinesEditor::refreshSeedLabels()
 {
     const auto& s = proc.getSeeds();
     seedRhythmValue.setText (juce::String (s.rhythm), juce::dontSendNotification);
     seedPitchValue.setText (juce::String (s.pitch), juce::dontSendNotification);
 }
 
-void LineGenEditor::timerCallback()
+void MidiLinesEditor::timerCallback()
 {
     // Réglages propres au moteur rythmique choisi
     const bool euclid = proc.apvts.getRawParameterValue ("rhythmMode")->load() > 0.5f;
@@ -261,13 +261,13 @@ void LineGenEditor::timerCallback()
     }
 }
 
-void LineGenEditor::paint (juce::Graphics& g)
+void MidiLinesEditor::paint (juce::Graphics& g)
 {
     g.fillAll (colours::background);
 
     g.setColour (colours::accent);
     g.setFont (juce::FontOptions (22.0f, juce::Font::bold));
-    g.drawText ("LINEGEN", 16, 10, 140, 30, juce::Justification::centredLeft);
+    g.drawText ("MIDI LINES", 16, 10, 140, 30, juce::Justification::centredLeft);
     g.setColour (colours::dim);
     g.setFont (juce::FontOptions (11.0f));
     g.drawText ("ANKS Labs", 16, 36, 140, 14, juce::Justification::centredLeft);
@@ -285,7 +285,7 @@ void LineGenEditor::paint (juce::Graphics& g)
     drawSection (notesArea, fr ("NOTES"));
 }
 
-void LineGenEditor::resized()
+void MidiLinesEditor::resized()
 {
     auto r = getLocalBounds().reduced (12);
 

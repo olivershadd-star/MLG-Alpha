@@ -1,8 +1,8 @@
-// Vérifications du moteur LINEGEN (hors plugin).
+// Vérifications du moteur MIDI LINES (hors plugin).
 #include "../Source/Engine.h"
 #include <iostream>
 
-using namespace linegen;
+using namespace midilines;
 
 static int failures = 0;
 #define CHECK(cond) do { if (! (cond)) { std::cerr << "ECHEC: " #cond " (ligne " << __LINE__ << ")\n"; ++failures; } } while (0)

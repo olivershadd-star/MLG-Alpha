@@ -1,5 +1,5 @@
 # Lignes acid (notation 303) : intervalle en demi-tons depuis la tonique ; a = accent, s = slide ;
-# . = silence ; - = note tenue.  Transposées dans la tonique choisie dans LINEGEN.
+# . = silence ; - = note tenue.  Transposées dans la tonique choisie dans MIDI LINES.
 
 @acid id=acid-01 name="Racine qui saute" genre=acid bars=1 steps=16
 N  0 0 12 0 . 0 12a 0 0 . 0 12 0 3 . 12s

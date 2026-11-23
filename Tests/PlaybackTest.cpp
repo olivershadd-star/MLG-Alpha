@@ -22,7 +22,7 @@ int main()
     for (int legato = 0; legato < 2; ++legato)
     for (int mode = 0; mode < 2; ++mode)
     {
-        LineGenProcessor proc;
+        MidiLinesProcessor proc;
         auto set = [&] (const char* id, float v) { auto* p = proc.apvts.getParameter (id); p->setValueNotifyingHost (p->convertTo0to1 (v)); };
         set ("legato", (float) legato); set ("rhythmMode", (float) mode); set ("swing", 30.0f);
         proc.setSeeds (42u, 99u);   // rebuild immédiat

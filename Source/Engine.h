@@ -4,13 +4,13 @@
 #include <juce_audio_basics/juce_audio_basics.h>
 #include <array>
 
-// Moteur de génération LINEGEN.
+// Moteur de génération MIDI LINES.
 // Deux couches indépendantes :
 //   - rythme  : quand une note joue (moteur Aléatoire ou Euclidien)
 //   - hauteurs : quelle note joue (moteur Aléatoire contraint)
 // La génération est déterministe : mêmes réglages + mêmes seeds = même ligne.
 
-namespace linegen
+namespace midilines
 {
 inline juce::String fr (const char* utf8) { return juce::String::fromUTF8 (utf8); }
 
@@ -79,4 +79,4 @@ juce::String noteName (int midiNote);      // convention Ableton : 60 = C3
 
 Pattern generate (const Settings&, const Seeds&);
 juce::MidiFile toMidiFile (const Pattern&);
-} // namespace linegen
+} // namespace midilines

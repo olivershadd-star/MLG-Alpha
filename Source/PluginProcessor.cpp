@@ -1,7 +1,7 @@
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
 
-using linegen::fr;
+using midilines::fr;
 
 namespace
 {
@@ -10,9 +10,9 @@ const char* const kParamIds[] = { "rhythmMode", "steps", "division", "density", 
                                   "lenMin", "lenMax", "legato", "velMin", "velMax", "accent" };
 }
 
-LineGenProcessor::LineGenProcessor()
+MidiLinesProcessor::MidiLinesProcessor()
     : AudioProcessor (BusesProperties().withOutput ("Output", juce::AudioChannelSet::stereo(), true)),
-      apvts (*this, nullptr, "LINEGEN", createLayout())
+      apvts (*this, nullptr, "MIDILINES", createLayout())
 {
     for (auto* id : kParamIds)
         apvts.addParameterListener (id, this);
@@ -23,34 +23,34 @@ LineGenProcessor::LineGenProcessor()
     startTimerHz (30);
 }
 
-LineGenProcessor::~LineGenProcessor()
+MidiLinesProcessor::~MidiLinesProcessor()
 {
     stopTimer();
     for (auto* id : kParamIds)
         apvts.removeParameterListener (id, this);
 }
 
-juce::AudioProcessorValueTreeState::ParameterLayout LineGenProcessor::createLayout()
+juce::AudioProcessorValueTreeState::ParameterLayout MidiLinesProcessor::createLayout()
 {
     using namespace juce;
     std::vector<std::unique_ptr<RangedAudioParameter>> p;
 
     auto pct = AudioParameterFloatAttributes().withStringFromValueFunction ([] (float v, int) { return String (roundToInt (v)) + " %"; });
-    auto note = AudioParameterIntAttributes().withStringFromValueFunction ([] (int v, int) { return linegen::noteName (v); });
+    auto note = AudioParameterIntAttributes().withStringFromValueFunction ([] (int v, int) { return midilines::noteName (v); });
 
     // Rythme
     p.push_back (std::make_unique<AudioParameterChoice> (ParameterID { "rhythmMode", 1 }, fr ("Mode rythme"),
                                                          StringArray { fr ("Aléatoire"), fr ("Euclidien") }, 0));
-    p.push_back (std::make_unique<AudioParameterInt> (ParameterID { "steps", 1 }, fr ("Pas"), 1, linegen::kMaxSteps, 16));
-    p.push_back (std::make_unique<AudioParameterChoice> (ParameterID { "division", 1 }, fr ("Division"), linegen::divisionNames(), 3));
+    p.push_back (std::make_unique<AudioParameterInt> (ParameterID { "steps", 1 }, fr ("Pas"), 1, midilines::kMaxSteps, 16));
+    p.push_back (std::make_unique<AudioParameterChoice> (ParameterID { "division", 1 }, fr ("Division"), midilines::divisionNames(), 3));
     p.push_back (std::make_unique<AudioParameterFloat> (ParameterID { "density", 1 }, fr ("Densité"), NormalisableRange<float> (0.0f, 100.0f, 1.0f), 50.0f, pct));
-    p.push_back (std::make_unique<AudioParameterInt> (ParameterID { "pulses", 1 }, fr ("Impulsions"), 0, linegen::kMaxSteps, 5));
-    p.push_back (std::make_unique<AudioParameterInt> (ParameterID { "rotation", 1 }, fr ("Rotation"), 0, linegen::kMaxSteps - 1, 0));
+    p.push_back (std::make_unique<AudioParameterInt> (ParameterID { "pulses", 1 }, fr ("Impulsions"), 0, midilines::kMaxSteps, 5));
+    p.push_back (std::make_unique<AudioParameterInt> (ParameterID { "rotation", 1 }, fr ("Rotation"), 0, midilines::kMaxSteps - 1, 0));
     p.push_back (std::make_unique<AudioParameterFloat> (ParameterID { "swing", 1 }, fr ("Swing"), NormalisableRange<float> (0.0f, 100.0f, 1.0f), 0.0f, pct));
 
     // Hauteurs
-    p.push_back (std::make_unique<AudioParameterChoice> (ParameterID { "root", 1 }, fr ("Tonique"), linegen::rootNames(), 0));
-    p.push_back (std::make_unique<AudioParameterChoice> (ParameterID { "scale", 1 }, fr ("Gamme"), linegen::scaleNames(), 1));
+    p.push_back (std::make_unique<AudioParameterChoice> (ParameterID { "root", 1 }, fr ("Tonique"), midilines::rootNames(), 0));
+    p.push_back (std::make_unique<AudioParameterChoice> (ParameterID { "scale", 1 }, fr ("Gamme"), midilines::scaleNames(), 1));
     p.push_back (std::make_unique<AudioParameterInt> (ParameterID { "lowNote", 1 }, fr ("Note basse"), 24, 108, 48, note));
     p.push_back (std::make_unique<AudioParameterInt> (ParameterID { "highNote", 1 }, fr ("Note haute"), 24, 108, 67, note));
     p.push_back (std::make_unique<AudioParameterInt> (ParameterID { "maxJump", 1 }, fr ("Écart max"), 0, 12, 3));
@@ -66,13 +66,13 @@ juce::AudioProcessorValueTreeState::ParameterLayout LineGenProcessor::createLayo
     return { p.begin(), p.end() };
 }
 
-bool LineGenProcessor::isBusesLayoutSupported (const BusesLayout& layouts) const
+bool MidiLinesProcessor::isBusesLayoutSupported (const BusesLayout& layouts) const
 {
     const auto out = layouts.getMainOutputChannelSet();
     return out == juce::AudioChannelSet::stereo() || out == juce::AudioChannelSet::mono();
 }
 
-void LineGenProcessor::prepareToPlay (double sampleRate, int)
+void MidiLinesProcessor::prepareToPlay (double sampleRate, int)
 {
     currentSampleRate = sampleRate > 0.0 ? sampleRate : 44100.0;
     wasPlaying = false;
@@ -82,10 +82,10 @@ void LineGenProcessor::prepareToPlay (double sampleRate, int)
 // ---------------------------------------------------------------------------
 // Génération (thread principal)
 
-linegen::Settings LineGenProcessor::readSettings() const
+midilines::Settings MidiLinesProcessor::readSettings() const
 {
-    linegen::Settings s;
-    s.rhythmMode = (int) raw ("rhythmMode") == 1 ? linegen::RhythmMode::euclidean : linegen::RhythmMode::random;
+    midilines::Settings s;
+    s.rhythmMode = (int) raw ("rhythmMode") == 1 ? midilines::RhythmMode::euclidean : midilines::RhythmMode::random;
     s.numSteps = (int) raw ("steps");
     s.division = (int) raw ("division");
     s.density = raw ("density") / 100.0;
@@ -106,9 +106,9 @@ linegen::Settings LineGenProcessor::readSettings() const
     return s;
 }
 
-void LineGenProcessor::rebuild()
+void MidiLinesProcessor::rebuild()
 {
-    const auto p = linegen::generate (readSettings(), seeds);
+    const auto p = midilines::generate (readSettings(), seeds);
     displayPattern = p;
     ++patternVersion;
 
@@ -119,50 +119,50 @@ void LineGenProcessor::rebuild()
     }
 }
 
-void LineGenProcessor::parameterChanged (const juce::String&, float) { dirty.store (true); }
+void MidiLinesProcessor::parameterChanged (const juce::String&, float) { dirty.store (true); }
 
-void LineGenProcessor::timerCallback()
+void MidiLinesProcessor::timerCallback()
 {
     if (dirty.exchange (false))
         rebuild();
 }
 
-void LineGenProcessor::generateNew()
+void MidiLinesProcessor::generateNew()
 {
     if (! lockRhythm) { seeds.rhythm = (juce::uint32) seedSource.nextInt(); seeds.rhythmMutations = 0; }
     if (! lockPitch)  { seeds.pitch = (juce::uint32) seedSource.nextInt();  seeds.pitchMutations = 0; }
     rebuild();
 }
 
-void LineGenProcessor::mutate()
+void MidiLinesProcessor::mutate()
 {
     if (! lockRhythm) ++seeds.rhythmMutations;
     if (! lockPitch)  ++seeds.pitchMutations;
     rebuild();
 }
 
-void LineGenProcessor::setRhythmLocked (bool b) { lockRhythm = b; }
-void LineGenProcessor::setPitchLocked (bool b) { lockPitch = b; }
+void MidiLinesProcessor::setRhythmLocked (bool b) { lockRhythm = b; }
+void MidiLinesProcessor::setPitchLocked (bool b) { lockPitch = b; }
 
-void LineGenProcessor::setSeeds (juce::uint32 r, juce::uint32 p)
+void MidiLinesProcessor::setSeeds (juce::uint32 r, juce::uint32 p)
 {
     if (r != seeds.rhythm) { seeds.rhythm = r; seeds.rhythmMutations = 0; }
     if (p != seeds.pitch)  { seeds.pitch = p;  seeds.pitchMutations = 0; }
     rebuild();
 }
 
-juce::File LineGenProcessor::writeMidiFile() const
+juce::File MidiLinesProcessor::writeMidiFile() const
 {
-    auto dir = juce::File::getSpecialLocation (juce::File::tempDirectory).getChildFile ("LINEGEN");
+    auto dir = juce::File::getSpecialLocation (juce::File::tempDirectory).getChildFile ("MIDI LINES");
     dir.createDirectory();
-    auto file = dir.getChildFile ("LINEGEN_" + juce::String (seeds.rhythm) + "-" + juce::String (seeds.rhythmMutations)
+    auto file = dir.getChildFile ("MIDI_LINES_" + juce::String (seeds.rhythm) + "-" + juce::String (seeds.rhythmMutations)
                                   + "_" + juce::String (seeds.pitch) + "-" + juce::String (seeds.pitchMutations) + ".mid");
     file.deleteFile();
 
     juce::FileOutputStream os (file);
     if (os.openedOk())
     {
-        linegen::toMidiFile (displayPattern).writeTo (os);
+        midilines::toMidiFile (displayPattern).writeTo (os);
         os.flush();
     }
     return file;
@@ -171,7 +171,7 @@ juce::File LineGenProcessor::writeMidiFile() const
 // ---------------------------------------------------------------------------
 // Lecture (thread audio)
 
-void LineGenProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midi)
+void MidiLinesProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::MidiBuffer& midi)
 {
     juce::ScopedNoDenormals noDenormals;
     buffer.clear();   // aucun son : seulement du MIDI
@@ -201,7 +201,7 @@ void LineGenProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::Mid
             if (auto b = pos->getBpm()) bpm = *b;
         }
 
-    const auto noteOff = [] (int pitch) { return juce::MidiMessage::noteOff (linegen::kMidiChannel, pitch); };
+    const auto noteOff = [] (int pitch) { return juce::MidiMessage::noteOff (midilines::kMidiChannel, pitch); };
 
     if (! playing || numSamples <= 0 || bpm <= 0.0)
     {
@@ -250,7 +250,7 @@ void LineGenProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::Mid
 
         releaseIfDue (t);
         const int smp = toSample (t);
-        const auto on = juce::MidiMessage::noteOn (linegen::kMidiChannel, st.pitch, (juce::uint8) st.velocity);
+        const auto on = juce::MidiMessage::noteOn (midilines::kMidiChannel, st.pitch, (juce::uint8) st.velocity);
 
         if (noteActive)
         {
@@ -286,7 +286,7 @@ void LineGenProcessor::processBlock (juce::AudioBuffer<float>& buffer, juce::Mid
 // ---------------------------------------------------------------------------
 // Sauvegarde
 
-void LineGenProcessor::getStateInformation (juce::MemoryBlock& dest)
+void MidiLinesProcessor::getStateInformation (juce::MemoryBlock& dest)
 {
     auto state = apvts.copyState();
     state.setProperty ("seedRhythm", (juce::int64) seeds.rhythm, nullptr);
@@ -300,7 +300,7 @@ void LineGenProcessor::getStateInformation (juce::MemoryBlock& dest)
         copyXmlToBinary (*xml, dest);
 }
 
-void LineGenProcessor::setStateInformation (const void* data, int size)
+void MidiLinesProcessor::setStateInformation (const void* data, int size)
 {
     auto xml = getXmlFromBinary (data, size);
     if (xml == nullptr || ! xml->hasTagName (apvts.state.getType()))
@@ -318,6 +318,6 @@ void LineGenProcessor::setStateInformation (const void* data, int size)
     dirty.store (true);
 }
 
-juce::AudioProcessorEditor* LineGenProcessor::createEditor() { return new LineGenEditor (*this); }
+juce::AudioProcessorEditor* MidiLinesProcessor::createEditor() { return new MidiLinesEditor (*this); }
 
-juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter() { return new LineGenProcessor(); }
+juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter() { return new MidiLinesProcessor(); }
