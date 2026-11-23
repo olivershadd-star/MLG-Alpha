@@ -419,6 +419,76 @@ def fuzz_bass(_):
     return p, "Basse fuzz", "noise-rock", "fuzz"
 
 
+# ------------------------------------------------------------------ DARK ELECTRO (façon :wumpscut:)
+HARM = [0, 2, 3, 5, 7, 8, 11]  # mineur harmonique (sensible = couleur gothique)
+
+
+def gothic_lead(_):
+    """Mélodie sombre mais accrocheuse (mineur harmonique), question-réponse sur 2 ou 4 mesures."""
+    scale = rng.choice([HARM, MINOR, HARM])
+    rhythm = rng.choice([[0, 2, 4, 6, 8, 10, 12, 14], [0, 3, 6, 8, 10, 12], [0, 4, 6, 8, 12, 14], [0, 2, 3, 6, 8, 11, 12, 14]])
+    def phrase(end_deg):
+        degs = [0]; d = 0
+        for _ in range(len(rhythm) - 2):
+            d = max(-2, min(7, d + rng.choice([-2, -1, -1, 1, 1, 2, 3])))
+            degs.append(d)
+        degs.append(end_deg)
+        return [scale[x % 7] + 12 * (x // 7) + 12 for x in degs]
+    A, B = phrase(rng.choice([4, 6])), phrase(0)   # A finit en suspens (V ou sensible), B revient à la tonique
+    bars = rng.choice([2, 4])
+    p = Pat("melody", bars, 1)
+    for b in range(bars):
+        m = A if b % 2 == 0 else B
+        for i, s in enumerate(rhythm):
+            nxt = rhythm[i + 1] if i + 1 < len(rhythm) else 16
+            p.note(0, b * 16 + s, m[i], rng.uniform(85, 115) + (8 if s % 4 == 0 else 0), max(1, nxt - s - 1))
+    return p, "Lead gothique", "dark-electro", "gothic-lead"
+
+
+def gothic_strings(_):
+    """Cordes / chœurs lents en mineur harmonique : i – VI – iv – V (V majeur grâce à la sensible)."""
+    prog = rng.choice([[0, 5, 3, 4], [0, 3, 4, 0], [0, 5, 6, 4], [0, 4, 5, 3], [0, 0, 5, 4]])
+    nv = rng.choice([3, 4])
+    bars = len(prog) * rng.choice([1, 2])
+    per = bars // len(prog)
+    p = Pat("pad", bars, nv); prev = None
+    for ci, deg in enumerate(prog):
+        voicing = voice_lead(prev, chord_tones(HARM, deg), nv); prev = voicing
+        for v, n in enumerate(voicing):
+            p.note(v, ci * per * 16, n, rng.uniform(70, 95), per * 16)
+    return p, "Cordes gothiques", "dark-electro", "gothic-strings"
+
+
+def staccato_stabs(_):
+    """Stabs d'accords staccato syncopés (mineur / mineur harmonique)."""
+    scale = rng.choice([HARM, MINOR])
+    prog = rng.choice([[0], [0, 5], [0, 3], [0, 4], [0, 5, 3, 4]])
+    rhythm = rng.choice([[0, 3, 6, 10, 12], [0, 2, 3, 8, 10, 11], [0, 3, 8, 11, 14], [0, 6, 8, 14]])
+    bars = max(len(prog), rng.choice([1, 2, 4]))
+    p = Pat("stab", bars, 3); prev = None
+    for b in range(bars):
+        voicing = voice_lead(prev, chord_tones(scale, prog[b % len(prog)]), 3); prev = voicing
+        for s in rhythm:
+            for v, n in enumerate(voicing):
+                p.note(v, b * 16 + s, n + 12, rng.uniform(95, 122), 1)
+    return p, "Stabs staccato", "dark-electro", "stabs"
+
+
+def dark_arp(_):
+    """Arpège de synthé sombre en doubles croches sur accords mineurs (gothique)."""
+    scale = rng.choice([HARM, MINOR, PHRYG])
+    prog = rng.choice([[0], [0, 5], [0, 3], [0, 5, 3, 4], [0, 1]])
+    shape = rng.choice([[0, 1, 2, 1], [0, 1, 2, 3], [0, 2, 1, 2], [2, 1, 0, 1], [0, 1, 2, 3, 2, 1]])
+    bars = max(len(prog), rng.choice([1, 2, 4]))
+    p = Pat("melody", bars, 1)
+    for b in range(bars):
+        t = chord_tones(scale, prog[b % len(prog)]); t = t + [t[0] + 12]
+        for s in range(16):
+            n = t[shape[s % len(shape)] % len(t)]
+            p.note(0, b * 16 + s, n + 12, 105 if s % 4 == 0 else rng.uniform(70, 88))
+    return p, "Arpège sombre", "dark-electro", "dark-arp"
+
+
 PLAN = [  # (fonction, fichier, nombre)
     (drone, "ambient", 220), (pad_prog, "ambient", 700), (floating, "ambient", 300), (dub_chord, "ambient", 150),
     (boc_melody, "idm", 250), (boc_beat, "idm", 150), (idm_drill, "idm", 450), (idm_shift_arp, "idm", 350),
@@ -429,6 +499,8 @@ PLAN = [  # (fonction, fichier, nombre)
     (ebm_techno_seq, "industrial_techno", 250),
     (swedish_tom_loop, "swedish", 350), (swedish_ride, "swedish", 60), (one_note_stab, "swedish", 120),
     (tribal_toms, "noise_rock", 100), (fuzz_bass, "noise_rock", 100),
+    (gothic_lead, "dark_electro", 300), (gothic_strings, "dark_electro", 150), (staccato_stabs, "dark_electro", 200),
+    (dark_arp, "dark_electro", 200),
 ]
 TYPE = {"pad": "pad", "melody": "melody", "stab": "melody", "bass": "bass", "perc": "perc", "drums": "drums"}
 

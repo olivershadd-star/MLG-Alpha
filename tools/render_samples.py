@@ -92,7 +92,9 @@ def render_drums(head, lines):
 def main(out, preset="general"):
     out = Path(out); out.mkdir(parents=True, exist_ok=True)
     rng = random.Random(7)
-    if preset == "textures":
+    if preset == "dark":
+        picks = [("tex_dark_electro.txt", 16, 48), ("industrial_bass.txt", 4, 36)]
+    elif preset == "textures":
         picks = [("tex_ambient.txt", 10, 48), ("tex_idm.txt", 9, 60), ("tex_moderat.txt", 8, 48),
                  ("tex_industrial_techno.txt", 6, 36), ("tex_swedish.txt", 5, 0), ("tex_noise_rock.txt", 3, 36)]
     elif preset == "industrial":

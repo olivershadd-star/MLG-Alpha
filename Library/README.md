@@ -10,6 +10,7 @@
 | `tex_industrial_techno.txt` | Rhythmic noise, basses grondantes (Perc / Ancient Methods), séquences EBM-techno (Orphx / Adam X) | 900 |
 | `tex_swedish.txt` | Techno suédoise en boucles : boucles de toms, ride, stabs d'une note | 461 |
 | `tex_noise_rock.txt` | Toms tribaux, basses fuzz (HEALTH) | 200 |
+| `tex_dark_electro.txt` | Dark electro façon :wumpscut: : leads gothiques en mineur harmonique (question-réponse), cordes/chœurs, stabs staccato, arpèges sombres | 442 |
 | `industrial_bass.txt` | EBM (doubles croches entre les kicks, gate), basses électro-industrielles / dark electro | 900 |
 | `industrial_synth.txt` | Riffs chug de rock/metal indus, riffs sur pédale, leads aggrotech | 764 |
 | `industrial_perc.txt` | Caisse martiale EBM, kick + caisse de rock indus (dont demi-temps), noise stabs métalliques, « usine » en 3/5/6/7 | 903 |
@@ -29,7 +30,7 @@
 | `bass_neuralacid.txt` | Basses NeuralAcid sur 4 mesures, qui suivent une grille d'accords | 8 985 |
 | `acid.txt`, `bass.txt`, `melody.txt` | Acid, basses et mélodies écrites à la main | 87 |
 
-**Total : 25 959 motifs.**
+**Total : 26 401 motifs.**
 
 ## Format
 
@@ -47,7 +48,7 @@ Pour ajouter tes motifs : copier un bloc, changer l'`id`, le nom et les pas.
 
 ## Sources
 
-- `tex_*.txt` : fabriqués par `tools/generate_textures.py` (ambient, IDM, Apparat/Moderat, techno industrielle, techno suédoise, noise rock).
+- `tex_*.txt` : fabriqués par `tools/generate_textures.py` (ambient, IDM, Apparat/Moderat, techno industrielle, techno suédoise, noise rock, dark electro).
 - `industrial_*.txt` : fabriqués par `tools/generate_industrial.py` (règles EBM, électro-industriel, aggrotech, rock/metal industriel ; tempo conseillé dans `bpm=`).
 - `techno_*.txt` : fabriqués par `tools/generate_techno.py` (règles de production techno : kick libre, rumble, polymètre, euclidien, accents, question-réponse, relances).
 - `gen_*.txt` : fabriqués par `tools/generate_patterns.py` (règles : hiérarchie des temps, cellules rythmiques par style, phrasé AAAA'/ABAB'/AABB, tonique sur les temps forts, vélocités accentuées). Relancer le script redonne exactement les mêmes motifs.
