@@ -4,6 +4,12 @@
 
 | Fichier | Contenu | Nombre |
 |---|---|---|
+| `tex_ambient.txt` | Drones, nappes polyphoniques avec conduite des voix (4 à 16 mesures), notes flottantes en boucles premières, accords dub | 1 256 |
+| `tex_idm.txt` | Drills IDM (ratchets), arpèges glissants en 5/7/9/11, mélodies simples, mélodies et beats façon Boards of Canada | 1 400 |
+| `tex_moderat.txt` | Beats demi-temps, sub syncopée, accords mélancoliques, plucks en contretemps | 950 |
+| `tex_industrial_techno.txt` | Rhythmic noise, basses grondantes (Perc / Ancient Methods), séquences EBM-techno (Orphx / Adam X) | 900 |
+| `tex_swedish.txt` | Techno suédoise en boucles : boucles de toms, ride, stabs d'une note | 461 |
+| `tex_noise_rock.txt` | Toms tribaux, basses fuzz (HEALTH) | 200 |
 | `industrial_bass.txt` | EBM (doubles croches entre les kicks, gate), basses électro-industrielles / dark electro | 900 |
 | `industrial_synth.txt` | Riffs chug de rock/metal indus, riffs sur pédale, leads aggrotech | 764 |
 | `industrial_perc.txt` | Caisse martiale EBM, kick + caisse de rock indus (dont demi-temps), noise stabs métalliques, « usine » en 3/5/6/7 | 903 |
@@ -23,7 +29,7 @@
 | `bass_neuralacid.txt` | Basses NeuralAcid sur 4 mesures, qui suivent une grille d'accords | 8 985 |
 | `acid.txt`, `bass.txt`, `melody.txt` | Acid, basses et mélodies écrites à la main | 87 |
 
-**Total : 20 792 motifs.**
+**Total : 25 959 motifs.**
 
 ## Format
 
@@ -32,6 +38,8 @@ Chaque motif commence par une ligne `@type id=… name="…" genre=… bars=… 
 - **Batterie** : une ligne par instrument (`BD`, `SN`, `CL`, `RS`, `CH`, `OH`, `CY`, `LT`, `MT`, `HT`, `CB`, `SH`, `PC`, `AC` = accent), un caractère par pas : `x` coup, `r` double coup, `h` coup décalé d'un demi-pas, `.` silence. Mesures séparées par un espace.
 - **Vélocités** (fichiers `gen_*`) : ligne `V` sous chaque ligne `N`, une vélocité par note.
 - **Percussions** (`gen_perc.txt`) : dans la ligne `N`, le nom de l'instrument (`RS`, `CH`, `LT`…) au lieu d'un intervalle.
+- **Polyphonie** (`tex_*`) : lignes `N`, `N2`, `N3`, `N4` (une par voix) et `V`, `V2`… pour leurs vélocités, à chaque mesure. Champ `voices=` dans l'en-tête.
+- **Ratchet** : suffixe `*2`, `*3`, `*4` = note répétée 2, 3 ou 4 fois dans le pas.
 - **Acid / basse / mélodie** : `N` puis un jeton par pas = intervalle en demi-tons depuis la tonique (`0`, `3`, `12`, `-2`…), suffixe `a` accent, `s` slide ; `.` silence, `-` note tenue. Tout est transposé dans la tonique choisie.
 - **Accords** : `C` puis un degré par mesure (`i`, `VI`, `iv7`, `Imaj7`, `isus2`…), `-` = l'accord continue. `@rhythm` = rythme de jeu des accords.
 
@@ -39,6 +47,7 @@ Pour ajouter tes motifs : copier un bloc, changer l'`id`, le nom et les pas.
 
 ## Sources
 
+- `tex_*.txt` : fabriqués par `tools/generate_textures.py` (ambient, IDM, Apparat/Moderat, techno industrielle, techno suédoise, noise rock).
 - `industrial_*.txt` : fabriqués par `tools/generate_industrial.py` (règles EBM, électro-industriel, aggrotech, rock/metal industriel ; tempo conseillé dans `bpm=`).
 - `techno_*.txt` : fabriqués par `tools/generate_techno.py` (règles de production techno : kick libre, rumble, polymètre, euclidien, accents, question-réponse, relances).
 - `gen_*.txt` : fabriqués par `tools/generate_patterns.py` (règles : hiérarchie des temps, cellules rythmiques par style, phrasé AAAA'/ABAB'/AABB, tonique sur les temps forts, vélocités accentuées). Relancer le script redonne exactement les mêmes motifs.

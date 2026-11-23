@@ -1,0 +1,3721 @@
+# Textures, ambient, IDM, Apparat/Moderat, techno industrielle, techno suédoise, noise rock —
+# tools/generate_textures.py.  Polyphonie : N/N2/N3/N4 + V/V2/V3/V4 par mesure.
+# Ratchet : suffixe *2 *3 *4 = note répétée dans le pas.  Notes = intervalles depuis la tonique.
+
+@perc id=x-swedish-tom-loop-0001 name="Boucle de toms — 1 voix, 4 mes. #001" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB PC PC . . . . . . . . CB PC CB . .
+V  87 83 115 . . . . . . . . 72 88 80 . .
+N  CB PC PC . . . . . . . . CB PC CB . .
+V  88 72 115 . . . . . . . . 87 78 85 . .
+N  CB PC PC . . . . . . . . CB PC CB . .
+V  86 93 115 . . . . . . . . 79 81 82 . .
+N  CB PC PC . . . . . . . . CB PC CB PC PC
+V  79 76 115 . . . . . . . . 79 80 88 115 70
+
+@perc id=x-swedish-tom-loop-0002 name="Boucle de toms — 1 voix, 4 mes. #002" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . . . . . . LT . . . . MT
+V  . . . 75 . . . . . . 115 . . . . 79
+N  . . . LT . . . . . . LT . . . . MT
+V  . . . 88 . . . . . . 115 . . . . 70
+N  . . . LT . . . . . . LT . . . . MT
+V  . . . 79 . . . . . . 115 . . . . 71
+N  . . . LT . . . . . . LT . MT . . MT
+V  . . . 76 . . . . . . 115 . 78 . . 78
+
+@perc id=x-swedish-tom-loop-0003 name="Boucle de toms — 1 voix, 4 mes. #003" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . HT . HT MT . MT . . . HT . .
+V  . . 115 . 92 . 115 79 . 88 . . . 72 . .
+N  . . MT . HT . HT MT . MT . . . HT . .
+V  . . 115 . 77 . 115 72 . 83 . . . 70 . .
+N  . . MT . HT . HT MT . MT . . . HT . .
+V  . . 115 . 79 . 115 92 . 80 . . . 81 . .
+N  . . MT . HT . HT MT . MT . . . HT . .
+V  . . 115 . 88 . 115 80 . 91 . . . 85 . .
+
+@perc id=x-swedish-tom-loop-0004 name="Boucle de toms — 1 voix, 4 mes. #004" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC PC CB CB . CB PC CB . PC . . PC CB . .
+V  74 94 115 84 . 88 115 94 . 92 . . 90 91 . .
+N  PC PC CB CB . CB PC CB . PC . . PC CB . .
+V  90 80 115 80 . 71 115 88 . 94 . . 70 76 . .
+N  PC PC CB CB . CB PC CB . PC . . PC CB . .
+V  83 92 115 88 . 89 115 83 . 77 . . 86 88 . .
+N  PC PC CB CB . CB PC CB . PC . . PC . PC PC
+V  91 86 115 90 . 70 115 90 . 81 . . 79 . 115 78
+
+@perc id=x-swedish-tom-loop-0005 name="Boucle de toms — 1 voix, 2 mes. #005" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB PC . PC PC CB CB CB . CB . CB CB . . CB
+V  80 86 . 78 80 89 115 70 . 90 . 75 76 . . 91
+N  CB PC . PC PC CB CB CB . CB . CB CB PC . CB
+V  94 81 . 79 70 76 115 70 . 92 . 87 83 71 . 73
+
+@perc id=x-swedish-tom-loop-0006 name="Boucle de toms — 1 voix, 4 mes. #006" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  HT . . MT HT MT MT . . . HT . . . HT MT
+V  79 . . 89 76 83 115 . . . 115 . . . 115 78
+N  HT . . MT HT MT MT . . . HT . . . HT MT
+V  78 . . 73 88 72 115 . . . 115 . . . 115 73
+N  HT . . MT HT MT MT . . . HT . . . HT MT
+V  89 . . 83 75 79 115 . . . 115 . . . 115 74
+N  HT . . MT HT MT MT . . . HT . HT . . MT
+V  82 . . 74 77 86 115 . . . 115 . 77 . . 78
+
+@perc id=x-swedish-tom-loop-0007 name="Boucle de toms — 1 voix, 4 mes. #007" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC . PC . . . LT PC . . LT . . LT PC
+V  . 73 . 92 . . . 71 76 . . 78 . . 115 84
+N  . PC . PC . . . LT PC . . LT . . LT PC
+V  . 77 . 85 . . . 75 89 . . 82 . . 115 91
+N  . PC . PC . . . LT PC . . LT . . LT PC
+V  . 94 . 70 . . . 71 86 . . 76 . . 115 82
+N  . PC . PC . . . LT PC . . LT PC PC LT .
+V  . 82 . 91 . . . 80 90 . . 93 71 85 115 .
+
+@perc id=x-swedish-tom-loop-0008 name="Boucle de toms — 1 voix, 2 mes. #008" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT MT . . . . . . . . LT . . MT LT
+V  . 76 115 . . . . . . . . 87 . . 115 70
+N  . LT MT . . . . . . . . LT LT . . LT
+V  . 73 115 . . . . . . . . 93 75 . . 83
+
+@perc id=x-swedish-tom-loop-0009 name="Boucle de toms — 1 voix, 2 mes. #009" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT MT . . . LT . . . LT . . . MT
+V  . 89 115 75 . . . 93 . . . 71 . . . 87
+N  . LT LT MT . . . LT . . . LT LT MT . .
+V  . 92 115 70 . . . 84 . . . 84 93 93 . .
+
+@perc id=x-swedish-tom-loop-0010 name="Boucle de toms — 1 voix, 4 mes. #010" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . . . . . MT . . . . HT MT
+V  . 76 . . . . . . . 87 . . . . 115 82
+N  . MT . . . . . . . MT . . . . HT MT
+V  . 93 . . . . . . . 92 . . . . 115 81
+N  . MT . . . . . . . MT . . . . HT MT
+V  . 86 . . . . . . . 81 . . . . 115 80
+N  . MT . . . . . . . MT . . HT MT HT MT
+V  . 88 . . . . . . . 86 . . 86 82 115 81
+
+@perc id=x-swedish-tom-loop-0011 name="Boucle de toms — 1 voix, 2 mes. #011" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . LT . . . MT . . MT LT LT
+V  . . . . . . 115 . . . 115 . . 87 115 88
+N  . . . . . . LT . . . MT . LT MT . .
+V  . . . . . . 115 . . . 115 . 90 72 . .
+
+@perc id=x-swedish-tom-loop-0012 name="Boucle de toms — 1 voix, 4 mes. #012" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT LT . . HT MT . . LT LT . . . . MT
+V  . 83 115 . . 79 115 . . 83 115 . . . . 93
+N  . HT LT . . HT MT . . LT LT . . . . MT
+V  . 78 115 . . 92 115 . . 74 115 . . . . 84
+N  . HT LT . . HT MT . . LT LT . . . . MT
+V  . 71 115 . . 92 115 . . 88 115 . . . . 73
+N  . HT LT . . HT MT . . LT LT . LT MT MT MT
+V  . 92 115 . . 91 115 . . 92 115 . 90 93 115 78
+
+@perc id=x-swedish-tom-loop-0013 name="Boucle de toms — 1 voix, 4 mes. #013" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT . PC PC LT . PC LT . . . PC LT . . .
+V  74 . 115 94 94 . 115 73 . . . 70 86 . . .
+N  LT . PC PC LT . PC LT . . . PC LT . . .
+V  73 . 115 93 90 . 115 93 . . . 89 73 . . .
+N  LT . PC PC LT . PC LT . . . PC LT . . .
+V  87 . 115 94 85 . 115 90 . . . 85 90 . . .
+N  LT . PC PC LT . PC LT . . . PC . . LT .
+V  71 . 115 92 87 . 115 86 . . . 75 . . 115 .
+
+@perc id=x-swedish-tom-loop-0014 name="Boucle de toms — 1 voix, 2 mes. #014" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . MT MT MT HT . . HT . HT MT HT HT
+V  . . 115 . 78 80 115 71 . . 115 . 74 80 115 77
+N  . . MT . MT MT MT HT . . HT . HT . . .
+V  . . 115 . 80 85 115 81 . . 115 . 73 . . .
+
+@perc id=x-swedish-tom-loop-0015 name="Boucle de toms — 1 voix, 4 mes. #015" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . . . LT . . . . . . . .
+V  . . . 77 . . . 94 . . . . . . . .
+N  . . . LT . . . LT . . . . . . . .
+V  . . . 82 . . . 82 . . . . . . . .
+N  . . . LT . . . LT . . . . . . . .
+V  . . . 77 . . . 78 . . . . . . . .
+N  . . . LT . . . LT . . . . . . LT .
+V  . . . 71 . . . 88 . . . . . . 115 .
+
+@perc id=x-swedish-tom-loop-0016 name="Boucle de toms — 1 voix, 4 mes. #016" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . MT HT MT . MT MT . . . MT HT .
+V  . . 115 . 78 83 115 . 92 70 . . . 84 115 .
+N  . . MT . MT HT MT . MT MT . . . MT HT .
+V  . . 115 . 76 93 115 . 76 86 . . . 87 115 .
+N  . . MT . MT HT MT . MT MT . . . MT HT .
+V  . . 115 . 74 79 115 . 91 71 . . . 86 115 .
+N  . . MT . MT HT MT . MT MT . . HT . HT MT
+V  . . 115 . 89 80 115 . 89 81 . . 77 . 115 83
+
+@perc id=x-swedish-tom-loop-0017 name="Boucle de toms — 1 voix, 4 mes. #017" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . CB . . . . . . . . . . PC . PC PC
+V  . 91 . . . . . . . . . . 84 . 115 84
+N  . CB . . . . . . . . . . PC . PC PC
+V  . 75 . . . . . . . . . . 92 . 115 71
+N  . CB . . . . . . . . . . PC . PC PC
+V  . 92 . . . . . . . . . . 87 . 115 74
+N  . CB . . . . . . . . . . . . PC .
+V  . 93 . . . . . . . . . . . . 115 .
+
+@perc id=x-swedish-tom-loop-0018 name="Boucle de toms — 1 voix, 4 mes. #018" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB CB . . . PC . . . CB CB . CB . . .
+V  78 74 . . . 81 . . . 76 115 . 92 . . .
+N  CB CB . . . PC . . . CB CB . CB . . .
+V  73 76 . . . 74 . . . 85 115 . 80 . . .
+N  CB CB . . . PC . . . CB CB . CB . . .
+V  75 90 . . . 77 . . . 77 115 . 82 . . .
+N  CB CB . . . PC . . . CB CB . CB CB . CB
+V  94 90 . . . 83 . . . 75 115 . 91 93 . 74
+
+@perc id=x-swedish-tom-loop-0019 name="Boucle de toms — 1 voix, 4 mes. #019" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . . HT HT . . LT MT . LT . .
+V  . . . 71 . . 115 79 . . 115 90 . 82 . .
+N  . . . LT . . HT HT . . LT MT . LT . .
+V  . . . 94 . . 115 92 . . 115 92 . 87 . .
+N  . . . LT . . HT HT . . LT MT . LT . .
+V  . . . 91 . . 115 80 . . 115 93 . 85 . .
+N  . . . LT . . HT HT . . LT MT LT LT . HT
+V  . . . 84 . . 115 84 . . 115 81 92 87 . 83
+
+@perc id=x-swedish-tom-loop-0020 name="Boucle de toms — 1 voix, 4 mes. #020" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . PC . PC CB . CB CB PC PC . PC CB . .
+V  . . 115 . 92 88 . 73 87 93 115 . 73 84 . .
+N  . . PC . PC CB . CB CB PC PC . PC CB . .
+V  . . 115 . 81 73 . 94 91 74 115 . 89 85 . .
+N  . . PC . PC CB . CB CB PC PC . PC CB . .
+V  . . 115 . 78 80 . 89 91 74 115 . 86 80 . .
+N  . . PC . PC CB . CB CB PC PC . . . PC CB
+V  . . 115 . 79 78 . 83 70 82 115 . . . 115 73
+
+@perc id=x-swedish-tom-loop-0021 name="Boucle de toms — 1 voix, 4 mes. #021" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . CB PC . . . . PC . . CB CB . PC .
+V  . . 115 73 . . . . 89 . . 76 82 . 115 .
+N  . . CB PC . . . . PC . . CB CB . PC .
+V  . . 115 75 . . . . 73 . . 89 94 . 115 .
+N  . . CB PC . . . . PC . . CB CB . PC .
+V  . . 115 89 . . . . 85 . . 81 87 . 115 .
+N  . . CB PC . . . . PC . . CB CB PC PC .
+V  . . 115 92 . . . . 86 . . 81 72 86 115 .
+
+@perc id=x-swedish-tom-loop-0022 name="Boucle de toms — 1 voix, 2 mes. #022" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . MT HT MT . HT . LT . LT . .
+V  . . . . . 78 115 94 . 90 . 73 . 86 . .
+N  . . . . . MT HT MT . HT . LT HT LT MT .
+V  . . . . . 89 115 77 . 89 . 94 86 91 115 .
+
+@perc id=x-swedish-tom-loop-0023 name="Boucle de toms — 1 voix, 4 mes. #023" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . HT LT . LT . . . LT . .
+V  . . . . . . 115 76 . 76 . . . 82 . .
+N  . . . . . . HT LT . LT . . . LT . .
+V  . . . . . . 115 86 . 81 . . . 75 . .
+N  . . . . . . HT LT . LT . . . LT . .
+V  . . . . . . 115 93 . 79 . . . 72 . .
+N  . . . . . . HT LT . LT . . LT LT HT HT
+V  . . . . . . 115 85 . 77 . . 71 77 115 73
+
+@perc id=x-swedish-tom-loop-0024 name="Boucle de toms — 1 voix, 4 mes. #024" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . LT LT . . . . LT LT . . . . LT .
+V  87 . 115 79 . . . . 85 83 . . . . 115 .
+N  PC . LT LT . . . . LT LT . . . . LT .
+V  81 . 115 93 . . . . 84 85 . . . . 115 .
+N  PC . LT LT . . . . LT LT . . . . LT .
+V  83 . 115 88 . . . . 92 93 . . . . 115 .
+N  PC . LT LT . . . . LT LT . . LT PC LT .
+V  79 . 115 80 . . . . 86 77 . . 77 83 115 .
+
+@perc id=x-swedish-tom-loop-0025 name="Boucle de toms — 1 voix, 2 mes. #025" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  MT HT MT HT MT MT MT MT . MT . MT . . . HT
+V  74 78 115 81 79 73 115 90 . 80 . 75 . . . 91
+N  MT HT MT HT MT MT MT MT . MT . MT HT . MT .
+V  84 81 115 83 84 77 115 71 . 75 . 84 86 . 115 .
+
+@perc id=x-swedish-tom-loop-0026 name="Boucle de toms — 1 voix, 4 mes. #026" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . HT . HT MT . . . . . MT . MT MT
+V  . . . 86 . 91 115 . . . . . 84 . 115 76
+N  . . . HT . HT MT . . . . . MT . MT MT
+V  . . . 74 . 77 115 . . . . . 74 . 115 86
+N  . . . HT . HT MT . . . . . MT . MT MT
+V  . . . 78 . 86 115 . . . . . 85 . 115 86
+N  . . . HT . HT MT . . . . . MT HT MT .
+V  . . . 76 . 92 115 . . . . . 72 76 115 .
+
+@perc id=x-swedish-tom-loop-0027 name="Boucle de toms — 1 voix, 4 mes. #027" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT PC . . LT LT . LT . . LT . LT . PC LT
+V  90 72 . . 73 82 . 91 . . 115 . 92 . 115 77
+N  LT PC . . LT LT . LT . . LT . LT . PC LT
+V  72 75 . . 81 92 . 81 . . 115 . 75 . 115 76
+N  LT PC . . LT LT . LT . . LT . LT . PC LT
+V  86 83 . . 75 86 . 71 . . 115 . 83 . 115 89
+N  LT PC . . LT LT . LT . . LT . LT . . .
+V  86 74 . . 75 71 . 74 . . 115 . 94 . . .
+
+@perc id=x-swedish-tom-loop-0028 name="Boucle de toms — 1 voix, 4 mes. #028" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . LT . . . MT . . LT LT . . MT LT
+V  . 83 . 74 . . . 81 . . 115 93 . . 115 77
+N  . LT . LT . . . MT . . LT LT . . MT LT
+V  . 92 . 89 . . . 83 . . 115 78 . . 115 88
+N  . LT . LT . . . MT . . LT LT . . MT LT
+V  . 84 . 81 . . . 84 . . 115 77 . . 115 90
+N  . LT . LT . . . MT . . LT LT . MT MT LT
+V  . 93 . 79 . . . 74 . . 115 81 . 84 115 94
+
+@perc id=x-swedish-tom-loop-0029 name="Boucle de toms — 1 voix, 2 mes. #029" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . . MT HT . . . LT . HT . .
+V  . 70 . . . . 115 85 . . . 94 . 75 . .
+N  . MT . . . . MT HT . . . LT HT HT MT .
+V  . 91 . . . . 115 86 . . . 86 93 87 115 .
+
+@perc id=x-swedish-tom-loop-0030 name="Boucle de toms — 1 voix, 2 mes. #030" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC CB PC PC CB . . . CB . . PC CB CB . CB
+V  73 78 115 94 80 . . . 73 . . 92 84 87 . 89
+N  PC CB PC PC CB . . . CB . . PC . CB CB CB
+V  76 81 115 78 79 . . . 82 . . 86 . 75 115 90
+
+@perc id=x-swedish-tom-loop-0031 name="Boucle de toms — 1 voix, 4 mes. #031" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  HT HT . HT MT . . . . HT . . MT . . .
+V  75 90 . 79 84 . . . . 78 . . 80 . . .
+N  HT HT . HT MT . . . . HT . . MT . . .
+V  81 80 . 86 79 . . . . 91 . . 82 . . .
+N  HT HT . HT MT . . . . HT . . MT . . .
+V  73 74 . 92 75 . . . . 87 . . 89 . . .
+N  HT HT . HT MT . . . . HT . . MT . HT .
+V  87 75 . 75 90 . . . . 94 . . 90 . 115 .
+
+@perc id=x-swedish-tom-loop-0032 name="Boucle de toms — 1 voix, 4 mes. #032" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT HT . MT . HT . . . HT . HT HT .
+V  . . 115 79 . 72 . 86 . . . 78 . 90 115 .
+N  . . MT HT . MT . HT . . . HT . HT HT .
+V  . . 115 78 . 82 . 93 . . . 85 . 94 115 .
+N  . . MT HT . MT . HT . . . HT . HT HT .
+V  . . 115 92 . 76 . 85 . . . 71 . 77 115 .
+N  . . MT HT . MT . HT . . . HT . . HT HT
+V  . . 115 92 . 83 . 73 . . . 93 . . 115 79
+
+@perc id=x-swedish-tom-loop-0033 name="Boucle de toms — 1 voix, 4 mes. #033" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . PC PC . LT PC . PC . LT . . PC LT .
+V  90 . 115 82 . 86 115 . 90 . 115 . . 81 115 .
+N  PC . PC PC . LT PC . PC . LT . . PC LT .
+V  91 . 115 94 . 74 115 . 75 . 115 . . 84 115 .
+N  PC . PC PC . LT PC . PC . LT . . PC LT .
+V  72 . 115 72 . 78 115 . 89 . 115 . . 70 115 .
+N  PC . PC PC . LT PC . PC . LT . LT . LT PC
+V  73 . 115 78 . 74 115 . 91 . 115 . 89 . 115 72
+
+@perc id=x-swedish-tom-loop-0034 name="Boucle de toms — 1 voix, 2 mes. #034" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . . . . . . . . . . . MT .
+V  . . 115 . . . . . . . . . . . 115 .
+N  . . MT . . . . . . . . . MT HT . HT
+V  . . 115 . . . . . . . . . 83 74 . 75
+
+@perc id=x-swedish-tom-loop-0035 name="Boucle de toms — 1 voix, 4 mes. #035" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . PC . LT PC . LT . . . . . . PC
+V  . . . 91 . 93 115 . 71 . . . . . . 93
+N  . . . PC . LT PC . LT . . . . . . PC
+V  . . . 81 . 75 115 . 92 . . . . . . 94
+N  . . . PC . LT PC . LT . . . . . . PC
+V  . . . 70 . 88 115 . 89 . . . . . . 84
+N  . . . PC . LT PC . LT . . . . PC . PC
+V  . . . 88 . 72 115 . 87 . . . . 87 . 83
+
+@perc id=x-swedish-tom-loop-0036 name="Boucle de toms — 1 voix, 4 mes. #036" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . PC . . PC PC . PC LT . . . LT
+V  . . 115 . 79 . . 89 78 . 115 79 . . . 89
+N  . . LT . PC . . PC PC . PC LT . . . LT
+V  . . 115 . 86 . . 80 88 . 115 77 . . . 93
+N  . . LT . PC . . PC PC . PC LT . . . LT
+V  . . 115 . 70 . . 94 74 . 115 71 . . . 82
+N  . . LT . PC . . PC PC . PC LT LT LT PC .
+V  . . 115 . 72 . . 72 80 . 115 92 83 88 115 .
+
+@perc id=x-swedish-tom-loop-0037 name="Boucle de toms — 1 voix, 2 mes. #037" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT HT . . . . . . HT MT HT . HT LT HT
+V  . 85 115 . . . . . . 73 115 71 . 89 115 89
+N  . MT HT . . . . . . HT MT HT MT HT LT HT
+V  . 85 115 . . . . . . 91 115 89 86 81 115 81
+
+@perc id=x-swedish-tom-loop-0038 name="Boucle de toms — 1 voix, 4 mes. #038" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT PC . . . . LT . PC . . . . . . PC
+V  80 91 . . . . 115 . 81 . . . . . . 90
+N  LT PC . . . . LT . PC . . . . . . PC
+V  90 84 . . . . 115 . 93 . . . . . . 81
+N  LT PC . . . . LT . PC . . . . . . PC
+V  91 77 . . . . 115 . 80 . . . . . . 92
+N  LT PC . . . . LT . PC . . . PC . PC PC
+V  77 87 . . . . 115 . 90 . . . 78 . 115 85
+
+@perc id=x-swedish-tom-loop-0039 name="Boucle de toms — 1 voix, 4 mes. #039" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . MT . . LT HT . LT HT MT . LT LT .
+V  . 92 . 81 . . 115 74 . 82 115 84 . 83 115 .
+N  . MT . MT . . LT HT . LT HT MT . LT LT .
+V  . 86 . 88 . . 115 91 . 77 115 91 . 79 115 .
+N  . MT . MT . . LT HT . LT HT MT . LT LT .
+V  . 94 . 73 . . 115 83 . 72 115 84 . 76 115 .
+N  . MT . MT . . LT HT . LT HT MT HT LT LT LT
+V  . 84 . 72 . . 115 78 . 92 115 90 87 86 115 77
+
+@perc id=x-swedish-tom-loop-0040 name="Boucle de toms — 1 voix, 2 mes. #040" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT MT LT . . MT . . . . . . LT . .
+V  . 94 115 87 . . 115 . . . . . . 74 . .
+N  . LT MT LT . . MT . . . . . LT LT LT .
+V  . 87 115 93 . . 115 . . . . . 78 91 115 .
+
+@perc id=x-swedish-tom-loop-0041 name="Boucle de toms — 1 voix, 4 mes. #041" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . LT HT MT . . . . . . . .
+V  . . . . . 88 115 90 . . . . . . . .
+N  . . . . . LT HT MT . . . . . . . .
+V  . . . . . 82 115 83 . . . . . . . .
+N  . . . . . LT HT MT . . . . . . . .
+V  . . . . . 83 115 90 . . . . . . . .
+N  . . . . . LT HT MT . . . . . LT LT HT
+V  . . . . . 92 115 70 . . . . . 78 115 71
+
+@perc id=x-swedish-tom-loop-0042 name="Boucle de toms — 1 voix, 4 mes. #042" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC . PC . LT LT . PC LT LT . LT PC . PC
+V  . 94 . 88 . 74 115 . 88 85 115 . 80 77 . 91
+N  . PC . PC . LT LT . PC LT LT . LT PC . PC
+V  . 94 . 76 . 80 115 . 87 88 115 . 74 73 . 76
+N  . PC . PC . LT LT . PC LT LT . LT PC . PC
+V  . 85 . 71 . 85 115 . 74 78 115 . 87 82 . 87
+N  . PC . PC . LT LT . PC LT LT . LT . PC PC
+V  . 88 . 76 . 76 115 . 91 73 115 . 91 . 115 71
+
+@perc id=x-swedish-tom-loop-0043 name="Boucle de toms — 1 voix, 4 mes. #043" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . HT MT . MT . HT . . . MT . MT . .
+V  . . 115 79 . 72 . 94 . . . 74 . 93 . .
+N  . . HT MT . MT . HT . . . MT . MT . .
+V  . . 115 93 . 83 . 81 . . . 87 . 72 . .
+N  . . HT MT . MT . HT . . . MT . MT . .
+V  . . 115 73 . 78 . 86 . . . 72 . 72 . .
+N  . . HT MT . MT . HT . . . MT MT MT LT LT
+V  . . 115 74 . 76 . 83 . . . 94 77 86 115 86
+
+@perc id=x-swedish-tom-loop-0044 name="Boucle de toms — 1 voix, 4 mes. #044" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT HT HT . . . . . HT HT MT MT .
+V  . . . 94 77 71 . . . . . 88 87 86 115 .
+N  . . . MT HT HT . . . . . HT HT MT MT .
+V  . . . 76 71 85 . . . . . 75 82 94 115 .
+N  . . . MT HT HT . . . . . HT HT MT MT .
+V  . . . 74 88 79 . . . . . 71 83 73 115 .
+N  . . . MT HT HT . . . . . HT . MT MT HT
+V  . . . 81 94 74 . . . . . 74 . 72 115 87
+
+@perc id=x-swedish-tom-loop-0045 name="Boucle de toms — 1 voix, 4 mes. #045" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . LT PC . . . . . LT . . . . .
+V  . 81 . 72 77 . . . . . 115 . . . . .
+N  . LT . LT PC . . . . . LT . . . . .
+V  . 81 . 93 83 . . . . . 115 . . . . .
+N  . LT . LT PC . . . . . LT . . . . .
+V  . 74 . 87 75 . . . . . 115 . . . . .
+N  . LT . LT PC . . . . . LT . PC . . .
+V  . 92 . 86 86 . . . . . 115 . 86 . . .
+
+@perc id=x-swedish-tom-loop-0046 name="Boucle de toms — 1 voix, 4 mes. #046" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . HT . . HT . . . . . MT . . HT .
+V  . . 115 . . 94 . . . . . 93 . . 115 .
+N  . . HT . . HT . . . . . MT . . HT .
+V  . . 115 . . 90 . . . . . 84 . . 115 .
+N  . . HT . . HT . . . . . MT . . HT .
+V  . . 115 . . 83 . . . . . 78 . . 115 .
+N  . . HT . . HT . . . . . MT . LT HT HT
+V  . . 115 . . 86 . . . . . 81 . 73 115 92
+
+@perc id=x-swedish-tom-loop-0047 name="Boucle de toms — 1 voix, 4 mes. #047" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT HT . MT . . . HT . . . MT HT MT .
+V  . 83 115 . 82 . . . 90 . . . 79 75 115 .
+N  . HT HT . MT . . . HT . . . MT HT MT .
+V  . 90 115 . 84 . . . 76 . . . 93 70 115 .
+N  . HT HT . MT . . . HT . . . MT HT MT .
+V  . 90 115 . 76 . . . 75 . . . 72 76 115 .
+N  . HT HT . MT . . . HT . . . MT HT MT MT
+V  . 75 115 . 81 . . . 93 . . . 80 81 115 92
+
+@perc id=x-swedish-tom-loop-0048 name="Boucle de toms — 1 voix, 4 mes. #048" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC . . LT . . LT . PC . . . . . .
+V  . 80 . . 79 . . 81 . 81 . . . . . .
+N  . PC . . LT . . LT . PC . . . . . .
+V  . 74 . . 72 . . 73 . 89 . . . . . .
+N  . PC . . LT . . LT . PC . . . . . .
+V  . 88 . . 74 . . 85 . 89 . . . . . .
+N  . PC . . LT . . LT . PC . . . PC PC .
+V  . 72 . . 87 . . 76 . 90 . . . 73 115 .
+
+@perc id=x-swedish-tom-loop-0049 name="Boucle de toms — 1 voix, 2 mes. #049" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . . MT MT . . HT MT . MT HT . . MT
+V  . 81 . . 81 81 . . 84 77 . 80 85 . . 90
+N  . HT . . MT MT . . HT MT . MT HT HT HT MT
+V  . 74 . . 71 84 . . 90 92 . 80 72 72 115 91
+
+@perc id=x-swedish-tom-loop-0050 name="Boucle de toms — 1 voix, 4 mes. #050" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC PC LT . . PC . LT LT PC . . . PC PC
+V  . 85 115 77 . . 115 . 90 80 115 . . . 115 77
+N  . PC PC LT . . PC . LT LT PC . . . PC PC
+V  . 81 115 81 . . 115 . 85 93 115 . . . 115 84
+N  . PC PC LT . . PC . LT LT PC . . . PC PC
+V  . 94 115 86 . . 115 . 79 86 115 . . . 115 77
+N  . PC PC LT . . PC . LT LT PC . PC . . .
+V  . 74 115 77 . . 115 . 91 71 115 . 79 . . .
+
+@perc id=x-swedish-tom-loop-0051 name="Boucle de toms — 1 voix, 2 mes. #051" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . PC LT PC . . . PC PC . PC .
+V  . . . 80 . 70 115 91 . . . 94 80 . 115 .
+N  . . . LT . PC LT PC . . . PC PC . . .
+V  . . . 75 . 84 115 94 . . . 85 83 . . .
+
+@perc id=x-swedish-tom-loop-0052 name="Boucle de toms — 1 voix, 4 mes. #052" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . LT LT . . . MT LT . LT . .
+V  . . . 76 . 85 115 . . . 115 82 . 70 . .
+N  . . . MT . LT LT . . . MT LT . LT . .
+V  . . . 82 . 72 115 . . . 115 93 . 70 . .
+N  . . . MT . LT LT . . . MT LT . LT . .
+V  . . . 79 . 89 115 . . . 115 72 . 92 . .
+N  . . . MT . LT LT . . . MT LT MT LT . .
+V  . . . 74 . 72 115 . . . 115 85 94 94 . .
+
+@perc id=x-swedish-tom-loop-0053 name="Boucle de toms — 1 voix, 2 mes. #053" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . HT . MT MT . . MT MT . . . . MT HT
+V  . . 115 . 71 83 . . 82 89 . . . . 115 79
+N  . . HT . MT MT . . MT MT . . . MT MT HT
+V  . . 115 . 85 89 . . 88 82 . . . 74 115 71
+
+@perc id=x-swedish-tom-loop-0054 name="Boucle de toms — 1 voix, 4 mes. #054" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . HT . . . HT HT . . . . . HT MT MT
+V  . . 115 . . . 115 86 . . . . . 79 115 84
+N  . . HT . . . HT HT . . . . . HT MT MT
+V  . . 115 . . . 115 90 . . . . . 81 115 92
+N  . . HT . . . HT HT . . . . . HT MT MT
+V  . . 115 . . . 115 81 . . . . . 72 115 82
+N  . . HT . . . HT HT . . . . LT . MT MT
+V  . . 115 . . . 115 92 . . . . 87 . 115 74
+
+@perc id=x-swedish-tom-loop-0055 name="Boucle de toms — 1 voix, 4 mes. #055" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC PC . . . PC LT . LT LT PC LT . PC .
+V  . 74 115 . . . 115 81 . 78 115 93 74 . 115 .
+N  . PC PC . . . PC LT . LT LT PC LT . PC .
+V  . 92 115 . . . 115 83 . 83 115 89 71 . 115 .
+N  . PC PC . . . PC LT . LT LT PC LT . PC .
+V  . 74 115 . . . 115 81 . 81 115 90 75 . 115 .
+N  . PC PC . . . PC LT . LT LT PC . LT . .
+V  . 77 115 . . . 115 84 . 81 115 78 . 92 . .
+
+@perc id=x-swedish-tom-loop-0056 name="Boucle de toms — 1 voix, 4 mes. #056" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . MT . MT . MT . . . . LT .
+V  . . . 70 . 76 . 90 . 93 . . . . 115 .
+N  . . . MT . MT . MT . MT . . . . LT .
+V  . . . 85 . 94 . 72 . 76 . . . . 115 .
+N  . . . MT . MT . MT . MT . . . . LT .
+V  . . . 82 . 92 . 79 . 80 . . . . 115 .
+N  . . . MT . MT . MT . MT . . . MT . MT
+V  . . . 75 . 94 . 85 . 90 . . . 85 . 80
+
+@perc id=x-swedish-tom-loop-0057 name="Boucle de toms — 1 voix, 4 mes. #057" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . LT . LT . MT . . . MT . MT LT LT
+V  . 87 . 92 . 93 . 76 . . . 86 . 79 115 86
+N  . HT . LT . LT . MT . . . MT . MT LT LT
+V  . 80 . 74 . 80 . 73 . . . 76 . 81 115 87
+N  . HT . LT . LT . MT . . . MT . MT LT LT
+V  . 71 . 82 . 83 . 71 . . . 88 . 78 115 73
+N  . HT . LT . LT . MT . . . MT . MT . .
+V  . 91 . 81 . 86 . 79 . . . 87 . 90 . .
+
+@perc id=x-swedish-tom-loop-0058 name="Boucle de toms — 1 voix, 4 mes. #058" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . MT . . . . LT . . MT LT .
+V  . 79 115 . . 84 . . . . 115 . . 70 115 .
+N  . LT LT . . MT . . . . LT . . MT LT .
+V  . 91 115 . . 93 . . . . 115 . . 94 115 .
+N  . LT LT . . MT . . . . LT . . MT LT .
+V  . 73 115 . . 84 . . . . 115 . . 92 115 .
+N  . LT LT . . MT . . . . LT . . . LT MT
+V  . 85 115 . . 85 . . . . 115 . . . 115 89
+
+@perc id=x-swedish-tom-loop-0059 name="Boucle de toms — 1 voix, 4 mes. #059" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . LT . LT . . . . . . . MT
+V  . . . . . 90 . 78 . . . . . . . 74
+N  . . . . . LT . LT . . . . . . . MT
+V  . . . . . 87 . 85 . . . . . . . 89
+N  . . . . . LT . LT . . . . . . . MT
+V  . . . . . 83 . 70 . . . . . . . 79
+N  . . . . . LT . LT . . . . LT LT MT MT
+V  . . . . . 70 . 85 . . . . 92 76 115 78
+
+@perc id=x-swedish-tom-loop-0060 name="Boucle de toms — 1 voix, 2 mes. #060" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . MT . . . . . . HT MT MT . . .
+V  . 80 . 73 . . . . . . 115 76 72 . . .
+N  . MT . MT . . . . . . HT MT MT MT . MT
+V  . 79 . 80 . . . . . . 115 92 79 77 . 90
+
+@perc id=x-swedish-tom-loop-0061 name="Boucle de toms — 1 voix, 4 mes. #061" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT . LT LT PC PC PC . . LT . LT . PC . PC
+V  85 . 115 87 92 94 115 . . 83 . 74 . 89 . 71
+N  LT . LT LT PC PC PC . . LT . LT . PC . PC
+V  89 . 115 90 87 80 115 . . 90 . 81 . 75 . 91
+N  LT . LT LT PC PC PC . . LT . LT . PC . PC
+V  71 . 115 81 75 84 115 . . 85 . 91 . 86 . 86
+N  LT . LT LT PC PC PC . . LT . LT . PC PC PC
+V  73 . 115 75 88 79 115 . . 87 . 86 . 90 115 86
+
+@perc id=x-swedish-tom-loop-0062 name="Boucle de toms — 1 voix, 2 mes. #062" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . . . MT . MT . LT . MT . .
+V  . 71 115 . . . . 75 . 81 . 79 . 79 . .
+N  . LT LT . . . . MT . MT . LT HT MT . .
+V  . 94 115 . . . . 87 . 72 . 77 79 79 . .
+
+@perc id=x-swedish-tom-loop-0063 name="Boucle de toms — 1 voix, 2 mes. #063" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB CB . CB . PC PC CB PC . PC CB PC . . CB
+V  86 90 . 72 . 76 115 94 87 . 115 70 72 . . 84
+N  CB CB . CB . PC PC CB PC . PC CB PC PC CB CB
+V  79 77 . 78 . 75 115 73 77 . 115 93 92 88 115 79
+
+@perc id=x-swedish-tom-loop-0064 name="Boucle de toms — 1 voix, 2 mes. #064" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . CB CB CB CB PC PC CB CB . . PC . . .
+V  . . 115 91 72 89 115 80 94 71 . . 89 . . .
+N  . . CB CB CB CB PC PC CB CB . . . PC CB PC
+V  . . 115 70 83 73 115 75 76 92 . . . 83 115 90
+
+@perc id=x-swedish-tom-loop-0065 name="Boucle de toms — 1 voix, 4 mes. #065" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . . . . LT . MT MT . . MT . .
+V  . . 115 . . . . 75 . 89 115 . . 73 . .
+N  . . MT . . . . LT . MT MT . . MT . .
+V  . . 115 . . . . 78 . 72 115 . . 88 . .
+N  . . MT . . . . LT . MT MT . . MT . .
+V  . . 115 . . . . 75 . 89 115 . . 74 . .
+N  . . MT . . . . LT . MT MT . LT . MT LT
+V  . . 115 . . . . 94 . 73 115 . 81 . 115 79
+
+@perc id=x-swedish-tom-loop-0066 name="Boucle de toms — 1 voix, 4 mes. #066" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . MT . MT . LT LT . . . LT .
+V  . . 115 . . 72 . 81 . 86 115 . . . 115 .
+N  . . LT . . MT . MT . LT LT . . . LT .
+V  . . 115 . . 89 . 92 . 82 115 . . . 115 .
+N  . . LT . . MT . MT . LT LT . . . LT .
+V  . . 115 . . 75 . 91 . 79 115 . . . 115 .
+N  . . LT . . MT . MT . LT LT . MT LT . .
+V  . . 115 . . 72 . 74 . 71 115 . 85 79 . .
+
+@perc id=x-swedish-tom-loop-0067 name="Boucle de toms — 1 voix, 4 mes. #067" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . PC CB CB . CB . . . . . . . PC
+V  . . . 71 86 70 . 87 . . . . . . . 84
+N  . . . PC CB CB . CB . . . . . . . PC
+V  . . . 71 94 85 . 77 . . . . . . . 80
+N  . . . PC CB CB . CB . . . . . . . PC
+V  . . . 79 93 77 . 91 . . . . . . . 82
+N  . . . PC CB CB . CB . . . . . . . PC
+V  . . . 81 93 84 . 92 . . . . . . . 81
+
+@perc id=x-swedish-tom-loop-0068 name="Boucle de toms — 1 voix, 4 mes. #068" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . LT . . . LT . . . . . .
+V  . . . 75 . 76 . . . 78 . . . . . .
+N  . . . LT . LT . . . LT . . . . . .
+V  . . . 92 . 88 . . . 80 . . . . . .
+N  . . . LT . LT . . . LT . . . . . .
+V  . . . 87 . 73 . . . 77 . . . . . .
+N  . . . LT . LT . . . LT . . LT . . LT
+V  . . . 92 . 71 . . . 79 . . 74 . . 71
+
+@perc id=x-swedish-tom-loop-0069 name="Boucle de toms — 1 voix, 2 mes. #069" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . HT HT . . . . . . HT HT . . . MT
+V  . . 115 77 . . . . . . 115 78 . . . 92
+N  . . HT HT . . . . . . HT HT HT . HT MT
+V  . . 115 90 . . . . . . 115 73 83 . 115 74
+
+@perc id=x-swedish-tom-loop-0070 name="Boucle de toms — 1 voix, 2 mes. #070" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB PC . . . . . CB . PC . . . . . CB
+V  87 70 . . . . . 79 . 71 . . . . . 73
+N  CB PC . . . . . CB . PC . . CB CB PC CB
+V  83 80 . . . . . 83 . 78 . . 94 92 115 88
+
+@perc id=x-swedish-tom-loop-0071 name="Boucle de toms — 1 voix, 4 mes. #071" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  HT MT HT HT . . . . . HT . HT . . . MT
+V  75 82 115 86 . . . . . 90 . 83 . . . 76
+N  HT MT HT HT . . . . . HT . HT . . . MT
+V  72 73 115 81 . . . . . 77 . 94 . . . 76
+N  HT MT HT HT . . . . . HT . HT . . . MT
+V  73 84 115 84 . . . . . 85 . 70 . . . 87
+N  HT MT HT HT . . . . . HT . HT MT MT HT .
+V  79 76 115 89 . . . . . 94 . 81 78 86 115 .
+
+@perc id=x-swedish-tom-loop-0072 name="Boucle de toms — 1 voix, 4 mes. #072" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . CB PC . . . . . PC PC . . CB PC .
+V  . . 115 91 . . . . . 86 115 . . 86 115 .
+N  . . CB PC . . . . . PC PC . . CB PC .
+V  . . 115 76 . . . . . 89 115 . . 77 115 .
+N  . . CB PC . . . . . PC PC . . CB PC .
+V  . . 115 94 . . . . . 86 115 . . 71 115 .
+N  . . CB PC . . . . . PC PC . . CB PC CB
+V  . . 115 90 . . . . . 77 115 . . 70 115 82
+
+@perc id=x-swedish-tom-loop-0073 name="Boucle de toms — 1 voix, 4 mes. #073" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . MT . MT . . . LT . . . MT
+V  . . . 91 . 71 . 76 . . . 74 . . . 71
+N  . . . LT . MT . MT . . . LT . . . MT
+V  . . . 87 . 94 . 89 . . . 85 . . . 89
+N  . . . LT . MT . MT . . . LT . . . MT
+V  . . . 78 . 76 . 79 . . . 73 . . . 79
+N  . . . LT . MT . MT . . . LT MT LT MT MT
+V  . . . 90 . 84 . 84 . . . 88 73 79 115 70
+
+@perc id=x-swedish-tom-loop-0074 name="Boucle de toms — 1 voix, 4 mes. #074" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . . MT . . . . . . LT MT .
+V  . 79 . . . . 115 . . . . . . 77 115 .
+N  . MT . . . . MT . . . . . . LT MT .
+V  . 91 . . . . 115 . . . . . . 75 115 .
+N  . MT . . . . MT . . . . . . LT MT .
+V  . 85 . . . . 115 . . . . . . 94 115 .
+N  . MT . . . . MT . . . . . LT LT . LT
+V  . 93 . . . . 115 . . . . . 86 90 . 78
+
+@perc id=x-swedish-tom-loop-0075 name="Boucle de toms — 1 voix, 4 mes. #075" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . PC . . . . . . . . . . CB CB PC
+V  90 . 115 . . . . . . . . . . 79 115 74
+N  PC . PC . . . . . . . . . . CB CB PC
+V  94 . 115 . . . . . . . . . . 76 115 81
+N  PC . PC . . . . . . . . . . CB CB PC
+V  86 . 115 . . . . . . . . . . 82 115 87
+N  PC . PC . . . . . . . . . CB CB CB PC
+V  90 . 115 . . . . . . . . . 77 81 115 79
+
+@perc id=x-swedish-tom-loop-0076 name="Boucle de toms — 1 voix, 2 mes. #076" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC PC . PC . PC . PC PC . . . . PC .
+V  . 88 115 . 82 . 115 . 85 77 . . . . 115 .
+N  . PC PC . PC . PC . PC PC . . LT PC PC PC
+V  . 70 115 . 83 . 115 . 77 79 . . 84 77 115 81
+
+@perc id=x-swedish-tom-loop-0077 name="Boucle de toms — 1 voix, 4 mes. #077" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT MT MT MT . HT HT . . . . . . .
+V  . . 115 76 91 93 . 74 79 . . . . . . .
+N  . . MT MT MT MT . HT HT . . . . . . .
+V  . . 115 85 93 94 . 81 76 . . . . . . .
+N  . . MT MT MT MT . HT HT . . . . . . .
+V  . . 115 80 77 81 . 90 75 . . . . . . .
+N  . . MT MT MT MT . HT HT . . . MT HT HT MT
+V  . . 115 76 81 93 . 78 71 . . . 84 72 115 85
+
+@perc id=x-swedish-tom-loop-0078 name="Boucle de toms — 1 voix, 4 mes. #078" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . . . LT . MT . . . . . HT HT .
+V  . 75 . . . 71 . 77 . . . . . 85 115 .
+N  . HT . . . LT . MT . . . . . HT HT .
+V  . 73 . . . 82 . 88 . . . . . 70 115 .
+N  . HT . . . LT . MT . . . . . HT HT .
+V  . 80 . . . 75 . 71 . . . . . 80 115 .
+N  . HT . . . LT . MT . . . . MT HT HT MT
+V  . 71 . . . 92 . 90 . . . . 89 81 115 70
+
+@perc id=x-swedish-tom-loop-0079 name="Boucle de toms — 1 voix, 4 mes. #079" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . MT . . . MT . . . . . .
+V  . . 115 . . 86 . . . 76 . . . . . .
+N  . . LT . . MT . . . MT . . . . . .
+V  . . 115 . . 86 . . . 89 . . . . . .
+N  . . LT . . MT . . . MT . . . . . .
+V  . . 115 . . 79 . . . 90 . . . . . .
+N  . . LT . . MT . . . MT . . MT MT MT LT
+V  . . 115 . . 86 . . . 92 . . 81 74 115 72
+
+@perc id=x-swedish-tom-loop-0080 name="Boucle de toms — 1 voix, 2 mes. #080" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT PC PC LT . . . . . . . LT . PC . LT
+V  71 77 115 72 . . . . . . . 83 . 70 . 80
+N  LT PC PC LT . . . . . . . LT PC . PC LT
+V  78 90 115 85 . . . . . . . 72 80 . 115 76
+
+@perc id=x-swedish-tom-loop-0081 name="Boucle de toms — 1 voix, 2 mes. #081" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . MT LT LT . . . . . . MT MT
+V  . 70 115 . . 73 115 71 . . . . . . 115 90
+N  . LT LT . . MT LT LT . . . . . LT MT MT
+V  . 80 115 . . 78 115 74 . . . . . 77 115 88
+
+@perc id=x-swedish-tom-loop-0082 name="Boucle de toms — 1 voix, 4 mes. #082" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT MT . . MT LT . HT . HT . LT . MT
+V  . . 115 77 . . 115 82 . 77 . 75 . 93 . 76
+N  . . LT MT . . MT LT . HT . HT . LT . MT
+V  . . 115 80 . . 115 91 . 74 . 85 . 76 . 80
+N  . . LT MT . . MT LT . HT . HT . LT . MT
+V  . . 115 76 . . 115 81 . 81 . 86 . 72 . 70
+N  . . LT MT . . MT LT . HT . HT HT . LT MT
+V  . . 115 79 . . 115 88 . 93 . 79 74 . 115 93
+
+@perc id=x-swedish-tom-loop-0083 name="Boucle de toms — 1 voix, 2 mes. #083" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT PC . . PC LT . . . . . LT LT . LT .
+V  84 92 . . 76 84 . . . . . 91 75 . 115 .
+N  LT PC . . PC LT . . . . . LT LT PC . LT
+V  85 81 . . 92 74 . . . . . 81 82 87 . 76
+
+@perc id=x-swedish-tom-loop-0084 name="Boucle de toms — 1 voix, 4 mes. #084" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC LT PC PC . LT . . PC LT . PC . LT LT
+V  . 77 115 80 86 . 115 . . 74 115 . 89 . 115 94
+N  . PC LT PC PC . LT . . PC LT . PC . LT LT
+V  . 86 115 92 80 . 115 . . 70 115 . 91 . 115 93
+N  . PC LT PC PC . LT . . PC LT . PC . LT LT
+V  . 85 115 70 89 . 115 . . 92 115 . 88 . 115 89
+N  . PC LT PC PC . LT . . PC LT . . PC LT LT
+V  . 86 115 91 76 . 115 . . 81 115 . . 77 115 84
+
+@perc id=x-swedish-tom-loop-0085 name="Boucle de toms — 1 voix, 4 mes. #085" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . HT . . . . HT . MT . . HT HT . MT
+V  . . 115 . . . . 84 . 71 . . 89 72 . 84
+N  . . HT . . . . HT . MT . . HT HT . MT
+V  . . 115 . . . . 81 . 80 . . 74 77 . 73
+N  . . HT . . . . HT . MT . . HT HT . MT
+V  . . 115 . . . . 72 . 81 . . 92 74 . 71
+N  . . HT . . . . HT . MT . . HT . MT .
+V  . . 115 . . . . 94 . 70 . . 74 . 115 .
+
+@perc id=x-swedish-tom-loop-0086 name="Boucle de toms — 1 voix, 4 mes. #086" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . PC . . . PC . . PC . . PC PC LT .
+V  . . 115 . . . 115 . . 75 . . 85 82 115 .
+N  . . PC . . . PC . . PC . . PC PC LT .
+V  . . 115 . . . 115 . . 79 . . 71 88 115 .
+N  . . PC . . . PC . . PC . . PC PC LT .
+V  . . 115 . . . 115 . . 78 . . 83 94 115 .
+N  . . PC . . . PC . . PC . . PC PC LT PC
+V  . . 115 . . . 115 . . 78 . . 91 80 115 75
+
+@perc id=x-swedish-tom-loop-0087 name="Boucle de toms — 1 voix, 4 mes. #087" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . LT . HT LT HT . MT MT . . . MT .
+V  . 87 . 91 . 83 115 92 . 94 115 . . . 115 .
+N  . LT . LT . HT LT HT . MT MT . . . MT .
+V  . 81 . 70 . 79 115 86 . 74 115 . . . 115 .
+N  . LT . LT . HT LT HT . MT MT . . . MT .
+V  . 80 . 73 . 87 115 77 . 93 115 . . . 115 .
+N  . LT . LT . HT LT HT . MT MT . . HT MT LT
+V  . 76 . 73 . 72 115 75 . 72 115 . . 81 115 71
+
+@perc id=x-swedish-tom-loop-0088 name="Boucle de toms — 1 voix, 4 mes. #088" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT MT . . HT HT . . . . . LT . LT
+V  . . 115 72 . . 115 76 . . . . . 76 . 76
+N  . . MT MT . . HT HT . . . . . LT . LT
+V  . . 115 73 . . 115 91 . . . . . 77 . 81
+N  . . MT MT . . HT HT . . . . . LT . LT
+V  . . 115 84 . . 115 83 . . . . . 82 . 91
+N  . . MT MT . . HT HT . . . . MT LT . LT
+V  . . 115 80 . . 115 77 . . . . 92 88 . 77
+
+@perc id=x-swedish-tom-loop-0089 name="Boucle de toms — 1 voix, 2 mes. #089" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  MT . . HT MT HT . . . . HT HT . . HT .
+V  70 . . 84 90 83 . . . . 115 77 . . 115 .
+N  MT . . HT MT HT . . . . HT HT . HT HT .
+V  85 . . 79 92 88 . . . . 115 78 . 90 115 .
+
+@perc id=x-swedish-tom-loop-0090 name="Boucle de toms — 1 voix, 2 mes. #090" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . LT . . LT . LT . . MT .
+V  . . . . . . 115 . . 87 . 82 . . 115 .
+N  . . . . . . LT . . LT . LT LT MT MT LT
+V  . . . . . . 115 . . 85 . 73 91 92 115 87
+
+@perc id=x-swedish-tom-loop-0091 name="Boucle de toms — 1 voix, 4 mes. #091" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC . PC . LT LT . PC . . . . LT . .
+V  . 86 . 93 . 87 115 . 80 . . . . 83 . .
+N  . PC . PC . LT LT . PC . . . . LT . .
+V  . 72 . 77 . 93 115 . 76 . . . . 91 . .
+N  . PC . PC . LT LT . PC . . . . LT . .
+V  . 75 . 84 . 85 115 . 90 . . . . 81 . .
+N  . PC . PC . LT LT . PC . . . . LT . PC
+V  . 94 . 81 . 84 115 . 89 . . . . 84 . 83
+
+@perc id=x-swedish-tom-loop-0092 name="Boucle de toms — 1 voix, 4 mes. #092" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . LT . . LT . LT . . LT . .
+V  . . . . . 86 . . 88 . 115 . . 86 . .
+N  . . . . . LT . . LT . LT . . LT . .
+V  . . . . . 88 . . 74 . 115 . . 72 . .
+N  . . . . . LT . . LT . LT . . LT . .
+V  . . . . . 86 . . 76 . 115 . . 90 . .
+N  . . . . . LT . . LT . LT . LT LT PC PC
+V  . . . . . 72 . . 76 . 115 . 86 85 115 80
+
+@perc id=x-swedish-tom-loop-0093 name="Boucle de toms — 1 voix, 4 mes. #093" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . . . MT MT . . LT . . MT . .
+V  . . 115 . . . 115 88 . . 115 . . 70 . .
+N  . . MT . . . MT MT . . LT . . MT . .
+V  . . 115 . . . 115 78 . . 115 . . 82 . .
+N  . . MT . . . MT MT . . LT . . MT . .
+V  . . 115 . . . 115 81 . . 115 . . 88 . .
+N  . . MT . . . MT MT . . LT . MT MT LT .
+V  . . 115 . . . 115 90 . . 115 . 75 72 115 .
+
+@perc id=x-swedish-tom-loop-0094 name="Boucle de toms — 1 voix, 4 mes. #094" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . HT MT HT . MT MT MT . . . MT
+V  . 87 . . . 82 115 92 . 73 115 87 . . . 84
+N  . MT . . . HT MT HT . MT MT MT . . . MT
+V  . 87 . . . 85 115 93 . 78 115 92 . . . 72
+N  . MT . . . HT MT HT . MT MT MT . . . MT
+V  . 73 . . . 90 115 77 . 84 115 87 . . . 84
+N  . MT . . . HT MT HT . MT MT MT . LT . .
+V  . 84 . . . 70 115 72 . 93 115 74 . 81 . .
+
+@perc id=x-swedish-tom-loop-0095 name="Boucle de toms — 1 voix, 2 mes. #095" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . . . MT MT . . . . MT . . LT .
+V  . 84 . . . 83 115 . . . . 71 . . 115 .
+N  . HT . . . MT MT . . . . MT MT HT LT .
+V  . 90 . . . 81 115 . . . . 75 77 86 115 .
+
+@perc id=x-swedish-tom-loop-0096 name="Boucle de toms — 1 voix, 4 mes. #096" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . LT LT MT . . . MT . LT MT MT
+V  . 87 115 . . 75 115 92 . . . 87 . 87 115 77
+N  . LT LT . . LT LT MT . . . MT . LT MT MT
+V  . 73 115 . . 83 115 86 . . . 93 . 82 115 70
+N  . LT LT . . LT LT MT . . . MT . LT MT MT
+V  . 70 115 . . 78 115 77 . . . 91 . 74 115 71
+N  . LT LT . . LT LT MT . . . MT MT LT MT .
+V  . 91 115 . . 91 115 92 . . . 74 92 83 115 .
+
+@perc id=x-swedish-tom-loop-0097 name="Boucle de toms — 1 voix, 4 mes. #097" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB CB . . CB . PC PC PC . CB CB . . PC PC
+V  77 74 . . 93 . 115 79 94 . 115 79 . . 115 89
+N  CB CB . . CB . PC PC PC . CB CB . . PC PC
+V  80 85 . . 79 . 115 71 91 . 115 81 . . 115 76
+N  CB CB . . CB . PC PC PC . CB CB . . PC PC
+V  78 85 . . 89 . 115 94 90 . 115 77 . . 115 72
+N  CB CB . . CB . PC PC PC . CB CB PC CB . PC
+V  83 82 . . 73 . 115 83 80 . 115 90 79 77 . 87
+
+@perc id=x-swedish-tom-loop-0098 name="Boucle de toms — 1 voix, 2 mes. #098" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT LT . . . HT . . LT MT MT . . . .
+V  . 75 115 . . . 115 . . 94 115 79 . . . .
+N  . HT LT . . . HT . . LT MT MT MT LT LT .
+V  . 76 115 . . . 115 . . 78 115 78 72 87 115 .
+
+@perc id=x-swedish-tom-loop-0099 name="Boucle de toms — 1 voix, 4 mes. #099" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . MT . LT . . . . . . . LT LT .
+V  . 91 . 71 . 87 . . . . . . . 85 115 .
+N  . MT . MT . LT . . . . . . . LT LT .
+V  . 87 . 70 . 83 . . . . . . . 71 115 .
+N  . MT . MT . LT . . . . . . . LT LT .
+V  . 73 . 77 . 93 . . . . . . . 92 115 .
+N  . MT . MT . LT . . . . . . MT . . LT
+V  . 83 . 73 . 86 . . . . . . 74 . . 77
+
+@perc id=x-swedish-tom-loop-0100 name="Boucle de toms — 1 voix, 2 mes. #100" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . . . PC . PC PC . . . LT PC
+V  . 91 115 . . . . 83 . 91 115 . . . 115 81
+N  . LT LT . . . . PC . PC PC . LT PC LT PC
+V  . 70 115 . . . . 79 . 81 115 . 88 90 115 73
+
+@perc id=x-swedish-tom-loop-0101 name="Boucle de toms — 1 voix, 2 mes. #101" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . . . . LT . . . PC PC . PC
+V  . . . 93 . . . . 83 . . . 71 94 . 81
+N  . . . LT . . . . LT . . . . PC PC PC
+V  . . . 72 . . . . 76 . . . . 82 115 77
+
+@perc id=x-swedish-tom-loop-0102 name="Boucle de toms — 1 voix, 2 mes. #102" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  MT . MT . HT MT MT HT . MT . . . . . MT
+V  88 . 115 . 92 89 115 86 . 86 . . . . . 93
+N  MT . MT . HT MT MT HT . MT . . HT . . .
+V  70 . 115 . 92 83 115 94 . 70 . . 80 . . .
+
+@perc id=x-swedish-tom-loop-0103 name="Boucle de toms — 1 voix, 4 mes. #103" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . HT HT HT . LT HT . . HT LT .
+V  . 91 . . . 91 115 77 . 86 115 . . 80 115 .
+N  . MT . . . HT HT HT . LT HT . . HT LT .
+V  . 90 . . . 80 115 89 . 78 115 . . 82 115 .
+N  . MT . . . HT HT HT . LT HT . . HT LT .
+V  . 77 . . . 78 115 82 . 70 115 . . 76 115 .
+N  . MT . . . HT HT HT . LT HT . LT . LT .
+V  . 83 . . . 89 115 84 . 73 115 . 78 . 115 .
+
+@perc id=x-swedish-tom-loop-0104 name="Boucle de toms — 1 voix, 4 mes. #104" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC LT . LT LT . . LT LT LT LT PC . . . .
+V  93 85 . 71 94 . . 94 70 90 115 89 . . . .
+N  PC LT . LT LT . . LT LT LT LT PC . . . .
+V  88 93 . 71 86 . . 80 79 76 115 79 . . . .
+N  PC LT . LT LT . . LT LT LT LT PC . . . .
+V  81 87 . 94 74 . . 79 74 89 115 73 . . . .
+N  PC LT . LT LT . . LT LT LT LT PC LT LT . .
+V  79 75 . 90 74 . . 81 87 74 115 73 81 94 . .
+
+@perc id=x-swedish-tom-loop-0105 name="Boucle de toms — 1 voix, 2 mes. #105" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . LT MT . . . . . . HT MT .
+V  . . . 91 . 73 115 . . . . . . 75 115 .
+N  . . . LT . LT MT . . . . . . HT MT HT
+V  . . . 72 . 89 115 . . . . . . 94 115 94
+
+@perc id=x-swedish-tom-loop-0106 name="Boucle de toms — 1 voix, 2 mes. #106" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . CB CB CB CB PC PC . . PC . . . . .
+V  . . 115 83 73 82 115 89 . . 115 . . . . .
+N  . . CB CB CB CB PC PC . . PC . . CB CB .
+V  . . 115 92 73 92 115 76 . . 115 . . 74 115 .
+
+@perc id=x-swedish-tom-loop-0107 name="Boucle de toms — 1 voix, 4 mes. #107" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT . LT LT LT LT LT . . LT . . PC PC LT .
+V  89 . 115 93 76 77 115 . . 79 . . 79 81 115 .
+N  LT . LT LT LT LT LT . . LT . . PC PC LT .
+V  75 . 115 89 88 82 115 . . 93 . . 83 93 115 .
+N  LT . LT LT LT LT LT . . LT . . PC PC LT .
+V  74 . 115 83 92 89 115 . . 85 . . 81 87 115 .
+N  LT . LT LT LT LT LT . . LT . . PC PC LT .
+V  76 . 115 88 71 86 115 . . 85 . . 86 93 115 .
+
+@perc id=x-swedish-tom-loop-0108 name="Boucle de toms — 1 voix, 4 mes. #108" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . CB . CB . PC . PC . . . . . . PC .
+V  . 91 . 88 . 80 . 70 . . . . . . 115 .
+N  . CB . CB . PC . PC . . . . . . PC .
+V  . 87 . 77 . 73 . 90 . . . . . . 115 .
+N  . CB . CB . PC . PC . . . . . . PC .
+V  . 86 . 87 . 88 . 93 . . . . . . 115 .
+N  . CB . CB . PC . PC . . . . . CB PC .
+V  . 84 . 91 . 74 . 81 . . . . . 92 115 .
+
+@perc id=x-swedish-tom-loop-0109 name="Boucle de toms — 1 voix, 4 mes. #109" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . MT . LT . MT . . . . . . . .
+V  . 71 . 76 . 92 . 88 . . . . . . . .
+N  . MT . MT . LT . MT . . . . . . . .
+V  . 89 . 73 . 83 . 87 . . . . . . . .
+N  . MT . MT . LT . MT . . . . . . . .
+V  . 82 . 92 . 88 . 81 . . . . . . . .
+N  . MT . MT . LT . MT . . . . LT MT MT LT
+V  . 79 . 74 . 91 . 77 . . . . 93 73 115 74
+
+@perc id=x-swedish-tom-loop-0110 name="Boucle de toms — 1 voix, 4 mes. #110" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . HT . MT . . HT HT . LT LT .
+V  . . 115 . . 72 . 77 . . 115 87 . 79 115 .
+N  . . LT . . HT . MT . . HT HT . LT LT .
+V  . . 115 . . 70 . 88 . . 115 93 . 80 115 .
+N  . . LT . . HT . MT . . HT HT . LT LT .
+V  . . 115 . . 70 . 75 . . 115 79 . 80 115 .
+N  . . LT . . HT . MT . . HT HT LT LT LT .
+V  . . 115 . . 83 . 84 . . 115 83 80 72 115 .
+
+@perc id=x-swedish-tom-loop-0111 name="Boucle de toms — 1 voix, 2 mes. #111" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . MT LT . . . LT . . . .
+V  . . . . . . 115 73 . . . 70 . . . .
+N  . . . . . . MT LT . . . LT MT LT . LT
+V  . . . . . . 115 74 . . . 89 70 70 . 72
+
+@perc id=x-swedish-tom-loop-0112 name="Boucle de toms — 1 voix, 4 mes. #112" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . . . . MT MT . . . LT . MT MT .
+V  . 76 . . . . 115 85 . . . 87 . 92 115 .
+N  . LT . . . . MT MT . . . LT . MT MT .
+V  . 70 . . . . 115 81 . . . 90 . 78 115 .
+N  . LT . . . . MT MT . . . LT . MT MT .
+V  . 91 . . . . 115 87 . . . 76 . 71 115 .
+N  . LT . . . . MT MT . . . LT MT . MT MT
+V  . 90 . . . . 115 77 . . . 70 82 . 115 84
+
+@perc id=x-swedish-tom-loop-0113 name="Boucle de toms — 1 voix, 4 mes. #113" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . MT MT . LT MT . . . . .
+V  . . . . . . 115 70 . 74 115 . . . . .
+N  . . . . . . MT MT . LT MT . . . . .
+V  . . . . . . 115 83 . 81 115 . . . . .
+N  . . . . . . MT MT . LT MT . . . . .
+V  . . . . . . 115 84 . 70 115 . . . . .
+N  . . . . . . MT MT . LT MT . LT LT LT LT
+V  . . . . . . 115 72 . 70 115 . 79 87 115 94
+
+@perc id=x-swedish-tom-loop-0114 name="Boucle de toms — 1 voix, 2 mes. #114" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . . . . . . HT HT . . . LT .
+V  . . 115 . . . . . . 71 115 . . . 115 .
+N  . . MT . . . . . . HT HT . . . LT MT
+V  . . 115 . . . . . . 84 115 . . . 115 71
+
+@perc id=x-swedish-tom-loop-0115 name="Boucle de toms — 1 voix, 2 mes. #115" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . MT . MT . LT MT . . LT . .
+V  . . 115 . . 86 . 73 . 90 115 . . 77 . .
+N  . . LT . . MT . MT . LT MT . . LT . MT
+V  . . 115 . . 70 . 76 . 76 115 . . 76 . 80
+
+@perc id=x-swedish-tom-loop-0116 name="Boucle de toms — 1 voix, 4 mes. #116" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . CB PC . . PC . . . . PC . .
+V  . . . . 78 83 . . 77 . . . . 90 . .
+N  . . . . CB PC . . PC . . . . PC . .
+V  . . . . 81 93 . . 83 . . . . 88 . .
+N  . . . . CB PC . . PC . . . . PC . .
+V  . . . . 80 74 . . 70 . . . . 77 . .
+N  . . . . CB PC . . PC . . . CB PC CB CB
+V  . . . . 70 88 . . 92 . . . 78 89 115 85
+
+@perc id=x-swedish-tom-loop-0117 name="Boucle de toms — 1 voix, 2 mes. #117" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB . . PC . PC . . PC PC PC CB CB . PC PC
+V  72 . . 70 . 85 . . 83 90 115 80 72 . 115 87
+N  CB . . PC . PC . . PC PC PC CB CB . PC PC
+V  75 . . 88 . 85 . . 78 76 115 74 93 . 115 72
+
+@perc id=x-swedish-tom-loop-0118 name="Boucle de toms — 1 voix, 2 mes. #118" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB . . . . CB . . . PC CB CB . . . .
+V  76 . . . . 93 . . . 87 115 86 . . . .
+N  CB . . . . CB . . . PC CB CB CB . PC .
+V  86 . . . . 77 . . . 89 115 87 76 . 115 .
+
+@perc id=x-swedish-tom-loop-0119 name="Boucle de toms — 1 voix, 4 mes. #119" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC PC . . PC CB CB CB . . PC . . . CB PC
+V  73 74 . . 73 85 115 71 . . 115 . . . 115 89
+N  PC PC . . PC CB CB CB . . PC . . . CB PC
+V  74 81 . . 80 86 115 80 . . 115 . . . 115 84
+N  PC PC . . PC CB CB CB . . PC . . . CB PC
+V  91 89 . . 88 93 115 70 . . 115 . . . 115 77
+N  PC PC . . PC CB CB CB . . PC . CB PC . PC
+V  74 83 . . 82 89 115 74 . . 115 . 75 83 . 79
+
+@perc id=x-swedish-tom-loop-0120 name="Boucle de toms — 1 voix, 2 mes. #120" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . . . LT . PC . . PC PC PC . . . .
+V  87 . . . 70 . 115 . . 93 115 71 . . . .
+N  PC . . . LT . PC . . PC PC PC LT LT PC PC
+V  83 . . . 80 . 115 . . 77 115 72 90 78 115 87
+
+@perc id=x-swedish-tom-loop-0121 name="Boucle de toms — 1 voix, 2 mes. #121" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT LT . . MT . . MT MT . . . MT .
+V  . . 115 94 . . 115 . . 74 115 . . . 115 .
+N  . . MT LT . . MT . . MT MT . . . MT MT
+V  . . 115 81 . . 115 . . 86 115 . . . 115 89
+
+@perc id=x-swedish-tom-loop-0122 name="Boucle de toms — 1 voix, 4 mes. #122" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . . PC . PC . . CB . . PC
+V  . . . . . . . 84 . 70 . . 78 . . 80
+N  . . . . . . . PC . PC . . CB . . PC
+V  . . . . . . . 75 . 88 . . 87 . . 77
+N  . . . . . . . PC . PC . . CB . . PC
+V  . . . . . . . 79 . 88 . . 81 . . 92
+N  . . . . . . . PC . PC . . CB CB CB .
+V  . . . . . . . 78 . 77 . . 87 90 115 .
+
+@perc id=x-swedish-tom-loop-0123 name="Boucle de toms — 1 voix, 2 mes. #123" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . . . LT . . PC . PC . . PC . . LT
+V  93 . . . 74 . . 90 . 75 . . 81 . . 84
+N  PC . . . LT . . PC . PC . . . PC . LT
+V  93 . . . 86 . . 70 . 85 . . . 73 . 90
+
+@perc id=x-swedish-tom-loop-0124 name="Boucle de toms — 1 voix, 4 mes. #124" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . HT . HT . MT . . . HT . . MT MT
+V  . 93 . 74 . 92 . 88 . . . 78 . . 115 89
+N  . HT . HT . HT . MT . . . HT . . MT MT
+V  . 77 . 83 . 76 . 81 . . . 70 . . 115 76
+N  . HT . HT . HT . MT . . . HT . . MT MT
+V  . 80 . 88 . 93 . 73 . . . 88 . . 115 82
+N  . HT . HT . HT . MT . . . HT . MT MT MT
+V  . 83 . 94 . 87 . 74 . . . 88 . 77 115 83
+
+@perc id=x-swedish-tom-loop-0125 name="Boucle de toms — 1 voix, 4 mes. #125" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT HT . . HT MT MT . . HT HT MT . MT
+V  . . 115 74 . . 115 82 91 . . 91 93 85 . 79
+N  . . MT HT . . HT MT MT . . HT HT MT . MT
+V  . . 115 91 . . 115 94 81 . . 83 84 87 . 77
+N  . . MT HT . . HT MT MT . . HT HT MT . MT
+V  . . 115 89 . . 115 84 72 . . 70 85 91 . 78
+N  . . MT HT . . HT MT MT . . HT HT MT MT MT
+V  . . 115 94 . . 115 74 88 . . 89 78 81 115 85
+
+@perc id=x-swedish-tom-loop-0126 name="Boucle de toms — 1 voix, 2 mes. #126" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . MT . MT . . MT LT . LT . .
+V  . . . . . 70 . 88 . . 115 92 . 85 . .
+N  . . . . . MT . MT . . MT LT . LT LT HT
+V  . . . . . 91 . 86 . . 115 80 . 86 115 90
+
+@perc id=x-swedish-tom-loop-0127 name="Boucle de toms — 1 voix, 2 mes. #127" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT LT LT . . . . . . . . . . . MT
+V  . 85 115 77 . . . . . . . . . . . 83
+N  . MT LT LT . . . . . . . . MT . . MT
+V  . 71 115 77 . . . . . . . . 84 . . 74
+
+@perc id=x-swedish-tom-loop-0128 name="Boucle de toms — 1 voix, 4 mes. #128" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . LT . . MT . . . LT . . . LT .
+V  . 92 . 75 . . 115 . . . 115 . . . 115 .
+N  . MT . LT . . MT . . . LT . . . LT .
+V  . 76 . 94 . . 115 . . . 115 . . . 115 .
+N  . MT . LT . . MT . . . LT . . . LT .
+V  . 80 . 71 . . 115 . . . 115 . . . 115 .
+N  . MT . LT . . MT . . . LT . LT MT . MT
+V  . 75 . 78 . . 115 . . . 115 . 76 78 . 73
+
+@perc id=x-swedish-tom-loop-0129 name="Boucle de toms — 1 voix, 2 mes. #129" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . . . . . . . . . . LT
+V  . . . . . . . . . . . . . . . 83
+N  . . . . . . . . . . . . . HT . LT
+V  . . . . . . . . . . . . . 90 . 77
+
+@perc id=x-swedish-tom-loop-0130 name="Boucle de toms — 1 voix, 2 mes. #130" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . LT LT LT . . . LT . PC LT PC . .
+V  . 87 . 79 82 75 . . . 83 . 81 83 90 . .
+N  . LT . LT LT LT . . . LT . PC LT PC LT .
+V  . 94 . 84 92 87 . . . 78 . 81 88 81 115 .
+
+@perc id=x-swedish-tom-loop-0131 name="Boucle de toms — 1 voix, 4 mes. #131" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB PC PC PC PC . . PC . CB . CB CB . CB .
+V  90 71 115 71 90 . . 76 . 92 . 85 73 . 115 .
+N  CB PC PC PC PC . . PC . CB . CB CB . CB .
+V  93 90 115 90 75 . . 90 . 90 . 78 88 . 115 .
+N  CB PC PC PC PC . . PC . CB . CB CB . CB .
+V  83 79 115 93 78 . . 85 . 72 . 92 84 . 115 .
+N  CB PC PC PC PC . . PC . CB . CB CB . CB CB
+V  84 72 115 81 93 . . 83 . 75 . 84 90 . 115 83
+
+@perc id=x-swedish-tom-loop-0132 name="Boucle de toms — 1 voix, 4 mes. #132" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . . HT . . . . LT . MT . HT
+V  . . 115 . . . 115 . . . . 71 . 74 . 88
+N  . . LT . . . HT . . . . LT . MT . HT
+V  . . 115 . . . 115 . . . . 93 . 77 . 73
+N  . . LT . . . HT . . . . LT . MT . HT
+V  . . 115 . . . 115 . . . . 92 . 83 . 82
+N  . . LT . . . HT . . . . LT HT MT . HT
+V  . . 115 . . . 115 . . . . 77 77 88 . 78
+
+@perc id=x-swedish-tom-loop-0133 name="Boucle de toms — 1 voix, 2 mes. #133" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . LT MT MT . HT . . . . . MT
+V  . . . . . 88 115 89 . 89 . . . . . 76
+N  . . . . . LT MT MT . HT . . HT HT . MT
+V  . . . . . 88 115 87 . 72 . . 79 89 . 94
+
+@perc id=x-swedish-tom-loop-0134 name="Boucle de toms — 1 voix, 4 mes. #134" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . CB PC . PC . . . PC . . . PC
+V  . . . . 80 80 . 81 . . . 75 . . . 73
+N  . . . . CB PC . PC . . . PC . . . PC
+V  . . . . 89 93 . 81 . . . 91 . . . 85
+N  . . . . CB PC . PC . . . PC . . . PC
+V  . . . . 85 78 . 71 . . . 82 . . . 78
+N  . . . . CB PC . PC . . . PC CB CB CB PC
+V  . . . . 79 84 . 78 . . . 74 90 87 115 73
+
+@perc id=x-swedish-tom-loop-0135 name="Boucle de toms — 1 voix, 2 mes. #135" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . HT . LT MT . . . . . . HT . HT
+V  . 90 . 84 . 78 115 . . . . . . 91 . 81
+N  . HT . HT . LT MT . . . . . LT . MT HT
+V  . 83 . 81 . 80 115 . . . . . 80 . 115 93
+
+@perc id=x-swedish-tom-loop-0136 name="Boucle de toms — 1 voix, 4 mes. #136" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . . . . . . . MT . MT . .
+V  . 87 . . . . . . . . . 88 . 76 . .
+N  . MT . . . . . . . . . MT . MT . .
+V  . 71 . . . . . . . . . 72 . 91 . .
+N  . MT . . . . . . . . . MT . MT . .
+V  . 77 . . . . . . . . . 75 . 88 . .
+N  . MT . . . . . . . . . MT MT MT LT LT
+V  . 90 . . . . . . . . . 74 86 80 115 81
+
+@perc id=x-swedish-tom-loop-0137 name="Boucle de toms — 1 voix, 4 mes. #137" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . . MT . . MT . . . MT . .
+V  . 85 . . . . 115 . . 82 . . . 88 . .
+N  . MT . . . . MT . . MT . . . MT . .
+V  . 74 . . . . 115 . . 79 . . . 94 . .
+N  . MT . . . . MT . . MT . . . MT . .
+V  . 76 . . . . 115 . . 77 . . . 71 . .
+N  . MT . . . . MT . . MT . . LT MT . MT
+V  . 93 . . . . 115 . . 71 . . 71 72 . 92
+
+@perc id=x-swedish-tom-loop-0138 name="Boucle de toms — 1 voix, 4 mes. #138" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . HT . HT MT . MT MT . HT MT . HT
+V  . . . . 93 . 115 94 . 83 115 . 92 85 . 70
+N  . . . . HT . HT MT . MT MT . HT MT . HT
+V  . . . . 86 . 115 78 . 77 115 . 80 87 . 75
+N  . . . . HT . HT MT . MT MT . HT MT . HT
+V  . . . . 77 . 115 72 . 85 115 . 83 92 . 94
+N  . . . . HT . HT MT . MT MT . . MT MT .
+V  . . . . 76 . 115 70 . 88 115 . . 89 115 .
+
+@perc id=x-swedish-tom-loop-0139 name="Boucle de toms — 1 voix, 2 mes. #139" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . MT . MT . . LT MT . . MT .
+V  . . 115 . . 72 . 94 . . 115 72 . . 115 .
+N  . . LT . . MT . MT . . LT MT LT LT . LT
+V  . . 115 . . 88 . 90 . . 115 91 83 94 . 92
+
+@perc id=x-swedish-tom-loop-0140 name="Boucle de toms — 1 voix, 4 mes. #140" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT MT . MT . MT . HT . . HT HT . . HT
+V  . 72 115 . 90 . 115 . 93 . . 93 81 . . 71
+N  . HT MT . MT . MT . HT . . HT HT . . HT
+V  . 77 115 . 88 . 115 . 91 . . 84 93 . . 93
+N  . HT MT . MT . MT . HT . . HT HT . . HT
+V  . 80 115 . 83 . 115 . 92 . . 78 77 . . 92
+N  . HT MT . MT . MT . HT . . HT . HT MT HT
+V  . 85 115 . 87 . 115 . 94 . . 77 . 92 115 80
+
+@perc id=x-swedish-tom-loop-0141 name="Boucle de toms — 1 voix, 4 mes. #141" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . CB . . CB . . CB CB . PC . . CB CB PC
+V  . 70 . . 78 . . 84 74 . 115 . . 85 115 90
+N  . CB . . CB . . CB CB . PC . . CB CB PC
+V  . 84 . . 94 . . 85 79 . 115 . . 73 115 87
+N  . CB . . CB . . CB CB . PC . . CB CB PC
+V  . 80 . . 92 . . 94 84 . 115 . . 72 115 94
+N  . CB . . CB . . CB CB . PC . CB CB CB .
+V  . 88 . . 83 . . 88 80 . 115 . 75 73 115 .
+
+@perc id=x-swedish-tom-loop-0142 name="Boucle de toms — 1 voix, 4 mes. #142" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . MT . . . . . . MT MT LT
+V  . . . . . . 115 . . . . . . 91 115 72
+N  . . . . . . MT . . . . . . MT MT LT
+V  . . . . . . 115 . . . . . . 90 115 73
+N  . . . . . . MT . . . . . . MT MT LT
+V  . . . . . . 115 . . . . . . 72 115 84
+N  . . . . . . MT . . . . . MT MT MT .
+V  . . . . . . 115 . . . . . 94 92 115 .
+
+@perc id=x-swedish-tom-loop-0143 name="Boucle de toms — 1 voix, 4 mes. #143" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT LT HT . . . HT . . MT . . HT . MT
+V  . 94 115 82 . . . 81 . . 115 . . 85 . 76
+N  . HT LT HT . . . HT . . MT . . HT . MT
+V  . 87 115 82 . . . 91 . . 115 . . 92 . 82
+N  . HT LT HT . . . HT . . MT . . HT . MT
+V  . 83 115 78 . . . 88 . . 115 . . 93 . 78
+N  . HT LT HT . . . HT . . MT . . HT MT MT
+V  . 71 115 73 . . . 93 . . 115 . . 81 115 75
+
+@perc id=x-swedish-tom-loop-0144 name="Boucle de toms — 1 voix, 4 mes. #144" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . MT . . . . . LT . MT . . LT LT
+V  . 78 . 76 . . . . . 74 . 81 . . 115 80
+N  . MT . MT . . . . . LT . MT . . LT LT
+V  . 94 . 90 . . . . . 81 . 92 . . 115 89
+N  . MT . MT . . . . . LT . MT . . LT LT
+V  . 70 . 87 . . . . . 81 . 86 . . 115 74
+N  . MT . MT . . . . . LT . MT LT LT LT LT
+V  . 76 . 75 . . . . . 75 . 94 81 82 115 79
+
+@perc id=x-swedish-tom-loop-0145 name="Boucle de toms — 1 voix, 2 mes. #145" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT LT . . . LT LT . . . . . LT MT .
+V  . 93 115 . . . 115 93 . . . . . 75 115 .
+N  . MT LT . . . LT LT . . . . . LT MT MT
+V  . 90 115 . . . 115 83 . . . . . 75 115 87
+
+@perc id=x-swedish-tom-loop-0146 name="Boucle de toms — 1 voix, 2 mes. #146" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  HT HT . . MT HT . . . HT . MT HT HT . MT
+V  87 83 . . 87 92 . . . 93 . 85 82 94 . 70
+N  HT HT . . MT HT . . . HT . MT . HT HT MT
+V  94 72 . . 71 73 . . . 86 . 91 . 91 115 73
+
+@perc id=x-swedish-tom-loop-0147 name="Boucle de toms — 1 voix, 2 mes. #147" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . LT . . . . . . . . .
+V  . . . . . . 115 . . . . . . . . .
+N  . . . . . . LT . . . . . MT LT HT LT
+V  . . . . . . 115 . . . . . 82 91 115 86
+
+@perc id=x-swedish-tom-loop-0148 name="Boucle de toms — 1 voix, 2 mes. #148" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT HT HT . LT . . . . . . . . HT .
+V  . 76 115 90 . 86 . . . . . . . . 115 .
+N  . MT HT HT . LT . . . . . . MT . HT HT
+V  . 85 115 84 . 92 . . . . . . 92 . 115 76
+
+@perc id=x-swedish-tom-loop-0149 name="Boucle de toms — 1 voix, 4 mes. #149" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . HT . MT . LT . LT . . . MT
+V  . . . . . 92 . 79 . 85 . 84 . . . 74
+N  . . . . . HT . MT . LT . LT . . . MT
+V  . . . . . 83 . 70 . 93 . 70 . . . 86
+N  . . . . . HT . MT . LT . LT . . . MT
+V  . . . . . 75 . 92 . 94 . 85 . . . 93
+N  . . . . . HT . MT . LT . LT MT LT HT MT
+V  . . . . . 93 . 85 . 77 . 84 88 90 115 90
+
+@perc id=x-swedish-tom-loop-0150 name="Boucle de toms — 1 voix, 4 mes. #150" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT LT LT . MT . LT . MT MT MT . LT LT .
+V  . 86 115 88 . 75 . 81 . 75 115 80 . 85 115 .
+N  . MT LT LT . MT . LT . MT MT MT . LT LT .
+V  . 82 115 92 . 92 . 71 . 79 115 79 . 73 115 .
+N  . MT LT LT . MT . LT . MT MT MT . LT LT .
+V  . 81 115 82 . 81 . 94 . 72 115 71 . 93 115 .
+N  . MT LT LT . MT . LT . MT MT MT MT LT . MT
+V  . 74 115 86 . 94 . 76 . 72 115 92 76 74 . 72
+
+@perc id=x-swedish-tom-loop-0151 name="Boucle de toms — 1 voix, 4 mes. #151" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT LT . MT LT MT . LT LT LT . MT MT .
+V  . . 115 78 . 73 115 75 . 90 115 89 . 93 115 .
+N  . . MT LT . MT LT MT . LT LT LT . MT MT .
+V  . . 115 79 . 72 115 83 . 84 115 82 . 76 115 .
+N  . . MT LT . MT LT MT . LT LT LT . MT MT .
+V  . . 115 91 . 93 115 89 . 94 115 83 . 90 115 .
+N  . . MT LT . MT LT MT . LT LT LT . . . LT
+V  . . 115 77 . 92 115 92 . 90 115 93 . . . 89
+
+@perc id=x-swedish-tom-loop-0152 name="Boucle de toms — 1 voix, 4 mes. #152" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . CB . . . . PC PC CB CB CB PC . . CB
+V  . . 115 . . . . 93 77 78 115 74 93 . . 85
+N  . . CB . . . . PC PC CB CB CB PC . . CB
+V  . . 115 . . . . 94 81 90 115 80 85 . . 77
+N  . . CB . . . . PC PC CB CB CB PC . . CB
+V  . . 115 . . . . 88 81 91 115 77 80 . . 79
+N  . . CB . . . . PC PC CB CB CB PC PC CB CB
+V  . . 115 . . . . 83 74 90 115 81 94 81 115 70
+
+@perc id=x-swedish-tom-loop-0153 name="Boucle de toms — 1 voix, 4 mes. #153" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC PC . LT . . . . . . PC . . LT . PC
+V  94 89 . 80 . . . . . . 115 . . 88 . 86
+N  PC PC . LT . . . . . . PC . . LT . PC
+V  70 71 . 75 . . . . . . 115 . . 93 . 75
+N  PC PC . LT . . . . . . PC . . LT . PC
+V  79 78 . 93 . . . . . . 115 . . 82 . 77
+N  PC PC . LT . . . . . . PC . PC . PC PC
+V  80 93 . 92 . . . . . . 115 . 86 . 115 91
+
+@perc id=x-swedish-tom-loop-0154 name="Boucle de toms — 1 voix, 4 mes. #154" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . . PC PC . . . PC . PC LT
+V  . . . . . . . 80 88 . . . 88 . 115 76
+N  . . . . . . . PC PC . . . PC . PC LT
+V  . . . . . . . 82 76 . . . 81 . 115 76
+N  . . . . . . . PC PC . . . PC . PC LT
+V  . . . . . . . 92 86 . . . 78 . 115 87
+N  . . . . . . . PC PC . . . PC LT PC LT
+V  . . . . . . . 79 83 . . . 85 84 115 90
+
+@perc id=x-swedish-tom-loop-0155 name="Boucle de toms — 1 voix, 4 mes. #155" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . LT . LT LT HT . MT HT . . HT . LT
+V  . 84 . 78 . 73 115 92 . 80 115 . . 91 . 72
+N  . HT . LT . LT LT HT . MT HT . . HT . LT
+V  . 76 . 85 . 79 115 86 . 77 115 . . 81 . 89
+N  . HT . LT . LT LT HT . MT HT . . HT . LT
+V  . 80 . 93 . 84 115 78 . 75 115 . . 83 . 89
+N  . HT . LT . LT LT HT . MT HT . . . MT .
+V  . 80 . 76 . 89 115 93 . 74 115 . . . 115 .
+
+@perc id=x-swedish-tom-loop-0156 name="Boucle de toms — 1 voix, 2 mes. #156" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . MT . . LT . . . . . . . . HT
+V  . 79 . 77 . . 115 . . . . . . . . 89
+N  . HT . MT . . LT . . . . . . HT . .
+V  . 80 . 83 . . 115 . . . . . . 89 . .
+
+@perc id=x-swedish-tom-loop-0157 name="Boucle de toms — 1 voix, 4 mes. #157" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . . LT . . LT . . . MT . .
+V  . 74 . . . . 115 . . 82 . . . 83 . .
+N  . MT . . . . LT . . LT . . . MT . .
+V  . 89 . . . . 115 . . 72 . . . 85 . .
+N  . MT . . . . LT . . LT . . . MT . .
+V  . 70 . . . . 115 . . 78 . . . 92 . .
+N  . MT . . . . LT . . LT . . MT . . LT
+V  . 86 . . . . 115 . . 90 . . 84 . . 94
+
+@perc id=x-swedish-tom-loop-0158 name="Boucle de toms — 1 voix, 4 mes. #158" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . MT . MT . . . . . MT HT HT .
+V  . . . . 80 . 115 . . . . . 81 71 115 .
+N  . . . . MT . MT . . . . . MT HT HT .
+V  . . . . 73 . 115 . . . . . 81 93 115 .
+N  . . . . MT . MT . . . . . MT HT HT .
+V  . . . . 84 . 115 . . . . . 90 90 115 .
+N  . . . . MT . MT . . . . . MT HT . .
+V  . . . . 84 . 115 . . . . . 88 81 . .
+
+@perc id=x-swedish-tom-loop-0159 name="Boucle de toms — 1 voix, 4 mes. #159" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . CB CB CB PC PC . . CB CB PC PC CB CB .
+V  . . 115 77 81 89 115 . . 93 115 79 86 94 115 .
+N  . . CB CB CB PC PC . . CB CB PC PC CB CB .
+V  . . 115 81 79 94 115 . . 85 115 88 77 90 115 .
+N  . . CB CB CB PC PC . . CB CB PC PC CB CB .
+V  . . 115 70 82 86 115 . . 85 115 79 79 88 115 .
+N  . . CB CB CB PC PC . . CB CB PC PC CB CB PC
+V  . . 115 88 83 82 115 . . 84 115 79 83 82 115 87
+
+@perc id=x-swedish-tom-loop-0160 name="Boucle de toms — 1 voix, 4 mes. #160" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB CB CB . . . PC . CB . PC . PC . . PC
+V  90 76 115 . . . 115 . 74 . 115 . 87 . . 90
+N  CB CB CB . . . PC . CB . PC . PC . . PC
+V  89 83 115 . . . 115 . 83 . 115 . 72 . . 89
+N  CB CB CB . . . PC . CB . PC . PC . . PC
+V  79 70 115 . . . 115 . 88 . 115 . 74 . . 70
+N  CB CB CB . . . PC . CB . PC . PC CB PC PC
+V  77 80 115 . . . 115 . 76 . 115 . 93 86 115 80
+
+@perc id=x-swedish-tom-loop-0161 name="Boucle de toms — 1 voix, 4 mes. #161" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . . LT LT MT . MT . MT . MT . .
+V  . . 115 . . 78 115 71 . 73 . 76 . 70 . .
+N  . . MT . . LT LT MT . MT . MT . MT . .
+V  . . 115 . . 85 115 83 . 77 . 93 . 74 . .
+N  . . MT . . LT LT MT . MT . MT . MT . .
+V  . . 115 . . 90 115 70 . 78 . 81 . 93 . .
+N  . . MT . . LT LT MT . MT . MT LT MT . MT
+V  . . 115 . . 77 115 85 . 71 . 82 77 77 . 81
+
+@perc id=x-swedish-tom-loop-0162 name="Boucle de toms — 1 voix, 4 mes. #162" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  MT . HT . MT HT . . MT HT . MT HT . HT .
+V  81 . 115 . 78 94 . . 94 86 . 90 78 . 115 .
+N  MT . HT . MT HT . . MT HT . MT HT . HT .
+V  85 . 115 . 89 90 . . 83 79 . 93 77 . 115 .
+N  MT . HT . MT HT . . MT HT . MT HT . HT .
+V  78 . 115 . 80 72 . . 72 91 . 72 83 . 115 .
+N  MT . HT . MT HT . . MT HT . MT . HT HT HT
+V  90 . 115 . 76 78 . . 91 70 . 75 . 87 115 78
+
+@perc id=x-swedish-tom-loop-0163 name="Boucle de toms — 1 voix, 4 mes. #163" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . . . MT . LT . MT . . MT .
+V  . . 115 . . . . 81 . 93 . 90 . . 115 .
+N  . . LT . . . . MT . LT . MT . . MT .
+V  . . 115 . . . . 80 . 70 . 86 . . 115 .
+N  . . LT . . . . MT . LT . MT . . MT .
+V  . . 115 . . . . 89 . 75 . 79 . . 115 .
+N  . . LT . . . . MT . LT . MT LT . MT MT
+V  . . 115 . . . . 84 . 79 . 74 72 . 115 71
+
+@perc id=x-swedish-tom-loop-0164 name="Boucle de toms — 1 voix, 4 mes. #164" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT MT . . LT MT . . MT MT . . MT . .
+V  . 91 115 . . 73 115 . . 76 115 . . 91 . .
+N  . MT MT . . LT MT . . MT MT . . MT . .
+V  . 85 115 . . 74 115 . . 88 115 . . 71 . .
+N  . MT MT . . LT MT . . MT MT . . MT . .
+V  . 91 115 . . 85 115 . . 75 115 . . 86 . .
+N  . MT MT . . LT MT . . MT MT . LT . LT .
+V  . 72 115 . . 78 115 . . 92 115 . 70 . 115 .
+
+@perc id=x-swedish-tom-loop-0165 name="Boucle de toms — 1 voix, 2 mes. #165" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . MT . . LT HT . . . MT . LT . LT
+V  . 87 . 90 . . 115 93 . . . 90 . 72 . 70
+N  . LT . MT . . LT HT . . . MT . LT HT .
+V  . 79 . 72 . . 115 77 . . . 78 . 71 115 .
+
+@perc id=x-swedish-tom-loop-0166 name="Boucle de toms — 1 voix, 4 mes. #166" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . . MT . . MT MT LT . LT LT LT
+V  . . 115 . . . 115 . . 73 115 94 . 71 115 85
+N  . . LT . . . MT . . MT MT LT . LT LT LT
+V  . . 115 . . . 115 . . 90 115 70 . 71 115 80
+N  . . LT . . . MT . . MT MT LT . LT LT LT
+V  . . 115 . . . 115 . . 70 115 85 . 74 115 79
+N  . . LT . . . MT . . MT MT LT MT . . LT
+V  . . 115 . . . 115 . . 75 115 91 71 . . 70
+
+@perc id=x-swedish-tom-loop-0167 name="Boucle de toms — 1 voix, 4 mes. #167" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . MT MT . . . HT MT HT HT . HT
+V  . . . 79 . 77 115 . . . 115 73 91 88 . 91
+N  . . . MT . MT MT . . . HT MT HT HT . HT
+V  . . . 74 . 89 115 . . . 115 91 75 89 . 80
+N  . . . MT . MT MT . . . HT MT HT HT . HT
+V  . . . 72 . 80 115 . . . 115 79 79 92 . 82
+N  . . . MT . MT MT . . . HT MT HT HT HT HT
+V  . . . 90 . 91 115 . . . 115 89 87 73 115 74
+
+@perc id=x-swedish-tom-loop-0168 name="Boucle de toms — 1 voix, 2 mes. #168" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC LT . LT PC . PC . PC . LT LT . . PC
+V  . 80 115 . 94 85 . 92 . 91 . 89 72 . . 72
+N  . PC LT . LT PC . PC . PC . LT LT LT PC PC
+V  . 85 115 . 93 93 . 73 . 91 . 75 78 82 115 83
+
+@perc id=x-swedish-tom-loop-0169 name="Boucle de toms — 1 voix, 2 mes. #169" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . HT . . . . . . MT . . . MT .
+V  . 70 . 80 . . . . . . 115 . . . 115 .
+N  . HT . HT . . . . . . MT . MT HT MT HT
+V  . 86 . 74 . . . . . . 115 . 83 71 115 78
+
+@perc id=x-swedish-tom-loop-0170 name="Boucle de toms — 1 voix, 4 mes. #170" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . HT . . LT . LT . . HT . . HT . .
+V  . . 115 . . 86 . 94 . . 115 . . 77 . .
+N  . . HT . . LT . LT . . HT . . HT . .
+V  . . 115 . . 75 . 89 . . 115 . . 92 . .
+N  . . HT . . LT . LT . . HT . . HT . .
+V  . . 115 . . 75 . 79 . . 115 . . 84 . .
+N  . . HT . . LT . LT . . HT . MT . LT HT
+V  . . 115 . . 70 . 94 . . 115 . 71 . 115 90
+
+@perc id=x-swedish-tom-loop-0171 name="Boucle de toms — 1 voix, 2 mes. #171" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT MT . . . HT MT . HT MT HT MT HT MT .
+V  . 94 115 . . . 115 79 . 85 115 94 70 91 115 .
+N  . MT MT . . . HT MT . HT MT HT . HT MT HT
+V  . 79 115 . . . 115 92 . 74 115 76 . 81 115 88
+
+@perc id=x-swedish-tom-loop-0172 name="Boucle de toms — 1 voix, 2 mes. #172" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT PC . PC . LT . . LT . . . . . .
+V  . 75 115 . 93 . 115 . . 82 . . . . . .
+N  . LT PC . PC . LT . . LT . . . PC . LT
+V  . 70 115 . 89 . 115 . . 93 . . . 86 . 82
+
+@perc id=x-swedish-tom-loop-0173 name="Boucle de toms — 1 voix, 4 mes. #173" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC PC LT . . . . LT PC PC . PC PC . LT
+V  . 89 115 83 . . . . 72 84 115 . 78 89 . 70
+N  . PC PC LT . . . . LT PC PC . PC PC . LT
+V  . 84 115 93 . . . . 71 76 115 . 82 72 . 88
+N  . PC PC LT . . . . LT PC PC . PC PC . LT
+V  . 79 115 81 . . . . 87 73 115 . 86 90 . 80
+N  . PC PC LT . . . . LT PC PC . PC . PC .
+V  . 80 115 88 . . . . 78 92 115 . 75 . 115 .
+
+@perc id=x-swedish-tom-loop-0174 name="Boucle de toms — 1 voix, 4 mes. #174" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT PC PC LT . . PC . LT PC . . PC . LT .
+V  92 89 115 71 . . 115 . 91 71 . . 70 . 115 .
+N  LT PC PC LT . . PC . LT PC . . PC . LT .
+V  82 75 115 89 . . 115 . 91 79 . . 79 . 115 .
+N  LT PC PC LT . . PC . LT PC . . PC . LT .
+V  83 92 115 94 . . 115 . 72 75 . . 77 . 115 .
+N  LT PC PC LT . . PC . LT PC . . PC LT LT .
+V  90 92 115 74 . . 115 . 75 80 . . 70 73 115 .
+
+@perc id=x-swedish-tom-loop-0175 name="Boucle de toms — 1 voix, 4 mes. #175" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . LT . HT . . . LT . LT . . LT .
+V  . 75 . 77 . 70 . . . 75 . 73 . . 115 .
+N  . HT . LT . HT . . . LT . LT . . LT .
+V  . 84 . 91 . 91 . . . 82 . 92 . . 115 .
+N  . HT . LT . HT . . . LT . LT . . LT .
+V  . 80 . 92 . 91 . . . 89 . 81 . . 115 .
+N  . HT . LT . HT . . . LT . LT HT . LT .
+V  . 86 . 83 . 76 . . . 76 . 81 78 . 115 .
+
+@perc id=x-swedish-tom-loop-0176 name="Boucle de toms — 1 voix, 2 mes. #176" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . HT . . . LT . . LT HT . MT MT MT
+V  . 72 . 93 . . . 92 . . 115 71 . 71 115 79
+N  . LT . HT . . . LT . . LT HT MT . MT MT
+V  . 81 . 78 . . . 85 . . 115 86 89 . 115 84
+
+@perc id=x-swedish-tom-loop-0177 name="Boucle de toms — 1 voix, 2 mes. #177" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . HT . . MT . MT . . HT . HT . . MT
+V  . . 115 . . 83 . 86 . . 115 . 82 . . 77
+N  . . HT . . MT . MT . . HT . . MT MT MT
+V  . . 115 . . 75 . 94 . . 115 . . 93 115 72
+
+@perc id=x-swedish-tom-loop-0178 name="Boucle de toms — 1 voix, 2 mes. #178" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  MT . MT MT . HT MT . . HT MT . . . . MT
+V  78 . 115 72 . 92 115 . . 80 115 . . . . 84
+N  MT . MT MT . HT MT . . HT MT . . . HT .
+V  75 . 115 82 . 72 115 . . 78 115 . . . 115 .
+
+@perc id=x-swedish-tom-loop-0179 name="Boucle de toms — 1 voix, 4 mes. #179" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . PC . PC PC . . . . LT LT . PC
+V  . . . . 81 . 115 90 . . . . 89 87 . 81
+N  . . . . PC . PC PC . . . . LT LT . PC
+V  . . . . 71 . 115 89 . . . . 81 93 . 88
+N  . . . . PC . PC PC . . . . LT LT . PC
+V  . . . . 76 . 115 79 . . . . 74 73 . 79
+N  . . . . PC . PC PC . . . . LT LT PC PC
+V  . . . . 79 . 115 91 . . . . 85 87 115 73
+
+@perc id=x-swedish-tom-loop-0180 name="Boucle de toms — 1 voix, 2 mes. #180" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT MT HT . HT . . . MT LT LT . LT . HT
+V  . 82 115 78 . 80 . . . 72 115 83 . 70 . 79
+N  . HT MT HT . HT . . . MT LT LT MT LT . HT
+V  . 88 115 91 . 81 . . . 87 115 72 75 90 . 87
+
+@perc id=x-swedish-tom-loop-0181 name="Boucle de toms — 1 voix, 4 mes. #181" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . PC . PC . . LT PC LT PC . LT . PC LT
+V  . . 115 . 92 . . 72 72 92 115 . 75 . 115 90
+N  . . PC . PC . . LT PC LT PC . LT . PC LT
+V  . . 115 . 75 . . 78 79 88 115 . 75 . 115 80
+N  . . PC . PC . . LT PC LT PC . LT . PC LT
+V  . . 115 . 85 . . 90 74 88 115 . 93 . 115 89
+N  . . PC . PC . . LT PC LT PC . . LT . .
+V  . . 115 . 87 . . 89 76 90 115 . . 72 . .
+
+@perc id=x-swedish-tom-loop-0182 name="Boucle de toms — 1 voix, 4 mes. #182" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . HT . MT MT LT . . MT . . . HT .
+V  . . . 84 . 83 115 91 . . 115 . . . 115 .
+N  . . . HT . MT MT LT . . MT . . . HT .
+V  . . . 79 . 71 115 81 . . 115 . . . 115 .
+N  . . . HT . MT MT LT . . MT . . . HT .
+V  . . . 92 . 91 115 76 . . 115 . . . 115 .
+N  . . . HT . MT MT LT . . MT . . HT HT HT
+V  . . . 83 . 85 115 88 . . 115 . . 71 115 76
+
+@perc id=x-swedish-tom-loop-0183 name="Boucle de toms — 1 voix, 4 mes. #183" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  MT HT . . . HT . HT MT . HT . . . . .
+V  70 90 . . . 73 . 91 84 . 115 . . . . .
+N  MT HT . . . HT . HT MT . HT . . . . .
+V  88 88 . . . 82 . 78 71 . 115 . . . . .
+N  MT HT . . . HT . HT MT . HT . . . . .
+V  74 88 . . . 89 . 83 77 . 115 . . . . .
+N  MT HT . . . HT . HT MT . HT . . MT HT .
+V  77 83 . . . 87 . 80 81 . 115 . . 80 115 .
+
+@perc id=x-swedish-tom-loop-0184 name="Boucle de toms — 1 voix, 2 mes. #184" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT LT . . . LT . LT . . . LT MT LT
+V  . . 115 92 . . . 74 . 86 . . . 73 115 74
+N  . . LT LT . . . LT . LT . . . LT MT .
+V  . . 115 92 . . . 74 . 80 . . . 77 115 .
+
+@perc id=x-swedish-tom-loop-0185 name="Boucle de toms — 1 voix, 2 mes. #185" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC LT PC . LT LT . PC . . . . . . PC
+V  . 71 115 85 . 74 115 . 88 . . . . . . 91
+N  . PC LT PC . LT LT . PC . . . PC . PC PC
+V  . 84 115 82 . 79 115 . 85 . . . 85 . 115 78
+
+@perc id=x-swedish-tom-loop-0186 name="Boucle de toms — 1 voix, 2 mes. #186" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . CB PC . . . PC . CB CB . CB . . CB .
+V  . 86 115 . . . 115 . 80 77 . 85 . . 115 .
+N  . CB PC . . . PC . CB CB . CB . CB CB PC
+V  . 93 115 . . . 115 . 72 91 . 83 . 82 115 90
+
+@perc id=x-swedish-tom-loop-0187 name="Boucle de toms — 1 voix, 2 mes. #187" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . LT . . . . . LT LT LT . . . LT
+V  . 92 . 84 . . . . . 72 115 72 . . . 85
+N  . LT . LT . . . . . LT LT LT . . LT .
+V  . 89 . 78 . . . . . 76 115 79 . . 115 .
+
+@perc id=x-swedish-tom-loop-0188 name="Boucle de toms — 1 voix, 4 mes. #188" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB . . CB CB PC PC . . . . CB . . CB PC
+V  80 . . 75 90 75 115 . . . . 87 . . 115 84
+N  CB . . CB CB PC PC . . . . CB . . CB PC
+V  93 . . 85 76 74 115 . . . . 86 . . 115 85
+N  CB . . CB CB PC PC . . . . CB . . CB PC
+V  84 . . 84 78 73 115 . . . . 86 . . 115 72
+N  CB . . CB CB PC PC . . . . CB PC . CB .
+V  87 . . 94 92 75 115 . . . . 89 77 . 115 .
+
+@perc id=x-swedish-tom-loop-0189 name="Boucle de toms — 1 voix, 2 mes. #189" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT MT HT . . LT LT . LT . . . HT . LT
+V  . 81 115 79 . . 115 90 . 91 . . . 91 . 78
+N  . MT MT HT . . LT LT . LT . . HT HT MT .
+V  . 89 115 85 . . 115 81 . 80 . . 77 84 115 .
+
+@perc id=x-swedish-tom-loop-0190 name="Boucle de toms — 1 voix, 2 mes. #190" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . HT MT . . . . . . MT .
+V  . . . . . . 115 90 . . . . . . 115 .
+N  . . . . . . HT MT . . . . MT HT . MT
+V  . . . . . . 115 78 . . . . 75 91 . 82
+
+@perc id=x-swedish-tom-loop-0191 name="Boucle de toms — 1 voix, 4 mes. #191" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . PC CB . CB CB PC CB PC PC . PC CB CB .
+V  73 . 115 71 . 86 115 90 78 85 115 . 77 70 115 .
+N  PC . PC CB . CB CB PC CB PC PC . PC CB CB .
+V  70 . 115 92 . 87 115 76 78 72 115 . 89 91 115 .
+N  PC . PC CB . CB CB PC CB PC PC . PC CB CB .
+V  76 . 115 93 . 79 115 90 81 92 115 . 91 90 115 .
+N  PC . PC CB . CB CB PC CB PC PC . . CB CB CB
+V  85 . 115 79 . 78 115 72 91 75 115 . . 77 115 91
+
+@perc id=x-swedish-tom-loop-0192 name="Boucle de toms — 1 voix, 2 mes. #192" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB . . . . . . PC . . . CB PC . . .
+V  94 . . . . . . 75 . . . 82 71 . . .
+N  CB . . . . . . PC . . . CB . . PC PC
+V  74 . . . . . . 93 . . . 76 . . 115 81
+
+@perc id=x-swedish-tom-loop-0193 name="Boucle de toms — 1 voix, 2 mes. #193" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT MT . LT MT . . LT . LT . . LT .
+V  . . 115 83 . 70 115 . . 94 . 75 . . 115 .
+N  . . LT MT . LT MT . . LT . LT MT LT LT MT
+V  . . 115 73 . 79 115 . . 92 . 81 74 72 115 92
+
+@perc id=x-swedish-tom-loop-0194 name="Boucle de toms — 1 voix, 4 mes. #194" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB CB . PC . PC . . . . CB PC . PC . .
+V  78 77 . 81 . 92 . . . . 115 87 . 86 . .
+N  CB CB . PC . PC . . . . CB PC . PC . .
+V  76 74 . 82 . 71 . . . . 115 74 . 77 . .
+N  CB CB . PC . PC . . . . CB PC . PC . .
+V  90 93 . 81 . 74 . . . . 115 72 . 86 . .
+N  CB CB . PC . PC . . . . CB PC CB PC . CB
+V  71 84 . 75 . 77 . . . . 115 85 84 74 . 88
+
+@perc id=x-swedish-tom-loop-0195 name="Boucle de toms — 1 voix, 4 mes. #195" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . HT . MT MT HT . . LT . . . LT .
+V  . . . 70 . 73 115 92 . . 115 . . . 115 .
+N  . . . HT . MT MT HT . . LT . . . LT .
+V  . . . 89 . 81 115 79 . . 115 . . . 115 .
+N  . . . HT . MT MT HT . . LT . . . LT .
+V  . . . 91 . 89 115 94 . . 115 . . . 115 .
+N  . . . HT . MT MT HT . . LT . HT . LT LT
+V  . . . 77 . 81 115 87 . . 115 . 78 . 115 87
+
+@perc id=x-swedish-tom-loop-0196 name="Boucle de toms — 1 voix, 2 mes. #196" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB . . PC . . CB . CB . . . . CB . .
+V  70 . . 80 . . 115 . 85 . . . . 82 . .
+N  CB . . PC . . CB . CB . . . CB CB CB PC
+V  88 . . 71 . . 115 . 88 . . . 71 70 115 76
+
+@perc id=x-swedish-tom-loop-0197 name="Boucle de toms — 1 voix, 4 mes. #197" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . PC LT LT PC . . LT LT . PC . . . LT
+V  . . 115 87 93 79 . . 80 70 . 94 . . . 72
+N  . . PC LT LT PC . . LT LT . PC . . . LT
+V  . . 115 74 87 82 . . 88 84 . 76 . . . 93
+N  . . PC LT LT PC . . LT LT . PC . . . LT
+V  . . 115 86 77 92 . . 74 86 . 84 . . . 90
+N  . . PC LT LT PC . . LT LT . PC . PC LT .
+V  . . 115 70 86 82 . . 76 86 . 81 . 88 115 .
+
+@perc id=x-swedish-tom-loop-0198 name="Boucle de toms — 1 voix, 2 mes. #198" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . MT . . . LT . MT . . . .
+V  . . 115 . . 71 . . . 88 . 87 . . . .
+N  . . LT . . MT . . . LT . MT MT LT LT MT
+V  . . 115 . . 82 . . . 75 . 88 76 85 115 70
+
+@perc id=x-swedish-tom-loop-0199 name="Boucle de toms — 1 voix, 4 mes. #199" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC PC . . PC . . . PC PC CB . . . PC .
+V  72 78 . . 85 . . . 72 82 115 . . . 115 .
+N  PC PC . . PC . . . PC PC CB . . . PC .
+V  75 77 . . 88 . . . 82 74 115 . . . 115 .
+N  PC PC . . PC . . . PC PC CB . . . PC .
+V  87 92 . . 73 . . . 91 70 115 . . . 115 .
+N  PC PC . . PC . . . PC PC CB . . . PC .
+V  94 93 . . 70 . . . 83 82 115 . . . 115 .
+
+@perc id=x-swedish-tom-loop-0200 name="Boucle de toms — 1 voix, 4 mes. #200" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . CB . CB CB . . . . . . CB CB
+V  . . . . 77 . 115 76 . . . . . . 115 75
+N  . . . . CB . CB CB . . . . . . CB CB
+V  . . . . 83 . 115 85 . . . . . . 115 93
+N  . . . . CB . CB CB . . . . . . CB CB
+V  . . . . 72 . 115 86 . . . . . . 115 88
+N  . . . . CB . CB CB . . . . . PC CB CB
+V  . . . . 84 . 115 72 . . . . . 84 115 88
+
+@perc id=x-swedish-tom-loop-0201 name="Boucle de toms — 1 voix, 4 mes. #201" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . PC . . PC . . . . LT . PC
+V  . . 115 . . 93 . . 86 . . . . 72 . 92
+N  . . LT . . PC . . PC . . . . LT . PC
+V  . . 115 . . 93 . . 85 . . . . 81 . 94
+N  . . LT . . PC . . PC . . . . LT . PC
+V  . . 115 . . 89 . . 75 . . . . 78 . 82
+N  . . LT . . PC . . PC . . . PC LT LT PC
+V  . . 115 . . 71 . . 76 . . . 88 88 115 90
+
+@perc id=x-swedish-tom-loop-0202 name="Boucle de toms — 1 voix, 2 mes. #202" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . PC . PC LT LT . PC . . PC . .
+V  . 78 115 . 77 . 115 70 78 . 115 . . 94 . .
+N  . LT LT . PC . PC LT LT . PC . . . PC PC
+V  . 76 115 . 76 . 115 84 88 . 115 . . . 115 87
+
+@perc id=x-swedish-tom-loop-0203 name="Boucle de toms — 1 voix, 2 mes. #203" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . PC . . . PC . CB PC . . PC CB
+V  . . . . 76 . . . 87 . 115 79 . . 115 94
+N  . . . . PC . . . PC . CB PC CB . PC CB
+V  . . . . 73 . . . 77 . 115 94 75 . 115 89
+
+@perc id=x-swedish-tom-loop-0204 name="Boucle de toms — 1 voix, 2 mes. #204" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . . . CB PC CB . . . . PC . PC CB CB
+V  91 . . . 83 79 115 . . . . 74 . 82 115 88
+N  PC . . . CB PC CB . . . . PC PC . CB .
+V  84 . . . 74 87 115 . . . . 82 84 . 115 .
+
+@perc id=x-swedish-tom-loop-0205 name="Boucle de toms — 1 voix, 4 mes. #205" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . CB PC . . CB . . PC . PC . . . . PC
+V  . 87 115 . . 88 . . 70 . 115 . . . . 79
+N  . CB PC . . CB . . PC . PC . . . . PC
+V  . 74 115 . . 85 . . 85 . 115 . . . . 90
+N  . CB PC . . CB . . PC . PC . . . . PC
+V  . 91 115 . . 70 . . 89 . 115 . . . . 89
+N  . CB PC . . CB . . PC . PC . . CB PC .
+V  . 72 115 . . 85 . . 87 . 115 . . 75 115 .
+
+@perc id=x-swedish-tom-loop-0206 name="Boucle de toms — 1 voix, 2 mes. #206" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT HT MT . . . . . . LT . . HT . MT
+V  . 81 115 72 . . . . . . 115 . . 84 . 83
+N  . MT HT MT . . . . . . LT . HT HT MT MT
+V  . 82 115 93 . . . . . . 115 . 85 84 115 91
+
+@perc id=x-swedish-tom-loop-0207 name="Boucle de toms — 1 voix, 2 mes. #207" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . MT LT LT . . . LT . . LT .
+V  . . . 90 . 75 115 72 . . . 70 . . 115 .
+N  . . . MT . MT LT LT . . . LT MT LT LT MT
+V  . . . 90 . 82 115 78 . . . 82 94 81 115 77
+
+@perc id=x-swedish-tom-loop-0208 name="Boucle de toms — 1 voix, 4 mes. #208" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . PC . LT PC . . . . PC PC PC . . .
+V  81 . 115 . 92 76 . . . . 115 70 75 . . .
+N  PC . PC . LT PC . . . . PC PC PC . . .
+V  89 . 115 . 83 86 . . . . 115 73 80 . . .
+N  PC . PC . LT PC . . . . PC PC PC . . .
+V  81 . 115 . 81 70 . . . . 115 74 78 . . .
+N  PC . PC . LT PC . . . . PC PC . PC PC PC
+V  72 . 115 . 78 93 . . . . 115 87 . 79 115 76
+
+@perc id=x-swedish-tom-loop-0209 name="Boucle de toms — 1 voix, 4 mes. #209" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . CB PC . . CB . . . PC PC PC . CB . .
+V  . 93 115 . . 84 . . . 73 115 89 . 77 . .
+N  . CB PC . . CB . . . PC PC PC . CB . .
+V  . 91 115 . . 87 . . . 94 115 86 . 88 . .
+N  . CB PC . . CB . . . PC PC PC . CB . .
+V  . 91 115 . . 73 . . . 85 115 80 . 88 . .
+N  . CB PC . . CB . . . PC PC PC PC CB PC CB
+V  . 84 115 . . 76 . . . 92 115 77 90 81 115 91
+
+@perc id=x-swedish-tom-loop-0210 name="Boucle de toms — 1 voix, 4 mes. #210" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT HT . . . . LT . . LT . . HT . .
+V  . 70 115 . . . . 82 . . 115 . . 92 . .
+N  . HT HT . . . . LT . . LT . . HT . .
+V  . 75 115 . . . . 84 . . 115 . . 91 . .
+N  . HT HT . . . . LT . . LT . . HT . .
+V  . 94 115 . . . . 88 . . 115 . . 74 . .
+N  . HT HT . . . . LT . . LT . LT HT MT HT
+V  . 72 115 . . . . 92 . . 115 . 88 74 115 83
+
+@perc id=x-swedish-tom-loop-0211 name="Boucle de toms — 1 voix, 4 mes. #211" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB PC . PC PC CB . PC CB . . . . CB CB PC
+V  90 79 . 94 70 75 . 88 91 . . . . 71 115 78
+N  CB PC . PC PC CB . PC CB . . . . CB CB PC
+V  76 92 . 74 78 82 . 87 76 . . . . 87 115 90
+N  CB PC . PC PC CB . PC CB . . . . CB CB PC
+V  81 70 . 74 94 92 . 89 79 . . . . 83 115 90
+N  CB PC . PC PC CB . PC CB . . . CB . CB PC
+V  82 81 . 79 86 93 . 86 92 . . . 94 . 115 82
+
+@perc id=x-swedish-tom-loop-0212 name="Boucle de toms — 1 voix, 4 mes. #212" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC CB PC . . . PC PC . PC . . . . PC .
+V  90 73 115 . . . 115 73 . 73 . . . . 115 .
+N  PC CB PC . . . PC PC . PC . . . . PC .
+V  92 93 115 . . . 115 83 . 81 . . . . 115 .
+N  PC CB PC . . . PC PC . PC . . . . PC .
+V  80 78 115 . . . 115 88 . 81 . . . . 115 .
+N  PC CB PC . . . PC PC . PC . . PC CB PC PC
+V  93 75 115 . . . 115 83 . 91 . . 72 71 115 75
+
+@perc id=x-swedish-tom-loop-0213 name="Boucle de toms — 1 voix, 4 mes. #213" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC CB . PC . PC . . CB . PC PC . CB . .
+V  92 78 . 84 . 92 . . 80 . 115 87 . 79 . .
+N  PC CB . PC . PC . . CB . PC PC . CB . .
+V  94 91 . 77 . 90 . . 80 . 115 75 . 73 . .
+N  PC CB . PC . PC . . CB . PC PC . CB . .
+V  71 76 . 86 . 81 . . 71 . 115 83 . 72 . .
+N  PC CB . PC . PC . . CB . PC PC PC CB CB PC
+V  86 74 . 72 . 92 . . 92 . 115 77 81 86 115 71
+
+@perc id=x-swedish-tom-loop-0214 name="Boucle de toms — 1 voix, 2 mes. #214" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT . . PC . PC . . LT PC . . . . . .
+V  88 . . 87 . 82 . . 80 70 . . . . . .
+N  LT . . PC . PC . . LT PC . . PC PC LT .
+V  91 . . 87 . 76 . . 92 73 . . 86 94 115 .
+
+@perc id=x-swedish-tom-loop-0215 name="Boucle de toms — 1 voix, 4 mes. #215" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT HT MT . LT . . . . MT MT . . LT HT
+V  . 81 115 76 . 81 . . . . 115 93 . . 115 88
+N  . LT HT MT . LT . . . . MT MT . . LT HT
+V  . 81 115 86 . 88 . . . . 115 86 . . 115 76
+N  . LT HT MT . LT . . . . MT MT . . LT HT
+V  . 85 115 87 . 78 . . . . 115 88 . . 115 74
+N  . LT HT MT . LT . . . . MT MT . HT . HT
+V  . 73 115 86 . 93 . . . . 115 81 . 79 . 88
+
+@perc id=x-swedish-tom-loop-0216 name="Boucle de toms — 1 voix, 2 mes. #216" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT MT HT . LT LT LT . HT . MT . HT . HT
+V  . 93 115 86 . 89 115 72 . 82 . 92 . 88 . 92
+N  . HT MT HT . LT LT LT . HT . MT LT HT MT HT
+V  . 83 115 73 . 82 115 87 . 92 . 71 75 93 115 73
+
+@perc id=x-swedish-tom-loop-0217 name="Boucle de toms — 1 voix, 4 mes. #217" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . . . . . . . MT . . . LT
+V  . . . 86 . . . . . . . 94 . . . 81
+N  . . . MT . . . . . . . MT . . . LT
+V  . . . 83 . . . . . . . 88 . . . 92
+N  . . . MT . . . . . . . MT . . . LT
+V  . . . 79 . . . . . . . 70 . . . 87
+N  . . . MT . . . . . . . MT . . . LT
+V  . . . 79 . . . . . . . 84 . . . 82
+
+@perc id=x-swedish-tom-loop-0218 name="Boucle de toms — 1 voix, 4 mes. #218" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . CB . . PC PC PC . CB . . PC . CB
+V  . . . 84 . . 115 91 94 . 115 . . 82 . 74
+N  . . . CB . . PC PC PC . CB . . PC . CB
+V  . . . 94 . . 115 75 73 . 115 . . 74 . 75
+N  . . . CB . . PC PC PC . CB . . PC . CB
+V  . . . 72 . . 115 75 93 . 115 . . 88 . 81
+N  . . . CB . . PC PC PC . CB . CB PC CB CB
+V  . . . 79 . . 115 80 90 . 115 . 94 78 115 89
+
+@perc id=x-swedish-tom-loop-0219 name="Boucle de toms — 1 voix, 2 mes. #219" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC PC . PC . . . PC . LT LT . . . . PC
+V  88 89 . 85 . . . 71 . 79 115 . . . . 76
+N  PC PC . PC . . . PC . LT LT . PC LT PC PC
+V  93 83 . 91 . . . 78 . 89 115 . 87 75 115 77
+
+@perc id=x-swedish-tom-loop-0220 name="Boucle de toms — 1 voix, 4 mes. #220" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . LT . MT . . . LT . . . LT . LT
+V  . 89 . 91 . 86 . . . 90 . . . 90 . 94
+N  . MT . LT . MT . . . LT . . . LT . LT
+V  . 71 . 80 . 89 . . . 85 . . . 82 . 81
+N  . MT . LT . MT . . . LT . . . LT . LT
+V  . 83 . 86 . 74 . . . 71 . . . 76 . 77
+N  . MT . LT . MT . . . LT . . LT LT MT .
+V  . 89 . 92 . 78 . . . 90 . . 77 84 115 .
+
+@perc id=x-swedish-tom-loop-0221 name="Boucle de toms — 1 voix, 2 mes. #221" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT . LT PC . . . LT . . . PC LT PC . PC
+V  73 . 115 72 . . . 85 . . . 81 94 85 . 93
+N  LT . LT PC . . . LT . . . PC LT PC LT .
+V  81 . 115 88 . . . 78 . . . 87 70 77 115 .
+
+@perc id=x-swedish-tom-loop-0222 name="Boucle de toms — 1 voix, 4 mes. #222" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC PC . . . . . LT PC PC LT . PC . PC
+V  . 77 115 . . . . . 90 71 115 86 . 87 . 72
+N  . PC PC . . . . . LT PC PC LT . PC . PC
+V  . 78 115 . . . . . 72 81 115 88 . 83 . 88
+N  . PC PC . . . . . LT PC PC LT . PC . PC
+V  . 71 115 . . . . . 94 89 115 88 . 74 . 73
+N  . PC PC . . . . . LT PC PC LT PC PC PC PC
+V  . 89 115 . . . . . 88 82 115 74 75 78 115 90
+
+@perc id=x-swedish-tom-loop-0223 name="Boucle de toms — 1 voix, 4 mes. #223" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT MT HT . . LT LT . . LT MT . . MT .
+V  . 92 115 80 . . 115 91 . . 115 85 . . 115 .
+N  . LT MT HT . . LT LT . . LT MT . . MT .
+V  . 92 115 86 . . 115 87 . . 115 76 . . 115 .
+N  . LT MT HT . . LT LT . . LT MT . . MT .
+V  . 84 115 80 . . 115 80 . . 115 86 . . 115 .
+N  . LT MT HT . . LT LT . . LT MT MT HT MT .
+V  . 72 115 87 . . 115 94 . . 115 90 76 94 115 .
+
+@perc id=x-swedish-tom-loop-0224 name="Boucle de toms — 1 voix, 4 mes. #224" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . MT LT . . . LT MT . MT . MT
+V  . . . 75 . 70 115 . . . 115 88 . 82 . 86
+N  . . . MT . MT LT . . . LT MT . MT . MT
+V  . . . 88 . 88 115 . . . 115 86 . 93 . 85
+N  . . . MT . MT LT . . . LT MT . MT . MT
+V  . . . 78 . 85 115 . . . 115 91 . 84 . 80
+N  . . . MT . MT LT . . . LT MT HT MT MT .
+V  . . . 77 . 73 115 . . . 115 90 86 89 115 .
+
+@perc id=x-swedish-tom-loop-0225 name="Boucle de toms — 1 voix, 2 mes. #225" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . PC . . LT LT PC PC . PC PC LT . PC
+V  . . . 75 . . 115 75 88 75 . 72 88 80 . 88
+N  . . . PC . . LT LT PC PC . PC PC LT . .
+V  . . . 81 . . 115 94 87 86 . 87 71 72 . .
+
+@perc id=x-swedish-tom-loop-0226 name="Boucle de toms — 1 voix, 4 mes. #226" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB . PC CB . CB CB . . CB . PC . CB . .
+V  91 . 115 72 . 82 115 . . 79 . 78 . 84 . .
+N  CB . PC CB . CB CB . . CB . PC . CB . .
+V  82 . 115 78 . 74 115 . . 81 . 76 . 73 . .
+N  CB . PC CB . CB CB . . CB . PC . CB . .
+V  81 . 115 71 . 72 115 . . 93 . 81 . 78 . .
+N  CB . PC CB . CB CB . . CB . PC CB . . CB
+V  73 . 115 79 . 90 115 . . 90 . 83 81 . . 94
+
+@perc id=x-swedish-tom-loop-0227 name="Boucle de toms — 1 voix, 4 mes. #227" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  HT MT HT . . MT HT . . HT . . MT HT HT HT
+V  79 87 115 . . 81 115 . . 78 . . 73 83 115 90
+N  HT MT HT . . MT HT . . HT . . MT HT HT HT
+V  80 93 115 . . 72 115 . . 76 . . 94 94 115 84
+N  HT MT HT . . MT HT . . HT . . MT HT HT HT
+V  81 81 115 . . 85 115 . . 76 . . 79 71 115 88
+N  HT MT HT . . MT HT . . HT . . MT HT HT HT
+V  86 74 115 . . 79 115 . . 76 . . 79 77 115 77
+
+@perc id=x-swedish-tom-loop-0228 name="Boucle de toms — 1 voix, 4 mes. #228" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . . . MT . MT . . . LT LT MT
+V  . 87 115 . . . . 90 . 71 . . . 81 115 85
+N  . LT LT . . . . MT . MT . . . LT LT MT
+V  . 87 115 . . . . 83 . 89 . . . 80 115 80
+N  . LT LT . . . . MT . MT . . . LT LT MT
+V  . 78 115 . . . . 93 . 86 . . . 71 115 80
+N  . LT LT . . . . MT . MT . . LT LT LT .
+V  . 83 115 . . . . 70 . 91 . . 89 81 115 .
+
+@perc id=x-swedish-tom-loop-0229 name="Boucle de toms — 1 voix, 2 mes. #229" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT LT . PC PC . PC . . . . PC . LT LT PC
+V  70 79 . 81 84 . 115 . . . . 81 . 86 115 90
+N  LT LT . PC PC . PC . . . . PC . LT LT PC
+V  94 94 . 73 79 . 115 . . . . 93 . 93 115 93
+
+@perc id=x-swedish-tom-loop-0230 name="Boucle de toms — 1 voix, 2 mes. #230" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . . . . . . LT . . HT .
+V  . . . . . . . . . . . 90 . . 115 .
+N  . . . . . . . . . . . LT . LT . .
+V  . . . . . . . . . . . 94 . 81 . .
+
+@perc id=x-swedish-tom-loop-0231 name="Boucle de toms — 1 voix, 2 mes. #231" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . PC . PC PC LT . LT . . LT . . LT .
+V  . . 115 . 72 76 115 . 87 . . 72 . . 115 .
+N  . . PC . PC PC LT . LT . . LT PC PC . PC
+V  . . 115 . 84 85 115 . 86 . . 83 94 91 . 91
+
+@perc id=x-swedish-tom-loop-0232 name="Boucle de toms — 1 voix, 4 mes. #232" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT MT MT . . . LT . . . . . MT MT .
+V  . 70 115 82 . . . 74 . . . . . 93 115 .
+N  . LT MT MT . . . LT . . . . . MT MT .
+V  . 86 115 87 . . . 81 . . . . . 78 115 .
+N  . LT MT MT . . . LT . . . . . MT MT .
+V  . 94 115 87 . . . 71 . . . . . 91 115 .
+N  . LT MT MT . . . LT . . . . LT MT MT LT
+V  . 85 115 87 . . . 86 . . . . 72 79 115 78
+
+@perc id=x-swedish-tom-loop-0233 name="Boucle de toms — 1 voix, 2 mes. #233" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . MT MT . . . . LT . . . .
+V  . . . 83 . 79 115 . . . . 87 . . . .
+N  . . . MT . MT MT . . . . LT . LT LT LT
+V  . . . 87 . 88 115 . . . . 93 . 73 115 92
+
+@perc id=x-swedish-tom-loop-0234 name="Boucle de toms — 1 voix, 4 mes. #234" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT HT MT . MT LT . . . . . . MT LT .
+V  . 81 115 91 . 89 115 . . . . . . 83 115 .
+N  . LT HT MT . MT LT . . . . . . MT LT .
+V  . 72 115 79 . 74 115 . . . . . . 90 115 .
+N  . LT HT MT . MT LT . . . . . . MT LT .
+V  . 94 115 70 . 83 115 . . . . . . 92 115 .
+N  . LT HT MT . MT LT . . . . . MT . LT .
+V  . 78 115 75 . 81 115 . . . . . 81 . 115 .
+
+@perc id=x-swedish-tom-loop-0235 name="Boucle de toms — 1 voix, 4 mes. #235" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . HT . HT . . HT . . . LT .
+V  . . . . . 92 . 71 . . 115 . . . 115 .
+N  . . . . . HT . HT . . HT . . . LT .
+V  . . . . . 93 . 74 . . 115 . . . 115 .
+N  . . . . . HT . HT . . HT . . . LT .
+V  . . . . . 77 . 93 . . 115 . . . 115 .
+N  . . . . . HT . HT . . HT . LT MT LT MT
+V  . . . . . 79 . 72 . . 115 . 94 72 115 71
+
+@perc id=x-swedish-tom-loop-0236 name="Boucle de toms — 1 voix, 2 mes. #236" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT . LT LT . PC . PC LT . LT LT LT PC . .
+V  82 . 115 77 . 82 . 84 82 . 115 80 77 84 . .
+N  LT . LT LT . PC . PC LT . LT LT LT . LT .
+V  94 . 115 75 . 89 . 81 77 . 115 73 70 . 115 .
+
+@perc id=x-swedish-tom-loop-0237 name="Boucle de toms — 1 voix, 4 mes. #237" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  MT HT MT HT . . . . MT . . . . MT MT .
+V  79 71 115 84 . . . . 89 . . . . 92 115 .
+N  MT HT MT HT . . . . MT . . . . MT MT .
+V  75 88 115 91 . . . . 93 . . . . 85 115 .
+N  MT HT MT HT . . . . MT . . . . MT MT .
+V  84 93 115 72 . . . . 74 . . . . 91 115 .
+N  MT HT MT HT . . . . MT . . . HT MT . MT
+V  85 75 115 79 . . . . 86 . . . 77 93 . 79
+
+@perc id=x-swedish-tom-loop-0238 name="Boucle de toms — 1 voix, 4 mes. #238" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . . . . . HT HT HT . LT LT MT
+V  . 85 115 . . . . . . 94 115 87 . 87 115 91
+N  . LT LT . . . . . . HT HT HT . LT LT MT
+V  . 77 115 . . . . . . 74 115 92 . 75 115 89
+N  . LT LT . . . . . . HT HT HT . LT LT MT
+V  . 82 115 . . . . . . 76 115 75 . 86 115 89
+N  . LT LT . . . . . . HT HT HT . . LT MT
+V  . 73 115 . . . . . . 80 115 76 . . 115 76
+
+@perc id=x-swedish-tom-loop-0239 name="Boucle de toms — 1 voix, 2 mes. #239" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . MT . . . HT . LT . . . LT
+V  . . 115 . . 77 . . . 76 . 88 . . . 81
+N  . . LT . . MT . . . HT . LT MT LT LT LT
+V  . . 115 . . 76 . . . 72 . 71 83 75 115 84
+
+@perc id=x-swedish-tom-loop-0240 name="Boucle de toms — 1 voix, 4 mes. #240" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . . MT . . . . HT . LT . .
+V  . 86 . . . . 115 . . . . 88 . 80 . .
+N  . MT . . . . MT . . . . HT . LT . .
+V  . 76 . . . . 115 . . . . 72 . 75 . .
+N  . MT . . . . MT . . . . HT . LT . .
+V  . 89 . . . . 115 . . . . 85 . 77 . .
+N  . MT . . . . MT . . . . HT HT LT MT LT
+V  . 74 . . . . 115 . . . . 70 71 80 115 83
+
+@perc id=x-swedish-tom-loop-0241 name="Boucle de toms — 1 voix, 2 mes. #241" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . . . . . MT . . . . HT HT
+V  . . . 94 . . . . . 89 . . . . 115 90
+N  . . . MT . . . . . MT . . . . HT HT
+V  . . . 84 . . . . . 77 . . . . 115 70
+
+@perc id=x-swedish-tom-loop-0242 name="Boucle de toms — 1 voix, 2 mes. #242" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT LT . . . LT . MT . . . . LT .
+V  . . 115 78 . . . 82 . 80 . . . . 115 .
+N  . . MT LT . . . LT . MT . . LT . LT .
+V  . . 115 82 . . . 73 . 87 . . 70 . 115 .
+
+@perc id=x-swedish-tom-loop-0243 name="Boucle de toms — 1 voix, 2 mes. #243" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT . . PC . . . LT PC PC . PC . LT
+V  . . 115 . . 84 . . . 90 115 89 . 70 . 93
+N  . . LT . . PC . . . LT PC PC PC PC PC LT
+V  . . 115 . . 80 . . . 71 115 79 92 80 115 82
+
+@perc id=x-swedish-tom-loop-0244 name="Boucle de toms — 1 voix, 4 mes. #244" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . MT . HT MT MT . MT MT . . HT
+V  . . . . . 88 . 94 91 71 . 83 73 . . 85
+N  . . . . . MT . HT MT MT . MT MT . . HT
+V  . . . . . 73 . 88 71 93 . 84 91 . . 83
+N  . . . . . MT . HT MT MT . MT MT . . HT
+V  . . . . . 83 . 85 88 77 . 90 72 . . 86
+N  . . . . . MT . HT MT MT . MT . MT HT .
+V  . . . . . 72 . 76 87 73 . 91 . 90 115 .
+
+@perc id=x-swedish-tom-loop-0245 name="Boucle de toms — 1 voix, 4 mes. #245" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC CB PC PC . PC PC CB CB CB CB PC . PC PC
+V  . 80 115 93 78 . 115 92 84 70 115 86 71 . 115 79
+N  . PC CB PC PC . PC PC CB CB CB CB PC . PC PC
+V  . 74 115 71 87 . 115 76 79 79 115 75 94 . 115 88
+N  . PC CB PC PC . PC PC CB CB CB CB PC . PC PC
+V  . 88 115 84 74 . 115 94 87 94 115 85 88 . 115 81
+N  . PC CB PC PC . PC PC CB CB CB CB . PC . .
+V  . 71 115 89 92 . 115 86 80 92 115 84 . 71 . .
+
+@perc id=x-swedish-tom-loop-0246 name="Boucle de toms — 1 voix, 4 mes. #246" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  HT . . HT HT . . . MT . MT MT MT . HT HT
+V  77 . . 84 79 . . . 76 . 115 93 76 . 115 90
+N  HT . . HT HT . . . MT . MT MT MT . HT HT
+V  85 . . 90 73 . . . 94 . 115 82 89 . 115 78
+N  HT . . HT HT . . . MT . MT MT MT . HT HT
+V  92 . . 85 81 . . . 94 . 115 84 85 . 115 94
+N  HT . . HT HT . . . MT . MT MT MT MT HT HT
+V  79 . . 85 78 . . . 83 . 115 94 77 93 115 87
+
+@perc id=x-swedish-tom-loop-0247 name="Boucle de toms — 1 voix, 4 mes. #247" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . MT LT . LT MT LT . HT . .
+V  . . . . . . 115 83 . 80 115 78 . 83 . .
+N  . . . . . . MT LT . LT MT LT . HT . .
+V  . . . . . . 115 94 . 73 115 89 . 80 . .
+N  . . . . . . MT LT . LT MT LT . HT . .
+V  . . . . . . 115 71 . 85 115 75 . 82 . .
+N  . . . . . . MT LT . LT MT LT HT HT HT HT
+V  . . . . . . 115 73 . 91 115 80 87 85 115 83
+
+@perc id=x-swedish-tom-loop-0248 name="Boucle de toms — 1 voix, 4 mes. #248" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . MT . . . LT . . . . . LT
+V  . . . . . 79 . . . 91 . . . . . 75
+N  . . . . . MT . . . LT . . . . . LT
+V  . . . . . 94 . . . 74 . . . . . 94
+N  . . . . . MT . . . LT . . . . . LT
+V  . . . . . 94 . . . 86 . . . . . 82
+N  . . . . . MT . . . LT . . MT HT LT .
+V  . . . . . 90 . . . 86 . . 89 70 115 .
+
+@perc id=x-swedish-tom-loop-0249 name="Boucle de toms — 1 voix, 4 mes. #249" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT MT MT . MT . MT . . . LT . . HT .
+V  . 71 115 71 . 77 . 72 . . . 72 . . 115 .
+N  . HT MT MT . MT . MT . . . LT . . HT .
+V  . 86 115 82 . 78 . 84 . . . 74 . . 115 .
+N  . HT MT MT . MT . MT . . . LT . . HT .
+V  . 73 115 71 . 92 . 74 . . . 77 . . 115 .
+N  . HT MT MT . MT . MT . . . LT . MT HT .
+V  . 80 115 81 . 77 . 72 . . . 71 . 70 115 .
+
+@perc id=x-swedish-tom-loop-0250 name="Boucle de toms — 1 voix, 4 mes. #250" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . CB PC . . PC CB PC . CB . CB PC . PC
+V  75 . 115 80 . . 115 92 82 . 115 . 70 76 . 93
+N  PC . CB PC . . PC CB PC . CB . CB PC . PC
+V  80 . 115 73 . . 115 92 71 . 115 . 86 87 . 84
+N  PC . CB PC . . PC CB PC . CB . CB PC . PC
+V  73 . 115 71 . . 115 79 80 . 115 . 73 79 . 92
+N  PC . CB PC . . PC CB PC . CB . . . CB PC
+V  89 . 115 84 . . 115 90 93 . 115 . . . 115 80
+
+@perc id=x-swedish-tom-loop-0251 name="Boucle de toms — 1 voix, 2 mes. #251" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . MT LT LT . . LT . . LT . LT
+V  . . . . . 92 115 74 . . 115 . . 75 . 70
+N  . . . . . MT LT LT . . LT . LT . LT LT
+V  . . . . . 93 115 75 . . 115 . 94 . 115 84
+
+@perc id=x-swedish-tom-loop-0252 name="Boucle de toms — 1 voix, 2 mes. #252" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . . HT MT . . HT . MT . LT . HT
+V  . . 115 . . 75 115 . . 89 . 85 . 82 . 81
+N  . . MT . . HT MT . . HT . MT MT LT MT HT
+V  . . 115 . . 82 115 . . 73 . 83 91 84 115 83
+
+@perc id=x-swedish-tom-loop-0253 name="Boucle de toms — 1 voix, 4 mes. #253" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT MT . MT LT . . MT . . . . . .
+V  . . 115 71 . 70 115 . . 73 . . . . . .
+N  . . LT MT . MT LT . . MT . . . . . .
+V  . . 115 79 . 82 115 . . 88 . . . . . .
+N  . . LT MT . MT LT . . MT . . . . . .
+V  . . 115 82 . 92 115 . . 82 . . . . . .
+N  . . LT MT . MT LT . . MT . . . LT LT LT
+V  . . 115 89 . 76 115 . . 72 . . . 75 115 72
+
+@perc id=x-swedish-tom-loop-0254 name="Boucle de toms — 1 voix, 4 mes. #254" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT HT . MT HT . . . . . MT . . MT MT
+V  . 83 115 . 82 88 . . . . . 89 . . 115 91
+N  . MT HT . MT HT . . . . . MT . . MT MT
+V  . 83 115 . 87 87 . . . . . 75 . . 115 78
+N  . MT HT . MT HT . . . . . MT . . MT MT
+V  . 94 115 . 90 92 . . . . . 72 . . 115 87
+N  . MT HT . MT HT . . . . . MT MT MT MT MT
+V  . 74 115 . 91 77 . . . . . 89 76 88 115 70
+
+@perc id=x-swedish-tom-loop-0255 name="Boucle de toms — 1 voix, 4 mes. #255" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT PC LT . . PC LT . . LT PC . . LT LT
+V  . 84 115 79 . . 115 91 . . 115 77 . . 115 77
+N  . LT PC LT . . PC LT . . LT PC . . LT LT
+V  . 90 115 72 . . 115 78 . . 115 90 . . 115 75
+N  . LT PC LT . . PC LT . . LT PC . . LT LT
+V  . 86 115 80 . . 115 75 . . 115 71 . . 115 89
+N  . LT PC LT . . PC LT . . LT PC PC . . .
+V  . 75 115 71 . . 115 72 . . 115 80 74 . . .
+
+@perc id=x-swedish-tom-loop-0256 name="Boucle de toms — 1 voix, 2 mes. #256" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . . HT . . LT HT . . . HT
+V  . . . . . . . 84 . . 115 88 . . . 80
+N  . . . . . . . HT . . LT HT . HT MT .
+V  . . . . . . . 71 . . 115 76 . 75 115 .
+
+@perc id=x-swedish-tom-loop-0257 name="Boucle de toms — 1 voix, 4 mes. #257" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC CB . PC . CB . . . PC . CB . PC . .
+V  88 71 . 70 . 83 . . . 94 . 78 . 88 . .
+N  PC CB . PC . CB . . . PC . CB . PC . .
+V  70 92 . 86 . 71 . . . 77 . 86 . 86 . .
+N  PC CB . PC . CB . . . PC . CB . PC . .
+V  90 72 . 94 . 86 . . . 83 . 77 . 84 . .
+N  PC CB . PC . CB . . . PC . CB PC PC PC CB
+V  73 80 . 92 . 92 . . . 75 . 85 81 77 115 71
+
+@perc id=x-swedish-tom-loop-0258 name="Boucle de toms — 1 voix, 2 mes. #258" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . . . . LT . . . MT . . LT MT
+V  . . 115 . . . . 83 . . . 90 . . 115 91
+N  . . MT . . . . LT . . . MT . MT LT .
+V  . . 115 . . . . 92 . . . 84 . 94 115 .
+
+@perc id=x-swedish-tom-loop-0259 name="Boucle de toms — 1 voix, 4 mes. #259" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . . . LT . LT . . LT . LT PC . . .
+V  74 . . . 90 . 115 . . 81 . 76 74 . . .
+N  PC . . . LT . LT . . LT . LT PC . . .
+V  79 . . . 90 . 115 . . 84 . 70 75 . . .
+N  PC . . . LT . LT . . LT . LT PC . . .
+V  80 . . . 86 . 115 . . 82 . 77 75 . . .
+N  PC . . . LT . LT . . LT . LT . PC LT PC
+V  81 . . . 75 . 115 . . 71 . 80 . 85 115 81
+
+@perc id=x-swedish-tom-loop-0260 name="Boucle de toms — 1 voix, 4 mes. #260" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT MT . . . MT . . . . . . LT . LT
+V  . 91 115 . . . 115 . . . . . . 72 . 93
+N  . MT MT . . . MT . . . . . . LT . LT
+V  . 91 115 . . . 115 . . . . . . 72 . 92
+N  . MT MT . . . MT . . . . . . LT . LT
+V  . 79 115 . . . 115 . . . . . . 90 . 80
+N  . MT MT . . . MT . . . . . . LT LT LT
+V  . 88 115 . . . 115 . . . . . . 85 115 94
+
+@perc id=x-swedish-tom-loop-0261 name="Boucle de toms — 1 voix, 4 mes. #261" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . . . PC . . . . PC . . . . LT .
+V  92 . . . 74 . . . . 80 . . . . 115 .
+N  PC . . . PC . . . . PC . . . . LT .
+V  84 . . . 88 . . . . 86 . . . . 115 .
+N  PC . . . PC . . . . PC . . . . LT .
+V  94 . . . 85 . . . . 78 . . . . 115 .
+N  PC . . . PC . . . . PC . . PC . . .
+V  84 . . . 92 . . . . 81 . . 74 . . .
+
+@perc id=x-swedish-tom-loop-0262 name="Boucle de toms — 1 voix, 4 mes. #262" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT MT . HT . MT . HT . . . . . . MT
+V  . 81 115 . 75 . 115 . 79 . . . . . . 89
+N  . HT MT . HT . MT . HT . . . . . . MT
+V  . 93 115 . 75 . 115 . 80 . . . . . . 75
+N  . HT MT . HT . MT . HT . . . . . . MT
+V  . 70 115 . 72 . 115 . 83 . . . . . . 84
+N  . HT MT . HT . MT . HT . . . . . . MT
+V  . 77 115 . 94 . 115 . 85 . . . . . . 82
+
+@perc id=x-swedish-tom-loop-0263 name="Boucle de toms — 1 voix, 4 mes. #263" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . . MT . . . MT . LT . . . .
+V  . . 115 . . 76 . . . 83 . 74 . . . .
+N  . . MT . . MT . . . MT . LT . . . .
+V  . . 115 . . 70 . . . 70 . 71 . . . .
+N  . . MT . . MT . . . MT . LT . . . .
+V  . . 115 . . 75 . . . 74 . 90 . . . .
+N  . . MT . . MT . . . MT . LT MT HT MT HT
+V  . . 115 . . 71 . . . 93 . 84 92 86 115 81
+
+@perc id=x-swedish-tom-loop-0264 name="Boucle de toms — 1 voix, 2 mes. #264" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT HT . . LT HT . LT LT . . HT . MT
+V  . . 115 78 . . 115 93 . 82 115 . . 75 . 91
+N  . . LT HT . . LT HT . LT LT . HT HT . .
+V  . . 115 88 . . 115 91 . 84 115 . 75 72 . .
+
+@perc id=x-swedish-tom-loop-0265 name="Boucle de toms — 1 voix, 4 mes. #265" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . PC . LT LT PC LT . . PC LT LT . PC .
+V  80 . 115 . 87 92 115 76 . . 115 86 89 . 115 .
+N  PC . PC . LT LT PC LT . . PC LT LT . PC .
+V  87 . 115 . 89 82 115 91 . . 115 93 71 . 115 .
+N  PC . PC . LT LT PC LT . . PC LT LT . PC .
+V  74 . 115 . 74 94 115 84 . . 115 71 94 . 115 .
+N  PC . PC . LT LT PC LT . . PC LT LT PC . LT
+V  87 . 115 . 75 92 115 72 . . 115 88 76 74 . 77
+
+@perc id=x-swedish-tom-loop-0266 name="Boucle de toms — 1 voix, 4 mes. #266" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . HT MT HT HT . . . . HT . HT .
+V  . . . . 93 81 115 86 . . . . 84 . 115 .
+N  . . . . HT MT HT HT . . . . HT . HT .
+V  . . . . 74 75 115 81 . . . . 88 . 115 .
+N  . . . . HT MT HT HT . . . . HT . HT .
+V  . . . . 91 71 115 74 . . . . 82 . 115 .
+N  . . . . HT MT HT HT . . . . . MT HT HT
+V  . . . . 73 91 115 83 . . . . . 72 115 93
+
+@perc id=x-swedish-tom-loop-0267 name="Boucle de toms — 1 voix, 4 mes. #267" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . HT . HT HT . . . MT HT . . HT .
+V  . 81 . 90 . 83 115 . . . 115 89 . . 115 .
+N  . HT . HT . HT HT . . . MT HT . . HT .
+V  . 89 . 72 . 73 115 . . . 115 71 . . 115 .
+N  . HT . HT . HT HT . . . MT HT . . HT .
+V  . 89 . 90 . 77 115 . . . 115 83 . . 115 .
+N  . HT . HT . HT HT . . . MT HT . LT HT .
+V  . 73 . 80 . 73 115 . . . 115 72 . 75 115 .
+
+@perc id=x-swedish-tom-loop-0268 name="Boucle de toms — 1 voix, 4 mes. #268" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . MT . MT . MT . MT MT HT MT HT
+V  . . . 80 . 86 . 84 . 82 . 74 70 79 115 82
+N  . . . MT . MT . MT . MT . MT MT HT MT HT
+V  . . . 88 . 90 . 77 . 78 . 87 81 92 115 76
+N  . . . MT . MT . MT . MT . MT MT HT MT HT
+V  . . . 75 . 76 . 83 . 92 . 81 83 73 115 93
+N  . . . MT . MT . MT . MT . MT MT HT MT HT
+V  . . . 77 . 82 . 88 . 75 . 80 70 73 115 89
+
+@perc id=x-swedish-tom-loop-0269 name="Boucle de toms — 1 voix, 2 mes. #269" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . . MT LT . MT . . . LT . .
+V  . . . 93 . . 115 90 . 85 . . . 78 . .
+N  . . . LT . . MT LT . MT . . . LT LT LT
+V  . . . 77 . . 115 83 . 88 . . . 85 115 76
+
+@perc id=x-swedish-tom-loop-0270 name="Boucle de toms — 1 voix, 2 mes. #270" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . . LT . . LT . . . MT .
+V  . . . . . . . 91 . . 115 . . . 115 .
+N  . . . . . . . LT . . LT . . LT MT LT
+V  . . . . . . . 93 . . 115 . . 76 115 71
+
+@perc id=x-swedish-tom-loop-0271 name="Boucle de toms — 1 voix, 4 mes. #271" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . HT HT . . . . HT . LT HT .
+V  . 89 . . . 72 115 . . . . 86 . 72 115 .
+N  . MT . . . HT HT . . . . HT . LT HT .
+V  . 83 . . . 94 115 . . . . 89 . 94 115 .
+N  . MT . . . HT HT . . . . HT . LT HT .
+V  . 90 . . . 78 115 . . . . 71 . 78 115 .
+N  . MT . . . HT HT . . . . HT LT LT HT .
+V  . 89 . . . 87 115 . . . . 83 88 84 115 .
+
+@perc id=x-swedish-tom-loop-0272 name="Boucle de toms — 1 voix, 2 mes. #272" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . . . . . . . MT . LT . .
+V  . . . 86 . . . . . . . 76 . 80 . .
+N  . . . LT . . . . . . . MT LT . . MT
+V  . . . 82 . . . . . . . 87 93 . . 70
+
+@perc id=x-swedish-tom-loop-0273 name="Boucle de toms — 1 voix, 4 mes. #273" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT . PC PC . . . LT LT LT . . PC . LT .
+V  80 . 115 87 . . . 93 76 72 . . 77 . 115 .
+N  LT . PC PC . . . LT LT LT . . PC . LT .
+V  91 . 115 91 . . . 72 80 70 . . 90 . 115 .
+N  LT . PC PC . . . LT LT LT . . PC . LT .
+V  85 . 115 86 . . . 88 70 74 . . 74 . 115 .
+N  LT . PC PC . . . LT LT LT . . . LT . PC
+V  81 . 115 92 . . . 84 73 78 . . . 70 . 76
+
+@perc id=x-swedish-tom-loop-0274 name="Boucle de toms — 1 voix, 4 mes. #274" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  MT HT HT HT HT HT . HT . . . . MT MT . .
+V  74 88 115 80 86 78 . 81 . . . . 78 86 . .
+N  MT HT HT HT HT HT . HT . . . . MT MT . .
+V  74 75 115 77 93 94 . 78 . . . . 85 74 . .
+N  MT HT HT HT HT HT . HT . . . . MT MT . .
+V  79 87 115 83 83 89 . 89 . . . . 70 71 . .
+N  MT HT HT HT HT HT . HT . . . . . MT MT .
+V  83 77 115 77 74 94 . 77 . . . . . 89 115 .
+
+@perc id=x-swedish-tom-loop-0275 name="Boucle de toms — 1 voix, 2 mes. #275" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . . . . LT . . . . . . HT . .
+V  . 77 . . . . 115 . . . . . . 92 . .
+N  . HT . . . . LT . . . . . . . . MT
+V  . 85 . . . . 115 . . . . . . . . 87
+
+@perc id=x-swedish-tom-loop-0276 name="Boucle de toms — 1 voix, 4 mes. #276" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT MT . . . . . . . . MT . LT LT .
+V  . 78 115 . . . . . . . . 91 . 89 115 .
+N  . LT MT . . . . . . . . MT . LT LT .
+V  . 88 115 . . . . . . . . 87 . 76 115 .
+N  . LT MT . . . . . . . . MT . LT LT .
+V  . 73 115 . . . . . . . . 73 . 93 115 .
+N  . LT MT . . . . . . . . MT MT LT LT .
+V  . 92 115 . . . . . . . . 88 70 88 115 .
+
+@perc id=x-swedish-tom-loop-0277 name="Boucle de toms — 1 voix, 4 mes. #277" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . LT . . MT LT . LT HT . . . . .
+V  . . . 87 . . 115 89 . 78 115 . . . . .
+N  . . . LT . . MT LT . LT HT . . . . .
+V  . . . 73 . . 115 91 . 83 115 . . . . .
+N  . . . LT . . MT LT . LT HT . . . . .
+V  . . . 92 . . 115 87 . 89 115 . . . . .
+N  . . . LT . . MT LT . LT HT . . MT HT MT
+V  . . . 81 . . 115 89 . 75 115 . . 81 115 80
+
+@perc id=x-swedish-tom-loop-0278 name="Boucle de toms — 1 voix, 4 mes. #278" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT HT MT . MT HT . . HT . . . . LT .
+V  . 84 115 72 . 84 115 . . 87 . . . . 115 .
+N  . MT HT MT . MT HT . . HT . . . . LT .
+V  . 82 115 81 . 93 115 . . 72 . . . . 115 .
+N  . MT HT MT . MT HT . . HT . . . . LT .
+V  . 94 115 85 . 75 115 . . 77 . . . . 115 .
+N  . MT HT MT . MT HT . . HT . . . . LT .
+V  . 79 115 77 . 76 115 . . 88 . . . . 115 .
+
+@perc id=x-swedish-tom-loop-0279 name="Boucle de toms — 1 voix, 4 mes. #279" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . . . . . . MT MT . . MT .
+V  . . . 89 . . . . . . 115 92 . . 115 .
+N  . . . MT . . . . . . MT MT . . MT .
+V  . . . 73 . . . . . . 115 92 . . 115 .
+N  . . . MT . . . . . . MT MT . . MT .
+V  . . . 92 . . . . . . 115 93 . . 115 .
+N  . . . MT . . . . . . MT MT . LT MT MT
+V  . . . 77 . . . . . . 115 84 . 71 115 77
+
+@perc id=x-swedish-tom-loop-0280 name="Boucle de toms — 1 voix, 4 mes. #280" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT HT . . HT LT HT . . MT MT . . LT HT
+V  . 82 115 . . 93 115 93 . . 115 84 . . 115 89
+N  . MT HT . . HT LT HT . . MT MT . . LT HT
+V  . 83 115 . . 85 115 94 . . 115 81 . . 115 93
+N  . MT HT . . HT LT HT . . MT MT . . LT HT
+V  . 81 115 . . 79 115 86 . . 115 77 . . 115 93
+N  . MT HT . . HT LT HT . . MT MT . LT LT HT
+V  . 73 115 . . 80 115 90 . . 115 83 . 79 115 76
+
+@perc id=x-swedish-tom-loop-0281 name="Boucle de toms — 1 voix, 4 mes. #281" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT MT . . . . . LT LT MT . MT . .
+V  . . 115 92 . . . . . 79 115 85 . 79 . .
+N  . . MT MT . . . . . LT LT MT . MT . .
+V  . . 115 86 . . . . . 91 115 87 . 73 . .
+N  . . MT MT . . . . . LT LT MT . MT . .
+V  . . 115 79 . . . . . 87 115 93 . 89 . .
+N  . . MT MT . . . . . LT LT MT MT MT LT .
+V  . . 115 78 . . . . . 81 115 75 77 92 115 .
+
+@perc id=x-swedish-tom-loop-0282 name="Boucle de toms — 1 voix, 4 mes. #282" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . CB PC PC . . . . . . . PC . PC
+V  . . . 71 70 91 . . . . . . . 80 . 74
+N  . . . CB PC PC . . . . . . . PC . PC
+V  . . . 93 77 88 . . . . . . . 83 . 76
+N  . . . CB PC PC . . . . . . . PC . PC
+V  . . . 83 89 88 . . . . . . . 75 . 73
+N  . . . CB PC PC . . . . . . . PC CB PC
+V  . . . 73 91 74 . . . . . . . 71 115 70
+
+@perc id=x-swedish-tom-loop-0283 name="Boucle de toms — 1 voix, 4 mes. #283" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . LT MT . LT MT LT . LT HT .
+V  . . . . . . 115 92 . 94 115 74 . 90 115 .
+N  . . . . . . LT MT . LT MT LT . LT HT .
+V  . . . . . . 115 71 . 73 115 88 . 87 115 .
+N  . . . . . . LT MT . LT MT LT . LT HT .
+V  . . . . . . 115 81 . 89 115 94 . 78 115 .
+N  . . . . . . LT MT . LT MT LT LT LT HT LT
+V  . . . . . . 115 86 . 85 115 86 90 86 115 91
+
+@perc id=x-swedish-tom-loop-0284 name="Boucle de toms — 1 voix, 2 mes. #284" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . . . MT . . . . . . . MT . MT
+V  . 71 . . . 72 . . . . . . . 72 . 85
+N  . LT . . . MT . . . . . . . MT HT MT
+V  . 73 . . . 78 . . . . . . . 89 115 81
+
+@perc id=x-swedish-tom-loop-0285 name="Boucle de toms — 1 voix, 2 mes. #285" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT HT . MT . . . HT LT . . . MT .
+V  . . 115 91 . 91 . . . 82 115 . . . 115 .
+N  . . LT HT . MT . . . HT LT . LT MT MT .
+V  . . 115 75 . 73 . . . 87 115 . 94 79 115 .
+
+@perc id=x-swedish-tom-loop-0286 name="Boucle de toms — 1 voix, 2 mes. #286" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . PC CB PC . . . . . PC PC PC . . .
+V  . . 115 75 85 . . . . . 115 71 74 . . .
+N  . . PC CB PC . . . . . PC PC PC CB PC CB
+V  . . 115 72 78 . . . . . 115 74 89 89 115 88
+
+@perc id=x-swedish-tom-loop-0287 name="Boucle de toms — 1 voix, 2 mes. #287" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT PC . PC PC . LT . . LT . . PC . LT PC
+V  88 74 . 80 94 . 115 . . 74 . . 79 . 115 70
+N  LT PC . PC PC . LT . . LT . . PC . LT PC
+V  87 93 . 93 81 . 115 . . 79 . . 75 . 115 87
+
+@perc id=x-swedish-tom-loop-0288 name="Boucle de toms — 1 voix, 2 mes. #288" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  HT . MT MT MT . HT MT HT MT . MT . . HT HT
+V  88 . 115 81 77 . 115 70 81 79 . 91 . . 115 73
+N  HT . MT MT MT . HT MT HT MT . MT MT HT HT .
+V  71 . 115 80 86 . 115 92 71 70 . 72 77 83 115 .
+
+@perc id=x-swedish-tom-loop-0289 name="Boucle de toms — 1 voix, 4 mes. #289" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC . LT . PC LT PC . . PC PC . LT PC LT
+V  . 70 . 88 . 94 115 90 . . 115 90 . 83 115 93
+N  . PC . LT . PC LT PC . . PC PC . LT PC LT
+V  . 92 . 87 . 91 115 82 . . 115 93 . 73 115 93
+N  . PC . LT . PC LT PC . . PC PC . LT PC LT
+V  . 72 . 79 . 90 115 75 . . 115 83 . 75 115 83
+N  . PC . LT . PC LT PC . . PC PC . LT PC .
+V  . 84 . 71 . 94 115 88 . . 115 71 . 76 115 .
+
+@perc id=x-swedish-tom-loop-0290 name="Boucle de toms — 1 voix, 4 mes. #290" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB . . CB . . CB PC CB . PC . CB . PC CB
+V  91 . . 90 . . 115 81 74 . 115 . 94 . 115 86
+N  CB . . CB . . CB PC CB . PC . CB . PC CB
+V  94 . . 84 . . 115 71 85 . 115 . 86 . 115 72
+N  CB . . CB . . CB PC CB . PC . CB . PC CB
+V  83 . . 78 . . 115 87 76 . 115 . 74 . 115 84
+N  CB . . CB . . CB PC CB . PC . CB . PC CB
+V  87 . . 70 . . 115 76 76 . 115 . 94 . 115 84
+
+@perc id=x-swedish-tom-loop-0291 name="Boucle de toms — 1 voix, 4 mes. #291" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  HT HT HT MT MT . MT . MT . MT MT . MT HT .
+V  70 90 115 89 86 . 115 . 85 . 115 71 . 77 115 .
+N  HT HT HT MT MT . MT . MT . MT MT . MT HT .
+V  71 81 115 86 84 . 115 . 85 . 115 83 . 91 115 .
+N  HT HT HT MT MT . MT . MT . MT MT . MT HT .
+V  74 83 115 84 85 . 115 . 71 . 115 88 . 75 115 .
+N  HT HT HT MT MT . MT . MT . MT MT HT MT . .
+V  84 92 115 77 75 . 115 . 84 . 115 92 79 75 . .
+
+@perc id=x-swedish-tom-loop-0292 name="Boucle de toms — 1 voix, 2 mes. #292" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT HT . . . . . . MT MT . . HT .
+V  . . 115 92 . . . . . . 115 81 . . 115 .
+N  . . MT HT . . . . . . MT MT MT HT HT MT
+V  . . 115 79 . . . . . . 115 82 81 75 115 75
+
+@perc id=x-swedish-tom-loop-0293 name="Boucle de toms — 1 voix, 4 mes. #293" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT LT PC . LT PC . LT LT . PC . PC LT LT .
+V  82 90 115 . 76 85 . 86 78 . 115 . 81 88 115 .
+N  LT LT PC . LT PC . LT LT . PC . PC LT LT .
+V  78 85 115 . 85 93 . 72 70 . 115 . 94 78 115 .
+N  LT LT PC . LT PC . LT LT . PC . PC LT LT .
+V  85 87 115 . 70 93 . 75 70 . 115 . 84 70 115 .
+N  LT LT PC . LT PC . LT LT . PC . . . LT .
+V  71 80 115 . 71 85 . 70 75 . 115 . . . 115 .
+
+@perc id=x-swedish-tom-loop-0294 name="Boucle de toms — 1 voix, 2 mes. #294" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . . . . . HT . . . . . . MT HT
+V  . 76 . . . . . 92 . . . . . . 115 75
+N  . HT . . . . . HT . . . . MT HT . HT
+V  . 75 . . . . . 81 . . . . 87 83 . 85
+
+@perc id=x-swedish-tom-loop-0295 name="Boucle de toms — 1 voix, 2 mes. #295" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . . PC . LT . LT PC . LT . PC . PC
+V  . 75 . . 83 . 115 . 87 81 . 71 . 81 . 74
+N  . LT . . PC . LT . LT PC . LT . PC PC PC
+V  . 87 . . 78 . 115 . 94 93 . 81 . 85 115 84
+
+@perc id=x-swedish-tom-loop-0296 name="Boucle de toms — 1 voix, 2 mes. #296" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . . LT . PC PC . LT PC . PC
+V  . . . . . . . 73 . 70 115 . 72 80 . 82
+N  . . . . . . . LT . PC PC . LT . . .
+V  . . . . . . . 90 . 77 115 . 84 . . .
+
+@perc id=x-swedish-tom-loop-0297 name="Boucle de toms — 1 voix, 4 mes. #297" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . HT . . HT . HT MT MT HT . . . .
+V  . 83 . 70 . . 115 . 73 77 115 87 . . . .
+N  . MT . HT . . HT . HT MT MT HT . . . .
+V  . 72 . 70 . . 115 . 79 75 115 75 . . . .
+N  . MT . HT . . HT . HT MT MT HT . . . .
+V  . 75 . 77 . . 115 . 87 87 115 93 . . . .
+N  . MT . HT . . HT . HT MT MT HT MT . HT HT
+V  . 72 . 77 . . 115 . 71 92 115 91 81 . 115 75
+
+@perc id=x-swedish-tom-loop-0298 name="Boucle de toms — 1 voix, 4 mes. #298" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . . . PC LT PC . . LT . LT . . LT PC
+V  91 . . . 72 70 115 . . 83 . 73 . . 115 94
+N  PC . . . PC LT PC . . LT . LT . . LT PC
+V  91 . . . 91 82 115 . . 80 . 77 . . 115 72
+N  PC . . . PC LT PC . . LT . LT . . LT PC
+V  94 . . . 80 92 115 . . 92 . 79 . . 115 92
+N  PC . . . PC LT PC . . LT . LT PC PC LT PC
+V  86 . . . 72 94 115 . . 79 . 91 74 73 115 84
+
+@perc id=x-swedish-tom-loop-0299 name="Boucle de toms — 1 voix, 4 mes. #299" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . MT . LT . . . . . MT . . LT MT
+V  . 90 . 90 . 70 . . . . . 76 . . 115 70
+N  . LT . MT . LT . . . . . MT . . LT MT
+V  . 94 . 78 . 86 . . . . . 76 . . 115 88
+N  . LT . MT . LT . . . . . MT . . LT MT
+V  . 72 . 88 . 76 . . . . . 87 . . 115 74
+N  . LT . MT . LT . . . . . MT MT MT LT .
+V  . 81 . 83 . 79 . . . . . 82 77 85 115 .
+
+@perc id=x-swedish-tom-loop-0300 name="Boucle de toms — 1 voix, 4 mes. #300" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . LT . . . . . . . . . .
+V  . . . . . 72 . . . . . . . . . .
+N  . . . . . LT . . . . . . . . . .
+V  . . . . . 89 . . . . . . . . . .
+N  . . . . . LT . . . . . . . . . .
+V  . . . . . 77 . . . . . . . . . .
+N  . . . . . LT . . . . . . . HT . LT
+V  . . . . . 89 . . . . . . . 71 . 84
+
+@perc id=x-swedish-tom-loop-0301 name="Boucle de toms — 1 voix, 4 mes. #301" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . . MT MT . LT . LT . MT . LT
+V  . . . 94 . . 115 79 . 74 . 94 . 80 . 81
+N  . . . MT . . MT MT . LT . LT . MT . LT
+V  . . . 91 . . 115 93 . 72 . 85 . 81 . 93
+N  . . . MT . . MT MT . LT . LT . MT . LT
+V  . . . 94 . . 115 92 . 84 . 79 . 85 . 74
+N  . . . MT . . MT MT . LT . LT LT MT LT LT
+V  . . . 85 . . 115 85 . 70 . 70 80 87 115 75
+
+@perc id=x-swedish-tom-loop-0302 name="Boucle de toms — 1 voix, 2 mes. #302" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . PC . PC . PC . PC PC LT . . . PC
+V  . . . 75 . 87 . 82 . 90 115 91 . . . 80
+N  . . . PC . PC . PC . PC PC LT PC LT LT .
+V  . . . 89 . 78 . 77 . 74 115 72 90 79 115 .
+
+@perc id=x-swedish-tom-loop-0303 name="Boucle de toms — 1 voix, 2 mes. #303" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . PC . CB . . CB CB CB CB . . PC . .
+V  . . 115 . 87 . . 81 83 77 115 . . 89 . .
+N  . . PC . CB . . CB CB CB CB . CB PC CB .
+V  . . 115 . 72 . . 74 82 82 115 . 82 70 115 .
+
+@perc id=x-swedish-tom-loop-0304 name="Boucle de toms — 1 voix, 4 mes. #304" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC CB CB . . . . CB . PC . . . . . PC
+V  82 84 115 . . . . 91 . 82 . . . . . 93
+N  PC CB CB . . . . CB . PC . . . . . PC
+V  72 90 115 . . . . 77 . 87 . . . . . 73
+N  PC CB CB . . . . CB . PC . . . . . PC
+V  87 91 115 . . . . 72 . 76 . . . . . 83
+N  PC CB CB . . . . CB . PC . . . . . PC
+V  91 84 115 . . . . 74 . 70 . . . . . 89
+
+@perc id=x-swedish-tom-loop-0305 name="Boucle de toms — 1 voix, 4 mes. #305" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT . MT MT . . . . . . . . . . HT
+V  . 94 . 89 85 . . . . . . . . . . 94
+N  . HT . MT MT . . . . . . . . . . HT
+V  . 83 . 81 74 . . . . . . . . . . 87
+N  . HT . MT MT . . . . . . . . . . HT
+V  . 80 . 87 76 . . . . . . . . . . 78
+N  . HT . MT MT . . . . . . . MT MT . HT
+V  . 86 . 88 92 . . . . . . . 94 76 . 75
+
+@perc id=x-swedish-tom-loop-0306 name="Boucle de toms — 1 voix, 2 mes. #306" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . PC PC . PC PC . PC . PC . PC PC
+V  . . . . 84 89 . 76 87 . 115 . 77 . 115 91
+N  . . . . PC PC . PC PC . PC . PC . PC PC
+V  . . . . 84 79 . 94 79 . 115 . 70 . 115 90
+
+@perc id=x-swedish-tom-loop-0307 name="Boucle de toms — 1 voix, 2 mes. #307" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . HT . MT MT MT . . HT HT . MT HT HT .
+V  . . 115 . 76 93 115 . . 70 115 . 82 83 115 .
+N  . . HT . MT MT MT . . HT HT . MT HT HT HT
+V  . . 115 . 89 79 115 . . 70 115 . 83 93 115 80
+
+@perc id=x-swedish-tom-loop-0308 name="Boucle de toms — 1 voix, 4 mes. #308" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . HT MT . . LT . . . MT MT . . HT HT .
+V  . 86 115 . . 77 . . . 91 115 . . 92 115 .
+N  . HT MT . . LT . . . MT MT . . HT HT .
+V  . 89 115 . . 90 . . . 91 115 . . 81 115 .
+N  . HT MT . . LT . . . MT MT . . HT HT .
+V  . 70 115 . . 92 . . . 83 115 . . 91 115 .
+N  . HT MT . . LT . . . MT MT . HT HT HT .
+V  . 86 115 . . 78 . . . 78 115 . 94 75 115 .
+
+@perc id=x-swedish-tom-loop-0309 name="Boucle de toms — 1 voix, 4 mes. #309" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT . . PC PC . . LT . PC . LT . LT . LT
+V  70 . . 72 93 . . 75 . 73 . 87 . 93 . 83
+N  LT . . PC PC . . LT . PC . LT . LT . LT
+V  78 . . 88 89 . . 79 . 92 . 83 . 94 . 90
+N  LT . . PC PC . . LT . PC . LT . LT . LT
+V  83 . . 88 76 . . 72 . 75 . 92 . 85 . 72
+N  LT . . PC PC . . LT . PC . LT PC . . .
+V  77 . . 89 89 . . 76 . 72 . 77 86 . . .
+
+@perc id=x-swedish-tom-loop-0310 name="Boucle de toms — 1 voix, 4 mes. #310" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . . . MT . MT LT MT . LT . .
+V  . 72 . . . . . 91 . 81 115 80 . 87 . .
+N  . MT . . . . . MT . MT LT MT . LT . .
+V  . 88 . . . . . 77 . 86 115 90 . 86 . .
+N  . MT . . . . . MT . MT LT MT . LT . .
+V  . 86 . . . . . 80 . 85 115 85 . 81 . .
+N  . MT . . . . . MT . MT LT MT LT LT MT LT
+V  . 74 . . . . . 90 . 87 115 93 92 80 115 83
+
+@perc id=x-swedish-tom-loop-0311 name="Boucle de toms — 1 voix, 2 mes. #311" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . LT MT . . . . . . LT . . . . .
+V  . . 115 74 . . . . . . 115 . . . . .
+N  . . LT MT . . . . . . LT . . MT LT MT
+V  . . 115 83 . . . . . . 115 . . 89 115 70
+
+@perc id=x-swedish-tom-loop-0312 name="Boucle de toms — 1 voix, 4 mes. #312" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . . . LT . . LT MT . . LT .
+V  . 85 115 . . . . 82 . . 115 76 . . 115 .
+N  . LT LT . . . . LT . . LT MT . . LT .
+V  . 72 115 . . . . 79 . . 115 86 . . 115 .
+N  . LT LT . . . . LT . . LT MT . . LT .
+V  . 86 115 . . . . 94 . . 115 76 . . 115 .
+N  . LT LT . . . . LT . . LT MT MT LT . MT
+V  . 77 115 . . . . 82 . . 115 78 91 74 . 80
+
+@perc id=x-swedish-tom-loop-0313 name="Boucle de toms — 1 voix, 4 mes. #313" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . MT . . . MT . . . . . LT MT LT
+V  . . . 70 . . . 84 . . . . . 74 115 93
+N  . . . MT . . . MT . . . . . LT MT LT
+V  . . . 71 . . . 86 . . . . . 75 115 76
+N  . . . MT . . . MT . . . . . LT MT LT
+V  . . . 81 . . . 73 . . . . . 86 115 75
+N  . . . MT . . . MT . . . . . LT MT LT
+V  . . . 86 . . . 83 . . . . . 88 115 72
+
+@perc id=x-swedish-tom-loop-0314 name="Boucle de toms — 1 voix, 4 mes. #314" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . . . . HT . . . . . HT
+V  . . . . . . . . . 76 . . . . . 93
+N  . . . . . . . . . HT . . . . . HT
+V  . . . . . . . . . 92 . . . . . 94
+N  . . . . . . . . . HT . . . . . HT
+V  . . . . . . . . . 88 . . . . . 90
+N  . . . . . . . . . HT . . MT HT LT .
+V  . . . . . . . . . 85 . . 82 71 115 .
+
+@perc id=x-swedish-tom-loop-0315 name="Boucle de toms — 1 voix, 2 mes. #315" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT . . . . . . . . . . . MT LT MT
+V  . 80 . . . . . . . . . . . 87 115 74
+N  . LT . . . . . . . . . . LT . LT .
+V  . 84 . . . . . . . . . . 74 . 115 .
+
+@perc id=x-swedish-tom-loop-0316 name="Boucle de toms — 1 voix, 2 mes. #316" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . PC LT LT . LT . PC . . LT . . .
+V  . . . 89 90 88 . 73 . 72 . . 84 . . .
+N  . . . PC LT LT . LT . PC . . LT PC LT PC
+V  . . . 91 82 88 . 85 . 85 . . 82 81 115 74
+
+@perc id=x-swedish-tom-loop-0317 name="Boucle de toms — 1 voix, 4 mes. #317" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . PC . PC . . PC PC . . PC LT LT . PC
+V  . . 115 . 87 . . 77 79 . . 93 87 92 . 80
+N  . . PC . PC . . PC PC . . PC LT LT . PC
+V  . . 115 . 71 . . 76 71 . . 81 92 73 . 86
+N  . . PC . PC . . PC PC . . PC LT LT . PC
+V  . . 115 . 76 . . 83 79 . . 88 73 92 . 91
+N  . . PC . PC . . PC PC . . PC . LT LT PC
+V  . . 115 . 73 . . 90 90 . . 74 . 85 115 70
+
+@perc id=x-swedish-tom-loop-0318 name="Boucle de toms — 1 voix, 4 mes. #318" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . MT . LT . . . LT . HT . MT . .
+V  . 79 . 93 . 74 . . . 86 . 83 . 85 . .
+N  . MT . MT . LT . . . LT . HT . MT . .
+V  . 83 . 93 . 86 . . . 71 . 83 . 80 . .
+N  . MT . MT . LT . . . LT . HT . MT . .
+V  . 78 . 83 . 71 . . . 79 . 88 . 79 . .
+N  . MT . MT . LT . . . LT . HT MT MT LT MT
+V  . 80 . 76 . 76 . . . 73 . 82 80 87 115 82
+
+@perc id=x-swedish-tom-loop-0319 name="Boucle de toms — 1 voix, 2 mes. #319" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT PC . LT LT . . . PC . PC . LT . PC
+V  . 71 115 . 85 71 . . . 70 . 85 . 80 . 85
+N  . LT PC . LT LT . . . PC . PC . . PC PC
+V  . 75 115 . 87 82 . . . 93 . 94 . . 115 89
+
+@perc id=x-swedish-tom-loop-0320 name="Boucle de toms — 1 voix, 2 mes. #320" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . . PC . . CB . CB . . . . . CB PC
+V  72 . . 78 . . 115 . 85 . . . . . 115 84
+N  PC . . PC . . CB . CB . . . PC PC CB .
+V  90 . . 84 . . 115 . 78 . . . 72 84 115 .
+
+@perc id=x-swedish-tom-loop-0321 name="Boucle de toms — 1 voix, 4 mes. #321" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT . PC . PC . . PC . LT LT PC . LT LT .
+V  71 . 115 . 89 . . 70 . 79 115 93 . 75 115 .
+N  LT . PC . PC . . PC . LT LT PC . LT LT .
+V  75 . 115 . 91 . . 78 . 91 115 93 . 70 115 .
+N  LT . PC . PC . . PC . LT LT PC . LT LT .
+V  72 . 115 . 75 . . 94 . 73 115 83 . 80 115 .
+N  LT . PC . PC . . PC . LT LT PC LT . LT .
+V  78 . 115 . 78 . . 70 . 76 115 82 81 . 115 .
+
+@perc id=x-swedish-tom-loop-0322 name="Boucle de toms — 1 voix, 4 mes. #322" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC PC . CB CB . . PC PC . . CB . . CB .
+V  85 88 . 92 83 . . 93 81 . . 86 . . 115 .
+N  PC PC . CB CB . . PC PC . . CB . . CB .
+V  86 92 . 77 87 . . 81 73 . . 76 . . 115 .
+N  PC PC . CB CB . . PC PC . . CB . . CB .
+V  84 94 . 93 76 . . 82 84 . . 75 . . 115 .
+N  PC PC . CB CB . . PC PC . . CB PC CB . PC
+V  88 73 . 93 76 . . 73 90 . . 73 84 82 . 87
+
+@perc id=x-swedish-tom-loop-0323 name="Boucle de toms — 1 voix, 4 mes. #323" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . HT . MT . . . . . . . . HT LT
+V  . 81 . 86 . 71 . . . . . . . . 115 81
+N  . MT . HT . MT . . . . . . . . HT LT
+V  . 92 . 71 . 90 . . . . . . . . 115 84
+N  . MT . HT . MT . . . . . . . . HT LT
+V  . 79 . 92 . 79 . . . . . . . . 115 94
+N  . MT . HT . MT . . . . . . LT HT . LT
+V  . 91 . 71 . 89 . . . . . . 87 75 . 82
+
+@perc id=x-swedish-tom-loop-0324 name="Boucle de toms — 1 voix, 4 mes. #324" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . . . . . . LT . . MT LT LT
+V  . 84 . . . . . . . . 115 . . 92 115 73
+N  . MT . . . . . . . . LT . . MT LT LT
+V  . 79 . . . . . . . . 115 . . 76 115 70
+N  . MT . . . . . . . . LT . . MT LT LT
+V  . 89 . . . . . . . . 115 . . 77 115 89
+N  . MT . . . . . . . . LT . . MT . LT
+V  . 81 . . . . . . . . 115 . . 81 . 81
+
+@perc id=x-swedish-tom-loop-0325 name="Boucle de toms — 1 voix, 2 mes. #325" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT MT . . MT MT LT . . LT MT . MT . LT
+V  . 94 115 . . 87 115 82 . . 115 92 . 71 . 84
+N  . MT MT . . MT MT LT . . LT MT LT . MT LT
+V  . 80 115 . . 80 115 75 . . 115 90 70 . 115 80
+
+@perc id=x-swedish-tom-loop-0326 name="Boucle de toms — 1 voix, 4 mes. #326" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . MT MT . . . . MT MT MT . . HT
+V  . . . . 86 83 . . . . 115 88 76 . . 71
+N  . . . . MT MT . . . . MT MT MT . . HT
+V  . . . . 87 76 . . . . 115 73 93 . . 82
+N  . . . . MT MT . . . . MT MT MT . . HT
+V  . . . . 93 91 . . . . 115 84 90 . . 81
+N  . . . . MT MT . . . . MT MT MT MT . HT
+V  . . . . 82 90 . . . . 115 75 94 79 . 77
+
+@perc id=x-swedish-tom-loop-0327 name="Boucle de toms — 1 voix, 4 mes. #327" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC . PC CB . . PC . CB . . PC . . .
+V  . 76 . 72 91 . . 73 . 78 . . 82 . . .
+N  . PC . PC CB . . PC . CB . . PC . . .
+V  . 87 . 84 90 . . 80 . 84 . . 88 . . .
+N  . PC . PC CB . . PC . CB . . PC . . .
+V  . 84 . 86 89 . . 89 . 70 . . 82 . . .
+N  . PC . PC CB . . PC . CB . . PC PC CB CB
+V  . 71 . 90 76 . . 85 . 94 . . 76 79 115 88
+
+@perc id=x-swedish-tom-loop-0328 name="Boucle de toms — 1 voix, 4 mes. #328" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  CB . CB PC CB . . CB CB . CB . . PC . CB
+V  71 . 115 83 91 . . 78 88 . 115 . . 89 . 92
+N  CB . CB PC CB . . CB CB . CB . . PC . CB
+V  91 . 115 75 83 . . 81 70 . 115 . . 72 . 92
+N  CB . CB PC CB . . CB CB . CB . . PC . CB
+V  84 . 115 84 87 . . 85 85 . 115 . . 82 . 81
+N  CB . CB PC CB . . CB CB . CB . . PC CB .
+V  75 . 115 75 77 . . 79 82 . 115 . . 81 115 .
+
+@perc id=x-swedish-tom-loop-0329 name="Boucle de toms — 1 voix, 4 mes. #329" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . HT . . HT MT HT MT . MT HT . . . HT
+V  . . 115 . . 76 115 74 90 . 115 93 . . . 71
+N  . . HT . . HT MT HT MT . MT HT . . . HT
+V  . . 115 . . 92 115 81 94 . 115 75 . . . 71
+N  . . HT . . HT MT HT MT . MT HT . . . HT
+V  . . 115 . . 91 115 88 84 . 115 87 . . . 80
+N  . . HT . . HT MT HT MT . MT HT HT HT . HT
+V  . . 115 . . 88 115 85 70 . 115 84 76 82 . 83
+
+@perc id=x-swedish-tom-loop-0330 name="Boucle de toms — 1 voix, 4 mes. #330" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . LT . HT . . HT LT . . LT .
+V  . 89 115 . . 87 . 74 . . 115 93 . . 115 .
+N  . LT LT . . LT . HT . . HT LT . . LT .
+V  . 73 115 . . 93 . 81 . . 115 82 . . 115 .
+N  . LT LT . . LT . HT . . HT LT . . LT .
+V  . 80 115 . . 87 . 72 . . 115 90 . . 115 .
+N  . LT LT . . LT . HT . . HT LT . MT LT LT
+V  . 90 115 . . 83 . 81 . . 115 93 . 82 115 85
+
+@perc id=x-swedish-tom-loop-0331 name="Boucle de toms — 1 voix, 4 mes. #331" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . HT . . . . MT . . . . .
+V  . 81 115 . . 74 . . . . 115 . . . . .
+N  . LT LT . . HT . . . . MT . . . . .
+V  . 86 115 . . 70 . . . . 115 . . . . .
+N  . LT LT . . HT . . . . MT . . . . .
+V  . 71 115 . . 89 . . . . 115 . . . . .
+N  . LT LT . . HT . . . . MT . . MT . .
+V  . 74 115 . . 89 . . . . 115 . . 78 . .
+
+@perc id=x-swedish-tom-loop-0332 name="Boucle de toms — 1 voix, 4 mes. #332" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . CB CB CB . . . PC . . . . PC PC . PC
+V  . 88 115 78 . . . 89 . . . . 81 94 . 90
+N  . CB CB CB . . . PC . . . . PC PC . PC
+V  . 86 115 93 . . . 93 . . . . 83 74 . 85
+N  . CB CB CB . . . PC . . . . PC PC . PC
+V  . 94 115 77 . . . 89 . . . . 85 88 . 84
+N  . CB CB CB . . . PC . . . . PC PC . .
+V  . 75 115 80 . . . 70 . . . . 85 91 . .
+
+@perc id=x-swedish-tom-loop-0333 name="Boucle de toms — 1 voix, 4 mes. #333" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . MT . . . MT LT HT . HT . LT . LT . .
+V  . 71 . . . 93 115 77 . 78 . 82 . 75 . .
+N  . MT . . . MT LT HT . HT . LT . LT . .
+V  . 70 . . . 76 115 88 . 82 . 73 . 91 . .
+N  . MT . . . MT LT HT . HT . LT . LT . .
+V  . 84 . . . 84 115 73 . 92 . 86 . 84 . .
+N  . MT . . . MT LT HT . HT . LT MT . MT HT
+V  . 91 . . . 83 115 93 . 86 . 71 87 . 115 87
+
+@perc id=x-swedish-tom-loop-0334 name="Boucle de toms — 1 voix, 4 mes. #334" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT . . . . LT LT . LT . LT . LT PC . .
+V  89 . . . . 80 115 . 88 . 115 . 87 75 . .
+N  LT . . . . LT LT . LT . LT . LT PC . .
+V  76 . . . . 89 115 . 74 . 115 . 91 93 . .
+N  LT . . . . LT LT . LT . LT . LT PC . .
+V  83 . . . . 76 115 . 84 . 115 . 74 87 . .
+N  LT . . . . LT LT . LT . LT . LT . LT LT
+V  84 . . . . 88 115 . 88 . 115 . 78 . 115 78
+
+@perc id=x-swedish-tom-loop-0335 name="Boucle de toms — 1 voix, 2 mes. #335" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC . LT . . . PC PC . PC LT . LT . LT
+V  . 88 . 90 . . . 72 93 . 115 94 . 93 . 87
+N  . PC . LT . . . PC PC . PC LT PC . PC .
+V  . 82 . 78 . . . 86 79 . 115 70 93 . 115 .
+
+@perc id=x-swedish-tom-loop-0336 name="Boucle de toms — 1 voix, 4 mes. #336" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . PC . CB CB PC PC . . . CB . . CB .
+V  . . 115 . 72 74 115 72 . . . 72 . . 115 .
+N  . . PC . CB CB PC PC . . . CB . . CB .
+V  . . 115 . 74 88 115 82 . . . 94 . . 115 .
+N  . . PC . CB CB PC PC . . . CB . . CB .
+V  . . 115 . 80 71 115 73 . . . 91 . . 115 .
+N  . . PC . CB CB PC PC . . . CB . PC CB PC
+V  . . 115 . 91 85 115 73 . . . 81 . 83 115 79
+
+@perc id=x-swedish-tom-loop-0337 name="Boucle de toms — 1 voix, 2 mes. #337" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . LT LT . LT MT . . MT . MT
+V  . . . . . . 115 73 . 85 115 . . 81 . 93
+N  . . . . . . LT LT . LT MT . MT MT . MT
+V  . . . . . . 115 93 . 84 115 . 73 78 . 88
+
+@perc id=x-swedish-tom-loop-0338 name="Boucle de toms — 1 voix, 4 mes. #338" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . . MT . . . LT . . . . . MT
+V  . 88 115 . . 74 . . . 86 . . . . . 83
+N  . LT LT . . MT . . . LT . . . . . MT
+V  . 82 115 . . 78 . . . 85 . . . . . 74
+N  . LT LT . . MT . . . LT . . . . . MT
+V  . 77 115 . . 91 . . . 93 . . . . . 75
+N  . LT LT . . MT . . . LT . . LT . HT MT
+V  . 76 115 . . 78 . . . 94 . . 91 . 115 72
+
+@perc id=x-swedish-tom-loop-0339 name="Boucle de toms — 1 voix, 4 mes. #339" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  LT PC . . . . . LT . PC . . PC . PC PC
+V  86 76 . . . . . 74 . 86 . . 72 . 115 76
+N  LT PC . . . . . LT . PC . . PC . PC PC
+V  86 86 . . . . . 93 . 72 . . 94 . 115 86
+N  LT PC . . . . . LT . PC . . PC . PC PC
+V  73 72 . . . . . 87 . 82 . . 83 . 115 83
+N  LT PC . . . . . LT . PC . . PC LT PC .
+V  71 72 . . . . . 77 . 83 . . 84 82 115 .
+
+@perc id=x-swedish-tom-loop-0340 name="Boucle de toms — 1 voix, 2 mes. #340" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . . . . . LT . . MT MT MT . . LT LT
+V  . . . . . . 115 . . 80 115 93 . . 115 73
+N  . . . . . . LT . . MT MT MT . MT LT LT
+V  . . . . . . 115 . . 89 115 94 . 72 115 71
+
+@perc id=x-swedish-tom-loop-0341 name="Boucle de toms — 1 voix, 2 mes. #341" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC . . PC . LT LT LT PC LT . . PC . .
+V  . 87 . . 84 . 115 90 72 87 115 . . 75 . .
+N  . PC . . PC . LT LT LT PC LT . LT PC PC LT
+V  . 70 . . 86 . 115 89 77 84 115 . 89 77 115 77
+
+@perc id=x-swedish-tom-loop-0342 name="Boucle de toms — 1 voix, 2 mes. #342" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC . . . . . . LT LT LT . . PC LT LT
+V  . 87 . . . . . . 83 86 115 . . 88 115 93
+N  . PC . . . . . . LT LT LT . . PC LT LT
+V  . 76 . . . . . . 79 82 115 . . 88 115 94
+
+@perc id=x-swedish-tom-loop-0343 name="Boucle de toms — 1 voix, 4 mes. #343" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . PC . CB . . . . CB CB . . PC CB . .
+V  . 85 . 90 . . . . 70 77 . . 87 79 . .
+N  . PC . CB . . . . CB CB . . PC CB . .
+V  . 85 . 70 . . . . 83 85 . . 77 86 . .
+N  . PC . CB . . . . CB CB . . PC CB . .
+V  . 88 . 94 . . . . 87 71 . . 76 78 . .
+N  . PC . CB . . . . CB CB . . . . CB .
+V  . 81 . 86 . . . . 71 92 . . . . 115 .
+
+@perc id=x-swedish-tom-loop-0344 name="Boucle de toms — 1 voix, 4 mes. #344" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . CB CB PC PC . . CB . . . PC . . .
+V  . . 115 75 72 87 . . 83 . . . 79 . . .
+N  . . CB CB PC PC . . CB . . . PC . . .
+V  . . 115 93 86 84 . . 85 . . . 84 . . .
+N  . . CB CB PC PC . . CB . . . PC . . .
+V  . . 115 89 83 73 . . 90 . . . 91 . . .
+N  . . CB CB PC PC . . CB . . . PC CB PC CB
+V  . . 115 78 78 79 . . 84 . . . 80 71 115 82
+
+@perc id=x-swedish-tom-loop-0345 name="Boucle de toms — 1 voix, 2 mes. #345" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT LT . PC . LT . . . . . . LT . PC
+V  . 70 115 . 80 . 115 . . . . . . 88 . 79
+N  . LT LT . PC . LT . . . . . PC LT . PC
+V  . 73 115 . 91 . 115 . . . . . 71 79 . 75
+
+@perc id=x-swedish-tom-loop-0346 name="Boucle de toms — 1 voix, 4 mes. #346" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  HT MT MT . . . HT MT . MT . HT HT HT . .
+V  83 74 115 . . . 115 89 . 80 . 71 83 73 . .
+N  HT MT MT . . . HT MT . MT . HT HT HT . .
+V  79 73 115 . . . 115 84 . 86 . 86 71 72 . .
+N  HT MT MT . . . HT MT . MT . HT HT HT . .
+V  94 73 115 . . . 115 81 . 84 . 87 80 77 . .
+N  HT MT MT . . . HT MT . MT . HT HT . MT .
+V  70 77 115 . . . 115 85 . 81 . 84 93 . 115 .
+
+@perc id=x-swedish-tom-loop-0347 name="Boucle de toms — 1 voix, 2 mes. #347" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . LT PC . PC PC . . LT PC PC . PC LT LT .
+V  . 87 115 . 94 78 . . 92 90 115 . 89 79 115 .
+N  . LT PC . PC PC . . LT PC PC . PC LT LT .
+V  . 83 115 . 82 80 . . 82 83 115 . 71 81 115 .
+
+@perc id=x-swedish-tom-loop-0348 name="Boucle de toms — 1 voix, 2 mes. #348" genre=swedish-techno bars=2 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  . . MT . . . . . . . LT MT . . MT LT
+V  . . 115 . . . . . . . 115 71 . . 115 72
+N  . . MT . . . . . . . LT MT LT LT MT LT
+V  . . 115 . . . . . . . 115 80 86 91 115 90
+
+@perc id=x-swedish-tom-loop-0349 name="Boucle de toms — 1 voix, 4 mes. #349" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  PC . PC . PC . LT PC PC LT . . . . LT .
+V  86 . 115 . 78 . 115 72 92 88 . . . . 115 .
+N  PC . PC . PC . LT PC PC LT . . . . LT .
+V  70 . 115 . 94 . 115 86 84 77 . . . . 115 .
+N  PC . PC . PC . LT PC PC LT . . . . LT .
+V  77 . 115 . 79 . 115 94 75 94 . . . . 115 .
+N  PC . PC . PC . LT PC PC LT . . PC PC LT PC
+V  86 . 115 . 83 . 115 85 77 80 . . 89 77 115 80
+
+@perc id=x-swedish-tom-loop-0350 name="Boucle de toms — 1 voix, 4 mes. #350" genre=swedish-techno bars=4 steps=16 voices=1 tags=tom-loop src=gen-textures
+N  HT . MT HT MT . . HT MT MT MT . . . . HT
+V  92 . 115 71 73 . . 74 75 83 115 . . . . 89
+N  HT . MT HT MT . . HT MT MT MT . . . . HT
+V  90 . 115 90 75 . . 90 71 90 115 . . . . 89
+N  HT . MT HT MT . . HT MT MT MT . . . . HT
+V  91 . 115 87 85 . . 94 83 93 115 . . . . 79
+N  HT . MT HT MT . . HT MT MT MT . MT HT HT .
+V  85 . 115 91 80 . . 88 78 76 115 . 84 84 115 .
+
+@perc id=x-swedish-ride-0001 name="Ride en doubles croches — 1 voix, 2 mes. #001" genre=swedish-techno bars=2 steps=16 voices=1 tags=ride16 src=gen-textures
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  64 59 104 62 75 52 115 58 75 54 106 65 73 56 112 59
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  65 58 109 54 69 50 115 58 71 51 106 56 65 56 112 54
+
+@perc id=x-swedish-ride-0002 name="Ride en doubles croches — 1 voix, 1 mes. #002" genre=swedish-techno bars=1 steps=16 voices=1 tags=ride16 src=gen-textures
+N  CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY CY
+V  68 55 107 55 73 49 114 64 75 51 112 64 64 59 111 55
+
+@perc id=x-swedish-ride-0003 name="Ride en doubles croches — 1 voix, 1 mes. #003" genre=swedish-techno bars=1 steps=16 voices=1 tags=ride16 src=gen-textures
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  75 52 114 61 73 52 114 57 75 50 107 59 70 54 106 57
+
+@perc id=x-swedish-ride-0004 name="Ride en doubles croches — 1 voix, 2 mes. #004" genre=swedish-techno bars=2 steps=16 voices=1 tags=ride16 src=gen-textures
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  71 59 115 63 70 56 109 58 75 53 104 61 75 57 109 55
+N  CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH CH
+V  67 58 104 58 71 55 105 63 68 55 104 57 75 58 107 65
+
+@perc id=x-swedish-ride-0005 name="Ride en doubles croches — 1 voix, 2 mes. #005" genre=swedish-techno bars=2 steps=16 voices=1 tags=ride16 src=gen-textures
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  75 57 109 58 73 50 104 55 75 55 105 55 65 56 111 60
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  66 51 114 64 70 54 104 58 70 49 114 56 69 54 114 54
+
+@perc id=x-swedish-ride-0006 name="Ride en doubles croches — 1 voix, 1 mes. #006" genre=swedish-techno bars=1 steps=16 voices=1 tags=ride16 src=gen-textures
+N  SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH SH
+V  69 51 111 62 75 57 104 64 75 51 113 55 75 58 113 59
+
+@melody id=x-one-note-stab-0001 name="Stab une note — 1 voix, 2 mes. #001" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 0 . . . . 0 . . 0 . . . . .
+V  . . 96 . . . . 96 . . 91 . . . . .
+N  . . 0 . . . . 0 . . 0 . . . . .
+V  . . 119 . . . . 119 . . 116 . . . . .
+
+@melody id=x-one-note-stab-0002 name="Stab une note — 1 voix, 4 mes. #002" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 0 . . . . 0 . . 0 . . . . .
+V  . . 99 . . . . 117 . . 106 . . . . .
+N  . . 0 . . . . 0 . . 0 . . . . .
+V  . . 102 . . . . 107 . . 115 . . . . .
+N  . . 0 . . . . 0 . . 0 . . . . .
+V  . . 103 . . . . 117 . . 101 . . . . .
+N  . . 0 . . . . 0 . . 0 . . . . .
+V  . . 105 . . . . 92 . . 96 . . . . .
+
+@melody id=x-one-note-stab-0003 name="Stab une note — 1 voix, 4 mes. #003" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . . . . . . . . . . .
+V  . . . 119 . . . . . . . . . . . .
+N  . . . 3 . . . . . . . . . . . .
+V  . . . 114 . . . . . . . . . . . .
+N  . . . 3 . . . . . . . . . . . .
+V  . . . 109 . . . . . . . . . . . .
+N  . . . 3 . . . . . . . . . . . .
+V  . . . 92 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0004 name="Stab une note — 1 voix, 1 mes. #004" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . . . . 3 . . . . . 3
+V  . . . 101 . . . . . 103 . . . . . 97
+
+@melody id=x-one-note-stab-0005 name="Stab une note — 1 voix, 1 mes. #005" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . . . . 7 . . . . . 7
+V  . . . 90 . . . . . 103 . . . . . 105
+
+@melody id=x-one-note-stab-0006 name="Stab une note — 1 voix, 4 mes. #006" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . . . . . . 0 . . . .
+V  . . . 118 . . . . . . . 94 . . . .
+N  . . . 0 . . . . . . . 0 . . . .
+V  . . . 110 . . . . . . . 91 . . . .
+N  . . . 0 . . . . . . . 0 . . . .
+V  . . . 99 . . . . . . . 104 . . . .
+N  . . . 0 . . . . . . . 0 . . . .
+V  . . . 99 . . . . . . . 106 . . . .
+
+@melody id=x-one-note-stab-0007 name="Stab une note — 1 voix, 2 mes. #007" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 3 . . . . . 3 . . . . . 3 . .
+V  . 99 . . . . . 114 . . . . . 111 . .
+N  . 3 . . . . . 3 . . . . . 3 . .
+V  . 98 . . . . . 93 . . . . . 94 . .
+
+@melody id=x-one-note-stab-0008 name="Stab une note — 1 voix, 2 mes. #008" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . . . . . . . . . . .
+V  . . . 97 . . . . . . . . . . . .
+N  . . . 12 . . . . . . . . . . . .
+V  . . . 91 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0009 name="Stab une note — 1 voix, 1 mes. #009" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 7 . . . . . . . 7 .
+V  . . . . . . 117 . . . . . . . 108 .
+
+@melody id=x-one-note-stab-0010 name="Stab une note — 1 voix, 1 mes. #010" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 0 . . . . . 0 . . . . . 0 . .
+V  . 97 . . . . . 113 . . . . . 115 . .
+
+@melody id=x-one-note-stab-0011 name="Stab une note — 1 voix, 1 mes. #011" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . . . . . . . . . . .
+V  . . . 100 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0012 name="Stab une note — 1 voix, 1 mes. #012" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 3 . . . . . 3 . . . . . 3 . .
+V  . 95 . . . . . 111 . . . . . 100 . .
+
+@melody id=x-one-note-stab-0013 name="Stab une note — 1 voix, 1 mes. #013" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 3 . . . . 3 . . 3 . . . . .
+V  . . 97 . . . . 115 . . 115 . . . . .
+
+@melody id=x-one-note-stab-0014 name="Stab une note — 1 voix, 2 mes. #014" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 7 . . . . . . . 7 .
+V  . . . . . . 102 . . . . . . . 106 .
+N  . . . . . . 7 . . . . . . . 7 .
+V  . . . . . . 90 . . . . . . . 116 .
+
+@melody id=x-one-note-stab-0015 name="Stab une note — 1 voix, 4 mes. #015" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 3 . . . . . 3 . . . . . 3 . .
+V  . 108 . . . . . 101 . . . . . 108 . .
+N  . 3 . . . . . 3 . . . . . 3 . .
+V  . 110 . . . . . 105 . . . . . 111 . .
+N  . 3 . . . . . 3 . . . . . 3 . .
+V  . 113 . . . . . 93 . . . . . 103 . .
+N  . 3 . . . . . 3 . . . . . 3 . .
+V  . 108 . . . . . 112 . . . . . 106 . .
+
+@melody id=x-one-note-stab-0016 name="Stab une note — 1 voix, 2 mes. #016" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . . . . . . . . . . .
+V  . . . 91 . . . . . . . . . . . .
+N  . . . 3 . . . . . . . . . . . .
+V  . . . 103 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0017 name="Stab une note — 1 voix, 4 mes. #017" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . -5 . . . . -5 . . -5 .
+V  . . . 100 . . 94 . . . . 103 . . 109 .
+N  . . . -5 . . -5 . . . . -5 . . -5 .
+V  . . . 96 . . 92 . . . . 100 . . 107 .
+N  . . . -5 . . -5 . . . . -5 . . -5 .
+V  . . . 110 . . 119 . . . . 112 . . 96 .
+N  . . . -5 . . -5 . . . . -5 . . -5 .
+V  . . . 95 . . 116 . . . . 108 . . 105 .
+
+@melody id=x-one-note-stab-0018 name="Stab une note — 1 voix, 2 mes. #018" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 3 . . . . 3 . . 3 . . . . .
+V  . . 95 . . . . 107 . . 114 . . . . .
+N  . . 3 . . . . 3 . . 3 . . . . .
+V  . . 91 . . . . 93 . . 105 . . . . .
+
+@melody id=x-one-note-stab-0019 name="Stab une note — 1 voix, 2 mes. #019" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . . . . . . . . . . .
+V  . . . 106 . . . . . . . . . . . .
+N  . . . -5 . . . . . . . . . . . .
+V  . . . 91 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0020 name="Stab une note — 1 voix, 1 mes. #020" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 0 . . . . . . . 0 .
+V  . . . . . . 90 . . . . . . . 92 .
+
+@melody id=x-one-note-stab-0021 name="Stab une note — 1 voix, 1 mes. #021" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . . . . . . . . . . .
+V  . . . 112 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0022 name="Stab une note — 1 voix, 1 mes. #022" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . 0 . . . . 0 . . 0 .
+V  . . . 119 . . 98 . . . . 114 . . 103 .
+
+@melody id=x-one-note-stab-0023 name="Stab une note — 1 voix, 1 mes. #023" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 12 . . . . . . . 12 .
+V  . . . . . . 119 . . . . . . . 109 .
+
+@melody id=x-one-note-stab-0024 name="Stab une note — 1 voix, 1 mes. #024" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . -5 . . . . . -5 . . . . . -5 . .
+V  . 108 . . . . . 90 . . . . . 108 . .
+
+@melody id=x-one-note-stab-0025 name="Stab une note — 1 voix, 1 mes. #025" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 0 . . . . 0 . . 0 . . . . .
+V  . . 90 . . . . 101 . . 113 . . . . .
+
+@melody id=x-one-note-stab-0026 name="Stab une note — 1 voix, 4 mes. #026" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . . . . 3 . . . . . 3
+V  . . . 90 . . . . . 117 . . . . . 118
+N  . . . 3 . . . . . 3 . . . . . 3
+V  . . . 113 . . . . . 104 . . . . . 106
+N  . . . 3 . . . . . 3 . . . . . 3
+V  . . . 94 . . . . . 94 . . . . . 95
+N  . . . 3 . . . . . 3 . . . . . 3
+V  . . . 110 . . . . . 117 . . . . . 106
+
+@melody id=x-one-note-stab-0027 name="Stab une note — 1 voix, 2 mes. #027" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . . . . 0 . . . . . 0
+V  . . . 106 . . . . . 103 . . . . . 96
+N  . . . 0 . . . . . 0 . . . . . 0
+V  . . . 107 . . . . . 104 . . . . . 101
+
+@melody id=x-one-note-stab-0028 name="Stab une note — 1 voix, 1 mes. #028" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . . . . . . 0 . . . .
+V  . . . 111 . . . . . . . 93 . . . .
+
+@melody id=x-one-note-stab-0029 name="Stab une note — 1 voix, 4 mes. #029" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . -5 . . . . -5 . . -5 . . . . .
+V  . . 91 . . . . 109 . . 113 . . . . .
+N  . . -5 . . . . -5 . . -5 . . . . .
+V  . . 110 . . . . 91 . . 111 . . . . .
+N  . . -5 . . . . -5 . . -5 . . . . .
+V  . . 109 . . . . 95 . . 99 . . . . .
+N  . . -5 . . . . -5 . . -5 . . . . .
+V  . . 97 . . . . 116 . . 113 . . . . .
+
+@melody id=x-one-note-stab-0030 name="Stab une note — 1 voix, 2 mes. #030" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . . . . -5 . . . . . -5
+V  . . . 114 . . . . . 106 . . . . . 95
+N  . . . -5 . . . . . -5 . . . . . -5
+V  . . . 117 . . . . . 104 . . . . . 113
+
+@melody id=x-one-note-stab-0031 name="Stab une note — 1 voix, 2 mes. #031" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . . . . 12 . . . . . 12
+V  . . . 100 . . . . . 107 . . . . . 110
+N  . . . 12 . . . . . 12 . . . . . 12
+V  . . . 106 . . . . . 118 . . . . . 108
+
+@melody id=x-one-note-stab-0032 name="Stab une note — 1 voix, 4 mes. #032" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . 7 . . . . 7 . . 7 .
+V  . . . 99 . . 97 . . . . 115 . . 106 .
+N  . . . 7 . . 7 . . . . 7 . . 7 .
+V  . . . 111 . . 93 . . . . 93 . . 117 .
+N  . . . 7 . . 7 . . . . 7 . . 7 .
+V  . . . 118 . . 111 . . . . 119 . . 96 .
+N  . . . 7 . . 7 . . . . 7 . . 7 .
+V  . . . 103 . . 119 . . . . 94 . . 101 .
+
+@melody id=x-one-note-stab-0033 name="Stab une note — 1 voix, 4 mes. #033" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . 0 . . . . 0 . . 0 .
+V  . . . 94 . . 112 . . . . 106 . . 107 .
+N  . . . 0 . . 0 . . . . 0 . . 0 .
+V  . . . 112 . . 100 . . . . 110 . . 102 .
+N  . . . 0 . . 0 . . . . 0 . . 0 .
+V  . . . 92 . . 110 . . . . 100 . . 90 .
+N  . . . 0 . . 0 . . . . 0 . . 0 .
+V  . . . 90 . . 92 . . . . 119 . . 96 .
+
+@melody id=x-one-note-stab-0034 name="Stab une note — 1 voix, 1 mes. #034" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . 7 . . . . 7 . . 7 .
+V  . . . 107 . . 114 . . . . 102 . . 103 .
+
+@melody id=x-one-note-stab-0035 name="Stab une note — 1 voix, 2 mes. #035" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . . . . . . . . . . .
+V  . . . 103 . . . . . . . . . . . .
+N  . . . 0 . . . . . . . . . . . .
+V  . . . 114 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0036 name="Stab une note — 1 voix, 4 mes. #036" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . . . . . . 7 . . . .
+V  . . . 119 . . . . . . . 103 . . . .
+N  . . . 7 . . . . . . . 7 . . . .
+V  . . . 107 . . . . . . . 116 . . . .
+N  . . . 7 . . . . . . . 7 . . . .
+V  . . . 95 . . . . . . . 103 . . . .
+N  . . . 7 . . . . . . . 7 . . . .
+V  . . . 106 . . . . . . . 92 . . . .
+
+@melody id=x-one-note-stab-0037 name="Stab une note — 1 voix, 4 mes. #037" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . 12 . . . . 12 . . 12 .
+V  . . . 93 . . 96 . . . . 104 . . 95 .
+N  . . . 12 . . 12 . . . . 12 . . 12 .
+V  . . . 116 . . 101 . . . . 108 . . 115 .
+N  . . . 12 . . 12 . . . . 12 . . 12 .
+V  . . . 96 . . 110 . . . . 91 . . 111 .
+N  . . . 12 . . 12 . . . . 12 . . 12 .
+V  . . . 99 . . 92 . . . . 92 . . 97 .
+
+@melody id=x-one-note-stab-0038 name="Stab une note — 1 voix, 2 mes. #038" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . . . . 7 . . . . . 7
+V  . . . 99 . . . . . 95 . . . . . 117
+N  . . . 7 . . . . . 7 . . . . . 7
+V  . . . 119 . . . . . 104 . . . . . 92
+
+@melody id=x-one-note-stab-0039 name="Stab une note — 1 voix, 2 mes. #039" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . . . . 3 . . . . . 3
+V  . . . 112 . . . . . 91 . . . . . 107
+N  . . . 3 . . . . . 3 . . . . . 3
+V  . . . 108 . . . . . 101 . . . . . 118
+
+@melody id=x-one-note-stab-0040 name="Stab une note — 1 voix, 1 mes. #040" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . 12 . . . . 12 . . 12 .
+V  . . . 105 . . 117 . . . . 108 . . 106 .
+
+@melody id=x-one-note-stab-0041 name="Stab une note — 1 voix, 4 mes. #041" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . . . . 7 . . . . . 7
+V  . . . 114 . . . . . 109 . . . . . 98
+N  . . . 7 . . . . . 7 . . . . . 7
+V  . . . 95 . . . . . 119 . . . . . 112
+N  . . . 7 . . . . . 7 . . . . . 7
+V  . . . 97 . . . . . 101 . . . . . 106
+N  . . . 7 . . . . . 7 . . . . . 7
+V  . . . 110 . . . . . 113 . . . . . 109
+
+@melody id=x-one-note-stab-0042 name="Stab une note — 1 voix, 2 mes. #042" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 7 . . . . . 7 . . . . . 7 . .
+V  . 97 . . . . . 99 . . . . . 103 . .
+N  . 7 . . . . . 7 . . . . . 7 . .
+V  . 111 . . . . . 101 . . . . . 117 . .
+
+@melody id=x-one-note-stab-0043 name="Stab une note — 1 voix, 4 mes. #043" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 3 . . . . 3 . . 3 . . . . .
+V  . . 110 . . . . 106 . . 109 . . . . .
+N  . . 3 . . . . 3 . . 3 . . . . .
+V  . . 100 . . . . 110 . . 116 . . . . .
+N  . . 3 . . . . 3 . . 3 . . . . .
+V  . . 90 . . . . 119 . . 116 . . . . .
+N  . . 3 . . . . 3 . . 3 . . . . .
+V  . . 114 . . . . 111 . . 102 . . . . .
+
+@melody id=x-one-note-stab-0044 name="Stab une note — 1 voix, 1 mes. #044" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . -5 . . . . -5 . . -5 .
+V  . . . 107 . . 118 . . . . 106 . . 111 .
+
+@melody id=x-one-note-stab-0045 name="Stab une note — 1 voix, 1 mes. #045" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 12 . . . . . 12 . . . . . 12 . .
+V  . 117 . . . . . 109 . . . . . 114 . .
+
+@melody id=x-one-note-stab-0046 name="Stab une note — 1 voix, 2 mes. #046" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 7 . . . . 7 . . 7 . . . . .
+V  . . 104 . . . . 106 . . 118 . . . . .
+N  . . 7 . . . . 7 . . 7 . . . . .
+V  . . 117 . . . . 112 . . 91 . . . . .
+
+@melody id=x-one-note-stab-0047 name="Stab une note — 1 voix, 2 mes. #047" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 0 . . . . . . . 0 .
+V  . . . . . . 105 . . . . . . . 99 .
+N  . . . . . . 0 . . . . . . . 0 .
+V  . . . . . . 116 . . . . . . . 93 .
+
+@melody id=x-one-note-stab-0048 name="Stab une note — 1 voix, 2 mes. #048" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . -5 . . . . -5 . . -5 .
+V  . . . 109 . . 117 . . . . 99 . . 92 .
+N  . . . -5 . . -5 . . . . -5 . . -5 .
+V  . . . 103 . . 102 . . . . 109 . . 109 .
+
+@melody id=x-one-note-stab-0049 name="Stab une note — 1 voix, 4 mes. #049" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . . . . -5 . . . . . -5
+V  . . . 113 . . . . . 99 . . . . . 110
+N  . . . -5 . . . . . -5 . . . . . -5
+V  . . . 101 . . . . . 114 . . . . . 101
+N  . . . -5 . . . . . -5 . . . . . -5
+V  . . . 115 . . . . . 94 . . . . . 117
+N  . . . -5 . . . . . -5 . . . . . -5
+V  . . . 92 . . . . . 112 . . . . . 117
+
+@melody id=x-one-note-stab-0050 name="Stab une note — 1 voix, 4 mes. #050" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 3 . . . . . . . 3 .
+V  . . . . . . 91 . . . . . . . 115 .
+N  . . . . . . 3 . . . . . . . 3 .
+V  . . . . . . 99 . . . . . . . 117 .
+N  . . . . . . 3 . . . . . . . 3 .
+V  . . . . . . 112 . . . . . . . 108 .
+N  . . . . . . 3 . . . . . . . 3 .
+V  . . . . . . 119 . . . . . . . 104 .
+
+@melody id=x-one-note-stab-0051 name="Stab une note — 1 voix, 2 mes. #051" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 0 . . . . . 0 . . . . . 0 . .
+V  . 106 . . . . . 112 . . . . . 96 . .
+N  . 0 . . . . . 0 . . . . . 0 . .
+V  . 115 . . . . . 95 . . . . . 113 . .
+
+@melody id=x-one-note-stab-0052 name="Stab une note — 1 voix, 4 mes. #052" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 7 . . . . . 7 . . . . . 7 . .
+V  . 110 . . . . . 110 . . . . . 111 . .
+N  . 7 . . . . . 7 . . . . . 7 . .
+V  . 98 . . . . . 93 . . . . . 116 . .
+N  . 7 . . . . . 7 . . . . . 7 . .
+V  . 115 . . . . . 92 . . . . . 111 . .
+N  . 7 . . . . . 7 . . . . . 7 . .
+V  . 90 . . . . . 110 . . . . . 117 . .
+
+@melody id=x-one-note-stab-0053 name="Stab une note — 1 voix, 4 mes. #053" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 12 . . . . 12 . . 12 . . . . .
+V  . . 105 . . . . 90 . . 116 . . . . .
+N  . . 12 . . . . 12 . . 12 . . . . .
+V  . . 93 . . . . 92 . . 116 . . . . .
+N  . . 12 . . . . 12 . . 12 . . . . .
+V  . . 105 . . . . 117 . . 103 . . . . .
+N  . . 12 . . . . 12 . . 12 . . . . .
+V  . . 96 . . . . 119 . . 111 . . . . .
+
+@melody id=x-one-note-stab-0054 name="Stab une note — 1 voix, 2 mes. #054" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . -5 . . . . -5 . . -5 . . . . .
+V  . . 110 . . . . 109 . . 100 . . . . .
+N  . . -5 . . . . -5 . . -5 . . . . .
+V  . . 92 . . . . 90 . . 116 . . . . .
+
+@melody id=x-one-note-stab-0055 name="Stab une note — 1 voix, 4 mes. #055" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . . . . 0 . . . . . 0
+V  . . . 119 . . . . . 102 . . . . . 102
+N  . . . 0 . . . . . 0 . . . . . 0
+V  . . . 97 . . . . . 107 . . . . . 104
+N  . . . 0 . . . . . 0 . . . . . 0
+V  . . . 112 . . . . . 93 . . . . . 95
+N  . . . 0 . . . . . 0 . . . . . 0
+V  . . . 116 . . . . . 94 . . . . . 117
+
+@melody id=x-one-note-stab-0056 name="Stab une note — 1 voix, 1 mes. #056" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . . . . . . . . . . .
+V  . . . 90 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0057 name="Stab une note — 1 voix, 2 mes. #057" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . . . . . . 0 . . . .
+V  . . . 110 . . . . . . . 114 . . . .
+N  . . . 0 . . . . . . . 0 . . . .
+V  . . . 92 . . . . . . . 104 . . . .
+
+@melody id=x-one-note-stab-0058 name="Stab une note — 1 voix, 4 mes. #058" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . -5 . . . . . -5 . . . . . -5 . .
+V  . 102 . . . . . 92 . . . . . 119 . .
+N  . -5 . . . . . -5 . . . . . -5 . .
+V  . 93 . . . . . 98 . . . . . 91 . .
+N  . -5 . . . . . -5 . . . . . -5 . .
+V  . 116 . . . . . 103 . . . . . 112 . .
+N  . -5 . . . . . -5 . . . . . -5 . .
+V  . 107 . . . . . 92 . . . . . 92 . .
+
+@melody id=x-one-note-stab-0059 name="Stab une note — 1 voix, 2 mes. #059" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 12 . . . . . . . 12 .
+V  . . . . . . 103 . . . . . . . 90 .
+N  . . . . . . 12 . . . . . . . 12 .
+V  . . . . . . 94 . . . . . . . 96 .
+
+@melody id=x-one-note-stab-0060 name="Stab une note — 1 voix, 2 mes. #060" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . 0 . . . . 0 . . 0 .
+V  . . . 107 . . 108 . . . . 115 . . 117 .
+N  . . . 0 . . 0 . . . . 0 . . 0 .
+V  . . . 101 . . 117 . . . . 106 . . 104 .
+
+@melody id=x-one-note-stab-0061 name="Stab une note — 1 voix, 2 mes. #061" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . . . . . . 3 . . . .
+V  . . . 94 . . . . . . . 104 . . . .
+N  . . . 3 . . . . . . . 3 . . . .
+V  . . . 108 . . . . . . . 100 . . . .
+
+@melody id=x-one-note-stab-0062 name="Stab une note — 1 voix, 1 mes. #062" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 3 . . . . . . . 3 .
+V  . . . . . . 103 . . . . . . . 105 .
+
+@melody id=x-one-note-stab-0063 name="Stab une note — 1 voix, 2 mes. #063" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . -5 . . . . . -5 . . . . . -5 . .
+V  . 118 . . . . . 110 . . . . . 109 . .
+N  . -5 . . . . . -5 . . . . . -5 . .
+V  . 102 . . . . . 92 . . . . . 103 . .
+
+@melody id=x-one-note-stab-0064 name="Stab une note — 1 voix, 1 mes. #064" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . . . . . . 12 . . . .
+V  . . . 113 . . . . . . . 97 . . . .
+
+@melody id=x-one-note-stab-0065 name="Stab une note — 1 voix, 2 mes. #065" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 3 . . . . . . . 3 .
+V  . . . . . . 102 . . . . . . . 109 .
+N  . . . . . . 3 . . . . . . . 3 .
+V  . . . . . . 98 . . . . . . . 93 .
+
+@melody id=x-one-note-stab-0066 name="Stab une note — 1 voix, 2 mes. #066" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . 7 . . . . 7 . . 7 .
+V  . . . 117 . . 94 . . . . 102 . . 92 .
+N  . . . 7 . . 7 . . . . 7 . . 7 .
+V  . . . 105 . . 95 . . . . 99 . . 90 .
+
+@melody id=x-one-note-stab-0067 name="Stab une note — 1 voix, 1 mes. #067" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . . . . . . . . . . .
+V  . . . 116 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0068 name="Stab une note — 1 voix, 4 mes. #068" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . . . . . . . . . . .
+V  . . . 111 . . . . . . . . . . . .
+N  . . . -5 . . . . . . . . . . . .
+V  . . . 95 . . . . . . . . . . . .
+N  . . . -5 . . . . . . . . . . . .
+V  . . . 91 . . . . . . . . . . . .
+N  . . . -5 . . . . . . . . . . . .
+V  . . . 93 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0069 name="Stab une note — 1 voix, 2 mes. #069" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . -5 . . . . . . . -5 .
+V  . . . . . . 102 . . . . . . . 109 .
+N  . . . . . . -5 . . . . . . . -5 .
+V  . . . . . . 116 . . . . . . . 113 .
+
+@melody id=x-one-note-stab-0070 name="Stab une note — 1 voix, 2 mes. #070" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . 3 . . . . 3 . . 3 .
+V  . . . 116 . . 93 . . . . 97 . . 119 .
+N  . . . 3 . . 3 . . . . 3 . . 3 .
+V  . . . 96 . . 100 . . . . 90 . . 106 .
+
+@melody id=x-one-note-stab-0071 name="Stab une note — 1 voix, 1 mes. #071" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . -5 . . . . . . . -5 .
+V  . . . . . . 109 . . . . . . . 104 .
+
+@melody id=x-one-note-stab-0072 name="Stab une note — 1 voix, 4 mes. #072" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . . . . . . . . . . .
+V  . . . 119 . . . . . . . . . . . .
+N  . . . 12 . . . . . . . . . . . .
+V  . . . 118 . . . . . . . . . . . .
+N  . . . 12 . . . . . . . . . . . .
+V  . . . 94 . . . . . . . . . . . .
+N  . . . 12 . . . . . . . . . . . .
+V  . . . 94 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0073 name="Stab une note — 1 voix, 1 mes. #073" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 7 . . . . 7 . . 7 . . . . .
+V  . . 96 . . . . 117 . . 111 . . . . .
+
+@melody id=x-one-note-stab-0074 name="Stab une note — 1 voix, 4 mes. #074" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 0 . . . . . 0 . . . . . 0 . .
+V  . 94 . . . . . 104 . . . . . 114 . .
+N  . 0 . . . . . 0 . . . . . 0 . .
+V  . 115 . . . . . 100 . . . . . 96 . .
+N  . 0 . . . . . 0 . . . . . 0 . .
+V  . 117 . . . . . 116 . . . . . 90 . .
+N  . 0 . . . . . 0 . . . . . 0 . .
+V  . 106 . . . . . 91 . . . . . 106 . .
+
+@melody id=x-one-note-stab-0075 name="Stab une note — 1 voix, 1 mes. #075" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . . . . 0 . . . . . 0
+V  . . . 99 . . . . . 117 . . . . . 100
+
+@melody id=x-one-note-stab-0076 name="Stab une note — 1 voix, 1 mes. #076" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . . . . . . 3 . . . .
+V  . . . 97 . . . . . . . 91 . . . .
+
+@melody id=x-one-note-stab-0077 name="Stab une note — 1 voix, 4 mes. #077" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 0 . . . . . . . 0 .
+V  . . . . . . 96 . . . . . . . 92 .
+N  . . . . . . 0 . . . . . . . 0 .
+V  . . . . . . 97 . . . . . . . 109 .
+N  . . . . . . 0 . . . . . . . 0 .
+V  . . . . . . 111 . . . . . . . 103 .
+N  . . . . . . 0 . . . . . . . 0 .
+V  . . . . . . 103 . . . . . . . 94 .
+
+@melody id=x-one-note-stab-0078 name="Stab une note — 1 voix, 4 mes. #078" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 12 . . . . . . . 12 .
+V  . . . . . . 97 . . . . . . . 105 .
+N  . . . . . . 12 . . . . . . . 12 .
+V  . . . . . . 92 . . . . . . . 108 .
+N  . . . . . . 12 . . . . . . . 12 .
+V  . . . . . . 119 . . . . . . . 108 .
+N  . . . . . . 12 . . . . . . . 12 .
+V  . . . . . . 112 . . . . . . . 117 .
+
+@melody id=x-one-note-stab-0079 name="Stab une note — 1 voix, 4 mes. #079" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . 7 . . . . . . . 7 .
+V  . . . . . . 97 . . . . . . . 115 .
+N  . . . . . . 7 . . . . . . . 7 .
+V  . . . . . . 92 . . . . . . . 116 .
+N  . . . . . . 7 . . . . . . . 7 .
+V  . . . . . . 108 . . . . . . . 103 .
+N  . . . . . . 7 . . . . . . . 7 .
+V  . . . . . . 112 . . . . . . . 106 .
+
+@melody id=x-one-note-stab-0080 name="Stab une note — 1 voix, 4 mes. #080" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . . . . -5 . . . . . . . -5 .
+V  . . . . . . 92 . . . . . . . 102 .
+N  . . . . . . -5 . . . . . . . -5 .
+V  . . . . . . 115 . . . . . . . 102 .
+N  . . . . . . -5 . . . . . . . -5 .
+V  . . . . . . 98 . . . . . . . 105 .
+N  . . . . . . -5 . . . . . . . -5 .
+V  . . . . . . 100 . . . . . . . 97 .
+
+@melody id=x-one-note-stab-0081 name="Stab une note — 1 voix, 2 mes. #081" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . . . . . . 12 . . . .
+V  . . . 106 . . . . . . . 92 . . . .
+N  . . . 12 . . . . . . . 12 . . . .
+V  . . . 91 . . . . . . . 98 . . . .
+
+@melody id=x-one-note-stab-0082 name="Stab une note — 1 voix, 1 mes. #082" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . . . . 12 . . . . . 12
+V  . . . 102 . . . . . 118 . . . . . 97
+
+@melody id=x-one-note-stab-0083 name="Stab une note — 1 voix, 4 mes. #083" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 0 . . . . . . . . . . . .
+V  . . . 118 . . . . . . . . . . . .
+N  . . . 0 . . . . . . . . . . . .
+V  . . . 92 . . . . . . . . . . . .
+N  . . . 0 . . . . . . . . . . . .
+V  . . . 111 . . . . . . . . . . . .
+N  . . . 0 . . . . . . . . . . . .
+V  . . . 116 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0084 name="Stab une note — 1 voix, 4 mes. #084" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . . . . . . . . . . .
+V  . . . 95 . . . . . . . . . . . .
+N  . . . 7 . . . . . . . . . . . .
+V  . . . 102 . . . . . . . . . . . .
+N  . . . 7 . . . . . . . . . . . .
+V  . . . 101 . . . . . . . . . . . .
+N  . . . 7 . . . . . . . . . . . .
+V  . . . 117 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0085 name="Stab une note — 1 voix, 2 mes. #085" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 12 . . . . . 12 . . . . . 12 . .
+V  . 99 . . . . . 110 . . . . . 113 . .
+N  . 12 . . . . . 12 . . . . . 12 . .
+V  . 113 . . . . . 119 . . . . . 114 . .
+
+@melody id=x-one-note-stab-0086 name="Stab une note — 1 voix, 4 mes. #086" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . . . . 12 . . . . . 12
+V  . . . 107 . . . . . 105 . . . . . 113
+N  . . . 12 . . . . . 12 . . . . . 12
+V  . . . 103 . . . . . 111 . . . . . 119
+N  . . . 12 . . . . . 12 . . . . . 12
+V  . . . 108 . . . . . 92 . . . . . 94
+N  . . . 12 . . . . . 12 . . . . . 12
+V  . . . 107 . . . . . 106 . . . . . 111
+
+@melody id=x-one-note-stab-0087 name="Stab une note — 1 voix, 1 mes. #087" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . . . . . . 7 . . . .
+V  . . . 110 . . . . . . . 95 . . . .
+
+@melody id=x-one-note-stab-0088 name="Stab une note — 1 voix, 4 mes. #088" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 7 . . . . 7 . . 7 . . . . .
+V  . . 116 . . . . 96 . . 99 . . . . .
+N  . . 7 . . . . 7 . . 7 . . . . .
+V  . . 113 . . . . 92 . . 109 . . . . .
+N  . . 7 . . . . 7 . . 7 . . . . .
+V  . . 112 . . . . 106 . . 109 . . . . .
+N  . . 7 . . . . 7 . . 7 . . . . .
+V  . . 101 . . . . 99 . . 114 . . . . .
+
+@melody id=x-one-note-stab-0089 name="Stab une note — 1 voix, 4 mes. #089" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . . . . . . -5 . . . .
+V  . . . 112 . . . . . . . 107 . . . .
+N  . . . -5 . . . . . . . -5 . . . .
+V  . . . 108 . . . . . . . 119 . . . .
+N  . . . -5 . . . . . . . -5 . . . .
+V  . . . 117 . . . . . . . 106 . . . .
+N  . . . -5 . . . . . . . -5 . . . .
+V  . . . 95 . . . . . . . 115 . . . .
+
+@melody id=x-one-note-stab-0090 name="Stab une note — 1 voix, 2 mes. #090" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . 12 . . . . 12 . . 12 .
+V  . . . 90 . . 91 . . . . 102 . . 102 .
+N  . . . 12 . . 12 . . . . 12 . . 12 .
+V  . . . 105 . . 91 . . . . 100 . . 100 .
+
+@melody id=x-one-note-stab-0091 name="Stab une note — 1 voix, 1 mes. #091" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . 3 . . . . 3 . . 3 .
+V  . . . 114 . . 106 . . . . 96 . . 90 .
+
+@melody id=x-one-note-stab-0092 name="Stab une note — 1 voix, 1 mes. #092" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . . . . . . -5 . . . .
+V  . . . 114 . . . . . . . 100 . . . .
+
+@melody id=x-one-note-stab-0093 name="Stab une note — 1 voix, 1 mes. #093" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . . . . -5 . . . . . -5
+V  . . . 100 . . . . . 102 . . . . . 118
+
+@melody id=x-one-note-stab-0094 name="Stab une note — 1 voix, 2 mes. #094" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . . . . . . -5 . . . .
+V  . . . 114 . . . . . . . 106 . . . .
+N  . . . -5 . . . . . . . -5 . . . .
+V  . . . 94 . . . . . . . 105 . . . .
+
+@melody id=x-one-note-stab-0095 name="Stab une note — 1 voix, 2 mes. #095" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . . . . . . . . . . .
+V  . . . 94 . . . . . . . . . . . .
+N  . . . 7 . . . . . . . . . . . .
+V  . . . 115 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0096 name="Stab une note — 1 voix, 1 mes. #096" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . -5 . . . . . . . . . . . .
+V  . . . 101 . . . . . . . . . . . .
+
+@melody id=x-one-note-stab-0097 name="Stab une note — 1 voix, 1 mes. #097" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 12 . . . . 12 . . 12 . . . . .
+V  . . 119 . . . . 92 . . 110 . . . . .
+
+@melody id=x-one-note-stab-0098 name="Stab une note — 1 voix, 4 mes. #098" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . . . . . . 3 . . . .
+V  . . . 114 . . . . . . . 103 . . . .
+N  . . . 3 . . . . . . . 3 . . . .
+V  . . . 118 . . . . . . . 91 . . . .
+N  . . . 3 . . . . . . . 3 . . . .
+V  . . . 110 . . . . . . . 114 . . . .
+N  . . . 3 . . . . . . . 3 . . . .
+V  . . . 91 . . . . . . . 95 . . . .
+
+@melody id=x-one-note-stab-0099 name="Stab une note — 1 voix, 4 mes. #099" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 12 . . . . . 12 . . . . . 12 . .
+V  . 108 . . . . . 111 . . . . . 116 . .
+N  . 12 . . . . . 12 . . . . . 12 . .
+V  . 119 . . . . . 100 . . . . . 93 . .
+N  . 12 . . . . . 12 . . . . . 12 . .
+V  . 111 . . . . . 98 . . . . . 105 . .
+N  . 12 . . . . . 12 . . . . . 12 . .
+V  . 99 . . . . . 101 . . . . . 102 . .
+
+@melody id=x-one-note-stab-0100 name="Stab une note — 1 voix, 2 mes. #100" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 7 . . . . . . . 7 . . . .
+V  . . . 115 . . . . . . . 99 . . . .
+N  . . . 7 . . . . . . . 7 . . . .
+V  . . . 118 . . . . . . . 112 . . . .
+
+@melody id=x-one-note-stab-0101 name="Stab une note — 1 voix, 2 mes. #101" genre=swedish-techno bars=2 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . 12 . . . . 12 . . 12 . . . . .
+V  . . 96 . . . . 116 . . 96 . . . . .
+N  . . 12 . . . . 12 . . 12 . . . . .
+V  . . 115 . . . . 111 . . 92 . . . . .
+
+@melody id=x-one-note-stab-0102 name="Stab une note — 1 voix, 4 mes. #102" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 3 . . 3 . . . . 3 . . 3 .
+V  . . . 102 . . 101 . . . . 110 . . 105 .
+N  . . . 3 . . 3 . . . . 3 . . 3 .
+V  . . . 118 . . 109 . . . . 100 . . 108 .
+N  . . . 3 . . 3 . . . . 3 . . 3 .
+V  . . . 100 . . 104 . . . . 99 . . 90 .
+N  . . . 3 . . 3 . . . . 3 . . 3 .
+V  . . . 97 . . 95 . . . . 119 . . 114 .
+
+@melody id=x-one-note-stab-0103 name="Stab une note — 1 voix, 1 mes. #103" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . -5 . . . . -5 . . -5 . . . . .
+V  . . 90 . . . . 107 . . 119 . . . . .
+
+@melody id=x-one-note-stab-0104 name="Stab une note — 1 voix, 1 mes. #104" genre=swedish-techno bars=1 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . 7 . . . . . 7 . . . . . 7 . .
+V  . 97 . . . . . 90 . . . . . 117 . .
+
+@melody id=x-one-note-stab-0105 name="Stab une note — 1 voix, 4 mes. #105" genre=swedish-techno bars=4 steps=16 voices=1 tags=stab1 src=gen-textures
+N  . . . 12 . . . . . . . 12 . . . .
+V  . . . 102 . . . . . . . 90 . . . .
+N  . . . 12 . . . . . . . 12 . . . .
+V  . . . 100 . . . . . . . 115 . . . .
+N  . . . 12 . . . . . . . 12 . . . .
+V  . . . 104 . . . . . . . 96 . . . .
+N  . . . 12 . . . . . . . 12 . . . .
+V  . . . 96 . . . . . . . 101 . . . .

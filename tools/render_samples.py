@@ -40,22 +40,36 @@ def blocks(fname):
 
 
 def render_notes(head, lines, root):
+    """Gère les voix multiples (N, N2… / V, V2…), les tenues (-), les ratchets (*2 *3 *4), accents et slides."""
     bars = int(re.search(r"bars=(\d+)", head).group(1))
-    N = [t for l in lines if l.startswith("N ") for t in l.split()[1:]]
-    V = [t for l in lines if l.startswith("V ") for t in l.split()[1:]] or None
+    voices = {}
+    for l in lines:
+        m = re.match(r"([NV])(\d?)\s+(.*)", l)
+        if not m: continue
+        kind, v, rest = m.group(1), m.group(2) or "1", m.group(3).split()
+        voices.setdefault(v, {"N": [], "V": []})[kind] += rest
     ev = []
-    for i, t in enumerate(N):
-        if t in (".", "-"): continue
-        j = i + 1
-        while j < len(N) and N[j] == "-": j += 1
-        accent = "a" in t
-        slide = "s" in t
-        name = t.rstrip("as")
-        note = DRUM[name] if name in DRUM else root + int(name)
-        vel = int(V[i]) if V and V[i] != "." else (120 if accent else 96)
-        end = j * STEP - 10
-        if slide and j < len(N): end = j * STEP + 30   # chevauchement = glide
-        ev.append((i * STEP, end, note, vel))
+    for v, d in voices.items():
+        N, V = d["N"], d["V"] or None
+        for i, t in enumerate(N):
+            if t in (".", "-"): continue
+            reps = 1
+            if "*" in t: t, r = t.split("*"); reps = int(r)
+            j = i + 1
+            while j < len(N) and N[j] == "-": j += 1
+            accent = "a" in t and t.rstrip("as") != t
+            slide = t.endswith("s")
+            name = t.rstrip("as") if t[-1:] in "as" and t.rstrip("as") not in ("", "C") else t
+            note = DRUM[name] if name in DRUM else root + int(name)
+            vel = int(V[i]) if V and i < len(V) and V[i] != "." else (120 if accent else 96)
+            if reps > 1:
+                sub = STEP // reps
+                for k in range(reps):
+                    ev.append((i * STEP + k * sub, i * STEP + (k + 1) * sub - 5, note, vel))
+                continue
+            end = j * STEP - 10
+            if slide and j < len(N): end = j * STEP + 30
+            ev.append((i * STEP, end, note, vel))
     return ev, bars * 16 * STEP
 
 
@@ -78,7 +92,10 @@ def render_drums(head, lines):
 def main(out, preset="general"):
     out = Path(out); out.mkdir(parents=True, exist_ok=True)
     rng = random.Random(7)
-    if preset == "industrial":
+    if preset == "textures":
+        picks = [("tex_ambient.txt", 10, 48), ("tex_idm.txt", 9, 60), ("tex_moderat.txt", 8, 48),
+                 ("tex_industrial_techno.txt", 6, 36), ("tex_swedish.txt", 5, 0), ("tex_noise_rock.txt", 3, 36)]
+    elif preset == "industrial":
         picks = [("industrial_bass.txt", 10, 36), ("industrial_synth.txt", 12, 48), ("industrial_perc.txt", 12, 0)]
     elif preset == "techno":
         picks = [("techno_bass.txt", 10, 36), ("techno_synth.txt", 12, 60), ("techno_perc.txt", 14, 0)]
@@ -93,7 +110,7 @@ def main(out, preset="general"):
                 ev, length = render_drums(head, lines)
             else:
                 ev, length = render_notes(head, lines, root)
-            write_mid(out / f"{pid}.mid", ev, length, channel=9 if (fname.startswith("drums") or "perc" in fname) else 0)
+            write_mid(out / f"{pid}.mid", ev, length, channel=9 if head.split()[0] in ("drums", "perc") else 0)
     print(len(list(out.glob("*.mid"))), "fichiers")
 
 
