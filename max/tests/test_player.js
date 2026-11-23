@@ -38,3 +38,38 @@ for (let b = 0; b < 400; ++b) { out.length = 0; ctx.tick(ticks); for (const m of
 console.log("nouvelle ligne à partir de", (firstNew / 480).toFixed(2), "noires (demandée à", (tChange / 480).toFixed(2), ")");
 check(firstNew / 480 >= 4 - 0.05, "attend la mesure");
 console.log(fails ? "ECHECS " + fails : "OK lecteur");
+
+// --- écriture dans un clip, avec une fausse API de Live ---
+(function () {
+  const slots = [{ clip: { name: "", notes: [] } }, { clip: null }, { clip: null }, { clip: null }];
+  let highlighted = 0;
+  const ids = { 100: "live_set tracks 0 clip_slots 0", 101: "live_set tracks 0 clip_slots 1", 102: "live_set tracks 0 clip_slots 2", 103: "live_set tracks 0 clip_slots 3" };
+  function Api(a, b) {
+    let p = typeof a === "string" ? a : b;
+    if (/^id /.test(p)) p = ids[p.slice(3)];
+    if (p === "this_device") p = "live_set tracks 0 devices 0";
+    this.path = '"' + p + '"';
+    const m = p.match(/clip_slots (\d+)( clip)?$/);
+    this.get = (k) => {
+      if (p === "live_set view" && k === "highlighted_clip_slot") return ["id", 100 + highlighted];
+      if (m && !m[2] && k === "has_clip") return [slots[+m[1]].clip ? 1 : 0];
+      if (m && m[2] && k === "name") return [slots[+m[1]].clip.name];
+      return [0];
+    };
+    this.getcount = () => slots.length;
+    this.set = (k, v) => { if (m && m[2] && k === "name") slots[+m[1]].clip.name = v; };
+    this.call = (f, arg) => {
+      if (m && !m[2] && f === "create_clip") slots[+m[1]].clip = { name: "", notes: [] };
+      if (m && m[2] && f === "add_new_notes") slots[+m[1]].clip.notes = arg.notes;
+      if (m && m[2] && f === "remove_notes_extended") slots[+m[1]].clip.notes = [];
+    };
+  }
+  ctx.LiveAPI = Api;
+  ctx.enable(1);
+  ctx.write(); check(slots[1].clip && slots[1].clip.name === "MLG Alpha loop 1" && slots[1].clip.notes.length > 0, "écrit dans la case libre");
+  check(slots[0].clip.notes.length === 0, "clip de lecture protégé");
+  highlighted = 1; ctx.write(); check(slots[1].clip.name === "MLG Alpha loop 1" && !slots[2].clip, "remplace le clip MLG sélectionné");
+  highlighted = 0; ctx.write(); check(slots[2].clip && slots[2].clip.name === "MLG Alpha loop 2", "numéro suivant");
+  out.length = 0; ctx.enable(0); ctx.tick(99999); check(!out.some(m => m[0] === 0 && m[2] > 0), "Lecture coupée");
+  console.log(fails ? "ECHECS " + fails : "OK écriture");
+})();

@@ -3,7 +3,7 @@
 Sortie dans dist/MLG Alpha/ :
     MLG Alpha.amxd        l'appareil (effet MIDI) à glisser sur une piste MIDI d'Ableton
     MLG Alpha.maxpat      le même patch en texte (secours : copier-coller dans un appareil Max vide)
-    mlg_core.js, mlg_player.js, mlg_roll.js, mlg_text.js
+    mlg_core.js, mlg_player.js, mlg_text.js
     mlg_library.txt.gz, mlg_dictionary.txt
 
 Le patch est écrit par ce script plutôt qu'à la souris : il reste lisible, versionné et reproductible.
@@ -22,7 +22,7 @@ import time
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "dist", "MLG Alpha")
-DEVICE_WIDTH = 1180
+DEVICE_WIDTH = 450
 
 # ----------------------------------------------------------------------------- conteneur .amxd
 MAX_EPOCH_OFFSET = 2_082_844_800
@@ -219,9 +219,23 @@ def build():
     P.line(r_player, 1, m_written)
     P.line(m_written, 0, node)
 
-    # ===================================================================== 3. Interface (présentation)
-    C("3. INTERFACE : potards, boutons, cases de texte (mode présentation)", 20, 700, 700)
+    # ===================================================================== 3. Interface
+    # Présentation compacte : trois pages (RYTHME, NOTES, TEXTE) à gauche, une colonne fixe à droite.
+    C("3. INTERFACE : pages RYTHME / NOTES / TEXTE + colonne fixe (mode présentation)", 20, 700, 800)
     x0, y0 = 20, 740   # zone de rangement des objets d'interface dans le patch
+    pages = {"rythme": [], "notes": [], "texte": []}
+    counter = [0]
+
+    def on_page(page, box_id):
+        """Donne un nom de script à l'objet et le range dans sa page (cachée au départ sauf RYTHME)."""
+        box = next(b["box"] for b in P.boxes if b["box"]["id"] == box_id)
+        if "varname" not in box:
+            counter[0] += 1
+            box["varname"] = "pg_%s_%d" % (page, counter[0])
+        if page != "rythme":
+            box["hidden"] = 1
+        pages[page].append(box["varname"])
+        return box_id
 
     def to_node(src, outlet, prefix, x, y):
         pp = P.obj("prepend " + prefix, 1, 1, x, y, 7 * len(prefix) + 60)
@@ -229,104 +243,166 @@ def build():
         P.line(pp, 0, node)
         return pp
 
-    def button(text, pres, x, y, message, toggle=False, varname=None):
+    def button(text, pres, x, y, message, toggle=False, varname=None, page=None, **extra):
         kw = {"text": text, "mode": 1 if toggle else 0, "parameter_enable": 0}
         if toggle: kw["texton"] = text
         if varname: kw["varname"] = varname
+        kw.update(extra)
         b = P.ui("live.text", x, y, pres, 1, 2, ["", ""], **kw)
         if message is not None:
             m = P.msg(message, x, y + 30)
             P.line(b, 0, m)
             P.line(m, 0, node)
+        if page: on_page(page, b)
         return b
+
+    def label(text, pres, page=None, size=9, **kw):
+        c = P.comment(text, 0, 0, pres[2], pres=pres, size=size, **kw)
+        if page: on_page(page, c)
+        return c
 
     dump_targets = []   # potards à relire quand le script démarre
 
-    def dial(pid, label, pres, x, y, mn, mx, initial, ptype=1, unit=UNIT_INT):
+    def dial(pid, text, pres, x, y, mn, mx, initial, ptype=1, unit=UNIT_INT, page=None):
         d = P.ui("live.dial", x, y, pres, 1, 2, ["", "float"], varname="p_" + pid, showname=1, shownumber=1,
-                 **param(label, label, ptype, mn, mx, initial, unit))
+                 **param(text, text, ptype, mn, mx, initial, unit))
         to_node(d, 0, "param " + pid, x, y + 60)
         dump_targets.append(d)
+        if page: on_page(page, d)
         return d
 
-    def menu(pid, label, items, pres, x, y, initial, lpres):
-        P.comment(label, x, y - 20, 120, pres=lpres, size=9)
+    def menu(pid, text, items, pres, x, y, initial, page=None):
+        label(text, [pres[0], pres[1] - 12, pres[2], 12], page, size=8.5)
         m = P.ui("live.menu", x, y, pres, 1, 3, ["", "", "float"], varname="p_" + pid,
-                 **param(label, label, 2, 0, len(items) - 1, initial, enum=items))
+                 **param(text, text, 2, 0, len(items) - 1, initial, enum=items))
         to_node(m, 0, "param " + pid, x, y + 30)
         dump_targets.append(m)
+        if page: on_page(page, m)
         return m
 
-    # --- panneau mécanique (x 4..556) ---
-    P.comment("PANNEAU MÉCANIQUE", 0, 0, 160, pres=[4, 0, 160, 14], size=9, bold=True, color=[0.21, 0.82, 0.73, 1])
-    bx = x0
-    button("GÉNÉRER", [4, 16, 62, 18], bx, y0, "generate"); bx += 90
-    button("MUTER", [70, 16, 50, 18], bx, y0, "mutate"); bx += 90
-    lr = button("Verrou rythme", [124, 16, 74, 18], bx, y0, None, toggle=True, varname="lockr")
-    to_node(lr, 0, "lockr", bx, y0 + 30); bx += 110
-    lp = button("Verrou hauteurs", [202, 16, 82, 18], bx, y0, None, toggle=True, varname="lockp")
-    to_node(lp, 0, "lockp", bx, y0 + 30); bx += 110
+    # --- onglets ---
+    tabs = P.ui("live.tab", x0, y0, [4, 2, 296, 16], 1, 3, ["", "", "float"], varname="pages",
+                num_lines_presentation=1, num_lines_patching=1,
+                **param("Page", "Page", 2, 0, 2, 0, enum=["RYTHME", "NOTES", "TEXTE"]))
 
-    # Garder (mécanique et texte) : prend les mots de la case de texte
-    words = P.ui("textedit", x0 + 900, y0 + 300, [566, 30, 252, 20], 1, 4, ["", "int", "", ""],
+    DW = 49   # largeur d'un potard
+    # --- page RYTHME ---
+    menu("rhythmMode", "Moteur", ["Aléatoire", "Euclidien"], [4, 34, 68, 15], x0, y0 + 80, 0, "rythme")
+    menu("division", "Division", ["1/4", "1/8", "1/8T", "1/16", "1/16T", "1/32"], [76, 34, 50, 15], x0 + 110, y0 + 80, 3, "rythme")
+    lr = button("Verrou rythme", [130, 32, 76, 18], x0 + 220, y0 + 80, None, toggle=True, varname="lockr", page="rythme")
+    to_node(lr, 0, "lockr", x0 + 220, y0 + 110)
+    label("Seed", [210, 22, 40, 12], "rythme", size=8.5)
+    seedr = P.ui("textedit", x0 + 330, y0 + 80, [210, 33, 90, 17], 1, 4, ["", "int", "", ""], keymode=1, lines=1,
+                 varname="seedr", parameter_enable=0, fontsize=10.0)
+    on_page("rythme", seedr)
+    to_node(seedr, 0, "seedr", x0 + 330, y0 + 110)
+    R = [("steps", "Pas", 1, 128, 16, 1, UNIT_INT), ("density", "Densité", 0, 100, 50, 0, UNIT_PCT),
+         ("pulses", "Impulsions", 0, 128, 5, 1, UNIT_INT), ("rotation", "Rotation", 0, 127, 0, 1, UNIT_INT),
+         ("swing", "Swing", 0, 100, 0, 0, UNIT_PCT), ("accent", "Accent", 0, 40, 15, 1, UNIT_INT)]
+    for i, (pid, text, mn, mx, ini, pt, unit) in enumerate(R):
+        dial(pid, text, [4 + i * DW, 58, DW - 2, 48], x0 + i * 90, y0 + 180, mn, mx, ini, 0 if pt == 0 else 1, unit, "rythme")
+    label("Pas jusqu'à 128 = 8 mesures en doubles croches. Le rythme euclidien répartit les impulsions sur les pas.",
+          [4, 110, 296, 40], "rythme", size=8.5, color=[0.6, 0.64, 0.7, 1])
+
+    # --- page NOTES ---
+    menu("root", "Tonique", ROOTS, [4, 34, 44, 15], x0, y0 + 300, 0, "notes")
+    menu("scale", "Gamme", SCALES, [52, 34, 96, 15], x0 + 110, y0 + 300, 1, "notes")
+    menu("octave", "Octave", ["-3", "-2", "-1", "0", "+1", "+2", "+3"], [152, 34, 40, 15], x0 + 220, y0 + 300, 3, "notes")
+    leg = P.ui("live.text", x0 + 330, y0 + 300, [196, 32, 50, 18], 1, 2, ["", ""], text="Legato", texton="Legato", mode=1,
+               varname="p_legato", **param("Legato", "Legato", 2, 0, 1, 0, enum=["off", "on"]))
+    on_page("notes", leg)
+    to_node(leg, 0, "param legato", x0 + 330, y0 + 330)
+    dump_targets.append(leg)
+    lp = button("Verrou haut.", [250, 32, 50, 18], x0 + 440, y0 + 300, None, toggle=True, varname="lockp", page="notes")
+    to_node(lp, 0, "lockp", x0 + 440, y0 + 330)
+    N = [("lowNote", "Note basse", 24, 108, 48, 1, UNIT_MIDI), ("highNote", "Note haute", 24, 108, 67, 1, UNIT_MIDI),
+         ("maxJump", "Écart max", 0, 12, 3, 1, UNIT_INT), ("lenMin", "Durée min", 5, 400, 50, 0, UNIT_PCT),
+         ("lenMax", "Durée max", 5, 400, 100, 0, UNIT_PCT), ("velMin", "Vél. min", 1, 127, 80, 1, UNIT_INT),
+         ("velMax", "Vél. max", 1, 127, 110, 1, UNIT_INT)]
+    for i, (pid, text, mn, mx, ini, pt, unit) in enumerate(N):
+        pres = [4 + i * DW, 58, DW - 2, 48] if i < 6 else [4, 110, DW - 2, 48]
+        dial(pid, text, pres, x0 + i * 90, y0 + 400, mn, mx, ini, 0 if pt == 0 else 1, unit, "notes")
+    label("Seed", [60, 122, 40, 12], "notes", size=8.5)
+    seedp = P.ui("textedit", x0 + 650, y0 + 300, [88, 120, 100, 17], 1, 4, ["", "int", "", ""], keymode=1, lines=1,
+                 varname="seedp", parameter_enable=0, fontsize=10.0)
+    on_page("notes", seedp)
+    to_node(seedp, 0, "seedp", x0 + 650, y0 + 330)
+
+    # --- page TEXTE ---
+    words = P.ui("textedit", x0 + 900, y0 + 300, [4, 22, 226, 20], 1, 4, ["", "int", "", ""],
                  keymode=1, lines=1, varname="words", parameter_enable=0, fontsize=11.0)
+    on_page("texte", words)
     gate = P.obj("gate 2 1", 2, 2, x0 + 900, y0 + 340, 60)
     P.line(words, 0, gate, 1)
     to_node(gate, 0, "words", x0 + 900, y0 + 370)
     to_node(gate, 1, "keep", x0 + 1000, y0 + 370)
-    t_keep = P.obj("t 1 b 2", 1, 3, x0 + 1100, y0 + 300, 60)
+    t_keep = P.obj("t 1 b 2", 1, 3, x0 + 1100, y0 + 300, 60)   # Garder : les mots de la case partent vers « keep »
     P.line(t_keep, 2, gate)
     P.line(t_keep, 1, words)
     P.line(t_keep, 0, gate)
-    keep1 = button("Garder", [288, 16, 54, 18], bx, y0, None); bx += 90
-    P.line(keep1, 0, t_keep)
+    search = button("CHERCHER", [234, 22, 66, 20], x0 + 1100, y0 + 340, None, page="texte")
+    P.line(search, 0, words)
+    tx = x0 + 900
+    button("J'aime", [4, 46, 70, 17], tx, y0 + 420, "like 1", page="texte")
+    button("Bof", [78, 46, 70, 17], tx + 90, y0 + 420, "like 0", page="texte")
+    fiche_btn = button("Fiche", [152, 46, 72, 17], tx + 180, y0 + 420, None, page="texte")
+    button("Bilan", [228, 46, 72, 17], tx + 270, y0 + 420, "bilan", page="texte")
+    understood = P.ui("jsui", tx, y0 + 500, [4, 66, 296, 56], 1, 1, [""], filename="mlg_text.js",
+                      jsarguments=[9.5], parameter_enable=0)
+    on_page("texte", understood)
+    pu = P.obj("prepend settext", 1, 1, tx, y0 + 470, 100)
+    P.line(route, O["understood"], pu)
+    P.line(pu, 0, understood)
+    label("Commande technique : « 2 mesures, division 1/16, tonique la »", [4, 124, 296, 12], "texte", size=8.5)
+    tech = P.ui("textedit", tx, y0 + 580, [4, 138, 250, 18], 1, 4, ["", "int", "", ""], keymode=1, lines=1,
+                varname="tech", parameter_enable=0, fontsize=10.0)
+    on_page("texte", tech)
+    to_node(tech, 0, "tech", tx, y0 + 610)
+    ok = button("OK", [258, 138, 42, 18], tx + 300, y0 + 580, None, page="texte")
+    P.line(ok, 0, tech)
 
-    P.comment("Seeds", 0, 0, 40, pres=[348, 18, 34, 14], size=9)
-    seedr = P.ui("textedit", bx, y0, [380, 16, 86, 18], 1, 4, ["", "int", "", ""], keymode=1, lines=1,
-                 varname="seedr", parameter_enable=0, fontsize=10.0)
-    to_node(seedr, 0, "seedr", bx, y0 + 30); bx += 110
-    seedp = P.ui("textedit", bx, y0, [470, 16, 86, 18], 1, 4, ["", "int", "", ""], keymode=1, lines=1,
-                 varname="seedp", parameter_enable=0, fontsize=10.0)
-    to_node(seedp, 0, "seedp", bx, y0 + 30); bx += 110
+    # changement de page : script show / hide
+    sel = P.obj("sel 0 1 2", 2, 4, x0, y0 + 30, 80)
+    P.line(tabs, 0, sel)
+    for k, page in enumerate(("rythme", "notes", "texte")):
+        cmds = ["script show " + v for v in pages[page]]
+        cmds += ["script hide " + v for other in pages if other != page for v in pages[other]]
+        m = P.msg(", ".join(cmds), x0 + k * 200, y0 + 55, 180)
+        P.line(sel, k, m)
+        P.line(m, 0, thisp)
 
-    # menus (ligne 2)
-    my = y0 + 120
-    menu("rhythmMode", "Moteur", ["Aléatoire", "Euclidien"], [4, 50, 70, 15], x0, my, 0, [4, 37, 70, 13])
-    menu("division", "Division", ["1/4", "1/8", "1/8T", "1/16", "1/16T", "1/32"], [78, 50, 54, 15], x0 + 130, my, 3, [78, 37, 54, 13])
-    menu("root", "Tonique", ROOTS, [136, 50, 46, 15], x0 + 260, my, 0, [136, 37, 46, 13])
-    menu("scale", "Gamme", SCALES, [186, 50, 100, 15], x0 + 390, my, 1, [186, 37, 100, 13])
-    menu("octave", "Octave", ["-3", "-2", "-1", "0", "+1", "+2", "+3"], [290, 50, 40, 15], x0 + 520, my, 3, [290, 37, 40, 13])
-    menu("switchAt", "Changement", ["Immédiat", "Mesure suiv."], [334, 50, 84, 15], x0 + 650, my, 0, [334, 37, 84, 13])
-    leg = P.ui("live.text", x0 + 780, my, [424, 48, 60, 18], 1, 2, ["", ""], text="Legato", texton="Legato", mode=1,
-               varname="p_legato", **param("Legato", "Legato", 2, 0, 1, 0, enum=["off", "on"]))
-    to_node(leg, 0, "param legato", x0 + 780, my + 30)
-    dump_targets.append(leg)
-
-    # potards (lignes 3 et 4)
-    dy = y0 + 220
-    D = [("steps", "Pas", 1, 128, 16, 1, UNIT_INT), ("density", "Densité", 0, 100, 50, 0, UNIT_PCT),
-         ("pulses", "Impulsions", 0, 128, 5, 1, UNIT_INT), ("rotation", "Rotation", 0, 127, 0, 1, UNIT_INT),
-         ("swing", "Swing", 0, 100, 0, 0, UNIT_PCT), ("lowNote", "Note basse", 24, 108, 48, 1, UNIT_MIDI),
-         ("highNote", "Note haute", 24, 108, 67, 1, UNIT_MIDI), ("maxJump", "Écart max", 0, 12, 3, 1, UNIT_INT),
-         ("accent", "Accent", 0, 40, 15, 1, UNIT_INT),
-         ("lenMin", "Durée min", 5, 400, 50, 0, UNIT_PCT), ("lenMax", "Durée max", 5, 400, 100, 0, UNIT_PCT),
-         ("velMin", "Vél. min", 1, 127, 80, 1, UNIT_INT), ("velMax", "Vél. max", 1, 127, 110, 1, UNIT_INT)]
-    for i, (pid, label, mn, mx, ini, pt, unit) in enumerate(D):
-        row, col = (0, i) if i < 9 else (1, i - 9)
-        pres = [4 + col * 61, 70 + row * 50, 58, 48]
-        dial(pid, label, pres, x0 + (i % 9) * 100, dy + (i // 9) * 120, mn, mx, ini, ptype=0 if pt == 0 else 1, unit=unit)
-
-    # retours de commandes et état de la bibliothèque (sous les potards)
-    techfb = P.comment("", 0, 0, 300, pres=[252, 124, 304, 14], size=9)
-    status = P.comment("Bibliothèque : chargement…", 0, 0, 300, pres=[252, 140, 304, 14], size=9,
+    # --- colonne fixe (x 306..446) ---
+    line_c = P.comment("MLG Alpha", 0, 0, 140, pres=[306, 0, 140, 42], size=9, bold=True)
+    pl = P.obj("prepend set", 1, 1, x0 + 1300, y0 + 260, 80)
+    P.line(route, O["line"], pl)
+    P.line(pl, 0, line_c)
+    button("GÉNÉRER", [306, 44, 68, 18], x0 + 1500, y0, "generate")
+    button("MUTER", [378, 44, 68, 18], x0 + 1590, y0, "mutate")
+    button("Une autre", [306, 66, 68, 18], x0 + 1680, y0, "again")
+    keep = button("Garder", [378, 66, 68, 18], x0 + 1770, y0, None)
+    P.line(keep, 0, t_keep)
+    lect = P.ui("live.text", x0 + 1500, y0 + 80, [306, 88, 68, 18], 1, 2, ["", ""], text="Lecture", texton="Lecture",
+                mode=1, varname="p_play", **param("Lecture", "Lecture", 2, 0, 1, 1, enum=["off", "on"]))
+    p_en = P.obj("prepend enable", 1, 1, x0 + 1500, y0 + 110, 100)
+    P.line(lect, 0, p_en)
+    P.line(p_en, 0, player)
+    sw = P.ui("live.menu", x0 + 1600, y0 + 80, [378, 90, 68, 15], 1, 3, ["", "", "float"], varname="p_switchAt",
+              **param("Changement", "Changement", 2, 0, 1, 0, enum=["Immédiat", "À la mesure"]))
+    to_node(sw, 0, "param switchAt", x0 + 1600, y0 + 110)
+    p_sw = P.obj("prepend switchat", 1, 1, x0 + 1600, y0 + 140, 100)
+    P.line(sw, 0, p_sw)
+    P.line(p_sw, 0, player)
+    dump_targets += [sw, lect]
+    wr = button("→ Écrire dans un clip", [306, 110, 140, 20], x0 + 1500, y0 + 150, None)
+    m_write = P.msg("write", x0 + 1500, y0 + 180)
+    P.line(wr, 0, m_write)
+    P.line(m_write, 0, player)
+    status = P.comment("Bibliothèque : chargement…", 0, 0, 140, pres=[306, 134, 140, 34], size=8.5,
                        color=[0.6, 0.64, 0.7, 1])
-    for sel, target in (("techfeedback", techfb), ("status", status)):
-        pp = P.obj("prepend set", 1, 1, x0 + 1300, y0 + (0 if sel == "techfeedback" else 30), 80)
-        P.line(route, O[sel], pp)
-        P.line(pp, 0, target)
-    pps = P.obj("prepend set", 1, 1, x0 + 1300, y0 + 60, 80)
-    P.line(r_player, 0, pps)
-    P.line(pps, 0, status)
+    for k, (src, outlet) in enumerate(((route, O["status"]), (route, O["techfeedback"]), (r_player, 0))):
+        pp = P.obj("prepend set", 1, 1, x0 + 1300, y0 + k * 30, 80)
+        P.line(src, outlet, pp)
+        P.line(pp, 0, status)
 
     # retours vers l'interface : seeds, verrous
     useeds = P.obj("unpack s s", 1, 2, x0 + 1300, y0 + 120, 80)
@@ -341,33 +417,6 @@ def build():
         pp = P.obj("prepend set", 1, 1, x0 + 1300 + k * 90, y0 + 220, 80)
         P.line(ulocks, k, pp)
         P.line(pp, 0, b)
-
-    # --- panneau texte (x 566..900) ---
-    P.comment("PANNEAU TEXTE — décris ce qui manque (Win+H pour dicter), puis Entrée", 0, 0, 330,
-              pres=[566, 0, 334, 14], size=9, bold=True, color=[0.21, 0.82, 0.73, 1])
-    search = button("CHERCHER", [822, 30, 78, 20], x0 + 1100, y0 + 340, None)
-    P.line(search, 0, words)
-    tx = x0 + 900
-    button("Une autre", [566, 54, 60, 18], tx, y0 + 420, "again")
-    button("J'aime", [630, 54, 46, 18], tx + 90, y0 + 420, "like 1")
-    button("Bof", [680, 54, 36, 18], tx + 180, y0 + 420, "like 0")
-    keep2 = button("Garder", [720, 54, 52, 18], tx + 270, y0 + 420, None)
-    P.line(keep2, 0, t_keep)
-    fiche_btn = button("Fiche", [776, 54, 60, 18], tx + 360, y0 + 420, None)
-    bilan_btn = button("Bilan", [840, 54, 60, 18], tx + 450, y0 + 420, "bilan")
-
-    understood = P.ui("jsui", tx, y0 + 500, [566, 76, 334, 50], 1, 1, [""], filename="mlg_text.js",
-                      jsarguments=[10], parameter_enable=0)
-    pu = P.obj("prepend settext", 1, 1, tx, y0 + 470, 100)
-    P.line(route, O["understood"], pu)
-    P.line(pu, 0, understood)
-
-    P.comment("Commande technique (« 2 mesures, division 1/16 ») :", 0, 0, 330, pres=[566, 128, 334, 14], size=9)
-    tech = P.ui("textedit", tx, y0 + 580, [566, 144, 272, 20], 1, 4, ["", "int", "", ""], keymode=1, lines=1,
-                varname="tech", parameter_enable=0, fontsize=11.0)
-    to_node(tech, 0, "tech", tx, y0 + 610)
-    ok = button("OK", [842, 144, 58, 20], tx + 300, y0 + 580, None)
-    P.line(ok, 0, tech)
 
     # fenêtres : fiche technique et bilan
     fiche_p, _ = text_window("fiche", 13)
@@ -396,20 +445,6 @@ def build():
     P.line(p_bilan, 0, m_reset)
     P.line(m_reset, 0, node)
 
-    # --- ligne en cours, piano roll, écriture dans un clip (x 906..1176) ---
-    line_c = P.comment("MLG Alpha", 0, 0, 270, pres=[906, 0, 270, 28], size=9.5, bold=True)
-    pl = P.obj("prepend set", 1, 1, x0 + 1300, y0 + 260, 80)
-    P.line(route, O["line"], pl)
-    P.line(pl, 0, line_c)
-    roll = P.ui("jsui", x0 + 1500, y0, [906, 30, 270, 112], 1, 1, [""], filename="mlg_roll.js", parameter_enable=0)
-    P.line(p_clip, 0, roll)
-    P.line(player, 1, roll)
-    wr = button("→ Écrire dans un clip", [906, 146, 140, 20], x0 + 1500, y0 + 150, None)
-    m_write = P.msg("write", x0 + 1500, y0 + 180)
-    P.line(wr, 0, m_write)
-    P.line(m_write, 0, player)
-    P.comment("ANKS Labs · MLG Alpha", 0, 0, 130, pres=[1050, 150, 126, 14], size=8.5, color=[0.6, 0.64, 0.7, 1])
-
     # relecture des potards au démarrage du script
     for d in dump_targets:
         P.line(t_ready, 1, d)
@@ -431,7 +466,7 @@ def build():
         "boxes": P.boxes, "lines": P.lines,
         "dependency_cache": [
             {"name": f, "bootpath": ".", "patcherrelativepath": ".", "type": t, "implicit": 1}
-            for f, t in (("mlg_core.js", "TEXT"), ("mlg_player.js", "TEXT"), ("mlg_roll.js", "TEXT"),
+            for f, t in (("mlg_core.js", "TEXT"), ("mlg_player.js", "TEXT"),
                          ("mlg_text.js", "TEXT"), ("mlg_library.txt.gz", "DATA"), ("mlg_dictionary.txt", "TEXT"))],
         "latency": 0, "is_mpe": 0, "minimum_live_version": "", "minimum_max_version": "", "platform_compatibility": 0,
         "project": {
@@ -479,7 +514,7 @@ def main():
         f.write(pack_amxd(text))
     with open(os.path.join(OUT, "MLG Alpha.maxpat"), "w", encoding="utf-8") as f:
         f.write(text)
-    for name in ("mlg_core.js", "mlg_player.js", "mlg_roll.js", "mlg_text.js"):
+    for name in ("mlg_core.js", "mlg_player.js", "mlg_text.js"):
         shutil.copy(os.path.join(ROOT, "max", name), OUT)
     for name in ("mlg_library.txt.gz", "mlg_dictionary.txt"):
         shutil.copy(os.path.join(ROOT, "Resources", name), OUT)

@@ -109,8 +109,8 @@ MLG Alpha est un **effet MIDI Max for Live**. Il se pose sur la piste MIDI, just
 Une seule piste, pas de routage. Il faut Live avec Max for Live (Suite, ou Standard avec Max for Live).
 
 1. Télécharger l'appareil : onglet **Actions** de ce dépôt, dernier « Max for Live » en vert, artefact `MLG-Alpha-Max-for-Live`.
-2. Dézipper. Le dossier `MLG Alpha` contient l'appareil, quatre scripts et la bibliothèque. **Ils doivent rester ensemble dans le même dossier.**
-3. Copier ce dossier dans ta User Library d'Ableton, par exemple `Documents\Ableton\User Library\Presets\MIDI Effects\Max MIDI Effect\MLG Alpha\`.
+2. Dézipper. Le dossier `MLG Alpha` contient l'appareil, trois scripts et la bibliothèque. **Ils doivent rester ensemble dans le même dossier.**
+3. Copier ce dossier dans `Documents\Max 9\Library\` (Max y trouve toujours les fichiers). Pour le voir dans le navigateur de Live : **Add Folder…** en bas de « Places ».
 4. Dans Live, glisser `MLG Alpha.amxd` sur une piste MIDI, devant l'instrument.
 5. Lancer la lecture : la ligne joue en boucle, calée sur le tempo. Les notes jouées au clavier passent à travers.
 
@@ -124,43 +124,49 @@ En ouvrant l'éditeur Max, tu trouves trois zones titrées :
 
 1. **CŒUR** : `node.script mlg_core.js`. Tout le cerveau est là : générateur, bibliothèque, traducteur, tirage, fiche technique, apprentissage. Il reçoit des messages simples (`param density 40`, `words basse sombre`, `generate`…) et en renvoie (`clip …`, `place p_density 40`, `understood …`). Un `[route]` les distribue.
 2. **LECTURE** : `js mlg_player.js`. Il lit la position du transport de Live (`[metro]` → `[transport]`), joue la ligne vers `[midiformat]` → `[midiout]`, et écrit la ligne dans un clip quand on le lui demande.
-3. **INTERFACE** : les potards (`live.dial`, `live.menu`), les boutons (`live.text`), les cases de texte (`textedit`), le piano roll (`jsui mlg_roll.js`) et les zones de texte (`jsui mlg_text.js`). En mode présentation, c'est ce que tu vois dans Live.
+3. **INTERFACE** : les onglets (`live.tab`), les potards (`live.dial`, `live.menu`), les boutons (`live.text`), les cases de texte (`textedit`) et les zones de texte (`jsui mlg_text.js`). Changer d'onglet envoie des messages `script show` / `script hide` à `[thispatcher]`. En mode présentation, c'est ce que tu vois dans Live.
 
 Le patch n'est pas dessiné à la main : il est fabriqué par `tools/build_device.py`. Pour une modification durable, c'est ce script qu'il faut changer, puis relancer `python3 tools/build_device.py`.
 
 ## Mode d'emploi
 
-L'appareil fait 1 180 pixels de large, en trois zones.
+L'appareil fait 450 pixels de large. À gauche, trois pages (onglets **RYTHME**, **NOTES**, **TEXTE**). À droite, une colonne toujours visible.
 
-### Panneau mécanique (à gauche)
+### Colonne fixe (à droite)
 
+- Le nom de la ligne en cours, son rôle et son style.
 - **GÉNÉRER** : nouvelle ligne avec les potards. Ce qui est verrouillé ne change pas.
 - **MUTER** : petites variations de la ligne actuelle.
-- **Verrou rythme / Verrou hauteurs** : garde l'une des deux couches.
-- **Garder** : garde la ligne dans ta bibliothèque perso, avec les mots tapés dans la case de texte.
-- **Seeds** : identifiants de la ligne. Tape un nombre puis Entrée pour retrouver une ligne.
-- **Menus** : moteur (aléatoire ou euclidien), division (1/4 à 1/32, triolets compris), tonique, gamme (13), octave, changement de ligne (immédiat ou à la mesure suivante), legato.
-- **Potards** : pas (jusqu'à 128, soit 8 mesures), densité, impulsions, rotation, swing, note basse, note haute, écart max, accent, durées min et max, vélocités min et max. Tous automatisables et mappables dans Live.
+- **Une autre** : nouveau tirage dans la bibliothèque avec les mêmes mots.
+- **Garder** : range la ligne dans ta bibliothèque perso de MLG, avec les mots tapés dans la page TEXTE.
+- **Lecture** : allume ou coupe la lecture en direct de MLG. Coupe-la quand tu écoutes les clips déjà écrits, pour ne pas entendre les notes en double.
+- **Changement** : nouvelle ligne immédiate, ou à la mesure suivante.
+- **→ Écrire dans un clip** : écrit la ligne dans un clip de la piste, nommé « MLG Alpha loop 1 », « loop 2 »… Il prend la case sélectionnée si elle est vide ou contient déjà un clip MLG, sinon la première case libre. Un clip qui n'est pas de MLG (ton clip vide qui fait tourner la lecture, par exemple) n'est jamais écrasé. Ensuite, tout se passe dans le piano roll d'Ableton.
+- En bas : l'état de la bibliothèque, le retour des commandes et de l'écriture.
 
-### Panneau texte (au milieu)
+### Page RYTHME
+
+Moteur (aléatoire ou euclidien), division (1/4 à 1/32, triolets compris), verrou rythme, seed rythme (tape un nombre puis Entrée), et les potards Pas (jusqu'à 128, soit 8 mesures), Densité, Impulsions, Rotation, Swing, Accent.
+
+### Page NOTES
+
+Tonique, gamme (13), octave, legato, verrou hauteurs, seed hauteurs, et les potards Note basse, Note haute, Écart max, Durée min et max, Vélocité min et max.
+
+Tous les potards et menus sont automatisables et mappables dans Live, même quand leur page est cachée.
+
+### Page TEXTE
 
 - **Case de texte** : tape (ou dicte avec Win+H) ce que tu cherches, puis Entrée ou **CHERCHER**. Exemples : « basse sombre et roulante », « nappe mélancolique aérée », « kick techno très lourd », « arpège triste en triolets, 2 mesures », « pas trop dense façon Boards of Canada ».
   - Le traducteur reconnaît les 100 mots, leurs synonymes, les styles (techno, EBM, acid, IDM, Moderat, NIN…), les rôles (kick, batterie, percu, basse, mélodie, accords, nappe), « très » / « un peu », « pas … », les triolets et le nombre de mesures.
   - En dessous s'affiche ce qui a été compris. S'il n'y a rien qui réunit tout, MLG Alpha prend la ligne la plus proche et le dit.
   - Une basse tirée après un kick évite de tomber sur les coups du kick.
-- **Une autre** : nouveau tirage avec les mêmes mots.
-- **Les potards se placent** sur les réglages équivalents de la ligne tirée. Tourner un potard repasse sur le moteur des potards avec ces réglages. La tonique et l'octave transposent la ligne de la bibliothèque.
-- **J'aime / Bof** : renforce ou affaiblit les étiquettes de la ligne pour les mots que tu as tapés. Le style et le rôle d'une ligne ne changent jamais. Rien n'est obligatoire.
-- **Garder** : comme à gauche.
-- **Fiche** : ouvre une fenêtre avec la fiche de la ligne en langage MIDI (mesures, grille, densité, placement sur les temps, durées, vélocités, hauteurs, intervalles, structure).
-- **Bilan** : ouvre une fenêtre avec les statistiques (proposées, écartées vite, écoutées longtemps, aimées, gardées, par style, jamais entendues) et un bouton pour effacer les J'aime / Bof.
+  - Les potards des pages RYTHME et NOTES se placent sur les réglages équivalents. Tourner un potard repasse sur le moteur des potards. La tonique et l'octave transposent la ligne de la bibliothèque.
+- **J'aime / Bof** : renforce ou affaiblit les étiquettes de la ligne pour les mots tapés. Le style et le rôle d'une ligne ne changent jamais. Rien n'est obligatoire.
+- **Fiche** : fenêtre avec la fiche de la ligne en langage MIDI (mesures, grille, densité, placement sur les temps, durées, vélocités, hauteurs, intervalles, structure).
+- **Bilan** : fenêtre avec les statistiques (proposées, écartées vite, écoutées longtemps, aimées, gardées, par style, jamais entendues) et un bouton pour effacer les J'aime / Bof.
 - **Commande technique** : « 2 mesures », « division 1/16 », « triolets », « densité 40 », « euclidien 5 », « swing 30 », « tonique la », « gamme dorien », « notes C1 à C3 », « legato », « vélocité 80 120 », « durée 50 100 », « écart 4 », « génère », « mute ».
 
-### Ligne en cours (à droite)
-
-- Le nom de la ligne, son rôle et son style, et le piano roll avec la tête de lecture.
-- **→ Écrire dans un clip** : écrit la ligne dans la case sélectionnée de la piste (vue Session), ou dans la première case libre. C'est la façon de la garder dans ton morceau.
-- Tes fichiers (bibliothèque perso, apprentissage, statistiques) sont dans `%APPDATA%\ANKS Labs\MLG Alpha\`, en texte lisible. Ce sont les mêmes que ceux de la version VST.
+Tes fichiers (bibliothèque perso, apprentissage, statistiques) sont dans `%APPDATA%\ANKS Labs\MLG Alpha\`, en texte lisible. Ce sont les mêmes que ceux de la version VST.
 
 ### Et le VST3 ?
 
