@@ -14,10 +14,10 @@
 | `drums_electronic.txt` | Batterie électronique écrite : techno, minimal, dub techno, hardgroove, industriel, house, EBM, trance… | 76 |
 | `chords_drolez.txt` | Grilles d'accords du Free MIDI Chords Pack (majeur, mineur, modal, avec ambiance) | 194 |
 | `chords.txt` | Grilles électroniques, 12 nappes sur 8 mesures, 14 rythmes de jeu d'accords | 56 |
-| `bass_neuralacid.txt` | Basses NeuralAcid sur 4 mesures, qui suivent une grille d'accords (lot de validation) | 897 |
+| `bass_neuralacid.txt` | Basses NeuralAcid sur 4 mesures, qui suivent une grille d'accords | 8 985 |
 | `acid.txt`, `bass.txt`, `melody.txt` | Acid, basses et mélodies écrites à la main | 87 |
 
-**Total : 5 717 motifs (1,8 Mo).**
+**Total : 13 805 motifs (5,5 Mo).**
 
 ## Format
 
