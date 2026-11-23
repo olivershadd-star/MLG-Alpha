@@ -20,15 +20,27 @@ juce_add_plugin(MLGAlpha
     PLUGIN_CODE Mlga
     VST3_CATEGORIES Instrument Generator
     FORMATS VST3
+    BUNDLE_ID com.ankslabs.mlgalpha
     PRODUCT_NAME "MLG Alpha")
 
-target_sources(MLGAlpha PRIVATE
+# Bibliothèque compilée (tools/classify.py) et dictionnaire (tools/build_dictionary.py), embarqués dans le plugin
+juce_add_binary_data(MLGAlphaData SOURCES
+    Resources/mlg_library.txt.gz
+    Resources/mlg_dictionary.txt)
+
+set(MLG_SOURCES
     Source/Engine.h
     Source/Engine.cpp
+    Source/Library.h
+    Source/Library.cpp
+    Source/Technical.h
+    Source/Technical.cpp
     Source/PluginProcessor.h
     Source/PluginProcessor.cpp
     Source/PluginEditor.h
     Source/PluginEditor.cpp)
+
+target_sources(MLGAlpha PRIVATE ${MLG_SOURCES})
 
 target_compile_features(MLGAlpha PRIVATE cxx_std_17)
 
@@ -43,32 +55,32 @@ target_compile_definitions(MLGAlpha PUBLIC
 
 target_link_libraries(MLGAlpha
     PRIVATE
+        MLGAlphaData
         juce::juce_audio_utils
     PUBLIC
         juce::juce_recommended_config_flags
         juce::juce_recommended_warning_flags)
 
-# Test du moteur (hors plugin) : cmake -DMLGALPHA_TESTS=ON
-option(MLGALPHA_TESTS "Construire le test du moteur" OFF)
+# Tests (hors plugin) : cmake -DMLGALPHA_TESTS=ON
+option(MLGALPHA_TESTS "Construire les tests" OFF)
 if(MLGALPHA_TESTS)
     juce_add_console_app(EngineTest PRODUCT_NAME "EngineTest")
     target_sources(EngineTest PRIVATE Tests/EngineTest.cpp Source/Engine.cpp)
     target_compile_definitions(EngineTest PRIVATE JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0)
     target_link_libraries(EngineTest PRIVATE juce::juce_audio_basics)
-endif()
 
-if(MLGALPHA_TESTS)
+    juce_add_console_app(LibraryTest PRODUCT_NAME "LibraryTest")
+    target_sources(LibraryTest PRIVATE Tests/LibraryTest.cpp Source/Engine.cpp Source/Library.cpp Source/Technical.cpp)
+    target_compile_definitions(LibraryTest PRIVATE JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0)
+    target_link_libraries(LibraryTest PRIVATE MLGAlphaData juce::juce_audio_basics)
+
     juce_add_console_app(PlaybackTest PRODUCT_NAME "PlaybackTest")
-    target_sources(PlaybackTest PRIVATE Tests/PlaybackTest.cpp Source/Engine.cpp
-        Source/PluginProcessor.cpp Source/PluginEditor.cpp)
-    target_compile_definitions(PlaybackTest PRIVATE JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0
-        JucePlugin_Name="MLG Alpha")
-    target_link_libraries(PlaybackTest PRIVATE juce::juce_audio_utils)
-endif()
+    target_sources(PlaybackTest PRIVATE Tests/PlaybackTest.cpp ${MLG_SOURCES})
+    target_compile_definitions(PlaybackTest PRIVATE JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0 JucePlugin_Name="MLG Alpha")
+    target_link_libraries(PlaybackTest PRIVATE MLGAlphaData juce::juce_audio_utils)
 
-if(MLGALPHA_TESTS)
     juce_add_gui_app(Snapshot PRODUCT_NAME "Snapshot")
-    target_sources(Snapshot PRIVATE Tests/Snapshot.cpp Source/Engine.cpp Source/PluginProcessor.cpp Source/PluginEditor.cpp)
+    target_sources(Snapshot PRIVATE Tests/Snapshot.cpp ${MLG_SOURCES})
     target_compile_definitions(Snapshot PRIVATE JUCE_WEB_BROWSER=0 JUCE_USE_CURL=0 JucePlugin_Name="MLG Alpha")
-    target_link_libraries(Snapshot PRIVATE juce::juce_audio_utils)
+    target_link_libraries(Snapshot PRIVATE MLGAlphaData juce::juce_audio_utils)
 endif()

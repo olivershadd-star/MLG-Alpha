@@ -204,6 +204,52 @@ Pattern generate (const Settings& s, const Seeds& seeds)
     return p;
 }
 
+Clip clipFromPattern (const Pattern& p)
+{
+    Clip c;
+    c.lengthPpq = p.cyclePpq();
+    c.stepPpq = p.stepPpq;
+    c.stepsPerBar = juce::jmax (1, juce::roundToInt (4.0 / p.stepPpq));
+    const double cycle = p.cyclePpq();
+
+    std::vector<int> onSteps;
+    for (int i = 0; i < p.numSteps; ++i)
+        if (p.steps[(size_t) i].on) onSteps.push_back (i);
+
+    for (size_t a = 0; a < onSteps.size(); ++a)
+    {
+        const auto& st = p.steps[(size_t) onSteps[a]];
+        const double start = p.stepStartPpq (onSteps[a]);
+        // note suivante (en bouclant) : la ligne reste monophonique
+        const double nextStart = (a + 1 < onSteps.size()) ? p.stepStartPpq (onSteps[a + 1])
+                                                          : cycle + p.stepStartPpq (onSteps[0]);
+        double end = start + st.lengthSteps * p.stepPpq;
+        end = p.legato ? juce::jmin (end, nextStart + 0.02) : juce::jmin (end, nextStart);
+        if (end <= start) end = start + 0.01;
+        c.notes.push_back ({ start, end - start, st.pitch, st.velocity });
+    }
+    return c;
+}
+
+juce::MidiFile toMidiFile (const Clip& c)
+{
+    constexpr int ticksPerQuarter = 960;
+    juce::MidiMessageSequence seq;
+    for (const auto& n : c.notes)
+    {
+        const double end = juce::jmin (n.start + n.length, c.lengthPpq);
+        seq.addEvent (juce::MidiMessage::noteOn (kMidiChannel, n.pitch, (juce::uint8) juce::jlimit (1, 127, n.velocity)), n.start * ticksPerQuarter);
+        seq.addEvent (juce::MidiMessage::noteOff (kMidiChannel, n.pitch), juce::jmax (n.start + 0.01, end) * ticksPerQuarter);
+    }
+    seq.addEvent (juce::MidiMessage::endOfTrack(), c.lengthPpq * ticksPerQuarter);
+    seq.sort();
+    seq.updateMatchedPairs();
+    juce::MidiFile file;
+    file.setTicksPerQuarterNote (ticksPerQuarter);
+    file.addTrack (seq);
+    return file;
+}
+
 juce::MidiFile toMidiFile (const Pattern& p)
 {
     constexpr int ticksPerQuarter = 960;

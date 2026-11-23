@@ -4,18 +4,18 @@
 #include "PluginProcessor.h"
 #include <map>
 
-// Affichage des pas : une colonne par pas, hauteur = note, intensité = vélocité.
-class StepView : public juce::Component
+// Piano roll de la ligne en cours (toutes voix), avec la tête de lecture.
+class ClipView : public juce::Component
 {
 public:
-    explicit StepView (MLGAlphaProcessor& p) : proc (p) {}
+    explicit ClipView (MLGAlphaProcessor& p) : proc (p) {}
     void paint (juce::Graphics&) override;
 
 private:
     MLGAlphaProcessor& proc;
 };
 
-// Zone à glisser vers une piste Ableton : crée un fichier .mid du cycle.
+// Zone à glisser vers une piste Ableton : crée un fichier .mid de la ligne.
 class MidiDragZone : public juce::Component
 {
 public:
@@ -26,6 +26,21 @@ public:
 
 private:
     bool dragging = false;
+};
+
+// Écran de bilan (statistiques d'usage, remise à zéro de l'apprentissage).
+class BilanView : public juce::Component
+{
+public:
+    explicit BilanView (MLGAlphaProcessor&);
+    void refresh();
+    void paint (juce::Graphics&) override;
+    void resized() override;
+
+private:
+    MLGAlphaProcessor& proc;
+    juce::TextEditor text;
+    juce::TextButton closeButton, resetButton;
 };
 
 class MLGAlphaEditor : public juce::AudioProcessorEditor, private juce::Timer
@@ -53,25 +68,38 @@ private:
     };
 
     Knob& addKnob (const char* paramId, const juce::String& text);
-    Choice& addChoice (const char* paramId, const juce::String& text);
+    Choice& addChoice (const char* paramId, const juce::String& text, const juce::StringArray& items = {});
     void timerCallback() override;
     void refreshSeedLabels();
+    void refreshLine();
+    void search (bool again);
+    void runTechnical();
+    void askWordsAndKeep();
+    void setMessage (const juce::String&);
 
     MLGAlphaProcessor& proc;
     juce::LookAndFeel_V4 laf;
 
-    StepView stepView;
-    MidiDragZone dragZone;
-    juce::TextButton generateButton, mutateButton;
+    // Panneau mécanique
+    juce::TextButton generateButton, mutateButton, keepMecaButton;
     juce::ToggleButton lockRhythmButton, lockPitchButton, legatoButton;
     std::unique_ptr<juce::AudioProcessorValueTreeState::ButtonAttachment> legatoAttachment;
     juce::Label seedRhythmLabel, seedPitchLabel, seedRhythmValue, seedPitchValue;
-
     std::map<juce::String, std::unique_ptr<Knob>> knobs;
     std::map<juce::String, std::unique_ptr<Choice>> choices;
 
-    juce::Rectangle<int> rhythmArea, pitchArea, notesArea;
-    int lastVersion = -1, lastStep = -2;
+    // Panneau texte
+    juce::Label normalTitle, techTitle, understood, lineTitle, libraryStatus, techFeedback;
+    juce::TextEditor normalInput, techText, techInput;
+    juce::TextButton searchButton, againButton, likeButton, dislikeButton, keepButton, bilanButton, techButton;
+
+    ClipView clipView;
+    MidiDragZone dragZone;
+    BilanView bilan;
+
+    juce::Rectangle<int> mecaArea, textArea, rhythmArea, pitchArea, notesArea;
+    int lastVersion = -1;
+    bool lastReady = false;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MLGAlphaEditor)
 };

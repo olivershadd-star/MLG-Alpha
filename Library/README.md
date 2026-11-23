@@ -1,6 +1,6 @@
 # Bibliothèque de motifs MLG Alpha
 
-332 motifs de base orientés musique électronique, en texte lisible et modifiable à la main.
+32 888 motifs orientés musique électronique, en texte lisible et modifiable à la main. Après classement et retrait des doublons (`tools/classify.py`), le plugin en embarque 32 163.
 
 | Fichier | Contenu | Nombre |
 |---|---|---|

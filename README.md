@@ -85,7 +85,7 @@ Tu peux aussi lui parler technique : *« 2 mesures, division 1/16 »*.
 - **Cette bibliothèque n'a pas encore été vraiment triée ni éprouvée.** Elle a été en grande partie générée par IA. Il y a forcément des perles, des lignes moyennes et quelques casseroles.
 - **C'est à toi de la faire grandir.** Chaque utilisateur améliore sa propre bibliothèque en likant, en jetant et en sauvegardant. Elle peut devenir énorme.
 - MLG Alpha ne fait **que des notes**. Le son, c'est ton synthé. Une ligne « grasse » sur un piano reste un piano.
-- **Version Alpha** : la v1 actuelle contient le panneau des potards. La bibliothèque est dans le dépôt, mais le dictionnaire, l'invite de commande et l'apprentissage arrivent dans les prochaines versions.
+- **Version Alpha** : tout est branché, mais rien n'a encore été éprouvé en vrai dans Ableton. Les étiquettes de départ ont été calculées automatiquement sur les notes : elles sont parfois à côté de la plaque, c'est le rôle des J'aime / Bof de les corriger.
 
 ## L'esprit
 
@@ -110,36 +110,48 @@ Le but : quand tu sèches, voir ce qui pourrait coller sur ton morceau et **l'en
    - *Monitor* : **In**.
 5. Lancer la lecture : la ligne joue en boucle, calée sur le tempo.
 
-## Commandes (v1)
+## Mode d'emploi
 
-- **GÉNÉRER** : nouvelle ligne. Ce qui est verrouillé ne change pas.
+### Panneau mécanique
+
+- **GÉNÉRER** : nouvelle ligne avec les potards. Ce qui est verrouillé ne change pas.
 - **MUTER** : petites variations de la ligne actuelle.
 - **Verrou rythme / Verrou hauteurs** : garde l'une des deux couches.
 - **Seeds** : identifiants de la ligne. Double-clic pour en saisir une et retrouver une ligne.
-- **Glisser le clip .mid** : glisse la ligne vers une piste d'Ableton pour la figer en clip.
+- Potards : rythme aléatoire (densité) ou euclidien (impulsions, rotation), division de 1/4 à 1/32 avec triolets, jusqu'à 128 pas (8 mesures), swing, tonique, 13 gammes, notes basse et haute, écart max, durées, legato, vélocités, accent.
 
-Tous les réglages agissent en direct sur la ligne en cours.
+### Panneau texte
 
-## Moteurs v1
+- **Vocabulaire normal** : tape (ou dicte avec Win+H) ce que tu cherches, puis Entrée ou **CHERCHER**. Exemples : « basse sombre et roulante », « nappe mélancolique aérée », « kick techno très lourd », « arpège triste en triolets, 2 mesures », « pas trop dense façon Boards of Canada ».
+  - Le traducteur reconnaît les 100 mots, leurs synonymes, les styles (techno, EBM, acid, IDM, Moderat, NIN…), les rôles (kick, batterie, percu, basse, mélodie, accords, nappe), « très » / « un peu », « pas … », les triolets et le nombre de mesures.
+  - **Une autre** : nouveau tirage avec les mêmes mots.
+  - S'il n'y a rien qui réunit tout, MLG Alpha prend la ligne la plus proche et le dit.
+  - Une basse tirée après un kick évite de tomber sur les coups du kick.
+- **Les potards se placent** sur les réglages équivalents de la ligne tirée. Tourner un potard repasse sur le moteur des potards avec ces réglages. La tonique et l'octave, elles, transposent la ligne de la bibliothèque.
+- **Vocabulaire technique** : la fiche de la ligne en langage MIDI (mesures, grille, densité, placement sur les temps, durées, vélocités, hauteurs, intervalles, structure). En dessous, tu peux taper des commandes : « 2 mesures », « division 1/16 », « triolets », « densité 40 », « euclidien 5 », « swing 30 », « tonique la », « gamme dorien », « notes C1 à C3 », « legato », « vélocité 80 120 », « durée 50 100 », « écart 4 », « génère », « mute ».
+- **J'aime / Bof** : renforce ou affaiblit les étiquettes de la ligne pour les mots que tu as tapés. Le style et le rôle d'une ligne ne changent jamais. Rien n'est obligatoire.
+- **Sauvegarder** (sur les deux panneaux) : garde la ligne dans ta bibliothèque perso, avec tes mots. Les doublons sont détectés (même rythme, mêmes notes par rapport à la tonique). Les lignes des potards gardent aussi leurs réglages et leurs seeds.
+- **Bilan** : lignes proposées, écartées vite (moins de 4 s), écoutées longtemps (plus de 30 s), aimées, gardées, par style, et ce qui n'a jamais été entendu. Bouton pour remettre l'apprentissage à zéro.
 
-- Rythme **aléatoire** (densité) ou **euclidien** (pas, impulsions, rotation).
-- Hauteurs en **aléatoire contraint** :
-  - tonique et gamme (13 gammes) ;
-  - note basse et note haute ;
-  - écart maximal entre deux notes, en degrés de la gamme.
-- Notes :
-  - durée minimale et maximale (en % d'un pas) ;
-  - legato (glide si le synthé est en mono) ;
-  - vélocité minimale et maximale ;
-  - accent sur les temps forts ;
-  - swing.
-- Cycle jusqu'à 64 pas, divisions de 1/4 à 1/32, triolets compris.
+### Lecture
+
+- **Changement de ligne** : immédiat, ou à la mesure suivante.
+- **Glisser le clip .mid vers Ableton** : fige la ligne en clip.
+- Tes fichiers (bibliothèque perso, apprentissage, statistiques) sont dans `%APPDATA%\ANKS Labs\MLG Alpha\`, en texte lisible.
+
+## La bibliothèque
+
+- `Library/*.txt` : les motifs en texte lisible (voir `Library/README.md`).
+- `tools/classify.py` les classe et les compile dans `Resources/mlg_library.txt.gz`, embarqué dans le plugin : 12 familles plus « hors cible », 7 rôles, mesures objectives, 3 à 5 étiquettes parmi les 100 mots avec une confiance de 1 à 9, doublons retirés, lignes de kick extraites des batteries, basses NeuralAcid triées.
+- `tools/build_dictionary.py` fabrique `Resources/mlg_dictionary.txt`, le traducteur mots → étiquettes, styles et rôles. Il se modifie à la main.
+
+Après une modification : `python3 tools/build_dictionary.py && python3 tools/classify.py`, puis recompiler.
 
 ## Compilation
 
 GitHub Actions compile le VST3 Windows à chaque push : onglet *Actions*, artefact `MLG-Alpha-VST3-Windows`.
 
-Pour compiler les tests du moteur et de la lecture :
+Pour compiler les tests (moteur, bibliothèque, lecture) :
 
 ```
 cmake -B build -DMLGALPHA_TESTS=ON

@@ -14,7 +14,7 @@ namespace mlg
 {
 inline juce::String fr (const char* utf8) { return juce::String::fromUTF8 (utf8); }
 
-constexpr int kMaxSteps = 64;
+constexpr int kMaxSteps = 128;   // 8 mesures de doubles croches
 constexpr int kMidiChannel = 1;
 
 struct Step
@@ -79,4 +79,28 @@ juce::String noteName (int midiNote);      // convention Ableton : 60 = C3
 
 Pattern generate (const Settings&, const Seeds&);
 juce::MidiFile toMidiFile (const Pattern&);
+
+// ---------------------------------------------------------------------------
+// Clip : ce que le plugin joue réellement. Notes libres (polyphonie, ratchets,
+// triolets, plusieurs mesures). Les lignes des potards et de la bibliothèque
+// sont toutes converties en Clip.
+struct ClipNote
+{
+    double start = 0.0;      // en noires depuis le début du clip
+    double length = 0.25;    // en noires
+    int pitch = 60;
+    int velocity = 100;
+};
+
+struct Clip
+{
+    double lengthPpq = 4.0;  // durée de la boucle en noires
+    double stepPpq = 0.25;   // taille d'un pas (pour l'affichage et la fiche technique)
+    int stepsPerBar = 16;
+    bool drums = false;      // notes de batterie (General MIDI) : pas transposées
+    std::vector<ClipNote> notes;   // triées par début
+};
+
+Clip clipFromPattern (const Pattern&);
+juce::MidiFile toMidiFile (const Clip&);
 } // namespace mlg

@@ -112,9 +112,9 @@ family ebm = ebm, électro indus, électro industriel, electro industrial, dark 
 family rock-indus = rock indus, rock industriel, metal indus, métal indus, industrial rock, industrial metal, nin, nine inch nails, ministry, rammstein, noise rock, health, rock, métal, metal, prog metal, metal prog
 family electro-breaks = electro, électro, breaks, breakbeat, break, miami bass, drum and bass, dnb, jungle, uk bass, trap, dubstep, hip hop, hiphop, footwork, drexciya
 family trance-rave = trance, rave, psytrance, psy, goa, hard trance, progressive, hardcore, hymne rave
-family ambient = ambient, ambiant, ambiance, drone, nappe, soundscape, texture, textures, atmosphérique
+family ambient = ambient, ambiant, soundscape, textures ambient
 family idm = idm, boards of canada, boc, aphex, aphex twin, autechre, warp, leftfield, glitch
-family melodique = moderat, apparat, modeselektor, électronique mélodique, mélodique, melodic techno, synthwave, berlin school, école de berlin, pop, quatre accords, 4 accords, arpège
+family melodique = moderat, apparat, modeselektor, électronique mélodique, mélodique, melodic techno, synthwave, berlin school, école de berlin, pop, quatre accords, 4 accords
 family hors-cible = jazz, reggae, ska, samba, bossa, latin, latino, cha cha, rnb, ballade, afro cubain, marche militaire
 
 role kick = kick, kicks, grosse caisse, bass drum, bd, boum, pied

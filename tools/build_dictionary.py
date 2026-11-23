@@ -167,10 +167,10 @@ FAMILIES = {
     "electro-breaks": ["electro", "électro", "breaks", "breakbeat", "break", "miami bass", "drum and bass", "dnb",
                        "jungle", "uk bass", "trap", "dubstep", "hip hop", "hiphop", "footwork", "drexciya"],
     "trance-rave": ["trance", "rave", "psytrance", "psy", "goa", "hard trance", "progressive", "hardcore", "hymne rave"],
-    "ambient": ["ambient", "ambiant", "ambiance", "drone", "nappe", "soundscape", "texture", "textures", "atmosphérique"],
+    "ambient": ["ambient", "ambiant", "soundscape", "textures ambient"],
     "idm": ["idm", "boards of canada", "boc", "aphex", "aphex twin", "autechre", "warp", "leftfield", "glitch"],
     "melodique": ["moderat", "apparat", "modeselektor", "électronique mélodique", "mélodique", "melodic techno",
-                  "synthwave", "berlin school", "école de berlin", "pop", "quatre accords", "4 accords", "arpège"],
+                  "synthwave", "berlin school", "école de berlin", "pop", "quatre accords", "4 accords"],
     "hors-cible": ["jazz", "reggae", "ska", "samba", "bossa", "latin", "latino", "cha cha", "rnb", "ballade",
                    "afro cubain", "marche militaire"],
 }

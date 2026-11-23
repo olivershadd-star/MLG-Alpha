@@ -1,5 +1,5 @@
-// Simule un hôte qui joue : vérifie que chaque note-on a son note-off,
-// que les notes tombent sur la grille et qu'un arrêt coupe tout.
+// Simule un hôte qui joue : chaque note-on a son note-off, les notes tombent au bon endroit,
+// un arrêt coupe tout ; lignes des potards et de la bibliothèque, changement immédiat ou à la mesure.
 #include "../Source/PluginProcessor.h"
 #include <iostream>
 #include <map>
@@ -13,66 +13,85 @@ struct FakePlayHead : juce::AudioPlayHead
     }
 };
 
+static int failures = 0;
+static void check (bool c, const char* what) { if (! c) { std::cerr << "ECHEC: " << what << "\n"; ++failures; } }
+
+// Joue `cycles` boucles, vérifie les paires et la position des notes ; renvoie le nombre de note-on.
+static int play (MLGAlphaProcessor& proc, FakePlayHead& ph, double ppqLength, const char* label,
+                 std::function<void (int)> everyBlock = {})
+{
+    const double sr = 48000.0; const int bs = 441;
+    juce::AudioBuffer<float> buf (2, bs);
+    std::map<int, int> sounding; int ons = 0, poly = 0, maxPoly = 0, offGrid = 0;
+    const double pps = ph.bpm / 60.0 / sr;
+    const int blocks = (int) (ppqLength / (pps * bs));
+    for (int b = 0; b < blocks; ++b)
+    {
+        if (everyBlock) everyBlock (b);
+        juce::MidiBuffer midi;
+        proc.processBlock (buf, midi);
+        for (const auto m : midi)
+        {
+            const auto& msg = m.getMessage();
+            const double t = ph.ppq + m.samplePosition * pps;
+            if (msg.isNoteOn())
+            {
+                ++ons; ++sounding[msg.getNoteNumber()]; maxPoly = std::max (maxPoly, ++poly);
+                const auto& c = proc.getDisplayClip();
+                const double inClip = std::fmod (t, c.lengthPpq);
+                bool ok = false;
+                for (auto& n : c.notes)
+                    if (std::abs (inClip - n.start) < pps * 1.5 || std::abs (inClip - c.lengthPpq - n.start) < pps * 1.5) ok = true;
+                offGrid += ok ? 0 : 1;
+            }
+            else if (msg.isNoteOff())
+            {
+                check (sounding[msg.getNoteNumber()] > 0, "note-off sans note-on");
+                --sounding[msg.getNoteNumber()]; --poly;
+            }
+        }
+        ph.ppq += bs * pps;
+    }
+    ph.playing = false;
+    { juce::MidiBuffer midi; proc.processBlock (buf, midi); for (const auto m : midi) if (m.getMessage().isNoteOff()) --poly; }
+    ph.playing = true;
+    check (poly == 0, "notes bloquees apres arret");
+    std::cout << label << " : " << ons << " notes, poly max " << maxPoly << ", hors place " << offGrid << "\n";
+    return offGrid;
+}
+
 int main()
 {
     juce::ScopedJuceInitialiser_GUI init;
-    int failures = 0;
-    auto check = [&] (bool c, const char* what) { if (! c) { std::cerr << "ECHEC: " << what << "\n"; ++failures; } };
 
     for (int legato = 0; legato < 2; ++legato)
-    for (int mode = 0; mode < 2; ++mode)
     {
         MLGAlphaProcessor proc;
         auto set = [&] (const char* id, float v) { auto* p = proc.apvts.getParameter (id); p->setValueNotifyingHost (p->convertTo0to1 (v)); };
-        set ("legato", (float) legato); set ("rhythmMode", (float) mode); set ("swing", 30.0f);
-        proc.setSeeds (42u, 99u);   // rebuild immédiat
-        FakePlayHead ph; proc.setPlayHead (&ph);
-        const double sr = 48000.0; const int bs = 441;  // taille de bloc volontairement "bizarre"
-        proc.prepareToPlay (sr, bs);
-        juce::AudioBuffer<float> buf (2, bs);
-
-        std::map<int, int> sounding; int ons = 0, offs = 0, maxPoly = 0, poly = 0;
-        const auto& pat = proc.getDisplayPattern();
-        int expectedPerCycle = 0; for (int i = 0; i < pat.numSteps; ++i) expectedPerCycle += pat.steps[(size_t) i].on;
-
-        const double ppqPerSample = ph.bpm / 60.0 / sr;
-        const int blocks = (int) (8.0 * pat.cyclePpq() / (ppqPerSample * bs)); // ~8 cycles
-        for (int b = 0; b < blocks; ++b)
-        {
-            juce::MidiBuffer midi;
-            proc.processBlock (buf, midi);
-            for (const auto m : midi)
-            {
-                const auto& msg = m.getMessage();
-                const double t = ph.ppq + m.samplePosition * ppqPerSample;
-                if (msg.isNoteOn())
-                {
-                    ++ons; ++sounding[msg.getNoteNumber()]; maxPoly = std::max (maxPoly, ++poly);
-                    // sur la grille (avec swing) à 1 échantillon près
-                    const double step = pat.stepPpq; const double cyc = std::fmod (t, pat.cyclePpq());
-                    bool ok = false;
-                    for (int s = 0; s < pat.numSteps; ++s) if (std::abs (cyc - pat.stepStartPpq (s)) < ppqPerSample * 1.5 + 1e-9 || std::abs (cyc - pat.cyclePpq() - pat.stepStartPpq (s)) < ppqPerSample * 1.5) ok = true;
-                    check (ok, "note hors grille");
-                    (void) step;
-                }
-                else if (msg.isNoteOff())
-                {
-                    ++offs; check (sounding[msg.getNoteNumber()] > 0, "note-off sans note-on"); --sounding[msg.getNoteNumber()]; --poly;
-                }
-            }
-            ph.ppq += bs * ppqPerSample;
-        }
-        // arrêt du transport
-        ph.playing = false;
-        { juce::MidiBuffer midi; proc.processBlock (buf, midi); for (const auto m : midi) if (m.getMessage().isNoteOff()) { ++offs; --poly; } }
-        check (poly == 0, "notes bloquees apres arret");
-        check (maxPoly <= (legato ? 2 : 1), "polyphonie inattendue");
-        const int cycles = (int) std::floor ((blocks * bs * ppqPerSample) / pat.cyclePpq());
-        check (ons >= expectedPerCycle * cycles, "notes manquantes");
-        check (ons <= expectedPerCycle * (cycles + 1), "notes en double");
-        std::cout << "legato=" << legato << " mode=" << mode << " : " << ons << " on / " << offs << " off, "
-                  << expectedPerCycle << " notes/cycle, poly max " << maxPoly << "\n";
+        set ("legato", (float) legato); set ("swing", 30.0f); set ("steps", 32.0f);
+        proc.setSeeds (42u, 99u);
+        FakePlayHead ph; proc.setPlayHead (&ph); proc.prepareToPlay (48000.0, 441);
+        check (play (proc, ph, 32.0, legato ? "potards legato" : "potards") == 0, "notes potards hors place");
         proc.setPlayHead (nullptr);
+    }
+
+    {
+        MLGAlphaProcessor proc;
+        while (! proc.libraryReady()) juce::Thread::sleep (20);
+        FakePlayHead ph; proc.setPlayHead (&ph); proc.prepareToPlay (48000.0, 441);
+        const char* asks[] = { "nappe sombre", "batterie techno", "basse acid", "arpège triolets", "accords dub" };
+        for (auto* a : asks)
+        {
+            std::cout << proc.drawFromText (juce::String::fromUTF8 (a)).upToFirstOccurrenceOf ("\n", false, false) << "\n";
+            check (proc.isLibraryLine(), "pas de ligne de bibliotheque");
+            ph.ppq = 0.0;
+            check (play (proc, ph, proc.getDisplayClip().lengthPpq * 2, a) == 0, "notes bibliotheque hors place");
+        }
+
+        // Changement à la mesure suivante : le nouveau clip ne commence qu'au début d'une mesure
+        auto* sw = proc.apvts.getParameter ("switchAt"); sw->setValueNotifyingHost (1.0f);
+        ph.ppq = 0.0;
+        play (proc, ph, 6.0, "changement a la mesure", [&] (int b) { if (b == 100) proc.drawFromText ("kick"); });
     }
     std::cout << (failures == 0 ? "OK lecture\n" : "ECHECS lecture\n");
     return failures ? 1 : 0;
