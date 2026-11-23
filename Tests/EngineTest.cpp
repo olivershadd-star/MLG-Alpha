@@ -1,8 +1,8 @@
-// Vérifications du moteur MIDI LINES (hors plugin).
+// Vérifications du moteur MLG Alpha (hors plugin).
 #include "../Source/Engine.h"
 #include <iostream>
 
-using namespace midilines;
+using namespace mlg;
 
 static int failures = 0;
 #define CHECK(cond) do { if (! (cond)) { std::cerr << "ECHEC: " #cond " (ligne " << __LINE__ << ")\n"; ++failures; } } while (0)

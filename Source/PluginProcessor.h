@@ -4,15 +4,15 @@
 #include <atomic>
 #include "Engine.h"
 
-// MIDI LINES : se charge comme un instrument dans Ableton, ne produit aucun son
-// et envoie ses notes en MIDI. Sur une 2e piste : MIDI From = piste MIDI LINES.
-class MidiLinesProcessor : public juce::AudioProcessor,
+// MLG Alpha : se charge comme un instrument dans Ableton, ne produit aucun son
+// et envoie ses notes en MIDI. Sur une 2e piste : MIDI From = piste MLG Alpha.
+class MLGAlphaProcessor : public juce::AudioProcessor,
                          private juce::AudioProcessorValueTreeState::Listener,
                          private juce::Timer
 {
 public:
-    MidiLinesProcessor();
-    ~MidiLinesProcessor() override;
+    MLGAlphaProcessor();
+    ~MLGAlphaProcessor() override;
 
     void prepareToPlay (double sampleRate, int samplesPerBlock) override;
     void releaseResources() override {}
@@ -48,9 +48,9 @@ public:
     bool isRhythmLocked() const { return lockRhythm; }
     bool isPitchLocked() const { return lockPitch; }
     void setSeeds (juce::uint32 rhythmSeed, juce::uint32 pitchSeed);
-    const midilines::Seeds& getSeeds() const { return seeds; }
+    const mlg::Seeds& getSeeds() const { return seeds; }
 
-    const midilines::Pattern& getDisplayPattern() const { return displayPattern; }
+    const mlg::Pattern& getDisplayPattern() const { return displayPattern; }
     int getPatternVersion() const { return patternVersion; }
     int getCurrentStep() const { return currentStep.load(); }
     juce::File writeMidiFile() const;
@@ -60,24 +60,24 @@ private:
     void parameterChanged (const juce::String&, float) override;
     void timerCallback() override;
     void rebuild();
-    midilines::Settings readSettings() const;
+    mlg::Settings readSettings() const;
     float raw (const char* id) const { return apvts.getRawParameterValue (id)->load(); }
 
     // État de génération (thread principal)
-    midilines::Seeds seeds;
+    mlg::Seeds seeds;
     bool lockRhythm = false, lockPitch = false;
-    midilines::Pattern displayPattern;
+    mlg::Pattern displayPattern;
     int patternVersion = 0;
     std::atomic<bool> dirty { true };
     juce::Random seedSource;
 
     // Passage du motif vers le thread audio
     juce::SpinLock patternLock;
-    midilines::Pattern pendingPattern;
+    mlg::Pattern pendingPattern;
     std::atomic<bool> hasPending { false };
 
     // Thread audio
-    midilines::Pattern playPattern;
+    mlg::Pattern playPattern;
     double currentSampleRate = 44100.0;
     bool wasPlaying = false;
     double expectedPpq = 0.0;
@@ -86,5 +86,5 @@ private:
     double activeEndPpq = 0.0;
     std::atomic<int> currentStep { -1 };
 
-    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MidiLinesProcessor)
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (MLGAlphaProcessor)
 };

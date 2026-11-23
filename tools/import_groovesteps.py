@@ -1,4 +1,4 @@
-"""Importe les grooves GrooveSteps (CC0) vers le format MIDI LINES.  Usage : python3 -I import_groovesteps.py drum_patterns.json"""
+"""Importe les grooves GrooveSteps (CC0) vers le format MLG Alpha.  Usage : python3 -I import_groovesteps.py drum_patterns.json"""
 import json, sys
 VOICES = [("kick", "BD"), ("snare", "SN"), ("hihat", "CH"), ("openhat", "OH"), ("crash", "CY"), ("ride", "CY")]
 d = json.load(open(sys.argv[1], encoding="utf-8"))

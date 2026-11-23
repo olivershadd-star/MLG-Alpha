@@ -1,13 +1,13 @@
-# MIDI LINES — générateur de lignes MIDI (ANKS Labs)
+# MLG Alpha — MIDI Line Generator (ANKS Labs)
 
 VST3 qui génère des lignes MIDI à partir de réglages (pas d'IA) et les joue en direct sur n'importe quel instrument d'Ableton.
 
 ## Installation dans Ableton (routage sur 2 pistes)
 
-1. Copier `MIDI LINES.vst3` dans `C:\Program Files\Common Files\VST3`, puis rescanner les plugins dans Ableton.
-2. **Piste 1** : charger MIDI LINES (il apparaît comme instrument, éditeur ANKS Labs). Il ne fait aucun son.
+1. Copier `MLG Alpha.vst3` dans `C:\Program Files\Common Files\VST3`, puis rescanner les plugins dans Ableton.
+2. **Piste 1** : charger MLG Alpha (il apparaît comme instrument, éditeur ANKS Labs). Il ne fait aucun son.
 3. **Piste 2** : charger l'instrument (Serum, Massive…).
-   - *MIDI From* : piste 1, puis choisir **MIDI LINES** dans le second menu.
+   - *MIDI From* : piste 1, puis choisir **MLG Alpha** dans le second menu.
    - *Monitor* : **In**.
 4. Lancer la lecture : la ligne joue en boucle, synchronisée sur le tempo.
 
@@ -30,6 +30,6 @@ Tous les réglages agissent en direct sur la ligne en cours.
 
 ## Compilation
 
-GitHub Actions compile le VST3 Windows à chaque push (onglet *Actions* → artefact `MIDI-LINES-VST3-Windows`).
+GitHub Actions compile le VST3 Windows à chaque push (onglet *Actions* → artefact `MLG-Alpha-VST3-Windows`).
 
-Tests du moteur et de la lecture : `cmake -B build -DMIDI LINES_TESTS=ON && cmake --build build`.
+Tests du moteur et de la lecture : `cmake -B build -DMLGALPHA_TESTS=ON && cmake --build build`.

@@ -1,4 +1,4 @@
-# Motifs de batterie électroniques écrits pour MIDI LINES (motifs de base des genres, libres).
+# Motifs de batterie électroniques écrits pour MLG Alpha (motifs de base des genres, libres).
 # Format identique à drums_pocket_operations.txt. Notes : BD 36, RS 37, SN 38, CL 39, CH 42, OH 46,
 # LT 45, MT 47, HT 50, CY (ride) 51, CB 56, SH 70, PC (percussion) 75.
 

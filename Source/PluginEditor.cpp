@@ -1,6 +1,6 @@
 #include "PluginEditor.h"
 
-using midilines::fr;
+using mlg::fr;
 
 namespace colours
 {
@@ -52,7 +52,7 @@ void StepView::paint (juce::Graphics& g)
             {
                 g.setColour (colours::text);
                 g.setFont (juce::FontOptions (10.0f));
-                g.drawText (midilines::noteName (st.pitch), r.withHeight (14.0f), juce::Justification::centred);
+                g.drawText (mlg::noteName (st.pitch), r.withHeight (14.0f), juce::Justification::centred);
             }
         }
 
@@ -92,7 +92,7 @@ void MidiDragZone::mouseDrag (const juce::MouseEvent& e)
 
 // ---------------------------------------------------------------------------
 
-MidiLinesEditor::MidiLinesEditor (MidiLinesProcessor& p)
+MLGAlphaEditor::MLGAlphaEditor (MLGAlphaProcessor& p)
     : AudioProcessorEditor (&p), proc (p), stepView (p)
 {
     laf.setColour (juce::Slider::rotarySliderFillColourId, colours::accent);
@@ -193,13 +193,13 @@ MidiLinesEditor::MidiLinesEditor (MidiLinesProcessor& p)
     startTimerHz (30);
 }
 
-MidiLinesEditor::~MidiLinesEditor()
+MLGAlphaEditor::~MLGAlphaEditor()
 {
     stopTimer();
     setLookAndFeel (nullptr);
 }
 
-MidiLinesEditor::Knob& MidiLinesEditor::addKnob (const char* paramId, const juce::String& text)
+MLGAlphaEditor::Knob& MLGAlphaEditor::addKnob (const char* paramId, const juce::String& text)
 {
     auto k = std::make_unique<Knob>();
     k->slider.setSliderStyle (juce::Slider::RotaryHorizontalVerticalDrag);
@@ -215,7 +215,7 @@ MidiLinesEditor::Knob& MidiLinesEditor::addKnob (const char* paramId, const juce
     return ref;
 }
 
-MidiLinesEditor::Choice& MidiLinesEditor::addChoice (const char* paramId, const juce::String& text)
+MLGAlphaEditor::Choice& MLGAlphaEditor::addChoice (const char* paramId, const juce::String& text)
 {
     auto c = std::make_unique<Choice>();
     if (auto* param = dynamic_cast<juce::AudioParameterChoice*> (proc.apvts.getParameter (paramId)))
@@ -231,14 +231,14 @@ MidiLinesEditor::Choice& MidiLinesEditor::addChoice (const char* paramId, const 
     return ref;
 }
 
-void MidiLinesEditor::refreshSeedLabels()
+void MLGAlphaEditor::refreshSeedLabels()
 {
     const auto& s = proc.getSeeds();
     seedRhythmValue.setText (juce::String (s.rhythm), juce::dontSendNotification);
     seedPitchValue.setText (juce::String (s.pitch), juce::dontSendNotification);
 }
 
-void MidiLinesEditor::timerCallback()
+void MLGAlphaEditor::timerCallback()
 {
     // Réglages propres au moteur rythmique choisi
     const bool euclid = proc.apvts.getRawParameterValue ("rhythmMode")->load() > 0.5f;
@@ -261,13 +261,13 @@ void MidiLinesEditor::timerCallback()
     }
 }
 
-void MidiLinesEditor::paint (juce::Graphics& g)
+void MLGAlphaEditor::paint (juce::Graphics& g)
 {
     g.fillAll (colours::background);
 
     g.setColour (colours::accent);
     g.setFont (juce::FontOptions (22.0f, juce::Font::bold));
-    g.drawText ("MIDI LINES", 16, 10, 140, 30, juce::Justification::centredLeft);
+    g.drawText ("MLG Alpha", 16, 10, 140, 30, juce::Justification::centredLeft);
     g.setColour (colours::dim);
     g.setFont (juce::FontOptions (11.0f));
     g.drawText ("ANKS Labs", 16, 36, 140, 14, juce::Justification::centredLeft);
@@ -285,7 +285,7 @@ void MidiLinesEditor::paint (juce::Graphics& g)
     drawSection (notesArea, fr ("NOTES"));
 }
 
-void MidiLinesEditor::resized()
+void MLGAlphaEditor::resized()
 {
     auto r = getLocalBounds().reduced (12);
 
