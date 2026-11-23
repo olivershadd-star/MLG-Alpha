@@ -13,9 +13,10 @@
 | `drums_electronic.txt` | Batterie électronique écrite : techno, minimal, dub techno, hardgroove, industriel, house, EBM, trance… | 76 |
 | `chords_drolez.txt` | Grilles d'accords du Free MIDI Chords Pack (majeur, mineur, modal, avec ambiance) | 194 |
 | `chords.txt` | Grilles électroniques, 12 nappes sur 8 mesures, 14 rythmes de jeu d'accords | 56 |
+| `bass_neuralacid.txt` | Basses NeuralAcid sur 4 mesures, qui suivent une grille d'accords (lot de validation) | 897 |
 | `acid.txt`, `bass.txt`, `melody.txt` | Acid, basses et mélodies écrites à la main | 87 |
 
-**Total : 4 813 motifs (1,4 Mo).**
+**Total : 5 710 motifs (1,8 Mo).**
 
 ## Format
 
@@ -33,6 +34,7 @@ Pour ajouter tes motifs : copier un bloc, changer l'`id`, le nom et les pas.
 
 - `gen_*.txt` : fabriqués par `tools/generate_patterns.py` (règles : hiérarchie des temps, cellules rythmiques par style, phrasé AAAA'/ABAB'/AABB, tonique sur les temps forts, vélocités accentuées). Relancer le script redonne exactement les mêmes motifs.
 - `drums_bardet.txt` : rythmes de René-Pierre Bardet, données JSON de [gvellut/dmp_midi](https://github.com/gvellut/dmp_midi) (`tools/import_bardet.py`).
+- `bass_neuralacid.txt` : jeu de données [intrect/neuralacid-basslines](https://huggingface.co/datasets/intrect/neuralacid-basslines) (CC BY 4.0), généré par Electr-o-matic de unohee (`tools/import_neuralacid.py`).
 - `chords_drolez.txt` : [ldrolez/free-midi-chords](https://github.com/ldrolez/free-midi-chords), licence MIT (`tools/import_drolez.py`).
 
 - `drums_pocket_operations.txt` : données de [darosh/pocket-patterns](https://github.com/darosh/pocket-patterns) (licence MIT), d'après la collection *Pocket Operations* (Shitty Recording Studio / Paul Wenzel). Import : `tools/import_pocket_operations.py`.
