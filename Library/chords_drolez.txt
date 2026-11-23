@@ -1,0 +1,585 @@
+# Grilles d'accords du Free MIDI Chords Pack de Ludovic Drolez (licence MIT).
+# Une case = une mesure ; tags = ambiance indiquée par l'auteur.
+
+@chords id=ld-001 name="I – I – IM-5 – IM-5 – IV – IV – V – Vsus2" genre=majeur bars=8 tags=joyful-triumphant src=drolez
+C  I I IM-5 IM-5 IV IV V Vsus2
+
+@chords id=ld-002 name="I – I – IV – iii" genre=majeur bars=4 tags=hopeful-nostalgic src=drolez
+C  I I IV iii
+
+@chords id=ld-003 name="I – I7 – Idom7 – I7" genre=majeur bars=4 tags=relaxed-playful src=drolez
+C  I I7 Idom7 I7
+
+@chords id=ld-004 name="I – I7 – Idom7 – IV" genre=majeur bars=4 tags=relaxed-nostalgic src=drolez
+C  I I7 Idom7 IV
+
+@chords id=ld-005 name="I – iii – IV – vi" genre=majeur bars=4 tags=romantic-nostalgic src=drolez
+C  I iii IV vi
+
+@chords id=ld-006 name="I – iii – vi – Isus4" genre=majeur bars=4 tags=tender-spiritual src=drolez
+C  I iii vi Isus4
+
+@chords id=ld-007 name="I – iii – vi – IV" genre=majeur bars=4 tags=romantic-hopeful src=drolez
+C  I iii vi IV
+
+@chords id=ld-008 name="I – IV – ii – V" genre=majeur bars=4 tags=joyful-triumphant src=drolez
+C  I IV ii V
+
+@chords id=ld-009 name="I – IV – Isus2 – IV" genre=majeur bars=4 tags=peaceful-hopeful src=drolez
+C  I IV Isus2 IV
+
+@chords id=ld-010 name="I – IV – V – IV" genre=majeur bars=4 tags=joyful-triumphant src=drolez
+C  I IV V IV
+
+@chords id=ld-011 name="I – IV – V" genre=majeur bars=3 tags=joyful-excited src=drolez
+C  I IV V
+
+@chords id=ld-012 name="I – IV – vi – V" genre=majeur bars=4 tags=joyful-hopeful src=drolez
+C  I IV vi V
+
+@chords id=ld-013 name="I – IV – vii – iii – vi – ii – V – I" genre=majeur bars=8 tags=romantic-triumphant src=drolez
+C  I IV vii iii vi ii V I
+
+@chords id=ld-014 name="I – V – I – IV" genre=majeur bars=4 tags=joyful-playful src=drolez
+C  I V I IV
+
+@chords id=ld-015 name="I – V – IV – vi" genre=majeur bars=4 tags=romantic-hopeful src=drolez
+C  I V IV vi
+
+@chords id=ld-016 name="I – V – vi – ii" genre=majeur bars=4 tags=hopeful-romantic src=drolez
+C  I V vi ii
+
+@chords id=ld-017 name="I – V – vi – iii – IV – I – IV – V" genre=majeur bars=8 tags=hopeful-joyful src=drolez
+C  I V vi iii IV I IV V
+
+@chords id=ld-018 name="I – V – vi – iii – IV" genre=majeur bars=5 tags=hopeful-joyful src=drolez
+C  I V vi iii IV
+
+@chords id=ld-019 name="I – V – vi – IV" genre=majeur bars=4 tags=hopeful-romantic src=drolez
+C  I V vi IV
+
+@chords id=ld-020 name="I – V – vi – V" genre=majeur bars=4 tags=hopeful-romantic src=drolez
+C  I V vi V
+
+@chords id=ld-021 name="I – vi – I – IV" genre=majeur bars=4 tags=tender-nostalgic src=drolez
+C  I vi I IV
+
+@chords id=ld-022 name="I – vi – ii – IV" genre=majeur bars=4 tags=tender-nostalgic src=drolez
+C  I vi ii IV
+
+@chords id=ld-023 name="I – vi – ii – V" genre=majeur bars=4 tags=nostalgic-romantic src=drolez
+C  I vi ii V
+
+@chords id=ld-024 name="I – vi – IV – iii" genre=majeur bars=4 tags=nostalgic-romantic src=drolez
+C  I vi IV iii
+
+@chords id=ld-025 name="I – vi – IV – V" genre=majeur bars=4 tags=romantic-hopeful src=drolez
+C  I vi IV V
+
+@chords id=ld-026 name="I7 – V7 – viadd9 – IV7" genre=majeur bars=4 tags=playful-joyful src=drolez
+C  I7 V7 viadd9 IV7
+
+@chords id=ld-027 name="ii – IV – V" genre=majeur bars=3 tags=hopeful src=drolez
+C  ii IV V
+
+@chords id=ld-028 name="ii – IV – vi – V" genre=majeur bars=4 tags=romantic src=drolez
+C  ii IV vi V
+
+@chords id=ld-029 name="ii – V – I" genre=majeur bars=3 tags=triumphant src=drolez
+C  ii V I
+
+@chords id=ld-030 name="ii – V – I – IV" genre=majeur bars=4 tags=hopeful-triumphant src=drolez
+C  ii V I IV
+
+@chords id=ld-031 name="ii7 – Vadd9 – I7" genre=majeur bars=3 tags=triumphant src=drolez
+C  ii7 Vadd9 I7
+
+@chords id=ld-032 name="iii – vi – IV – I" genre=majeur bars=4 tags=romantic-nostalgic src=drolez
+C  iii vi IV I
+
+@chords id=ld-033 name="iim7 – V7 – iiim7 – vi7 – iim7 – V7" genre=majeur bars=6 tags=romantic-nostalgic src=drolez
+C  iim7 V7 iiim7 vi7 iim7 V7
+
+@chords id=ld-034 name="Isus2 – I – vi7 – visus4" genre=majeur bars=4 tags=playful-romantic src=drolez
+C  Isus2 I vi7 visus4
+
+@chords id=ld-035 name="IV – I – ii – vi" genre=majeur bars=4 tags=nostalgic-peaceful src=drolez
+C  IV I ii vi
+
+@chords id=ld-036 name="IV – I – iii – IV" genre=majeur bars=4 tags=playful-joyful src=drolez
+C  IV I iii IV
+
+@chords id=ld-037 name="IV – I – IV6 – Iadd9" genre=majeur bars=4 tags=relaxed-joyful src=drolez
+C  IV I IV6 Iadd9
+
+@chords id=ld-038 name="IV – I – V – vi" genre=majeur bars=4 tags=joyful-romantic src=drolez
+C  IV I V vi
+
+@chords id=ld-039 name="IV – IV – I – V" genre=majeur bars=4 tags=joyful-hopeful src=drolez
+C  IV IV I V
+
+@chords id=ld-040 name="IV – vi – I – V" genre=majeur bars=4 tags=hopeful-romantic src=drolez
+C  IV vi I V
+
+@chords id=ld-041 name="IV – vi – iii – I" genre=majeur bars=4 tags=nostalgic-playful src=drolez
+C  IV vi iii I
+
+@chords id=ld-042 name="IV – vi – IV – vi" genre=majeur bars=4 tags=nostalgic src=drolez
+C  IV vi IV vi
+
+@chords id=ld-043 name="V – I – vi – V" genre=majeur bars=4 tags=hopeful-romantic src=drolez
+C  V I vi V
+
+@chords id=ld-044 name="V – IV – vi – I" genre=majeur bars=4 tags=hopeful-triumphant src=drolez
+C  V IV vi I
+
+@chords id=ld-045 name="V – vi – IV – I" genre=majeur bars=4 tags=hopeful-romantic src=drolez
+C  V vi IV I
+
+@chords id=ld-046 name="vi – ii – V – I" genre=majeur bars=4 tags=hopeful-romantic src=drolez
+C  vi ii V I
+
+@chords id=ld-047 name="vi – IV – I – V" genre=majeur bars=4 tags=hopeful-romantic src=drolez
+C  vi IV I V
+
+@chords id=ld-048 name="vi – IV – iii – V" genre=majeur bars=4 tags=hopeful-romantic src=drolez
+C  vi IV iii V
+
+@chords id=ld-049 name="vi – V – IV – V – ii – V – I – I" genre=majeur bars=8 tags=triumphant-hopeful src=drolez
+C  vi V IV V ii V I I
+
+@chords id=ld-050 name="vi – V – IV – V" genre=majeur bars=4 tags=romantic-hopeful src=drolez
+C  vi V IV V
+
+@chords id=ld-051 name="i – i – iv – iv – v7 – ii5 – v – v7" genre=mineur bars=8 tags=dark-mysterious src=drolez
+C  i i iv iv v7 ii5 v v7
+
+@chords id=ld-052 name="i – ii – v – i" genre=mineur bars=4 tags=mysterious-triumphant src=drolez
+C  i ii v i
+
+@chords id=ld-053 name="i – III – iv – VI" genre=mineur bars=4 tags=nostalgic-romantic src=drolez
+C  i III iv VI
+
+@chords id=ld-054 name="i – III – VII – iv" genre=mineur bars=4 tags=empowered-nostalgic src=drolez
+C  i III VII iv
+
+@chords id=ld-055 name="i – III – VII – VI" genre=mineur bars=4 tags=nostalgic-romantic src=drolez
+C  i III VII VI
+
+@chords id=ld-056 name="i – III7 – VI7 – iv" genre=mineur bars=4 tags=new-dark-romantic src=drolez
+C  i III7 VI7 iv
+
+@chords id=ld-057 name="i – ii – v – III – i – ii – v – VII" genre=mineur bars=8 tags=mysterious-dramatic src=drolez
+C  i ii v III i ii v VII
+
+@chords id=ld-058 name="i – iv – III – VI" genre=mineur bars=4 tags=nostalgic-romantic src=drolez
+C  i iv III VI
+
+@chords id=ld-059 name="i – iv – v – iv" genre=mineur bars=4 tags=mysterious-sad src=drolez
+C  i iv v iv
+
+@chords id=ld-060 name="i – iv – v" genre=mineur bars=3 tags=sad-lonely src=drolez
+C  i iv v
+
+@chords id=ld-061 name="i – iv – VI – v" genre=mineur bars=4 tags=sad-hopeful src=drolez
+C  i iv VI v
+
+@chords id=ld-062 name="i – iv – VII – i" genre=mineur bars=4 tags=sad-nostalgic src=drolez
+C  i iv VII i
+
+@chords id=ld-063 name="i – iv – VII – v – i – i – ii – V" genre=mineur bars=8 tags=mysterious-surprised src=drolez
+C  i iv VII v i i ii V
+
+@chords id=ld-064 name="i – v – iv – VII" genre=mineur bars=4 tags=sad-rebellious src=drolez
+C  i v iv VII
+
+@chords id=ld-065 name="i – vdim – iv – VI" genre=mineur bars=4 tags=dark-nostalgic src=drolez
+C  i vdim iv VI
+
+@chords id=ld-066 name="i – VI – III – VII – i – VI69 – III7 – VII" genre=mineur bars=8 tags=mysterious-spiritual src=drolez
+C  i VI III VII i VI69 III7 VII
+
+@chords id=ld-067 name="i – VI – III – VII" genre=mineur bars=4 tags=nostalgic-hopeful src=drolez
+C  i VI III VII
+
+@chords id=ld-068 name="i – VI – iv – ii" genre=mineur bars=4 tags=sad-tender src=drolez
+C  i VI iv ii
+
+@chords id=ld-069 name="i – VI – iv – III" genre=mineur bars=4 tags=sad-nostalgic src=drolez
+C  i VI iv III
+
+@chords id=ld-070 name="i – VI – iv – v" genre=mineur bars=4 tags=sad-hopeful src=drolez
+C  i VI iv v
+
+@chords id=ld-071 name="i – VI – VII – iv" genre=mineur bars=4 tags=mysterious-nostalgic src=drolez
+C  i VI VII iv
+
+@chords id=ld-072 name="i – VI – VII – v" genre=mineur bars=4 tags=mysterious-rebellious src=drolez
+C  i VI VII v
+
+@chords id=ld-073 name="i – VI – VII" genre=mineur bars=3 tags=triumphant-rebellious src=drolez
+C  i VI VII
+
+@chords id=ld-074 name="i – VII – i – v – III – VII – i – v – i" genre=mineur bars=9 tags=mysterious-surprised src=drolez
+C  i VII i v III VII i v i
+
+@chords id=ld-075 name="i – VII – i – v" genre=mineur bars=4 tags=mysterious-nostalgic src=drolez
+C  i VII i v
+
+@chords id=ld-076 name="i – VII – III – VI" genre=mineur bars=4 tags=rebellious-triumphant src=drolez
+C  i VII III VI
+
+@chords id=ld-077 name="i – VII – v – VI" genre=mineur bars=4 tags=mysterious-hopeful src=drolez
+C  i VII v VI
+
+@chords id=ld-078 name="i – VII – VI – III – iv – VI – VII – i" genre=mineur bars=8 tags=mysterious-surprised src=drolez
+C  i VII VI III iv VI VII i
+
+@chords id=ld-079 name="i – VII – VI – III" genre=mineur bars=4 tags=nostalgic-hopeful src=drolez
+C  i VII VI III
+
+@chords id=ld-080 name="i – VII – VI – iv" genre=mineur bars=4 tags=sad-romantic src=drolez
+C  i VII VI iv
+
+@chords id=ld-081 name="i – VII – VI – VII" genre=mineur bars=4 tags=rebellious-triumphant src=drolez
+C  i VII VI VII
+
+@chords id=ld-082 name="i – VII – VIadd9 – VII – i – v – VI – VIIsus4" genre=mineur bars=8 tags=nostalgic-sad src=drolez
+C  i VII VIadd9 VII i v VI VIIsus4
+
+@chords id=ld-083 name="i7 – VI – III7 – VII6 – i – i7 – III7 – iv7" genre=mineur bars=8 tags=dark-nostalgic src=drolez
+C  i7 VI III7 VII6 i i7 III7 iv7
+
+@chords id=ld-084 name="i7 – VII – VI7 – iv7" genre=mineur bars=4 tags=nostalgic-romantic src=drolez
+C  i7 VII VI7 iv7
+
+@chords id=ld-085 name="ii – v – i" genre=mineur bars=3 tags=peaceful-hopeful src=drolez
+C  ii v i
+
+@chords id=ld-086 name="ii – v – i – iv" genre=mineur bars=4 tags=peaceful-nostalgic src=drolez
+C  ii v i iv
+
+@chords id=ld-087 name="ii – VI – i – iv" genre=mineur bars=4 tags=sad-hopeful src=drolez
+C  ii VI i iv
+
+@chords id=ld-088 name="im7 – ivsus4 – v7 – isus4" genre=mineur bars=4 tags=mysterious-tender src=drolez
+C  im7 ivsus4 v7 isus4
+
+@chords id=ld-089 name="iv – i – v – VI" genre=mineur bars=4 tags=nostalgic-hopeful src=drolez
+C  iv i v VI
+
+@chords id=ld-090 name="iv – III – VII – i" genre=mineur bars=4 tags=nostalgic-mysterious src=drolez
+C  iv III VII i
+
+@chords id=ld-091 name="iv – III – vsus4 – VI – iv – i – III – VI" genre=mineur bars=8 tags=nostalgic-mysterious src=drolez
+C  iv III vsus4 VI iv i III VI
+
+@chords id=ld-092 name="iv – v – VI – VII" genre=mineur bars=4 tags=mysterious-rebellious src=drolez
+C  iv v VI VII
+
+@chords id=ld-093 name="iv – VI – v – VII" genre=mineur bars=4 tags=mysterious-hopeful src=drolez
+C  iv VI v VII
+
+@chords id=ld-094 name="iv – VI – VII – i" genre=mineur bars=4 tags=triumphant src=drolez
+C  iv VI VII i
+
+@chords id=ld-095 name="v – i – iv – VII" genre=mineur bars=4 tags=dark-rebellious src=drolez
+C  v i iv VII
+
+@chords id=ld-096 name="v – iv – i" genre=mineur bars=3 tags=lonely src=drolez
+C  v iv i
+
+@chords id=ld-097 name="v – VI – III – i" genre=mineur bars=4 tags=hopeful-nostalgic src=drolez
+C  v VI III i
+
+@chords id=ld-098 name="v – VI – v – i" genre=mineur bars=4 tags=sad src=drolez
+C  v VI v i
+
+@chords id=ld-099 name="VI – i – v – III" genre=mineur bars=4 tags=hopeful-nostalgic src=drolez
+C  VI i v III
+
+@chords id=ld-100 name="VI – i – v" genre=mineur bars=3 tags=sad src=drolez
+C  VI i v
+
+@chords id=ld-101 name="VI – III – i – v" genre=mineur bars=4 tags=nostalgic-dark src=drolez
+C  VI III i v
+
+@chords id=ld-102 name="VI – iv – i – v" genre=mineur bars=4 tags=hopeful-tender src=drolez
+C  VI iv i v
+
+@chords id=ld-103 name="VI – VI – i – VII" genre=mineur bars=4 tags=empowered src=drolez
+C  VI VI i VII
+
+@chords id=ld-104 name="VI – VII – i – III" genre=mineur bars=4 tags=triumphant-nostalgic src=drolez
+C  VI VII i III
+
+@chords id=ld-105 name="VI – VII – i – III – VII – VI – iv – i" genre=mineur bars=8 tags=new-nostalgic-mysterious src=drolez
+C  VI VII i III VII VI iv i
+
+@chords id=ld-106 name="VI – VII – v – III" genre=mineur bars=4 tags=rebellious-nostalgic src=drolez
+C  VI VII v III
+
+@chords id=ld-107 name="VI7 – VII – i – v – VI7 – VII – i – iv7" genre=mineur bars=8 tags=empowered-nostalgic src=drolez
+C  VI7 VII i v VI7 VII i iv7
+
+@chords id=ld-108 name="VI7 – VII6 – i – VII6" genre=mineur bars=4 tags=nostalgic-hopeful src=drolez
+C  VI7 VII6 i VII6
+
+@chords id=ld-109 name="VII – iv – v – i" genre=mineur bars=4 tags=mysterious-dark src=drolez
+C  VII iv v i
+
+@chords id=ld-110 name="VII – iv – VII – i" genre=mineur bars=4 tags=spiritual src=drolez
+C  VII iv VII i
+
+@chords id=ld-111 name="bIIIM – ii – bIIM – I" genre=modal bars=4 tags=mysterious-surprised src=drolez
+C  bIIIM ii bIIM I
+
+@chords id=ld-112 name="bIIM – bVIM – biii – bviim" genre=modal bars=4 tags=mysterious-surprised src=drolez
+C  bIIM bVIM biii bviim
+
+@chords id=ld-113 name="bIIM – ivm – biii – im" genre=modal bars=4 tags=mysterious-dark src=drolez
+C  bIIM ivm biii im
+
+@chords id=ld-114 name="bviim – I/bVII – bviim – I/bVII" genre=modal bars=4 tags=new-dark-lonely src=drolez
+C  bviim I/bVII bviim I/bVII
+
+@chords id=ld-115 name="bVIIM – bIIM – bIIIM – im" genre=modal bars=4 tags=mysterious-rebellious src=drolez
+C  bVIIM bIIM bIIIM im
+
+@chords id=ld-116 name="bVIM – bIIIM – bVIIM – IV – I" genre=modal bars=5 tags=triumphant-mysterious src=drolez
+C  bVIM bIIIM bVIIM IV I
+
+@chords id=ld-117 name="bVIM – bVIIm – im – bIIM" genre=modal bars=4 tags=mysterious-dark src=drolez
+C  bVIM bVIIm im bIIM
+
+@chords id=ld-118 name="bVIM – vi – im – bVIIM" genre=modal bars=4 tags=hopeful-mysterious src=drolez
+C  bVIM vi im bVIIM
+
+@chords id=ld-119 name="bVIM7 – ivmadd9 – I" genre=modal bars=3 tags=spiritual-nostalgic src=drolez
+C  bVIM7 ivmadd9 I
+
+@chords id=ld-120 name="I7 – bIdom7 – III7 – ii7 – V7" genre=modal bars=5 tags=playful-surprised src=drolez
+C  I7 bIdom7 III7 ii7 V7
+
+@chords id=ld-121 name="I – bIIIM – bVIIM – I" genre=modal bars=4 tags=triumphant-rebellious src=drolez
+C  I bIIIM bVIIM I
+
+@chords id=ld-122 name="I – bIIIM – bVIIM – IV" genre=modal bars=4 tags=triumphant-mysterious src=drolez
+C  I bIIIM bVIIM IV
+
+@chords id=ld-123 name="I – bIIIM – bVIM – bVIIM" genre=modal bars=4 tags=triumphant-hopeful src=drolez
+C  I bIIIM bVIM bVIIM
+
+@chords id=ld-124 name="I – bIIIM – IV – I" genre=modal bars=4 tags=romantic src=drolez
+C  I bIIIM IV I
+
+@chords id=ld-125 name="I – bIIM – I – iii" genre=modal bars=4 tags=surprised-mysterious src=drolez
+C  I bIIM I iii
+
+@chords id=ld-126 name="I – bIIM7 – bIIIM6 – bIIM7 – I – im – bVIIM – bIIM" genre=modal bars=8 tags=surprised-mysterious src=drolez
+C  I bIIM7 bIIIM6 bIIM7 I im bVIIM bIIM
+
+@chords id=ld-127 name="I – bVIIM – bVIM – bIIM" genre=modal bars=4 tags=triumphant-rebellious src=drolez
+C  I bVIIM bVIM bIIM
+
+@chords id=ld-128 name="I – bVIIM – bVIM – IV – IVsus4 – IV" genre=modal bars=6 tags=hopeful-nostalgic src=drolez
+C  I bVIIM bVIM IV IVsus4 IV
+
+@chords id=ld-129 name="I – bVIIM – I – I – bVIM – V" genre=modal bars=6 tags=triumphant-hopeful src=drolez
+C  I bVIIM I I bVIM V
+
+@chords id=ld-130 name="I – bVIIM – IV – V" genre=modal bars=4 tags=joyful-triumphant src=drolez
+C  I bVIIM IV V
+
+@chords id=ld-131 name="I – bVIM – bVIIM – ivm" genre=modal bars=4 tags=empowered-nostalgic src=drolez
+C  I bVIM bVIIM ivm
+
+@chords id=ld-132 name="I – bVIM – I – bIIM" genre=modal bars=4 tags=surprised-mysterious src=drolez
+C  I bVIM I bIIM
+
+@chords id=ld-133 name="I – bVIM – IV – bIIIM – bVIIM" genre=modal bars=5 tags=mysterious-nostalgic src=drolez
+C  I bVIM IV bIIIM bVIIM
+
+@chords id=ld-134 name="I – I7 – I9 – IV – ivm" genre=modal bars=5 tags=romantic-nostalgic src=drolez
+C  I I7 I9 IV ivm
+
+@chords id=ld-135 name="I – I7 – Idom7 – IV – ivm – I" genre=modal bars=6 tags=relaxed-nostalgic src=drolez
+C  I I7 Idom7 IV ivm I
+
+@chords id=ld-136 name="I – I7 – Idom7 – IV – ivm – I – ivm6 – Vdom7" genre=modal bars=8 tags=relaxed-romantic src=drolez
+C  I I7 Idom7 IV ivm I ivm6 Vdom7
+
+@chords id=ld-137 name="I – im – bVII6 – bVIM" genre=modal bars=4 tags=nostalgic-mysterious src=drolez
+C  I im bVII6 bVIM
+
+@chords id=ld-138 name="I – IIIM – vi – V" genre=modal bars=4 tags=joyful-hopeful src=drolez
+C  I IIIM vi V
+
+@chords id=ld-139 name="I – IIM – iii – V6" genre=modal bars=4 tags=surprised-triumphant src=drolez
+C  I IIM iii V6
+
+@chords id=ld-140 name="I – IIM – IV – I" genre=modal bars=4 tags=joyful-triumphant src=drolez
+C  I IIM IV I
+
+@chords id=ld-141 name="I – IV – bIIIM – bVIM" genre=modal bars=4 tags=nostalgic-mysterious src=drolez
+C  I IV bIIIM bVIM
+
+@chords id=ld-142 name="I – IV – bVIIM – IV" genre=modal bars=4 tags=joyful-rebellious src=drolez
+C  I IV bVIIM IV
+
+@chords id=ld-143 name="I – IV – V – bVIIM" genre=modal bars=4 tags=triumphant-rebellious src=drolez
+C  I IV V bVIIM
+
+@chords id=ld-144 name="I – ivm6 – I – I7" genre=modal bars=4 tags=new-nostalgic-tender src=drolez
+C  I ivm6 I I7
+
+@chords id=ld-145 name="I – ivm – bIIIM – bVIIM" genre=modal bars=4 tags=mysterious-nostalgic src=drolez
+C  I ivm bIIIM bVIIM
+
+@chords id=ld-146 name="I – V – bVIIM – IV" genre=modal bars=4 tags=triumphant-rebellious src=drolez
+C  I V bVIIM IV
+
+@chords id=ld-147 name="I – V – ivm – bVIM" genre=modal bars=4 tags=surprised-mysterious src=drolez
+C  I V ivm bVIM
+
+@chords id=ld-148 name="I – vi – bVIM – V" genre=modal bars=4 tags=surprised-mysterious src=drolez
+C  I vi bVIM V
+
+@chords id=ld-149 name="I5 – iii – II5 – #IVm – IV5 – vi – V5 – viim" genre=modal bars=8 tags=excited-triumphant src=drolez
+C  I5 iii II5 #IVm IV5 vi V5 viim
+
+@chords id=ld-150 name="ii – bIIM – I – bVIIM" genre=modal bars=4 tags=mysterious-rebellious src=drolez
+C  ii bIIM I bVIIM
+
+@chords id=ld-151 name="ii – bVIIM7 – I" genre=modal bars=3 tags=hopeful-triumphant src=drolez
+C  ii bVIIM7 I
+
+@chords id=ld-152 name="ii – IVM – vm – bVIIM" genre=modal bars=4 tags=mysterious-nostalgic src=drolez
+C  ii IVM vm bVIIM
+
+@chords id=ld-153 name="IIIM – V – VIsus4 – VIM – I – IIM" genre=modal bars=6 tags=triumphant-surprised src=drolez
+C  IIIM V VIsus4 VIM I IIM
+
+@chords id=ld-154 name="im – bIIIM – bVIIM – IV" genre=modal bars=4 tags=romantic-nostalgic src=drolez
+C  im bIIIM bVIIM IV
+
+@chords id=ld-155 name="im – bIIIM – bVIM – V" genre=modal bars=4 tags=mysterious-triumphant src=drolez
+C  im bIIIM bVIM V
+
+@chords id=ld-156 name="im – bIIIM – IV – bVIM" genre=modal bars=4 tags=mysterious-hopeful src=drolez
+C  im bIIIM IV bVIM
+
+@chords id=ld-157 name="im – bIIIM – IV – V" genre=modal bars=4 tags=mysterious-triumphant src=drolez
+C  im bIIIM IV V
+
+@chords id=ld-158 name="im – bIIIsus2 – IV" genre=modal bars=3 tags=mysterious-hopeful src=drolez
+C  im bIIIsus2 IV
+
+@chords id=ld-159 name="im – bIIM – bIIIM – bIIM" genre=modal bars=4 tags=mysterious-dark src=drolez
+C  im bIIM bIIIM bIIM
+
+@chords id=ld-160 name="im – bIIM – biim6 – ivm" genre=modal bars=4 tags=mysterious-tender src=drolez
+C  im bIIM biim6 ivm
+
+@chords id=ld-161 name="im – bIIM – im7 – bviim" genre=modal bars=4 tags=mysterious-spiritual src=drolez
+C  im bIIM im7 bviim
+
+@chords id=ld-162 name="im – bIIM – ivm – IIIM – bIIM – ivm – IIIM – IIIM" genre=modal bars=8 tags=mysterious-nostalgic src=drolez
+C  im bIIM ivm IIIM bIIM ivm IIIM IIIM
+
+@chords id=ld-163 name="im – bIIM – vm – im7" genre=modal bars=4 tags=mysterious-dark src=drolez
+C  im bIIM vm im7
+
+@chords id=ld-164 name="im – bVIIM – bIIM – vm" genre=modal bars=4 tags=mysterious-rebellious src=drolez
+C  im bVIIM bIIM vm
+
+@chords id=ld-165 name="im – bVIIM – IV – im" genre=modal bars=4 tags=nostalgic-mysterious-cadence src=drolez
+C  im bVIIM IV im
+
+@chords id=ld-166 name="im – bviim – bVIM – bIIM" genre=modal bars=4 tags=mysterious-hopeful src=drolez
+C  im bviim bVIM bIIM
+
+@chords id=ld-167 name="im – bVIM – im – IV" genre=modal bars=4 tags=nostalgic-hopeful src=drolez
+C  im bVIM im IV
+
+@chords id=ld-168 name="im – bVIM – ivm – V" genre=modal bars=4 tags=triumphant src=drolez
+C  im bVIM ivm V
+
+@chords id=ld-169 name="im – ii – vm – IV" genre=modal bars=4 tags=nostalgic-hopeful src=drolez
+C  im ii vm IV
+
+@chords id=ld-170 name="im – ivm9 – bIIM – im – vm – ivm7 – bIIM – im7" genre=modal bars=8 tags=mysterious-tender src=drolez
+C  im ivm9 bIIM im vm ivm7 bIIM im7
+
+@chords id=ld-171 name="im – ivm9 – bIIM – im" genre=modal bars=4 tags=mysterious-nostalgic src=drolez
+C  im ivm9 bIIM im
+
+@chords id=ld-172 name="im – V – bVIIM – IV – bVIM – bIIIM – ivm – V" genre=modal bars=8 tags=mysterious-rebellious src=drolez
+C  im V bVIIM IV bVIM bIIIM ivm V
+
+@chords id=ld-173 name="im – VIM – bi – V" genre=modal bars=4 tags=mysterious-triumphant src=drolez
+C  im VIM bi V
+
+@chords id=ld-174 name="im – VIM – IIIM – bIIM" genre=modal bars=4 tags=nostalgic-surprised src=drolez
+C  im VIM IIIM bIIM
+
+@chords id=ld-175 name="im – vm – isus4 – I" genre=modal bars=4 tags=hopeful-spiritual src=drolez
+C  im vm isus4 I
+
+@chords id=ld-176 name="im – vm – bVIM – bIIM" genre=modal bars=4 tags=mysterious-hopeful src=drolez
+C  im vm bVIM bIIM
+
+@chords id=ld-177 name="im – vm – bVIIM – IV" genre=modal bars=4 tags=hopeful-nostalgic src=drolez
+C  im vm bVIIM IV
+
+@chords id=ld-178 name="im – vm – ivm – bIIM7" genre=modal bars=4 tags=mysterious-dark src=drolez
+C  im vm ivm bIIM7
+
+@chords id=ld-179 name="im – viim/i – im – bii/i" genre=modal bars=4 tags=new-mysterious-fearful src=drolez
+C  im viim/i im bii/i
+
+@chords id=ld-180 name="iii – im – iii – im7" genre=modal bars=4 tags=anguished-mysterious src=drolez
+C  iii im iii im7
+
+@chords id=ld-181 name="IV – V – ii – im – bIIIM – IV" genre=modal bars=6 tags=hopeful-nostalgic src=drolez
+C  IV V ii im bIIIM IV
+
+@chords id=ld-182 name="ivm – bIIIM – iim7 – V" genre=modal bars=4 tags=mysterious-tender src=drolez
+C  ivm bIIIM iim7 V
+
+@chords id=ld-183 name="ivm – im – bviim – bVIM" genre=modal bars=4 tags=dark src=drolez
+C  ivm im bviim bVIM
+
+@chords id=ld-184 name="vdim – vdim – ivm – bIIIM" genre=modal bars=4 tags=fearful-mysterious src=drolez
+C  vdim vdim ivm bIIIM
+
+@chords id=ld-185 name="vi – bVIIM – im – bVIM" genre=modal bars=4 tags=new-hopeful-peaceful src=drolez
+C  vi bVIIM im bVIM
+
+@chords id=ld-186 name="vi – bVIM – bVIIM – I" genre=modal bars=4 tags=hopeful-triumphant src=drolez
+C  vi bVIM bVIIM I
+
+@chords id=ld-187 name="vi – IV – I – IIM" genre=modal bars=4 tags=hopeful-peaceful src=drolez
+C  vi IV I IIM
+
+@chords id=ld-188 name="vi – viim – V – vi – #IVdim – V" genre=modal bars=6 tags=nostalgic-dark src=drolez
+C  vi viim V vi #IVdim V
+
+@chords id=ld-189 name="VIM – bVIM – im – bVIIM" genre=modal bars=4 tags=surprised-rebellious src=drolez
+C  VIM bVIM im bVIIM
+
+@chords id=ld-190 name="bIIIM – V7 – I" genre=modal bars=3 tags=cadence src=drolez
+C  bIIIM V7 I
+
+@chords id=ld-191 name="bVIIM – V7 – I" genre=modal bars=3 tags=cadence src=drolez
+C  bVIIM V7 I
+
+@chords id=ld-192 name="ivm – bIIIM – bIIM – I" genre=modal bars=4 tags=cadence src=drolez
+C  ivm bIIIM bIIM I
+
+@chords id=ld-193 name="ivm – IIIM – bIIM – I" genre=modal bars=4 tags=cadence src=drolez
+C  ivm IIIM bIIM I
+
+@chords id=ld-194 name="ivm – bIIIM – bVIM – I" genre=modal bars=4 tags=cadence src=drolez
+C  ivm bIIIM bVIM I
+
