@@ -1,0 +1,92 @@
+# Lignes de basse électroniques : même notation que acid.txt (sans accents ni slides).
+
+@bass id=bs-offbeat name="Basse au contretemps" genre=techno bars=1 steps=16
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+
+@bass id=bs-offbeat16 name="Contretemps doublé" genre=techno bars=1 steps=16
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+
+@bass id=bs-rolling name="Basse roulante" genre=techno bars=1 steps=16
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 0
+
+@bass id=bs-psy name="Basse psytrance" genre=psytrance bars=1 steps=16
+N  . 0 0 0 . 0 0 0 . 0 0 0 . 0 0 12
+
+@bass id=bs-gallop name="Galop" genre=techno bars=1 steps=16
+N  0 . 0 0 0 . 0 0 0 . 0 0 0 . 0 0
+
+@bass id=bs-16th name="Doubles croches" genre=ebm bars=1 steps=16
+N  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+
+@bass id=bs-ebm name="EBM octave" genre=ebm bars=1 steps=16
+N  0 0 12 0 0 0 12 0 0 0 12 0 0 0 12 0
+
+@bass id=bs-ebm2 name="EBM 4 notes" genre=ebm bars=1 steps=16
+N  0 0 0 0 0 0 0 0 3 3 3 3 5 5 7 7
+
+@bass id=bs-octave name="House octave" genre=house bars=1 steps=16
+N  0 . 12 . 0 . 12 . 0 . 12 . 0 . 12 .
+
+@bass id=bs-house name="House syncopée" genre=house bars=1 steps=16
+N  0 . . 0 . . 12 . 0 . . 0 . 10 . 7
+
+@bass id=bs-deep name="Deep house" genre=deep-house bars=1 steps=16
+N  0 - - . . . 7 . 10 - - . . . 7 .
+
+@bass id=bs-dub name="Dub techno" genre=dub-techno bars=1 steps=16
+N  0 - - - - - . . 0 - - - . . 7 .
+
+@bass id=bs-sub name="Sub tenu" genre=sub bars=1 steps=16
+N  0 - - - - - - - 0 - - - - - - -
+
+@bass id=bs-sub-move name="Sub en mouvement" genre=sub bars=1 steps=16
+N  0 - - - - - - - -2 - - - 3 - - -
+
+@bass id=bs-electro name="Electro" genre=electro bars=1 steps=16
+N  0 . . 0 . . 0 . . . 0 . 12 . 10 .
+
+@bass id=bs-electro2 name="Electro syncopée" genre=electro bars=1 steps=16
+N  0 . . . . . 0 . . 0 . . 3 . 0 .
+
+@bass id=bs-synthwave name="Synthwave croches" genre=synthwave bars=1 steps=16
+N  0 . 0 . 0 . 0 . 0 . 0 . 0 . 0 .
+
+@bass id=bs-synthwave2 name="Synthwave octaves" genre=synthwave bars=1 steps=16
+N  0 . 12 . 0 . 12 . 0 . 12 . 0 . 12 .
+
+@bass id=bs-trance name="Trance contretemps" genre=trance bars=1 steps=16
+N  . . 0 0 . . 0 0 . . 0 0 . . 0 0
+
+@bass id=bs-minimal name="Minimal" genre=minimal bars=1 steps=16
+N  . . . 0 . . . . . . 0 . . . . 0
+
+@bass id=bs-minimal2 name="Minimal clic" genre=minimal bars=1 steps=16
+N  0 . . . . . 0 . . 0 . . . . . .
+
+@bass id=bs-tech-house name="Tech house" genre=tech-house bars=1 steps=16
+N  . . 0 . . 0 0 . . . 0 . . 0 12 .
+
+@bass id=bs-ukg name="UK garage" genre=ukg bars=1 steps=16
+N  0 - . . . . 0 . . . 7 - . . 5 .
+
+@bass id=bs-dnb name="Reese DnB" genre=dnb bars=1 steps=16
+N  0 - - - - - - - - - 3 - - - -2 -
+
+@bass id=bs-dubstep name="Wobble half-time" genre=dubstep bars=1 steps=16
+N  0 - - - - - 0 . 0 - - - 3 - 0 .
+
+@bass id=bs-industrial name="Industrielle" genre=industrial bars=1 steps=16
+N  0 0 . 0 0 . 0 0 . 0 1 . 0 0 . 0
+
+@bass id=bs-hardgroove name="Hardgroove" genre=hardgroove bars=1 steps=16
+N  . 0 . 0 . 0 12 . . 0 . 0 . 0 10 .
+
+@bass id=bs-2bar name="Techno 2 mesures" genre=techno bars=2 steps=16
+N  . . 0 . . . 0 . . . 0 . . . 0 .
+N  . . 0 . . . 0 . . . 3 . . . 5 .
+
+@bass id=bs-arp-bass name="Basse arpégée" genre=techno bars=1 steps=16
+N  0 7 12 7 0 7 12 7 0 7 12 7 0 7 12 15
+
+@bass id=bs-berlin name="Berlin" genre=techno bars=1 steps=16
+N  0 . . 0 . . 0 . . 0 . . 0 . 0 .

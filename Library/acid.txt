@@ -1,0 +1,100 @@
+# Lignes acid (notation 303) : intervalle en demi-tons depuis la tonique ; a = accent, s = slide ;
+# . = silence ; - = note tenue.  Transposées dans la tonique choisie dans LINEGEN.
+
+@acid id=acid-01 name="Racine qui saute" genre=acid bars=1 steps=16
+N  0 0 12 0 . 0 12a 0 0 . 0 12 0 3 . 12s
+
+@acid id=acid-02 name="Phuture" genre=acid bars=1 steps=16
+N  0 . 0 0a 12 . 0 0 3s 0 . 0 12a . 0 10
+
+@acid id=acid-03 name="Mineur classique" genre=acid bars=1 steps=16
+N  0 0a 3 0 7s 12 0 0 10 0a 3 0 5s 7 0 12
+
+@acid id=acid-04 name="Octaves glissées" genre=acid bars=1 steps=16
+N  0 12s 0 12s 0 12s 0 0a 0 12s 0 12s 3 15s 3 0a
+
+@acid id=acid-05 name="Phrygien" genre=acid bars=1 steps=16
+N  0 1s 0 0a . 0 1 0 12 0 1s 0 . 0a 1 13
+
+@acid id=acid-06 name="Tritons" genre=acid bars=1 steps=16
+N  0 . 6a 0 12 . 6 0 0a . 6 12s 0 6 . 0
+
+@acid id=acid-07 name="Galop" genre=acid bars=1 steps=16
+N  0 . 0a 0 . 12 0 0 . 3a 3 . 0 0 12s 0
+
+@acid id=acid-08 name="Montée" genre=acid bars=1 steps=16
+N  0 3 5 7a 0 3 5 7 10a 12 0 3 5 7 10 12s
+
+@acid id=acid-09 name="Descente" genre=acid bars=1 steps=16
+N  12a 10 7 5 3 0 . 0 12a 10s 7 5 3 0 -2 0
+
+@acid id=acid-10 name="Pompe" genre=acid bars=1 steps=16
+N  0a . 0 . 0a . 0 . 0a . 0 . 0a 3 5s 0
+
+@acid id=acid-11 name="Ping-pong" genre=acid bars=1 steps=16
+N  0 12 0 12 3 15a 3 15 5 17 5 17s 7 19 0a 12
+
+@acid id=acid-12 name="Hypnotique" genre=acid bars=1 steps=16
+N  0 0 0a 0 0 0 0a 0 0 0 0a 0 0 3s 0 0
+
+@acid id=acid-13 name="Syncopé" genre=acid bars=1 steps=16
+N  . 0a . 0 12 . 0 . 0a . 12s 0 . 0 7 .
+
+@acid id=acid-14 name="Squelch long" genre=acid bars=1 steps=16
+N  0 - - 12s 0 - 3a - 0 - - 12s 7 - 0a -
+
+@acid id=acid-15 name="Rebond" genre=acid bars=1 steps=16
+N  0 0 12a 0 0 12 0 0a 10 0 12 0 0 7s 0 12
+
+@acid id=acid-16 name="Sombre" genre=acid bars=1 steps=16
+N  0 1 0 . 0a 1s 0 . 0 1 0 . -1a 0 . 0
+
+@acid id=acid-17 name="Mineur 7" genre=acid bars=1 steps=16
+N  0 3 7 10a 12 10 7 3 0a 3 7s 10 12a 10 7 3
+
+@acid id=acid-18 name="Questions-réponses" genre=acid bars=1 steps=16
+N  0 . 0a 3 . 0 . . 12 . 12a 10s 7 . 5 3
+
+@acid id=acid-19 name="Basse + aigu" genre=acid bars=1 steps=16
+N  0 . 24a . 0 . 0 . 0 . 24a . 0 12s 0 .
+
+@acid id=acid-20 name="Relance" genre=acid bars=1 steps=16
+N  0 0 0 0a 3 3 3 3a 5 5 5 5a 7 7s 10 12a
+
+@acid id=acid-21 name="Ostinato" genre=acid bars=1 steps=16
+N  0a 0 3 0 0a 0 5 0 0a 0 7 0 0a 0 5s 3
+
+@acid id=acid-22 name="Glissades" genre=acid bars=1 steps=16
+N  0s 3s 5s 7a 0s 3s 5s 7a 0 3 5 7a 10s 7s 5s 3
+
+@acid id=acid-23 name="Funk acid" genre=acid bars=1 steps=16
+N  0 . 0 12a . 0 10 . 0 0a . 7 . 10s 12 .
+
+@acid id=acid-24 name="Minimal acid" genre=acid bars=1 steps=16
+N  0 . . 0a . . 0 . . 0a . . 0 . 3s .
+
+@acid id=acid-25 name="Blues acid" genre=acid bars=1 steps=16
+N  0 3 0 3a 5 6s 7 . 0 3 0a 10 . 7 5 3
+
+@acid id=acid-26 name="Accents décalés" genre=acid bars=1 steps=16
+N  0 0a 0 0 0a 0 0 0a 0 0 0a 0 0 0a 12 0
+
+@acid id=acid-27 name="Dorien" genre=acid bars=1 steps=16
+N  0 2 3 5a 7 9 10 12 0a 2 3 5 7s 9 10 12a
+
+@acid id=acid-28 name="Dramatique" genre=acid bars=1 steps=16
+N  0a . . 0 1s 0 . 0 0a . . 0 -2s 0 . 3
+
+@acid id=acid-29 name="Rapide" genre=acid bars=1 steps=16
+N  0 12 0 12a 0 12 0 12 0 12a 0 12 3 15s 3 15a
+
+@acid id=acid-30 name="Psy roulant" genre=acid bars=1 steps=16
+N  . 0 0a 0 . 0 0 0a . 0 0a 0 . 0 12s 0
+
+@acid id=acid-31 name="Deux mesures A" genre=acid bars=2 steps=16
+N  0 0a 12 0 3 0 12s 0 0 0a 12 0 3 0 7s 0
+N  0 0a 12 0 3 0 12s 0 10 10a 22 10 3s 5 7 12a
+
+@acid id=acid-32 name="Deux mesures B" genre=acid bars=2 steps=16
+N  0 . 0a . 0 3s . 0 . 0a . 0 7 . 0 .
+N  0 . 0a . 0 3s . 0 12a 10 7 5 3s 0 -2 0

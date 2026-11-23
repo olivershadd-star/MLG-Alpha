@@ -1,0 +1,80 @@
+# Mélodies, arpèges, riffs et séquences : même notation que acid.txt.
+
+@melody id=ml-arp-up name="Arpège montant" genre=arp bars=1 steps=16
+N  0 3 7 12 0 3 7 12 0 3 7 12 0 3 7 12
+
+@melody id=ml-arp-updown name="Arpège aller-retour" genre=arp bars=1 steps=16
+N  0 3 7 12 15 12 7 3 0 3 7 12 15 12 7 3
+
+@melody id=ml-arp-oct name="Arpège octaves" genre=arp bars=1 steps=16
+N  0 12 7 12 0 12 7 12 0 12 7 12 0 12 10 12
+
+@melody id=ml-arp-sus name="Arpège sus" genre=arp bars=1 steps=16
+N  0 5 7 12 0 5 7 12 0 5 7 12 0 5 7 14
+
+@melody id=ml-arp-trance name="Arpège trance" genre=trance bars=1 steps=16
+N  0 7 12 7 15 7 12 7 0 7 12 7 15 7 19 7
+
+@melody id=ml-arp-berlin name="École de Berlin" genre=berlin-school bars=1 steps=16
+N  0 12 7 3 0 12 7 3 0 12 7 5 0 12 7 5
+
+@melody id=ml-arp-synthwave name="Arpège synthwave" genre=synthwave bars=1 steps=16
+N  0 7 12 15 0 7 12 15 -2 5 10 14 -2 5 10 14
+
+@melody id=ml-stab name="Stab techno" genre=techno bars=1 steps=16
+N  . . 0 . . . . . . . 0 . . . . .
+
+@melody id=ml-stab2 name="Stab décalé" genre=techno bars=1 steps=16
+N  . . . 0 . . 0 . . . . 0 . . . .
+
+@melody id=ml-hook-1 name="Gimmick 3 notes" genre=techno bars=1 steps=16
+N  0 . 3 . 7 . . . 0 . 3 . 5 . . .
+
+@melody id=ml-hook-2 name="Gimmick question" genre=house bars=1 steps=16
+N  0 - 3 - 5 - 7 - 10 - 7 - 5 - 3 -
+
+@melody id=ml-hook-3 name="Riff hypnotique" genre=techno bars=1 steps=16
+N  12 . 10 . 12 . 7 . 12 . 10 . 7 . 3 .
+
+@melody id=ml-hook-4 name="Riff rave" genre=rave bars=1 steps=16
+N  0 0 12 0 0 12 0 0 10 10 22 10 10 22 10 10
+
+@melody id=ml-hook-5 name="Hoover" genre=rave bars=1 steps=16
+N  0 - - - 1 - - - 0 - - - -2 - - -
+
+@melody id=ml-hook-6 name="Mélodie trance" genre=trance bars=1 steps=16
+N  12 - 10 - 7 - 10 - 12 - 15 - 14 - 10 -
+
+@melody id=ml-lead-1 name="Lead synthwave" genre=synthwave bars=1 steps=16
+N  7 - - - 5 - 3 - 5 - - - 3 - 2 -
+
+@melody id=ml-lead-2 name="Lead sombre" genre=techno bars=1 steps=16
+N  0 - - - - - 1 - 0 - - - -2 - - -
+
+@melody id=ml-seq-1 name="Séquence 303 aiguë" genre=acid bars=1 steps=16
+N  12 0 12 0 15 0 12 0 10 0 12 0 7 0 10 0
+
+@melody id=ml-seq-2 name="Séquence EBM" genre=ebm bars=1 steps=16
+N  0 0 12 0 3 0 12 0 5 0 12 0 3 0 12 0
+
+@melody id=ml-seq-3 name="Séquence minimal" genre=minimal bars=1 steps=16
+N  0 . . 7 . . 12 . . 7 . . 0 . . .
+
+@melody id=ml-seq-4 name="Pluck house" genre=house bars=1 steps=16
+N  . . 7 . . 7 . . 10 . . 7 . . 5 .
+
+@melody id=ml-seq-5 name="Pluck en 3" genre=techno bars=1 steps=16
+N  0 . . 7 . . 12 . . 0 . . 7 . . 12
+
+@melody id=ml-bell name="Cloches" genre=ambient bars=1 steps=16
+N  12 - - - 19 - - - 15 - - - 14 - - -
+
+@melody id=ml-2bar-1 name="Phrase 2 mesures" genre=techno bars=2 steps=16
+N  0 - 3 - 7 - 5 - 3 - 0 - . . . .
+N  0 - 3 - 7 - 10 - 12 - 10 - 7 - . .
+
+@melody id=ml-4bar-1 name="Phrase 4 mesures" genre=melodic-techno bars=4 steps=16
+N  12 - - - 10 - - - 7 - - - 10 - - -
+N  12 - - - 15 - - - 14 - - - 10 - - -
+N  12 - - - 10 - - - 7 - - - 5 - - -
+N  3 - - - 5 - - - 7 - - - - - - -

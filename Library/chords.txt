@@ -1,0 +1,171 @@
+# Grilles d'accords et nappes : degrés en chiffres romains dans la gamme choisie dans LINEGEN.
+# Minuscule = accord mineur, majuscule = majeur, ° = diminué ; 7, maj7, 9, sus2, sus4 acceptés.
+# Une case = une mesure ; « - » = l'accord précédent continue.  @rhythm = rythme de jeu des accords.
+
+@chords id=ch-01 name="i – VI – III – VII" genre=techno bars=4
+C  i VI III VII
+
+@chords id=ch-02 name="i – iv" genre=techno bars=2
+C  i iv
+
+@chords id=ch-03 name="i – VII" genre=techno bars=2
+C  i VII
+
+@chords id=ch-04 name="i – v" genre=techno bars=2
+C  i v
+
+@chords id=ch-05 name="i – VI" genre=techno bars=2
+C  i VI
+
+@chords id=ch-06 name="i – iv – v – i" genre=techno bars=4
+C  i iv v i
+
+@chords id=ch-07 name="i – VII – VI – VII" genre=trance bars=4
+C  i VII VI VII
+
+@chords id=ch-08 name="i – VI – VII – i" genre=trance bars=4
+C  i VI VII i
+
+@chords id=ch-09 name="VI – VII – i – i" genre=trance bars=4
+C  VI VII i i
+
+@chords id=ch-10 name="i – III – VII – IV" genre=progressive bars=4
+C  i III VII IV
+
+@chords id=ch-11 name="i7 – iv7" genre=deep-house bars=2
+C  i7 iv7
+
+@chords id=ch-12 name="i9 – IVmaj7" genre=deep-house bars=2
+C  i9 IVmaj7
+
+@chords id=ch-13 name="ii7 – V7 – Imaj7 – vi7" genre=house bars=4
+C  ii7 V7 Imaj7 vi7
+
+@chords id=ch-14 name="Imaj7 – vi7" genre=house bars=2
+C  Imaj7 vi7
+
+@chords id=ch-15 name="vi – IV – I – V" genre=house bars=4
+C  vi IV I V
+
+@chords id=ch-16 name="I – V – vi – IV" genre=house bars=4
+C  I V vi IV
+
+@chords id=ch-17 name="i – i – VI – VII" genre=synthwave bars=4
+C  i i VI VII
+
+@chords id=ch-18 name="i – VI – iv – VII" genre=synthwave bars=4
+C  i VI iv VII
+
+@chords id=ch-19 name="i – II (phrygien)" genre=industrial bars=2
+C  i II
+
+@chords id=ch-20 name="i – II – i – VII" genre=industrial bars=4
+C  i II i VII
+
+@chords id=ch-21 name="i sus2 – i" genre=dub-techno bars=2
+C  isus2 i
+
+@chords id=ch-22 name="i9 seul (dub)" genre=dub-techno bars=1
+C  i9
+
+@chords id=ch-23 name="i7 – VII7" genre=dub-techno bars=2
+C  i7 VII7
+
+@chords id=ch-24 name="i – iv – VII – III" genre=melodic-techno bars=4
+C  i iv VII III
+
+@chords id=ch-25 name="i – VI – III – v" genre=melodic-techno bars=4
+C  i VI III v
+
+@chords id=ch-26 name="iv – i – v – i" genre=melodic-techno bars=4
+C  iv i v i
+
+@chords id=ch-27 name="i – IV (dorien)" genre=house bars=2
+C  i IV
+
+@chords id=ch-28 name="i7 – IV7 (dorien)" genre=deep-house bars=2
+C  i7 IV7
+
+@chords id=ch-29 name="Isus4 – I" genre=trance bars=2
+C  Isus4 I
+
+@chords id=ch-30 name="i – VI – i – VII" genre=rave bars=4
+C  i VI i VII
+
+@chords id=pad-01 name="Nappe sombre" genre=ambient bars=8 tags=nappe
+C  i - - - VI - VII -
+
+@chords id=pad-02 name="Nappe qui monte" genre=ambient bars=8 tags=nappe
+C  i - VI - III - VII -
+
+@chords id=pad-03 name="Nappe dub" genre=dub-techno bars=8 tags=nappe
+C  i9 - - - VII7 - - -
+
+@chords id=pad-04 name="Nappe mélancolique" genre=melodic-techno bars=8 tags=nappe
+C  i - iv - VI - v -
+
+@chords id=pad-05 name="Nappe lumineuse" genre=ambient bars=8 tags=nappe
+C  Imaj7 - - - IVmaj7 - - -
+
+@chords id=pad-06 name="Nappe suspendue" genre=ambient bars=8 tags=nappe
+C  isus2 - - - VIsus2 - - -
+
+@chords id=pad-07 name="Nappe trance" genre=trance bars=8 tags=nappe
+C  i - VI - III - VII -
+
+@chords id=pad-08 name="Nappe drone" genre=drone bars=8 tags=nappe
+C  i - - - - - - -
+
+@chords id=pad-09 name="Nappe phrygienne" genre=industrial bars=8 tags=nappe
+C  i - - - II - - -
+
+@chords id=pad-10 name="Nappe synthwave" genre=synthwave bars=8 tags=nappe
+C  i - VI - iv - VII -
+
+@chords id=pad-11 name="Nappe deep" genre=deep-house bars=8 tags=nappe
+C  i7 - - - iv7 - - -
+
+@chords id=pad-12 name="Nappe cyclique" genre=ambient bars=8 tags=nappe
+C  i - III - VI - VII -
+
+@rhythm id=st-01 name="Contretemps" genre=house bars=1 steps=16
+R  ..x...x...x...x.
+
+@rhythm id=st-02 name="Charleston" genre=house bars=1 steps=16
+R  x..x............
+
+@rhythm id=st-03 name="Stab dub" genre=dub-techno bars=1 steps=16
+R  ...x......x.....
+
+@rhythm id=st-04 name="Stab dub 2" genre=dub-techno bars=1 steps=16
+R  ..x......x....x.
+
+@rhythm id=st-05 name="Syncopé" genre=techno bars=1 steps=16
+R  x..x..x...x..x..
+
+@rhythm id=st-06 name="Tresillo" genre=techno bars=1 steps=16
+R  x..x..x.........
+
+@rhythm id=st-07 name="Rave piano" genre=rave bars=1 steps=16
+R  x..x..x.x..x..x.
+
+@rhythm id=st-08 name="Croches" genre=trance bars=1 steps=16
+R  x.x.x.x.x.x.x.x.
+
+@rhythm id=st-09 name="Doubles croches gated" genre=trance bars=1 steps=16
+R  xxxxxxxxxxxxxxxx
+
+@rhythm id=st-10 name="Un coup" genre=techno bars=1 steps=16
+R  x...............
+
+@rhythm id=st-11 name="Chicago" genre=house bars=1 steps=16
+R  x.x..x..x.x..x..
+
+@rhythm id=st-12 name="Deep" genre=deep-house bars=1 steps=16
+R  x.....x....x....
+
+@rhythm id=st-13 name="Minimal" genre=minimal bars=1 steps=16
+R  ...x.........x..
+
+@rhythm id=st-14 name="Tenu" genre=pad bars=1 steps=16
+R  x...............
