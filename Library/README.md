@@ -4,6 +4,9 @@
 
 | Fichier | Contenu | Nombre |
 |---|---|---|
+| `techno_bass.txt` | Techno : basses roulantes qui laissent la place au kick, rumble, contretemps | 1 020 |
+| `techno_synth.txt` | Techno : polymètres, euclidiens, accents, courbes de vélocité, lignes atonales/industrielles, question-réponse | 1 970 |
+| `techno_perc.txt` | Techno : polymètres et euclidiens de percussions, accents toutes les 3/5/7, courbes de vélocité, relances | 1 430 |
 | `gen_bass.txt` | Basses fabriquées par règles de groove : contretemps, roulante, galop, sur le temps, syncopée, clairsemée, dub, doubles croches, garage | 1 400 |
 | `gen_acid.txt` | Lignes acid fabriquées (accents, slides) | 500 |
 | `gen_synth.txt` | Synthés fabriqués : stabs, séquences, arpèges, plucks, gimmicks, drones | 1 100 |
@@ -17,7 +20,7 @@
 | `bass_neuralacid.txt` | Basses NeuralAcid sur 4 mesures, qui suivent une grille d'accords | 8 985 |
 | `acid.txt`, `bass.txt`, `melody.txt` | Acid, basses et mélodies écrites à la main | 87 |
 
-**Total : 13 805 motifs (5,5 Mo).**
+**Total : 18 225 motifs.**
 
 ## Format
 
@@ -33,6 +36,7 @@ Pour ajouter tes motifs : copier un bloc, changer l'`id`, le nom et les pas.
 
 ## Sources
 
+- `techno_*.txt` : fabriqués par `tools/generate_techno.py` (règles de production techno : kick libre, rumble, polymètre, euclidien, accents, question-réponse, relances).
 - `gen_*.txt` : fabriqués par `tools/generate_patterns.py` (règles : hiérarchie des temps, cellules rythmiques par style, phrasé AAAA'/ABAB'/AABB, tonique sur les temps forts, vélocités accentuées). Relancer le script redonne exactement les mêmes motifs.
 - `drums_bardet.txt` : rythmes de René-Pierre Bardet, données JSON de [gvellut/dmp_midi](https://github.com/gvellut/dmp_midi) (`tools/import_bardet.py`).
 - `bass_neuralacid.txt` : jeu de données [intrect/neuralacid-basslines](https://huggingface.co/datasets/intrect/neuralacid-basslines) (CC BY 4.0), généré par Electr-o-matic de unohee (`tools/import_neuralacid.py`).

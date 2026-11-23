@@ -75,10 +75,13 @@ def render_drums(head, lines):
     return ev, bars * 16 * STEP
 
 
-def main(out):
+def main(out, preset="general"):
     out = Path(out); out.mkdir(parents=True, exist_ok=True)
     rng = random.Random(7)
-    picks = [("gen_bass.txt", 8, 36), ("gen_acid.txt", 5, 36), ("gen_synth.txt", 6, 60), ("gen_perc.txt", 5, 0),
+    if preset == "techno":
+        picks = [("techno_bass.txt", 10, 36), ("techno_synth.txt", 12, 60), ("techno_perc.txt", 14, 0)]
+    else:
+      picks = [("gen_bass.txt", 8, 36), ("gen_acid.txt", 5, 36), ("gen_synth.txt", 6, 60), ("gen_perc.txt", 5, 0),
              ("acid.txt", 3, 36), ("bass.txt", 3, 36), ("drums_electronic.txt", 5, 0), ("drums_pocket_operations.txt", 3, 0)]
     for fname, count, root in picks:
         items = list(blocks(fname)); rng.shuffle(items)
@@ -93,4 +96,4 @@ def main(out):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1])
+    main(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else "general")
