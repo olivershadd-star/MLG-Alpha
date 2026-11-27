@@ -5,12 +5,29 @@ on:
     branches: [ main, master ]
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build-windows:
     runs-on: windows-2022
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Lire le numéro de version
+        id: version
+        shell: pwsh
+        run: |
+          $match = Select-String -Path CMakeLists.txt -Pattern 'project\([A-Za-z0-9_]+ VERSION ([0-9.]+)'
+          $version = $match.Matches[0].Groups[1].Value
+          $exists = git tag --list "v$version"
+          $publish = (-not $exists) -and ('${{ github.event_name }}' -ne 'pull_request') -and ('${{ github.ref }}' -eq 'refs/heads/main')
+          "version=$version" >> $env:GITHUB_OUTPUT
+          "publish=$($publish.ToString().ToLower())" >> $env:GITHUB_OUTPUT
+          Write-Host "Version $version - publication : $publish"
 
       - name: Configure
         run: cmake -B build -G "Visual Studio 17 2022" -A x64
@@ -24,3 +41,40 @@ jobs:
           name: MLG-Alpha-VST3-Windows
           path: build/MLGAlpha_artefacts/Release/VST3/
           if-no-files-found: error
+
+      - name: Fabriquer l'appareil Max for Live
+        if: steps.version.outputs.publish == 'true'
+        run: python tools/build_device.py
+
+      - name: Préparer le ZIP numéroté
+        if: steps.version.outputs.publish == 'true'
+        shell: pwsh
+        run: |
+          $name = "MLG-Alpha-${{ steps.version.outputs.version }}"
+          $dir = "release/$name"
+          New-Item -ItemType Directory -Force "$dir/VST3 (optionnel)" | Out-Null
+          Copy-Item -Recurse "dist/MLG Alpha" "$dir/MLG Alpha"
+          Copy-Item -Recurse "build/MLGAlpha_artefacts/Release/VST3/MLG Alpha.vst3" "$dir/VST3 (optionnel)/"
+          Copy-Item README.md "$dir/"
+          Compress-Archive -Path $dir -DestinationPath "release/$name.zip" -Force
+
+      - name: Publier la version (onglet Releases)
+        if: steps.version.outputs.publish == 'true'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: v${{ steps.version.outputs.version }}
+          target_commitish: ${{ github.sha }}
+          name: MLG Alpha ${{ steps.version.outputs.version }}
+          prerelease: true
+          files: release/*.zip
+          body: |
+            **MLG Alpha — générateur de lignes MIDI, ANKS Labs, gratuit.** Version Alpha.
+
+            **Max for Live (version principale, Live Suite ou Standard + Max for Live)**
+            1. Télécharge `MLG-Alpha-${{ steps.version.outputs.version }}.zip` ci-dessous (rubrique *Assets*) et fais clic droit → **Extraire tout**.
+            2. Copie le dossier `MLG Alpha` dans `Documents\Max 9\Library\` (tous ses fichiers doivent rester ensemble).
+            3. Dans Live, glisse `MLG Alpha.amxd` sur une piste MIDI, devant ton synthé, et lance la lecture.
+
+            **VST3 (optionnel, pour Live Lite ou d'autres logiciels)** : copie `VST3 (optionnel)\MLG Alpha.vst3` dans `C:\Program Files\Common Files\VST3`. Dans Ableton il faut deux pistes et un routage MIDI (voir le README).
+
+            **EN —** Download `MLG-Alpha-${{ steps.version.outputs.version }}.zip`, extract it, copy the `MLG Alpha` folder to `Documents\Max 9\Library\` and drop `MLG Alpha.amxd` on a MIDI track.

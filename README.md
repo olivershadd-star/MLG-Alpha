@@ -4,6 +4,18 @@
 
 ---
 
+## ⬇ TÉLÉCHARGER ET INSTALLER — DOWNLOAD
+
+[![TÉLÉCHARGER LA DERNIÈRE VERSION](https://img.shields.io/github/v/release/olivershadd-star/MLG-Alpha?include_prereleases&sort=date&display_name=tag&style=for-the-badge&logo=github&logoColor=F7FAFF&label=T%C3%89L%C3%89CHARGER&labelColor=10151E&color=EF343E)](../../releases/latest) [![TOUTES LES VERSIONS](https://img.shields.io/badge/TOUTES_LES-VERSIONS-F5C343?style=for-the-badge&labelColor=10151E)](../../releases)
+
+1. Clique sur **TÉLÉCHARGER**, puis, dans la rubrique *Assets*, télécharge `MLG-Alpha-X.Y.Z.zip` (X.Y.Z = numéro de version : prends toujours le plus grand).
+2. Clic droit sur le ZIP → **Extraire tout**.
+3. Copie le dossier `MLG Alpha` dans `Documents\Max 9\Library\` (tous ses fichiers restent ensemble).
+4. Dans Live (Suite, ou Standard + Max for Live), glisse `MLG Alpha.amxd` sur une piste MIDI, devant ton synthé. Détails dans « Installation » plus bas.
+5. Pas de Max for Live (Live Lite…) ? Le ZIP contient aussi `VST3 (optionnel)\MLG Alpha.vst3` (voir « Et le VST3 ? »).
+
+**EN —** Click **DOWNLOAD**, get `MLG-Alpha-X.Y.Z.zip` from *Assets*, extract it, copy `MLG Alpha` to `Documents\Max 9\Library\` and drop `MLG Alpha.amxd` on a MIDI track.
+
 ## Toi aussi, ça t'arrive ?
 
 Ta boucle tourne depuis vingt minutes. Le kick est bon, la basse aussi, et tu sens bien qu'il manque **une ligne de quelque chose**. Un petit arpège, une nappe, une percu qui claque, n'importe quoi. Et là, rien. Pas une idée. Le vide.
@@ -108,7 +120,7 @@ MLG Alpha est un **effet MIDI Max for Live**. Il se pose sur la piste MIDI, just
 
 Une seule piste, pas de routage. Il faut Live avec Max for Live (Suite, ou Standard avec Max for Live).
 
-1. Télécharger l'appareil : onglet **Actions** de ce dépôt, dernier « Max for Live » en vert, artefact `MLG-Alpha-Max-for-Live`.
+1. Télécharger l'appareil : bouton **TÉLÉCHARGER** en haut de cette page, fichier `MLG-Alpha-X.Y.Z.zip`.
 2. Dézipper. Le dossier `MLG Alpha` contient l'appareil, trois scripts et la bibliothèque. **Ils doivent rester ensemble dans le même dossier.**
 3. Copier ce dossier dans `Documents\Max 9\Library\` (Max y trouve toujours les fichiers). Pour le voir dans le navigateur de Live : **Add Folder…** en bas de « Places ».
 4. Dans Live, glisser `MLG Alpha.amxd` sur une piste MIDI, devant l'instrument.
@@ -170,7 +182,7 @@ Tes fichiers (bibliothèque perso, apprentissage, statistiques) sont dans `%APPD
 
 ### Et le VST3 ?
 
-Le VST3 (dossier `Source/`) marche, mais dans Ableton il ne peut pas se placer devant un instrument : il faut deux pistes et un routage MIDI. La version Max for Live est la version principale. Le VST3 reste compilé à chaque push (artefact `MLG-Alpha-VST3-Windows`) pour d'autres logiciels.
+Le VST3 (dossier `Source/`) marche, mais dans Ableton il ne peut pas se placer devant un instrument : il faut deux pistes et un routage MIDI. La version Max for Live est la version principale. Le VST3 est livré dans le même ZIP, dossier `VST3 (optionnel)`, pour Live Lite ou d'autres logiciels : copie `MLG Alpha.vst3` dans `C:\Program Files\Common Files\VST3`.
 
 ## La bibliothèque
 
